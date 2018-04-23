@@ -1,0 +1,4 @@
+live:	live	%1
+	zjmp	%:live		
+l2:	sti	r2,%:live,%0
+	and	r1,%0,r1
