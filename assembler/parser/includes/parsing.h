@@ -43,7 +43,7 @@ typedef struct	s_op
 }				t_op;
 // 
 int			parsing(t_str_tokens *input, int count);
-int			*after_label(t_str_tokens *input, int index);
+int			after_label(t_str_tokens *input, int index);
 t_op		f_arguments(char *operation);
 int			check_the_args(t_op args, t_str_tokens *input, int index);
 int			error_messege(t_str_tokens *input, t_tokens *input_tokens, int index);

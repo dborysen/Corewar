@@ -16,22 +16,23 @@ static char		*dop_funct(int i, size_t o, char *s1, char *s2)
 {
 	int		d;
 
-	while (s1[i])
-	{
-		d = i;
-		o = 0;
-		while (s1[d])
+	if (*s1 && *s2)
+		while (s1[i])
 		{
-			if (s1[d] == s2[o])
-				o++;
-			else
-				break ;
-			d++;
+			d = i;
+			o = 0;
+			while (s1[d])
+			{
+				if (s1[d] == s2[o])
+					o++;
+				else
+					break ;
+				d++;
+			}
+			if (o == ft_strlen(s2))
+				return (s1 + i);
+			i++;
 		}
-		if (o == ft_strlen(s2))
-			return (s1 + i);
-		i++;
-	}
 	return (0);
 }
 
