@@ -1,14 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   filler.c                                           :+:      :+:    :+:   */
+/*   ft_lstdelone.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dborysen <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: klee <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/01/24 14:46:54 by dborysen          #+#    #+#             */
-/*   Updated: 2018/01/24 14:46:55 by dborysen         ###   ########.fr       */
+/*   Created: 2017/11/10 11:34:10 by klee              #+#    #+#             */
+/*   Updated: 2017/11/10 13:21:10 by klee             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "assembler/lexer/lexer.h"
-#include "assembler/parser/includes/parsing.h"
+#include "libft.h"
+
+void	ft_lstdelone(t_list **alst, void (*del)(void*, size_t))
+{
+	del((*alst)->content, (*alst)->content_size);
+	free(*alst);
+	*alst = 0;
+}

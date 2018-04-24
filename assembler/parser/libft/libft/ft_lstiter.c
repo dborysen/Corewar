@@ -1,14 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   filler.c                                           :+:      :+:    :+:   */
+/*   ft_lstiter.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dborysen <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: klee <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/01/24 14:46:54 by dborysen          #+#    #+#             */
-/*   Updated: 2018/01/24 14:46:55 by dborysen         ###   ########.fr       */
+/*   Created: 2017/11/13 09:28:37 by klee              #+#    #+#             */
+/*   Updated: 2017/11/13 12:11:42 by klee             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "assembler/lexer/lexer.h"
-#include "assembler/parser/includes/parsing.h"
+#include "libft.h"
+
+void	ft_lstiter(t_list *lst, void (*f)(t_list *elem))
+{
+	t_list *buff;
+
+	buff = lst;
+	while (buff)
+	{
+		f(buff);
+		buff = buff->next;
+	}
+}

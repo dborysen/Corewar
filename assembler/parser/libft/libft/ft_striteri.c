@@ -1,14 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   filler.c                                           :+:      :+:    :+:   */
+/*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dborysen <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: klee <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/01/24 14:46:54 by dborysen          #+#    #+#             */
-/*   Updated: 2018/01/24 14:46:55 by dborysen         ###   ########.fr       */
+/*   Created: 2017/11/06 15:07:58 by klee              #+#    #+#             */
+/*   Updated: 2017/11/20 11:35:11 by klee             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "assembler/lexer/lexer.h"
-#include "assembler/parser/includes/parsing.h"
+#include "libft.h"
+
+void	ft_striteri(char *s, void (*f)(unsigned int, char*))
+{
+	int	i;
+
+	i = 0;
+	if (!s || !f)
+		return ;
+	while (s[i])
+	{
+		f(i, (s + i));
+		i++;
+	}
+}

@@ -1,14 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   filler.c                                           :+:      :+:    :+:   */
+/*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dborysen <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: klee <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/01/24 14:46:54 by dborysen          #+#    #+#             */
-/*   Updated: 2018/01/24 14:46:55 by dborysen         ###   ########.fr       */
+/*   Created: 2017/11/01 11:05:50 by klee              #+#    #+#             */
+/*   Updated: 2017/11/16 11:22:56 by klee             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "assembler/lexer/lexer.h"
-#include "assembler/parser/includes/parsing.h"
+#include <string.h>
+
+int		ft_strncmp(char *s1, char *s2, size_t n)
+{
+	size_t	i;
+
+	i = 0;
+	while ((s1[i] || s2[i]) && i < n)
+	{
+		if (s1[i] != s2[i])
+			return ((unsigned char)s1[i] - (unsigned char)s2[i]);
+		i++;
+	}
+	return (0);
+}

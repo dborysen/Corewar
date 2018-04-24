@@ -1,14 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   filler.c                                           :+:      :+:    :+:   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dborysen <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: klee <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/01/24 14:46:54 by dborysen          #+#    #+#             */
-/*   Updated: 2018/01/24 14:46:55 by dborysen         ###   ########.fr       */
+/*   Created: 2017/11/01 12:28:33 by klee              #+#    #+#             */
+/*   Updated: 2017/11/13 13:29:06 by klee             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "assembler/lexer/lexer.h"
-#include "assembler/parser/includes/parsing.h"
+#include "libft.h"
+
+void	*ft_memset(void *b, int c, size_t len)
+{
+	size_t			i;
+	unsigned char	*r1;
+
+	i = 0;
+	r1 = (unsigned char*)b;
+	while (i < len)
+		r1[i++] = (unsigned char)c;
+	return (b);
+}

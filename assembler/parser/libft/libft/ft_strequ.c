@@ -1,14 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   filler.c                                           :+:      :+:    :+:   */
+/*   ft_strequ.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dborysen <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: klee <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/01/24 14:46:54 by dborysen          #+#    #+#             */
-/*   Updated: 2018/01/24 14:46:55 by dborysen         ###   ########.fr       */
+/*   Created: 2017/11/07 10:23:46 by klee              #+#    #+#             */
+/*   Updated: 2017/11/20 11:13:31 by klee             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "assembler/lexer/lexer.h"
-#include "assembler/parser/includes/parsing.h"
+#include "libft.h"
+
+int		ft_strequ(const char *s1, const char *s2)
+{
+	char	*s11;
+	char	*s22;
+
+	if (!s1 || !s2)
+		return (0);
+	s11 = (char*)(s1);
+	s22 = (char*)(s2);
+	if (ft_strcmp(s11, s22) != 0)
+		return (0);
+	return (1);
+}

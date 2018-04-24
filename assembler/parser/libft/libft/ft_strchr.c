@@ -1,14 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   filler.c                                           :+:      :+:    :+:   */
+/*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dborysen <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: klee <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/01/24 14:46:54 by dborysen          #+#    #+#             */
-/*   Updated: 2018/01/24 14:46:55 by dborysen         ###   ########.fr       */
+/*   Created: 2017/10/31 12:01:54 by klee              #+#    #+#             */
+/*   Updated: 2017/11/16 13:58:36 by klee             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "assembler/lexer/lexer.h"
-#include "assembler/parser/includes/parsing.h"
+#include "libft.h"
+
+char	*ft_strchr(char *s, int c)
+{
+	int		i;
+	char	*s1;
+
+	i = 0;
+	if (s && *s && c)
+	{
+		s1 = (char*)s;
+		while (s1[i] != c && s1[i])
+			i++;
+		if (s1[i] == c)
+			return (s1 + i);
+	}
+	return (0);
+}

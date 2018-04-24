@@ -10,5 +10,39 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "assembler/lexer/lexer.h"
-#include "assembler/parser/includes/parsing.h"
+#include "lexer.h"
+#include <fcntl.h>
+
+int		read_data(t_data **champ_data)
+{
+    char	*line;
+	int		fd;
+
+	fd = open("/Users/dborysen/Downloads/Corewar/assembler/test", O_RDONLY);
+    line = NULL;
+    while (get_next_line(fd, &line) > 0)
+    {
+        new_node(*(&champ_data), line);
+        ft_strdel(&line);
+    }
+	return (OK);
+}
+
+void	new_node(t_data **head, char *line)
+{
+	t_data *tmp;
+	t_data *new;
+
+	tmp = *head;
+	new = (t_data*)malloc(sizeof(t_data));
+	new->data = ft_strdup(line);
+	new->next = NULL;
+	if (*head != NULL)
+	{
+		while (tmp->next != NULL)
+			tmp = tmp->next;
+		tmp->next = new;
+	}
+	else
+		*head = new;
+}
