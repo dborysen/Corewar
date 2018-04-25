@@ -6,7 +6,7 @@
 /*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/23 13:20:36 by myprosku          #+#    #+#             */
-/*   Updated: 2018/04/24 16:32:08 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/04/25 15:45:37 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,7 +63,7 @@ t_champion	*ns_check_champions(char *av, t_champion **champ)
 		ft_printf("ERROR wrong champion name\n");
 		exit(0);
 	}
-	if (id > MAX_PLAYERS || id == 0)
+	if (temp->id > MAX_PLAYERS)
 	{
 		ft_printf("ERROR wrong number champions\n");
 		exit(0);
@@ -105,20 +105,29 @@ int		main(int ac, char **av)
 	ns_zero_flags(&flags);
 	ns_zero_champ(&champ);
 	ns_check_flags(ac, av, &flags, &champ);
+	ns_dump_flag(champ, map);
 	ns_create_map(&map);
+	ns_position_start(&champ);
+	ns_fill_map(champ, &map);
+	ns_print_map(map);
 
-
-
-	while (champ->next)
-	{
-		ft_printf("champ name = %s\n", champ->prog_name);
-		ft_printf("champ coment = %s\n", champ->comment);
-		ft_printf("champ realprogsize = %lld\n", champ->real_program_size);
-		ft_printf("champ progsize = %u\n", champ->prog_size);
-		ft_printf("champ magic = %u\n", champ->magic);
-		ft_printf("id = %lld\n", champ->id);
-		champ = champ->next;
-	}
-	ft_printf("%d %d %d\n", flags.d_is, flags.s_is, flags.v_is);
+//	while (champ->next)
+//	{
+////		ft_printf("champ name = %s\n", champ->prog_name);
+////		ft_printf("champ coment = %s\n", champ->comment);
+////		ft_printf("champ realprogsize = %lld\n", champ->real_program_size);
+////		ft_printf("champ progsize = %u\n", champ->prog_size);
+////		ft_printf("champ magic = %u\n", champ->magic);
+////		int i = 0;
+////		while (champ->exec_code[i])
+////		{
+////			ft_printf("champ exec = %x\n", champ->exec_code[i]);
+////			i++;
+////		}
+//		ft_printf("start pos = %d\n", champ->position_to_start);
+//		ft_printf("id = %lld\n", champ->id);
+//		champ = champ->next;
+//	}
+//	ft_printf("%d %d %d\n", flags.d_is, flags.s_is, flags.v_is);
 	return (0);
 }

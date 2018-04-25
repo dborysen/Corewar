@@ -1,9 +1,9 @@
 cmake_minimum_required(VERSION 3.9)
-project(corewar)
+project(VM_cor)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(corewar
+add_executable(VM_cor
         libft/af_per_doxu.c
         libft/af_per_sc.c
         libft/alignment_p.c
@@ -106,6 +106,10 @@ add_executable(corewar
         libft/unsigned_itoa.c
         libft/zero_flags.c
         corewar.h
+        create_map.c
         main.c
+        ns_additional_func.c
+        ns_read_champion.c
+        ns_zero_struct.c
         op.c
-        op.h ns_read_champion.c ns_additional_func.c ns_zero_struct.c create_map.c)
+        op.h dump_flag.c)

@@ -1,3 +1,3 @@
-/Users/myprosku/corewar/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/myprosku/corewar/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/myprosku/corewar/cmake-build-debug/CMakeFiles/corewar.dir
+/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles/VM_cor.dir

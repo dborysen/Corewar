@@ -6,14 +6,14 @@
 /*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/23 17:23:34 by myprosku          #+#    #+#             */
-/*   Updated: 2018/04/24 15:52:57 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/04/25 17:20:39 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "corewar.h"
 
 
-void	ns_save_program_size(t_champion **champ, char *content_file)
+void	ns_save_program_size(t_champion **champ, unsigned char *content_file)
 {
 	unsigned char	str[4];
 	int				i;
@@ -30,11 +30,11 @@ void	ns_save_program_size(t_champion **champ, char *content_file)
 	temp->prog_size = (unsigned int)unsigned_char_to_int(str);
 }
 
-void	ns_save_magic(t_champion **champ, char *content_file)
+void	ns_save_magic(t_champion **champ, unsigned char *content_file)
 {
 	unsigned char	magic[4];
-	int		i;
-	t_champion *temp;
+	int				i;
+	t_champion		*temp;
 
 	temp = *champ;
 	i = 0;
@@ -47,7 +47,7 @@ void	ns_save_magic(t_champion **champ, char *content_file)
 	temp->magic = (unsigned int)unsigned_char_to_int(magic);
 }
 
-void	ns_save_comment(t_champion **champ, char *content_file)
+void	ns_save_comment(t_champion **champ, unsigned char *content_file)
 {
 	int			i;
 	t_champion	*temp;
@@ -62,10 +62,10 @@ void	ns_save_comment(t_champion **champ, char *content_file)
 	temp->comment[i] = '\0';
 }
 
-void 	ns_save_program_name(t_champion **champ, char *content_file)
+void 	ns_save_program_name(t_champion **champ, unsigned char *content_file)
 {
-	t_champion *temp;
-	int i;
+	int 		i;
+	t_champion	*temp;
 
 	i = 0;
 	temp = *champ;
@@ -77,15 +77,15 @@ void 	ns_save_program_name(t_champion **champ, char *content_file)
 	temp->prog_name[i] = '\0';
 }
 
-void	ns_save_execute_code(t_champion **champ, char *content_file)
+void	ns_save_execute_code(t_champion **champ, unsigned char *content_file)
 {
 	unsigned int	i;
 	t_champion		*temp;
 
 	temp = *champ;
 	i = 0;
-	temp->exec_code = ft_strnew(temp->real_program_size);
-	while (i < temp->real_program_size)
+	temp->exec_code = (unsigned char*)ft_strnew(temp->real_program_size);
+	while (i < temp->prog_size)
 	{
 		temp->exec_code[i] = content_file[i + PROG_NAME_LENGTH + COMMENT_LENGTH + 16];
 		i++;
@@ -93,7 +93,7 @@ void	ns_save_execute_code(t_champion **champ, char *content_file)
 	temp->exec_code[i] = '\0';
 }
 
-t_champion	*ns_save_champs(t_champion **champ, char *content_file)
+t_champion	*ns_save_champs(t_champion **champ, unsigned char *content_file)
 {
 	t_champion *temp;
 
@@ -110,17 +110,17 @@ t_champion	*ns_save_champs(t_champion **champ, char *content_file)
 
 t_champion	*ns_read_champion(char *av, t_champion **champ)
 {
-	int 	fd;
-	off_t 	size_file;
-	char	*content_file;
-	t_champion *temp;
+	int 			fd;
+	off_t 			size_file;
+	unsigned char	*content_file;
+	t_champion		*temp;
 
 	temp = *champ;
 	if ((fd = open(av, O_RDONLY)) == -1)
 		ft_printf("ERROR wrong file name\n");
 	size_file = lseek(fd, 0, SEEK_END);
 	lseek(fd, 0, SEEK_SET);
-	content_file = ft_strnew((size_t)size_file);
+	content_file = (unsigned char *)ft_strnew((size_t)size_file);
 	read(fd, content_file, (size_t)size_file);
 	temp->real_program_size = (size_t)size_file;
 	return (ns_save_champs(&temp, content_file));

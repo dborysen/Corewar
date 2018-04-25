@@ -1,49 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ns_additional_func.c                               :+:      :+:    :+:   */
+/*   dump_flag.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/04/24 14:49:11 by myprosku          #+#    #+#             */
-/*   Updated: 2018/04/25 15:34:05 by myprosku         ###   ########.fr       */
+/*   Created: 2018/04/24 18:02:24 by myprosku          #+#    #+#             */
+/*   Updated: 2018/04/24 18:11:37 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "corewar.h"
 
-
-int		unsigned_char_to_int(unsigned char *str)
+void	ns_dump_flag(t_champion *champ, t_map memory_map)
 {
-	int nbr;
+	t_champion *temp;
 
-	nbr = str[0] << 24;
-	nbr += str[1] << 16;
-	nbr += str[2] << 8;
-	nbr += str[3];
-	return (nbr);
-}
-
-void	ns_position_start(t_champion **champ)
-{
-	int			len;
-	int			before_pos;
-	t_champion	*temp;
-
-	temp = *champ;
-	len = 0;
-	before_pos = 0;
+	temp = champ;
 	while (temp->next)
 	{
-		len++;
-		temp = temp->next;
-	}
-	temp = *champ;
-	temp = temp->next;
-	while (temp->next)
-	{
-		temp->position_to_start += 64 / len + before_pos;
-		before_pos = temp->position_to_start;
+		ft_printf("* Player %d, weighing %u bytes, \"%s\" (\"%s\") !\n",
+				  temp->id, temp->prog_size, temp->prog_name, temp->comment);
 		temp = temp->next;
 	}
 }
+
+
