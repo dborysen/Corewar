@@ -16,19 +16,6 @@
 # define OK 0
 
 #include "../../lexer/lexer.h"
-// typedef struct	s_tokens
-// {
-//     int 		token;
-// 	char		*current_str_piece;
-//     struct 		s_tokens *next;
-// }				t_tokens;
-
-// typedef struct	s_str_tokens
-// {
-//     t_tokens 	*valid;
-// 	char		*current_str;
-//     struct 		s_str_tokens *next;
-// }				t_str_tokens;
 
 typedef struct	s_op
 {
@@ -41,7 +28,7 @@ typedef struct	s_op
 	int i2;
 	int i3;
 }				t_op;
-// 
+
 int			parsing(t_str_tokens *input, int count);
 int			after_label(t_str_tokens *input, int index);
 t_op		f_arguments(char *operation);
