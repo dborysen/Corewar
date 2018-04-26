@@ -50,5 +50,6 @@ int			error_messege(t_str_tokens *input, t_tokens *input_tokens, int index);
 int			error_messege_for_arguments(t_tokens *input_tokens, t_op args, int i);
 int			number_of_arguments(t_op args, t_str_tokens *input, int index);
 int			error_messege_if_not_enough(t_op args);
-
+int			error_messege_for_operation(t_str_tokens *input,
+			t_tokens *input_tokens,int index);
 #endif
