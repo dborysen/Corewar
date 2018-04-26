@@ -28,7 +28,7 @@ int	is_r_letter(char c)
 
 int	is_letter(char c)
 {
-	if (ft_isalpha(c) == 1)
+	if (ft_isalpha(c) == 1 || c == '_')
 		return (TRUE);
 	return (FALSE);
 }

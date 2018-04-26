@@ -12,6 +12,7 @@
 
 #include "../corewar.h"
 
+// HAVE 1 LEAK 
 int     main(void)
 {
 	t_data	*data_from_file;
@@ -19,7 +20,9 @@ int     main(void)
     data_from_file = NULL;
     read_data(&data_from_file);
 	validation(data_from_file);
-    free_list(&data_from_file);
+	free_list(&data_from_file);
+	// while (1)
+	// ;
     return (0);
 }
 

@@ -29,11 +29,11 @@
 
 int state_table[19][11] = 
 {
-	{100, 105, 101, 106, 102, 108, 104, EOL, 112, 115, ERROR},
+	{100, 105, 101, 106, 102, 108, 104, EOL, 112, 115, T_ERROR},
 	{OPERATION, 101, 101, 110, T_ERROR, 103, OPERATION, OPERATION, OPERATION, T_ERROR, T_ERROR},
 	{T_ERROR, T_ERROR, T_ERROR, 107, T_ERROR, 109, T_ERROR, T_ERROR, T_ERROR, 117, T_ERROR},
-	{T_LAB, T_LAB, T_LAB, T_LAB, T_LAB, T_LAB, T_LAB, T_LAB, T_LAB, T_LAB, T_LAB},
-	{SEP_CHAR, SEP_CHAR, SEP_CHAR, SEP_CHAR, SEP_CHAR, SEP_CHAR, T_ERROR, SEP_CHAR, SEP_CHAR, SEP_CHAR, SEP_CHAR},
+	{T_LAB, T_LAB, T_LAB, T_LAB, T_LAB, T_LAB, T_LAB, T_LAB, T_LAB, T_LAB, T_ERROR},
+	{SEP_CHAR, SEP_CHAR, SEP_CHAR, SEP_CHAR, SEP_CHAR, SEP_CHAR, T_ERROR, SEP_CHAR, SEP_CHAR, SEP_CHAR, T_ERROR},
 	{OPERATION, 101, 101, 111, T_ERROR, 103, T_ERROR, T_ERROR, OPERATION, T_ERROR, T_ERROR},
 	{T_IND, 106, 110, 106, T_ERROR, T_ERROR, T_IND, T_IND, T_IND, T_ERROR, T_ERROR},
 	{T_DIR, T_ERROR, T_ERROR, 107, T_ERROR, T_ERROR, T_DIR, T_DIR, T_DIR, T_ERROR, T_ERROR},
@@ -69,33 +69,45 @@ int		rows_before_operation(t_data *data_from_file)
 
 void	lexer(t_data *data_from_file, t_str_tokens **str_tokens)
 {
-	t_func_list *state_funcs;
-	t_str_tokens *tmp;
+	t_func_list		*state_funcs;
+	t_str_tokens	*tmp;
+	int				row_num;
 
+	row_num = 1;
 	state_funcs = NULL;
 	fill_func_list(&state_funcs);
 	if (data_from_file != NULL)
 	{
-		while (data_from_file->data[0] == '.')
-			data_from_file = data_from_file->next;
+		row_num = row_num + skip_name_comment_rows(&data_from_file);
 		while (data_from_file != NULL)
 		{
 			add_node_in_tokens_strings(&(*str_tokens), data_from_file->data);
 			tmp = *str_tokens;
 			while (tmp->next != NULL)
 				tmp = tmp->next;
-			find_tokens(ft_strtrim(data_from_file->data), &(tmp->valid), state_funcs);
+			find_tokens(ft_strtrim(data_from_file->data), &(tmp->valid), state_funcs, row_num);
 			data_from_file = data_from_file->next;
+			row_num++;
 		}
 	}
 	free_func_list(state_funcs);
 }
 
-// MAKE AN EXTRA NODE FOR EOL				✅
-// FIGURE OUT, HOW TO SAVE SEP_CHAR TOKEN	✅
-// FREE LIST'S WITH TOKENS					✅
+int		skip_name_comment_rows(t_data **data_from_file)
+{
+	int rows_skiped;
 
-void	find_tokens(char *str, t_tokens **tokens_list, t_func_list *state_funcs)
+	rows_skiped = 0;
+	while ((*data_from_file)->data[0] == '.')
+	{
+		// name_and_comment_lexical
+		*data_from_file = (*data_from_file)->next;
+		rows_skiped++;
+	}
+	return (rows_skiped);
+}
+
+void	find_tokens(char *str, t_tokens **tokens_list, t_func_list *state_funcs, int row_num)
 {
 	t_counters counter;
 	
@@ -107,6 +119,7 @@ void	find_tokens(char *str, t_tokens **tokens_list, t_func_list *state_funcs)
 	{	
 		counter.state_column = find_correct_state_column(str[counter.i], state_funcs);
 		counter.state = state_table[counter.state][counter.state_column];
+		catch_error(counter.state, counter.i + 1, row_num);
 		if (is_a_token(counter.state) == TRUE)
 		{
 			add_new_token_node(&(*tokens_list), counter.state, ft_strsub(str, counter.j, counter.i - counter.j));
@@ -126,7 +139,18 @@ void	find_tokens(char *str, t_tokens **tokens_list, t_func_list *state_funcs)
 			counter.i++;
 		}
 	}
-	ft_strdel(&str);
+}
+
+void	catch_error(int state, int column, int row)
+{
+	if (state == T_ERROR)
+	{
+		ft_putstr_fd("Lexical error at [", 2);
+		ft_putnbr_fd(row, 2);
+		ft_putchar_fd(':', 2);
+		ft_putnbr_fd(column, 2);
+		ft_putstr_fd("]\n",2);
+	}
 }
 
 void	add_new_token_node(t_tokens **token_list, int token, char *token_str)

@@ -18,11 +18,12 @@ int		read_data(t_data **champ_data)
     char	*line;
 	int		fd;
 
-	fd = open("/Users/dborysen/Downloads/Corewar/assembler/test", O_RDONLY);
+	fd = open("/Users/dborysen/Downloads/corewar_all_versions/corewar_1/assembler/test", O_RDONLY);
+	// fd = 1;
     line = NULL;
     while (get_next_line(fd, &line) > 0)
     {
-        new_node(*(&champ_data), line);
+        new_node(&(*champ_data), line);
         ft_strdel(&line);
     }
 	return (OK);

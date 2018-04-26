@@ -19,6 +19,7 @@
 # define OK 0
 # define TRUE 0
 # define FALSE -1
+# define END_OF_HEADER 2
 
 /*
 ** FINAL STATE TABLE STRUCTS
@@ -62,7 +63,7 @@ typedef struct  s_counters
     int j;
 }               t_counters;
 
-void            find_tokens(char *str, t_tokens **tokens_list, t_func_list *state_funcs);
+void            find_tokens(char *str, t_tokens **tokens_list, t_func_list *state_funcs, int row_num);
 void            lexer(t_data *data_from_file, t_str_tokens **str_tokens);
 int				read_data(t_data **champ_data);
 void			new_node(t_data **head, char *line);
@@ -90,5 +91,7 @@ void            add_node_in_tokens_strings(t_str_tokens **str_tokens, char *str)
 void            add_new_token_node(t_tokens **token_list, int token, char *token_str);
 void            free_str_tokens(t_str_tokens **str_tokens);
 void            free_tokens(t_tokens **tokens);
+void            catch_error(int state, int column, int row);
+int             skip_name_comment_rows(t_data **data_from_file);
 
 #endif

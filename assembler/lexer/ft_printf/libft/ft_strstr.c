@@ -18,18 +18,21 @@ char	*ft_strstr(const char *big, const char *lit)
 	int j;
 
 	i = 0;
-	if (!*lit)
-		return ((char*)big);
-	while (big[i])
+	if (big != NULL && lit != NULL)
 	{
-		j = 0;
-		while (lit[j] == big[i + j])
+		if (*lit == 0)
+			return ((char*)big);
+		while (big[i])
 		{
-			if (lit[j + 1] == '\0')
-				return ((char*)big + i);
-			j++;
+			j = 0;
+			while (lit[j] == big[i + j])
+			{
+				if (lit[j + 1] == '\0')
+					return ((char*)big + i);
+				j++;
+			}
+			i++;
 		}
-		i++;
 	}
 	return (0);
 }
