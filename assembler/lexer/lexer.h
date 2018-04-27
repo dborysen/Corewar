@@ -33,13 +33,15 @@ typedef struct  s_func_list
 
 typedef struct  s_tokens
 {
-    int             token;
+	int             token;
     char            *current_str_piece;
     struct s_tokens *next;
 }               t_tokens;
 
 typedef struct  s_str_tokens
 {
+	int				position;
+	int				size;
     t_tokens                *valid;
     char                    *current_str;
     struct  s_str_tokens    *next;
@@ -65,12 +67,15 @@ typedef struct  s_counters
 
 void            find_tokens(char *str, t_tokens **tokens_list, t_func_list *state_funcs, int row_num);
 void            lexer(t_data *data_from_file, t_str_tokens **str_tokens);
+
+// int				read_data(t_data **champ_data, char *name_of_file);
 int				read_data(t_data **champ_data);
+
 void			new_node(t_data **head, char *line);
 int				validation(t_data *champ_data);
 void			free_list(t_data **head);
 void			save_name_and_comment(t_data *data_from_file, int row_num);
-void			free_twvo_dem_array(char **array);
+void			free_two_dem_array(char **array);
 int             rows_before_operation(t_data *data_from_file);
 int             is_white_space(char c);
 int             is_r_letter(char c);
@@ -91,7 +96,9 @@ void            add_node_in_tokens_strings(t_str_tokens **str_tokens, char *str)
 void            add_new_token_node(t_tokens **token_list, int token, char *token_str);
 void            free_str_tokens(t_str_tokens **str_tokens);
 void            free_tokens(t_tokens **tokens);
-void            catch_error(int state, int column, int row);
+void			catch_error(int state, int column, int row, char *str);
 int             skip_name_comment_rows(t_data **data_from_file);
+int             header_validation(t_data *data_from_file);
+char			*create_error_arrow_str(char *str, int column);
 
 #endif

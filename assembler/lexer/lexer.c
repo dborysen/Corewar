@@ -85,7 +85,7 @@ void	lexer(t_data *data_from_file, t_str_tokens **str_tokens)
 			tmp = *str_tokens;
 			while (tmp->next != NULL)
 				tmp = tmp->next;
-			find_tokens(ft_strtrim(data_from_file->data), &(tmp->valid), state_funcs, row_num);
+			find_tokens(data_from_file->data, &(tmp->valid), state_funcs, row_num);
 			data_from_file = data_from_file->next;
 			row_num++;
 		}
@@ -100,7 +100,6 @@ int		skip_name_comment_rows(t_data **data_from_file)
 	rows_skiped = 0;
 	while ((*data_from_file)->data[0] == '.')
 	{
-		// name_and_comment_lexical
 		*data_from_file = (*data_from_file)->next;
 		rows_skiped++;
 	}
@@ -109,24 +108,26 @@ int		skip_name_comment_rows(t_data **data_from_file)
 
 void	find_tokens(char *str, t_tokens **tokens_list, t_func_list *state_funcs, int row_num)
 {
-	t_counters counter;
+	t_counters	counter;
+	char		*trimed_str;
 	
+	trimed_str = ft_strtrim(str);
 	counter.i = 0;
 	counter.j = 0;
 	counter.state = 0;
 	counter.state_column = 0;
 	while (1)
 	{	
-		counter.state_column = find_correct_state_column(str[counter.i], state_funcs);
+		counter.state_column = find_correct_state_column(trimed_str[counter.i], state_funcs);
 		counter.state = state_table[counter.state][counter.state_column];
-		catch_error(counter.state, counter.i + 1, row_num);
+		catch_error(counter.state, counter.i + 1, row_num, str);
 		if (is_a_token(counter.state) == TRUE)
 		{
-			add_new_token_node(&(*tokens_list), counter.state, ft_strsub(str, counter.j, counter.i - counter.j));
+			add_new_token_node(&(*tokens_list), counter.state, ft_strsub(trimed_str, counter.j, counter.i - counter.j));
 			if (counter.state_column == 7 || counter.state == 32)
 			{
 				add_new_token_node(&(*tokens_list), EOL, NULL);
-				ft_strdel(&str);
+				ft_strdel(&trimed_str);
 				return ;
 			}
 			counter.j = counter.i;
@@ -141,16 +142,41 @@ void	find_tokens(char *str, t_tokens **tokens_list, t_func_list *state_funcs, in
 	}
 }
 
-void	catch_error(int state, int column, int row)
+void	catch_error(int state, int column, int row, char *str)
 {
+	char *error_arrow_str;
+	char *trimed_str;
+
+	trimed_str = ft_strtrim(str);
 	if (state == T_ERROR)
 	{
-		ft_putstr_fd("Lexical error at [", 2);
-		ft_putnbr_fd(row, 2);
-		ft_putchar_fd(':', 2);
-		ft_putnbr_fd(column, 2);
-		ft_putstr_fd("]\n",2);
+		error_arrow_str = create_error_arrow_str(str, column - 1);		
+		ft_printf("\n\e[1;31mLEXICAL ERROR: \e[1;37mat [%d:%d]\e[0m\e[0m\n", row, column);
+		ft_printf("\t\e[1;37m%s\e[0m\n", trimed_str);
+		ft_printf("\t\e[1;36m%s\e[0m\n", error_arrow_str);
+		ft_strdel(&error_arrow_str);
 	}
+	ft_strdel(&trimed_str);
+}
+
+char	*create_error_arrow_str(char *str, int column)
+{
+	int		i;
+	char	*arrow_str;
+	char	*trimed_str;
+
+	i = 0;
+	trimed_str = ft_strtrim(str);
+	arrow_str = ft_strdup(trimed_str);
+	while (arrow_str[i] != '\0')
+	{
+		if (arrow_str[i] != '\t')
+			arrow_str[i] = ' ';
+		i++;
+	}
+	arrow_str[column] = '^';
+	ft_strdel(&trimed_str);
+	return (arrow_str);
 }
 
 void	add_new_token_node(t_tokens **token_list, int token, char *token_str)
