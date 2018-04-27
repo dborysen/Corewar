@@ -98,7 +98,9 @@ int		skip_name_comment_rows(t_data **data_from_file)
 	int rows_skiped;
 
 	rows_skiped = 0;
-	while ((*data_from_file)->data[0] == '.')
+
+	while (ft_strchr((*data_from_file)->data, '.') != 0 ||
+	ft_strcmp((*data_from_file)->data, "") == 0)
 	{
 		*data_from_file = (*data_from_file)->next;
 		rows_skiped++;

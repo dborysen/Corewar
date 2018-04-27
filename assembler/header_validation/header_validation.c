@@ -13,7 +13,7 @@
 #include "header_validation.h"
 
 // 	NO OPEN BRACKET 1 & 2 LINE ✅
-//	NO CLOSE BRACKET 1 $ 2 LINE
+//	NO CLOSE BRACKET 1 $ 2 LINE 
 //	NO NAME OR NO COMMENT ✅
 //	MORE THEN NEEDED CHAR IN NAME OR IN COMMENT
 //	LESS THEN NEEDED CHAR IN NAME OR COMMENT
@@ -45,7 +45,7 @@ int		name_is_here(t_data *data_from_file)
 	int		name_count;
 
 	name_count = 0;
-	while (ft_strchr(data_from_file->data, '.') != 0)
+	while (ft_strchr(data_from_file->data, '.') != 0 || ft_strcmp(data_from_file->data, "") == 0)
 	{
 		str_split = ft_strsplit(data_from_file->data, ' ');
 		if (ft_strcmp(str_split[0], NAME_CMD_STRING) == 0)
@@ -67,7 +67,7 @@ int		comment_is_here(t_data *data_from_file)
 	int		comment_count;
 
 	comment_count = 0;
-	while (ft_strchr(data_from_file->data, '.') != 0)
+	while (ft_strchr(data_from_file->data, '.') != 0 || ft_strcmp(data_from_file->data, "") == 0)
 	{
 		str_split = ft_strsplit(data_from_file->data, ' ');
 		if (ft_strcmp(str_split[0], COMMENT_CMD_STRING) == 0)
@@ -145,7 +145,7 @@ void	show_no_open_brecket_error(char *str, int line_num)
 		i++;
 	arrow_str = bracket_place_in_str(str, i, '^');
 	bracket_str = bracket_place_in_str(str, i, '\"');
-	ft_printf("\n\e[1;31mSYNTAX ERROR: \e[1;37mno open bracket at [%d:%d]\e[0m\e[0m\n", line_num ,i + 1);
+	ft_printf("\n\e[1;31mSYNTAX ERROR: \e[1;37mexpected open bracket at [%d:%d]\e[0m\e[0m\n", line_num ,i + 1);
 	ft_printf("\t\e[1;37m%s\e[0m\n", str);
 	ft_printf("\t\e[1;36m%s\e[0m\n", arrow_str);
 	ft_printf("\t\e[1;36m%s\e[0m\n", bracket_str);
