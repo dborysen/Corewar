@@ -76,7 +76,7 @@ int			after_label(t_str_tokens *input, int index)
 	if (input_tokens->token == OPERATION)
 		operation = input_tokens->current_str_piece;
 	else
-		return (ERROR);
+		return (error_messege(input, input_tokens, index));
 	args = f_arguments(operation);
 	if (args.name != 0)
 		return (check_the_args(args, input, index));
