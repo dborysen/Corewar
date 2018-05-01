@@ -18,7 +18,7 @@ SRCS = parsing.c error_messege.c
 OBJ = $(SRCS:.c=.o)
 SRCS_DIR = $(addprefix $(SRCS_PREFIX)/, $(SRCS))
 LIB = ./libft/libft.a
-INCL = ./incl
+INCL = ./includes
 INCL_LIB = ./libft/includes
 
 all:
