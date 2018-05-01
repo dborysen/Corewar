@@ -79,7 +79,8 @@ ft_one_equ.c \
 ft_join_free_b.c \
 ft_join_free.c \
 clear_res_split.c \
-ft_splitwhtsp.c
+ft_splitwhtsp.c \
+ft_strrstr.c
 
 
 OBJECT = $(SRCS:.c=.o)

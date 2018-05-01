@@ -129,7 +129,7 @@ int			check_the_args(t_op args, t_str_tokens *input, int index)
 		if (input_tokens->token != SEP_CHAR && input_tokens->token != COMMENT)
 		{
 			if (((input_tokens->token & args.arg[i]) == 0))
-				result = (error_messege_for_arguments(input_tokens, args, i));
+				result = (error_messege_for_arguments(input, input_tokens, args, index));
 			i++;
 		}
 		input_tokens = input_tokens->next;
@@ -139,10 +139,11 @@ int			check_the_args(t_op args, t_str_tokens *input, int index)
 
 int			number_of_arguments(t_op args, t_str_tokens *input, int index)
 {
-	int			i;
+	int			i[2];
 	t_tokens	*input_tokens;
 
-	i = 0;
+	i[0] = 0;
+	i[1] = 0;
 	input_tokens = input->valid;
 	if (input_tokens->token == T_LAB)
 		input_tokens = input_tokens->next;
@@ -151,16 +152,15 @@ int			number_of_arguments(t_op args, t_str_tokens *input, int index)
 	{
 		if (input_tokens->token == T_ERROR)
 			return (0);
-		if (input_tokens->token != SEP_CHAR && input_tokens->token != EOL
-		&& input_tokens->token != COMMENT)
+		if (input_tokens->token != EOL && input_tokens->token != COMMENT)
 		{
-			i++;
-			if (i > args.numb)
+			(input_tokens->token == SEP_CHAR) ? i[1]++ : i[0]++;
+			if (i[0] > args.numb || i[1] >= args.numb)
 				return (error_messege(input, input_tokens, index));
 		}
 		input_tokens = input_tokens->next;
 	}
-	if (i < args.numb)
-		return (error_messege_if_not_enough(args));
+	if (i[0] < args.numb)
+		return (error_messege_if_not_enough(input, args, index));
 	return (0);
 }
