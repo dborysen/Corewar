@@ -6,7 +6,7 @@
 /*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/23 13:22:27 by myprosku          #+#    #+#             */
-/*   Updated: 2018/04/25 17:15:14 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/04/26 15:29:52 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,12 +32,12 @@ typedef struct		s_fl
 
 typedef struct			s_champion
 {
-	char				prog_name[PROG_NAME_LENGTH + 1];
-	char				comment[COMMENT_LENGTH + 1];
-	size_t				real_program_size;
-	unsigned int		prog_size;
+	char				champ_name[PROG_NAME_LENGTH + 1];
+	char				champ_comment[COMMENT_LENGTH + 1];
+	size_t				file_size;
+	unsigned int		size_bytes;
 	unsigned int		magic;
-	unsigned char				*exec_code;
+	unsigned char		*exec_code;
 	int					id;
 	/*
 	 * *  Стартовая позиция чемпиона будем искать (64 / на количество чемпионов)
@@ -61,5 +61,6 @@ void					ns_print_map(t_map memory_map);
 void					ns_dump_flag(t_champion *champ, t_map memory_map);
 void					ns_position_start(t_champion **champ);
 void					ns_fill_map(t_champion *champ, t_map *map);
+void 					ns_error(char *err_message);
 
 #endif

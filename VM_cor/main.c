@@ -6,25 +6,27 @@
 /*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/23 13:20:36 by myprosku          #+#    #+#             */
-/*   Updated: 2018/04/25 15:45:37 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/04/26 15:37:34 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "corewar.h"
 
 
-void	usage()
+void		usage()
 {
 	ft_printf("Usage: ./corewar [-d N -s N -v N | "
 			" -n ] [-a] <champion1.cor> <...>");
 }
 
-void	ns_save_flags(char **av, t_fl *flags, int *i)
+void		ns_save_flags(char **av, t_fl *flags, int *i)
 {
 	if(ft_strcmp(av[*i], "-d") == 0)
 	{
 		flags->d_is = 1;
 		*i += 1;
+		if (!ft_isdigit(av[*i][0]))
+			ns_error("not a digit after flag");
 		flags->d_num = (unsigned int)ft_atoi(av[*i]);
 	}
 	else if(ft_strcmp(av[*i], "-v") == 0)
@@ -59,19 +61,13 @@ t_champion	*ns_check_champions(char *av, t_champion **champ)
 		temp = ns_read_champion(av, &temp);
 	}
 	else
-	{
-		ft_printf("ERROR wrong champion name\n");
-		exit(0);
-	}
+		ns_error("wrong champion name");
 	if (temp->id > MAX_PLAYERS)
-	{
-		ft_printf("ERROR wrong number champions\n");
-		exit(0);
-	}
+		ns_error("to much champions");
 	return (temp);
 }
 
-void	ns_check_flags(int ac, char **av, t_fl *flags, t_champion **champ)
+void		ns_check_flags(int ac, char **av, t_fl *flags, t_champion **champ)
 {
 	int i;
 
@@ -86,14 +82,13 @@ void	ns_check_flags(int ac, char **av, t_fl *flags, t_champion **champ)
 		i++;
 	}
 	if ((*champ)->id == 0)
-	{
-		ft_printf("ERROR wrong number champions\n");
-		exit(0);
-	}
+		ns_error("wrong number champions");
+	if(!flags->a_is && !flags->d_is && !flags->n_is)
+		ns_error("wrong num of flags");
 	temp->next = NULL;
 }
 
-int		main(int ac, char **av)
+int			main(int ac, char **av)
 {
 	t_fl		flags;
 	t_map		map;
@@ -105,8 +100,8 @@ int		main(int ac, char **av)
 	ns_zero_flags(&flags);
 	ns_zero_champ(&champ);
 	ns_check_flags(ac, av, &flags, &champ);
-	ns_dump_flag(champ, map);
 	ns_create_map(&map);
+	ns_dump_flag(champ, map);
 	ns_position_start(&champ);
 	ns_fill_map(champ, &map);
 	ns_print_map(map);
@@ -129,5 +124,6 @@ int		main(int ac, char **av)
 //		champ = champ->next;
 //	}
 //	ft_printf("%d %d %d\n", flags.d_is, flags.s_is, flags.v_is);
+
 	return (0);
 }

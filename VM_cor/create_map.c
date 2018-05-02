@@ -50,7 +50,7 @@ void	ns_ch_map(t_champion *champ, t_map **map)
 		j = 0;
 		while (j < 64)
 		{
-			if (ind < champ->prog_size)
+			if (ind < champ->size_bytes)
 				memory_map->map[i][j] = champ->exec_code[ind++];
 			j++;
 		}

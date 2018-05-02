@@ -27,9 +27,9 @@ void	ns_zero_champ(t_champion **champ)
 
 	temp = *champ;
 	temp->exec_code = NULL;
-	temp->real_program_size = 0;
+	temp->file_size = 0;
 	temp->id = 0;
 	temp->magic = 0;
-	temp->prog_size = 0;
+	temp->size_bytes = 0;
 	temp->position_to_start = 0;
 }

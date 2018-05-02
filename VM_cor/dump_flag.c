@@ -20,7 +20,7 @@ void	ns_dump_flag(t_champion *champ, t_map memory_map)
 	while (temp->next)
 	{
 		ft_printf("* Player %d, weighing %u bytes, \"%s\" (\"%s\") !\n",
-				  temp->id, temp->prog_size, temp->prog_name, temp->comment);
+				  temp->id, temp->size_bytes, temp->champ_name, temp->champ_comment);
 		temp = temp->next;
 	}
 }
