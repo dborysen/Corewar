@@ -2931,6 +2931,33 @@ ns_additional_func.c.s:
 	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/ns_additional_func.c.s
 .PHONY : ns_additional_func.c.s
 
+ns_cursor_create.o: ns_cursor_create.c.o
+
+.PHONY : ns_cursor_create.o
+
+# target to build an object file
+ns_cursor_create.c.o:
+	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/ns_cursor_create.c.o
+.PHONY : ns_cursor_create.c.o
+
+ns_cursor_create.i: ns_cursor_create.c.i
+
+.PHONY : ns_cursor_create.i
+
+# target to preprocess a source file
+ns_cursor_create.c.i:
+	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/ns_cursor_create.c.i
+.PHONY : ns_cursor_create.c.i
+
+ns_cursor_create.s: ns_cursor_create.c.s
+
+.PHONY : ns_cursor_create.s
+
+# target to generate assembly for a file
+ns_cursor_create.c.s:
+	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/ns_cursor_create.c.s
+.PHONY : ns_cursor_create.c.s
+
 ns_read_champion.o: ns_read_champion.c.o
 
 .PHONY : ns_read_champion.o
@@ -3333,6 +3360,9 @@ help:
 	@echo "... ns_additional_func.o"
 	@echo "... ns_additional_func.i"
 	@echo "... ns_additional_func.s"
+	@echo "... ns_cursor_create.o"
+	@echo "... ns_cursor_create.i"
+	@echo "... ns_cursor_create.s"
 	@echo "... ns_read_champion.o"
 	@echo "... ns_read_champion.i"
 	@echo "... ns_read_champion.s"

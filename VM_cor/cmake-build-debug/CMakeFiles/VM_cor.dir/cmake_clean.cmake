@@ -106,6 +106,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/VM_cor.dir/ns_zero_struct.c.o"
   "CMakeFiles/VM_cor.dir/op.c.o"
   "CMakeFiles/VM_cor.dir/dump_flag.c.o"
+  "CMakeFiles/VM_cor.dir/ns_cursor_create.c.o"
   "VM_cor.pdb"
   "VM_cor"
 )

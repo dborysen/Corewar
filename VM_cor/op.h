@@ -83,7 +83,7 @@ typedef struct		s_op
 	char			*name_operaions;
 	unsigned int 	count_args;
 	t_arg_type		args[3];
-	unsigned int 	id;
+	unsigned int 	opcode;
 	unsigned int 	cycles;
 	char			*description;
 	unsigned int 	codeg_octal;

@@ -112,4 +112,4 @@ add_executable(VM_cor
         ns_read_champion.c
         ns_zero_struct.c
         op.c
-        op.h dump_flag.c)
+        op.h dump_flag.c ns_cursor_create.c)

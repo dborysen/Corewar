@@ -398,6 +398,9 @@
 		<Unit filename="/Users/myprosku/corTwar/VM_cor/ns_additional_func.c">
 			<Option target="VM_cor"/>
 		</Unit>
+		<Unit filename="/Users/myprosku/corTwar/VM_cor/ns_cursor_create.c">
+			<Option target="VM_cor"/>
+		</Unit>
 		<Unit filename="/Users/myprosku/corTwar/VM_cor/ns_read_champion.c">
 			<Option target="VM_cor"/>
 		</Unit>

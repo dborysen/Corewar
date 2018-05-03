@@ -108,6 +108,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/myprosku/corTwar/VM_cor/libft/zero_flags.c" "/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles/VM_cor.dir/libft/zero_flags.c.o"
   "/Users/myprosku/corTwar/VM_cor/main.c" "/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles/VM_cor.dir/main.c.o"
   "/Users/myprosku/corTwar/VM_cor/ns_additional_func.c" "/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles/VM_cor.dir/ns_additional_func.c.o"
+  "/Users/myprosku/corTwar/VM_cor/ns_cursor_create.c" "/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles/VM_cor.dir/ns_cursor_create.c.o"
   "/Users/myprosku/corTwar/VM_cor/ns_read_champion.c" "/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles/VM_cor.dir/ns_read_champion.c.o"
   "/Users/myprosku/corTwar/VM_cor/ns_zero_struct.c" "/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles/VM_cor.dir/ns_zero_struct.c.o"
   "/Users/myprosku/corTwar/VM_cor/op.c" "/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles/VM_cor.dir/op.c.o"
