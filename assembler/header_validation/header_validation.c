@@ -180,7 +180,6 @@ int		count_words(char const *s, char c)
 	return (words);
 }
 
-
 char	*cut_hash(char *header_str)
 {
 	int		i;
