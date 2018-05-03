@@ -12,14 +12,17 @@
 
 #include "../corewar.h"
 
-int     main(void)
+int     main(int argc, char **argv)
 {
 	t_data	*data_from_file;
 
     data_from_file = NULL;
-    read_data(&data_from_file);
-	validation(data_from_file);
-	free_list(&data_from_file);
+	if (argc == 2)
+	{
+		read_data(&data_from_file, *argv);
+		validation(data_from_file);
+		free_list(&data_from_file);
+	}
     return (0);
 }
 
@@ -27,12 +30,17 @@ int		validation(t_data *data_from_file)
 {
 	t_str_tokens	*str_tokens;
 	int				skipped_rows;
+	header_t		header;
 
+	header.magic = 0;
 	str_tokens = NULL;
-	skipped_rows = rows_before_operation(data_from_file);
-	header_validation(data_from_file);
-	lexer(data_from_file, &str_tokens);
-	parsing(str_tokens, skipped_rows);
-	free_str_tokens(&str_tokens);
+	skipped_rows = 0;
+	if (header_validation(data_from_file) == OK)
+	{
+		skipped_rows = rows_before_operation(data_from_file);
+		lexer(data_from_file, &str_tokens);
+		parsing(str_tokens, skipped_rows);
+		free_str_tokens(&str_tokens);
+	}
 	return (OK);
 }

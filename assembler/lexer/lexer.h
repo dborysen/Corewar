@@ -40,10 +40,11 @@ typedef struct  s_tokens
 
 typedef struct  s_str_tokens
 {
-	int				position;
-	int				size;
+	int						position;
+	int						size;
     t_tokens                *valid;
     char                    *current_str;
+	unsigned char			*code;
     struct  s_str_tokens    *next;
 }               t_str_tokens;
 
@@ -68,8 +69,8 @@ typedef struct  s_counters
 void            find_tokens(char *str, t_tokens **tokens_list, t_func_list *state_funcs, int row_num);
 void            lexer(t_data *data_from_file, t_str_tokens **str_tokens);
 
-// int				read_data(t_data **champ_data, char *name_of_file);
-int				read_data(t_data **champ_data);
+int				read_data(t_data **champ_data, char *name_of_file);
+// int				read_data(t_data **champ_data);
 
 void			new_node(t_data **head, char *line);
 int				validation(t_data *champ_data);
@@ -98,7 +99,7 @@ void            free_str_tokens(t_str_tokens **str_tokens);
 void            free_tokens(t_tokens **tokens);
 void			catch_error(int state, int column, int row, char *str);
 int             skip_name_comment_rows(t_data **data_from_file);
-int             header_validation(t_data *data_from_file);
 char			*create_error_arrow_str(char *str, int column);
+int				only_hesh_coomment_line(char *str);
 
 #endif

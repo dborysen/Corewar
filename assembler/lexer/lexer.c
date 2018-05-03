@@ -52,19 +52,37 @@ int state_table[19][11] =
 
 int		rows_before_operation(t_data *data_from_file)
 {
-	int skipped_rows;
+	int headers_count;
+	int	skipped_rows;
 
 	skipped_rows = 0;
-	if (data_from_file != NULL)
+	headers_count = 0;
+	while (headers_count != 2)
 	{
-		while (data_from_file->data[0] == '.')
+		if (ft_strchr(data_from_file->data, '.') != 0)
 		{
-			data_from_file = data_from_file->next;
+			headers_count++;
 			skipped_rows++;
 		}
-		return (skipped_rows);
+		if (only_hesh_coomment_line(data_from_file->data) == TRUE)
+			skipped_rows++;
+		data_from_file = data_from_file->next;
 	}
-	return (ERROR);
+	return (skipped_rows);
+}
+
+int		only_hesh_coomment_line(char *str)
+{
+	int i;
+
+	i = 0;
+	while (str[i] != '\0' && str[i] != '#')
+	{
+		if (str[i] != ' ' && str[i] != '\t')
+			return (FALSE);
+		i++;
+	}
+	return (TRUE);
 }
 
 void	lexer(t_data *data_from_file, t_str_tokens **str_tokens)
@@ -95,17 +113,23 @@ void	lexer(t_data *data_from_file, t_str_tokens **str_tokens)
 
 int		skip_name_comment_rows(t_data **data_from_file)
 {
-	int rows_skiped;
+	int headers_count;
+	int	skipped_rows;
 
-	rows_skiped = 0;
-
-	while (ft_strchr((*data_from_file)->data, '.') != 0 ||
-	ft_strcmp((*data_from_file)->data, "") == 0)
+	skipped_rows = 0;
+	headers_count = 0;
+	while (headers_count != 2)
 	{
+		if (ft_strchr((*data_from_file)->data, '.') != 0)
+		{
+			headers_count++;
+			skipped_rows++;
+		}
+		if (only_hesh_coomment_line((*data_from_file)->data) == TRUE)
+			skipped_rows++;
 		*data_from_file = (*data_from_file)->next;
-		rows_skiped++;
 	}
-	return (rows_skiped);
+	return (skipped_rows);
 }
 
 void	find_tokens(char *str, t_tokens **tokens_list, t_func_list *state_funcs, int row_num)

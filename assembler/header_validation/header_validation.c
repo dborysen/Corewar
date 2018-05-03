@@ -12,111 +12,196 @@
 
 #include "header_validation.h"
 
-// 	NO OPEN BRACKET 1 & 2 LINE ✅
-//	NO CLOSE BRACKET 1 $ 2 LINE 
-//	NO NAME OR NO COMMENT ✅
-//	MORE THEN NEEDED CHAR IN NAME OR IN COMMENT
-//	LESS THEN NEEDED CHAR IN NAME OR COMMENT
-
 int     header_validation(t_data *data_from_file)
 {
 	if (is_only_one_name_and_one_comment(data_from_file) == TRUE 
 	&& name_and_comment_are_present(data_from_file) == TRUE)
 	{
 		if (brackets_are_ok(data_from_file) == TRUE)
-		{
-
-		}
+			return (OK);
 	}
     return (ERROR);
 }
 
 int		name_and_comment_are_present(t_data *data_from_file)
 {
-	if (name_is_here(data_from_file) == TRUE
-	&& comment_is_here(data_from_file) == TRUE)
+	if (header_is_here(data_from_file, HEADER_NAME) == TRUE
+	&& header_is_here(data_from_file, HEADER_COMMENT) == TRUE)
 		return (TRUE);
 	return (FALSE);
 }
 
-int		name_is_here(t_data *data_from_file)
+int		header_is_here(t_data *data_from_file, int type_of_header)
 {
-	char	**str_split;
-	int		name_count;
+	int		header_count;
+	char	current_header[8];
+	char	what_to_find_in_str[8];	
 
-	name_count = 0;
-	while (ft_strchr(data_from_file->data, '.') != 0 || ft_strcmp(data_from_file->data, "") == 0)
+	header_count = 0;
+	if (type_of_header == HEADER_NAME)
 	{
-		str_split = ft_strsplit(data_from_file->data, ' ');
-		if (ft_strcmp(str_split[0], NAME_CMD_STRING) == 0)
-			name_count++;
-		free_two_dem_array(str_split);
-		data_from_file = data_from_file->next;
+		ft_strcpy(current_header, "name");
+		ft_strcpy(what_to_find_in_str, ".name");
 	}
-	if (name_count < 1)
+	else if (type_of_header == HEADER_COMMENT)
 	{
-		ft_printf("\n\e[1;31mSYNTAX ERROR: \e[1;37mexpected program name \e[0m\e[0m\n\n");
+		ft_strcpy(current_header, "comment");
+		ft_strcpy(what_to_find_in_str, ".comment");
+	}
+	header_count = find_header(data_from_file, what_to_find_in_str);
+	if (header_count == 0)
+	{
+		ft_printf("\n\e[1;31mERROR: \e[1;37mexpected program %s \e[0m\e[0m\n\n",
+		current_header);
 		return (FALSE);
 	}
 	return (TRUE);
 }
 
-int		comment_is_here(t_data *data_from_file)
+int		find_header(t_data *data_from_file, char *current_header)
 {
+	int		header_count;
 	char	**str_split;
-	int		comment_count;
 
-	comment_count = 0;
-	while (ft_strchr(data_from_file->data, '.') != 0 || ft_strcmp(data_from_file->data, "") == 0)
+	header_count = 0;
+	while (data_from_file != NULL)
 	{
-		str_split = ft_strsplit(data_from_file->data, ' ');
-		if (ft_strcmp(str_split[0], COMMENT_CMD_STRING) == 0)
-			comment_count++;
-		free_two_dem_array(str_split);
+		if (ft_strchr(data_from_file->data, '.') != 0)
+		{
+			str_split = ft_strsplit(data_from_file->data, ' ');
+			if (ft_strcmp(str_split[0], current_header) == 0)
+				header_count++;
+			free_two_dem_array(str_split);
+		}
 		data_from_file = data_from_file->next;
 	}
-	if (comment_count < 1)
-	{
-		ft_printf("\n\e[1;31mSYNTAX ERROR: \e[1;37mexpected program comment \e[0m\e[0m\n\n");
-		return (FALSE);
-	}
-	return (TRUE);
+	return (header_count);
 }
 
 int		brackets_are_ok(t_data *data_from_file)
 {
-	if (open_brackets_are_ok(data_from_file) == TRUE 
-	&& close_brackets_are_ok(data_from_file) == TRUE)
+	if (current_brackets_is_ok(data_from_file, OPEN_BRACKET) == TRUE 
+	&& current_brackets_is_ok(data_from_file, CLOSE_BRACKET) == TRUE)
 		return (TRUE);
 	return (FALSE);
 }
 
-int		open_brackets_are_ok(t_data *data_from_file)
+int		current_brackets_is_ok(t_data *data_from_file, int type_of_bracket)
 {
 	int		status;
 	int		line_num;
+	int		headers_count;
+	int		(*f)(char*, int);
 
 	status = TRUE;
+	headers_count = 0;
 	line_num = 1;
-	while (ft_strchr(data_from_file->data, '.') != 0)
+	if (type_of_bracket == OPEN_BRACKET)
+		f = open_brackets_on_place;
+	else
+		f = close_brackets_on_place;
+	while (headers_count < 2)
 	{
-		if (line_is_ok(data_from_file->data, line_num) == FALSE)
-			status = FALSE;
+		if (ft_strchr(data_from_file->data, '.') != 0)
+		{
+			if (f(data_from_file->data, line_num) == FALSE)
+				status = FALSE;
+			headers_count++;				
+		}
 		data_from_file = data_from_file->next;
 		line_num++;
 	}
-	if (status == FALSE)
-		return (FALSE);
-	return (TRUE);
+	return (status == FALSE) ? FALSE : TRUE;
 }
 
-int		close_brackets_are_ok(t_data *data_from_file)
+int		close_brackets_on_place(char *header_str, int line_num)
 {
-	(void)data_from_file;
+	char	**split_line;
+	char	*line_without_hesh;
+	int		words_num;
+	int		last_word_length;
+
+	(void)line_num;
+	words_num = 0;
+	line_without_hesh = cut_hash(header_str);
+	split_line = ft_strsplit(line_without_hesh, ' ');
+	words_num = count_words(line_without_hesh, ' ');
+	last_word_length = ft_strlen(split_line[words_num - 1]);
+	if (split_line[words_num - 1][last_word_length - 1] == '\"')
+	{
+		free_two_dem_array(split_line);
+		ft_strdel(&line_without_hesh);
+		return (TRUE);
+	}
+	else
+		show_no_close_bracket_error(header_str, line_num);
+	free_two_dem_array(split_line);
+	ft_strdel(&line_without_hesh);
 	return (FALSE);
 }
 
-int		line_is_ok(char *header_str, int line_num)
+void	show_no_close_bracket_error(char *header_str, int line_num)
+{
+	int		i;
+	char	*arrow_str;
+	char	*bracket_str;
+
+	i = ft_strlen(header_str);
+	arrow_str = bracket_place_in_str(header_str, i - 1, '^');
+	bracket_str = bracket_place_in_str(header_str, i - 1, '\"');
+	ft_printf("\n\e[1;31mSYNTAX ERROR: \e[1;37mexpected \e[0m\e[0m");
+	ft_printf("\e[1;37mclose bracket at [%d:%d]\e[0m\e[0m\n", line_num , i);
+	ft_printf("\t\e[1;37m%s\e[0m\n", header_str);
+	ft_printf("\t\e[1;36m%s\e[0m\n", arrow_str);
+	ft_printf("\t\e[1;36m%s\e[0m\n", bracket_str);
+	ft_strdel(&arrow_str);
+}
+
+int		count_words(char const *s, char c)
+{
+	int state;
+	int words;
+	int i;
+
+	state = 0;
+	words = 0;
+	i = 0;
+	while (s[i] != '\0')
+	{
+		if (s[i] == c && (s[i + 1] != c || s[i + 1] != '\0'))
+			state = 0;
+		else if (state == 0)
+		{
+			state = 1;
+			words++;
+		}
+		i++;
+	}
+	return (words);
+}
+
+
+char	*cut_hash(char *header_str)
+{
+	int		i;
+	int		bracket_count;
+	char	*line_without_hash;
+
+	i = 0;
+	bracket_count = 0;
+	while (header_str[i] != '\0')
+	{
+		if (header_str[i] == '\"')
+			bracket_count++;
+		if (header_str[i] == '#' && bracket_count == 2)
+			break;
+		i++;
+	}
+	line_without_hash = ft_strsub(header_str, 0, i);
+	return (line_without_hash);
+}
+
+int		open_brackets_on_place(char *header_str, int line_num)
 {
 	char **split_line;
 
@@ -145,7 +230,8 @@ void	show_no_open_brecket_error(char *str, int line_num)
 		i++;
 	arrow_str = bracket_place_in_str(str, i - 1, '^');
 	bracket_str = bracket_place_in_str(str, i - 1, '\"');
-	ft_printf("\n\e[1;31mSYNTAX ERROR: \e[1;37mexpected open bracket at [%d:%d]\e[0m\e[0m\n", line_num , i);
+	ft_printf("\n\e[1;31mSYNTAX ERROR: \e[1;37mexpected \e[0m\e[0m");
+	ft_printf("\e[1;37mopen bracket at [%d:%d]\e[0m\e[0m\n", line_num , i);
 	ft_printf("\t\e[1;37m%s\e[0m\n", str);
 	ft_printf("\t\e[1;36m%s\e[0m\n", arrow_str);
 	ft_printf("\t\e[1;36m%s\e[0m\n", bracket_str);
@@ -170,26 +256,45 @@ char	*bracket_place_in_str(char *head_line, int bracket_place, char c)
 
 int     is_only_one_name_and_one_comment(t_data *data_from_file)
 {
-	if (is_only_one_name(data_from_file) == TRUE &&
-		is_only_one_comment(data_from_file) == TRUE)
+	if (is_only_one_current_header(data_from_file, HEADER_NAME) == TRUE &&
+		is_only_one_current_header(data_from_file, HEADER_COMMENT) == TRUE)
 		return (TRUE);
     return (FALSE);
 }
 
-int		is_only_one_name(t_data *data_from_file)
+int		is_only_one_current_header(t_data *data_from_file, int header)
+{
+	char	current_header[8];
+	char	what_to_find_in_str[8];	
+
+	if (header == HEADER_NAME)
+	{
+		ft_strcpy(current_header, "name");
+		ft_strcpy(what_to_find_in_str, ".name");
+	}
+	else if (header == HEADER_COMMENT)
+	{
+		ft_strcpy(current_header, "comment");
+		ft_strcpy(what_to_find_in_str, ".comment");
+	}
+	return (count_header(data_from_file, what_to_find_in_str, current_header));
+}
+
+int		count_header(t_data *data_from_file, char *what_to_find_in_str, char *current_header)
 {
 	char	**split_line;
 	int		name_line_count;
 
 	name_line_count = 0;
-	while (ft_strchr(data_from_file->data, '.') != 0)
+	while (data_from_file != NULL)
 	{
 	    split_line = ft_strsplit(data_from_file->data, ' ');
-		if (ft_strcmp(split_line[0], NAME_CMD_STRING) == 0)
+		if (ft_strcmp(split_line[0], what_to_find_in_str) == 0)
 		{
 			if (name_line_count == 1)
 			{
-				ft_printf("\n\e[1;31mSYNTAX ERROR: \e[1;37mmore then one program name \e[0m\e[0m\n");
+				ft_printf("\n\e[1;31mERROR: \e[1;37mmore then one\e[0m\e[0m");
+				ft_printf("\e[1;37m program %s\e[0m\e[0m\n\n", current_header);
 				free_two_dem_array(split_line);
 				return (FALSE);
 			}
@@ -200,29 +305,3 @@ int		is_only_one_name(t_data *data_from_file)
 	}
 	return (TRUE);
 }
-
-int		is_only_one_comment(t_data *data_from_file)
-{
-	char	**split_line;
-	int		name_line_count;
-
-	name_line_count = 0;
-	while (ft_strchr(data_from_file->data, '.') != 0)
-	{
-	    split_line = ft_strsplit(data_from_file->data, ' ');
-		if (ft_strcmp(split_line[0], COMMENT_CMD_STRING) == 0)
-		{
-			if (name_line_count == 1)
-			{
-				ft_printf("\n\e[1;31mSYNTAX ERROR: \e[1;37mmore then one program comment \e[0m\e[0m\n");
-				free_two_dem_array(split_line);
-				return (FALSE);
-			}
-			name_line_count++;
-		}
-		free_two_dem_array(split_line);
-		data_from_file = data_from_file->next;
-	}
-	return (TRUE);
-}
-
