@@ -413,6 +413,21 @@
 		<Unit filename="/Users/myprosku/corTwar/VM_cor/op.h">
 			<Option target="VM_cor"/>
 		</Unit>
+		<Unit filename="/Users/myprosku/corTwar/VM_cor/operations/ns_add.c">
+			<Option target="VM_cor"/>
+		</Unit>
+		<Unit filename="/Users/myprosku/corTwar/VM_cor/operations/ns_and.c">
+			<Option target="VM_cor"/>
+		</Unit>
+		<Unit filename="/Users/myprosku/corTwar/VM_cor/operations/ns_or.c">
+			<Option target="VM_cor"/>
+		</Unit>
+		<Unit filename="/Users/myprosku/corTwar/VM_cor/operations/ns_sub.c">
+			<Option target="VM_cor"/>
+		</Unit>
+		<Unit filename="/Users/myprosku/corTwar/VM_cor/operations/ns_xor.c">
+			<Option target="VM_cor"/>
+		</Unit>
 		<Unit filename="/Users/myprosku/corTwar/VM_cor/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

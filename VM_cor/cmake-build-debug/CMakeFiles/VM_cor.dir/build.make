@@ -2649,6 +2649,126 @@ CMakeFiles/VM_cor.dir/ns_cursor_create.c.o.provides: CMakeFiles/VM_cor.dir/ns_cu
 CMakeFiles/VM_cor.dir/ns_cursor_create.c.o.provides.build: CMakeFiles/VM_cor.dir/ns_cursor_create.c.o
 
 
+CMakeFiles/VM_cor.dir/operations/ns_add.c.o: CMakeFiles/VM_cor.dir/flags.make
+CMakeFiles/VM_cor.dir/operations/ns_add.c.o: ../operations/ns_add.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_109) "Building C object CMakeFiles/VM_cor.dir/operations/ns_add.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/operations/ns_add.c.o   -c /Users/myprosku/corTwar/VM_cor/operations/ns_add.c
+
+CMakeFiles/VM_cor.dir/operations/ns_add.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/operations/ns_add.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/operations/ns_add.c > CMakeFiles/VM_cor.dir/operations/ns_add.c.i
+
+CMakeFiles/VM_cor.dir/operations/ns_add.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/operations/ns_add.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/operations/ns_add.c -o CMakeFiles/VM_cor.dir/operations/ns_add.c.s
+
+CMakeFiles/VM_cor.dir/operations/ns_add.c.o.requires:
+
+.PHONY : CMakeFiles/VM_cor.dir/operations/ns_add.c.o.requires
+
+CMakeFiles/VM_cor.dir/operations/ns_add.c.o.provides: CMakeFiles/VM_cor.dir/operations/ns_add.c.o.requires
+	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/operations/ns_add.c.o.provides.build
+.PHONY : CMakeFiles/VM_cor.dir/operations/ns_add.c.o.provides
+
+CMakeFiles/VM_cor.dir/operations/ns_add.c.o.provides.build: CMakeFiles/VM_cor.dir/operations/ns_add.c.o
+
+
+CMakeFiles/VM_cor.dir/operations/ns_sub.c.o: CMakeFiles/VM_cor.dir/flags.make
+CMakeFiles/VM_cor.dir/operations/ns_sub.c.o: ../operations/ns_sub.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_110) "Building C object CMakeFiles/VM_cor.dir/operations/ns_sub.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/operations/ns_sub.c.o   -c /Users/myprosku/corTwar/VM_cor/operations/ns_sub.c
+
+CMakeFiles/VM_cor.dir/operations/ns_sub.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/operations/ns_sub.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/operations/ns_sub.c > CMakeFiles/VM_cor.dir/operations/ns_sub.c.i
+
+CMakeFiles/VM_cor.dir/operations/ns_sub.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/operations/ns_sub.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/operations/ns_sub.c -o CMakeFiles/VM_cor.dir/operations/ns_sub.c.s
+
+CMakeFiles/VM_cor.dir/operations/ns_sub.c.o.requires:
+
+.PHONY : CMakeFiles/VM_cor.dir/operations/ns_sub.c.o.requires
+
+CMakeFiles/VM_cor.dir/operations/ns_sub.c.o.provides: CMakeFiles/VM_cor.dir/operations/ns_sub.c.o.requires
+	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/operations/ns_sub.c.o.provides.build
+.PHONY : CMakeFiles/VM_cor.dir/operations/ns_sub.c.o.provides
+
+CMakeFiles/VM_cor.dir/operations/ns_sub.c.o.provides.build: CMakeFiles/VM_cor.dir/operations/ns_sub.c.o
+
+
+CMakeFiles/VM_cor.dir/operations/ns_and.c.o: CMakeFiles/VM_cor.dir/flags.make
+CMakeFiles/VM_cor.dir/operations/ns_and.c.o: ../operations/ns_and.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_111) "Building C object CMakeFiles/VM_cor.dir/operations/ns_and.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/operations/ns_and.c.o   -c /Users/myprosku/corTwar/VM_cor/operations/ns_and.c
+
+CMakeFiles/VM_cor.dir/operations/ns_and.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/operations/ns_and.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/operations/ns_and.c > CMakeFiles/VM_cor.dir/operations/ns_and.c.i
+
+CMakeFiles/VM_cor.dir/operations/ns_and.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/operations/ns_and.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/operations/ns_and.c -o CMakeFiles/VM_cor.dir/operations/ns_and.c.s
+
+CMakeFiles/VM_cor.dir/operations/ns_and.c.o.requires:
+
+.PHONY : CMakeFiles/VM_cor.dir/operations/ns_and.c.o.requires
+
+CMakeFiles/VM_cor.dir/operations/ns_and.c.o.provides: CMakeFiles/VM_cor.dir/operations/ns_and.c.o.requires
+	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/operations/ns_and.c.o.provides.build
+.PHONY : CMakeFiles/VM_cor.dir/operations/ns_and.c.o.provides
+
+CMakeFiles/VM_cor.dir/operations/ns_and.c.o.provides.build: CMakeFiles/VM_cor.dir/operations/ns_and.c.o
+
+
+CMakeFiles/VM_cor.dir/operations/ns_xor.c.o: CMakeFiles/VM_cor.dir/flags.make
+CMakeFiles/VM_cor.dir/operations/ns_xor.c.o: ../operations/ns_xor.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_112) "Building C object CMakeFiles/VM_cor.dir/operations/ns_xor.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/operations/ns_xor.c.o   -c /Users/myprosku/corTwar/VM_cor/operations/ns_xor.c
+
+CMakeFiles/VM_cor.dir/operations/ns_xor.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/operations/ns_xor.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/operations/ns_xor.c > CMakeFiles/VM_cor.dir/operations/ns_xor.c.i
+
+CMakeFiles/VM_cor.dir/operations/ns_xor.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/operations/ns_xor.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/operations/ns_xor.c -o CMakeFiles/VM_cor.dir/operations/ns_xor.c.s
+
+CMakeFiles/VM_cor.dir/operations/ns_xor.c.o.requires:
+
+.PHONY : CMakeFiles/VM_cor.dir/operations/ns_xor.c.o.requires
+
+CMakeFiles/VM_cor.dir/operations/ns_xor.c.o.provides: CMakeFiles/VM_cor.dir/operations/ns_xor.c.o.requires
+	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/operations/ns_xor.c.o.provides.build
+.PHONY : CMakeFiles/VM_cor.dir/operations/ns_xor.c.o.provides
+
+CMakeFiles/VM_cor.dir/operations/ns_xor.c.o.provides.build: CMakeFiles/VM_cor.dir/operations/ns_xor.c.o
+
+
+CMakeFiles/VM_cor.dir/operations/ns_or.c.o: CMakeFiles/VM_cor.dir/flags.make
+CMakeFiles/VM_cor.dir/operations/ns_or.c.o: ../operations/ns_or.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_113) "Building C object CMakeFiles/VM_cor.dir/operations/ns_or.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/operations/ns_or.c.o   -c /Users/myprosku/corTwar/VM_cor/operations/ns_or.c
+
+CMakeFiles/VM_cor.dir/operations/ns_or.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/operations/ns_or.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/operations/ns_or.c > CMakeFiles/VM_cor.dir/operations/ns_or.c.i
+
+CMakeFiles/VM_cor.dir/operations/ns_or.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/operations/ns_or.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/operations/ns_or.c -o CMakeFiles/VM_cor.dir/operations/ns_or.c.s
+
+CMakeFiles/VM_cor.dir/operations/ns_or.c.o.requires:
+
+.PHONY : CMakeFiles/VM_cor.dir/operations/ns_or.c.o.requires
+
+CMakeFiles/VM_cor.dir/operations/ns_or.c.o.provides: CMakeFiles/VM_cor.dir/operations/ns_or.c.o.requires
+	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/operations/ns_or.c.o.provides.build
+.PHONY : CMakeFiles/VM_cor.dir/operations/ns_or.c.o.provides
+
+CMakeFiles/VM_cor.dir/operations/ns_or.c.o.provides.build: CMakeFiles/VM_cor.dir/operations/ns_or.c.o
+
+
 # Object files for target VM_cor
 VM_cor_OBJECTS = \
 "CMakeFiles/VM_cor.dir/libft/af_per_doxu.c.o" \
@@ -2758,7 +2878,12 @@ VM_cor_OBJECTS = \
 "CMakeFiles/VM_cor.dir/ns_zero_struct.c.o" \
 "CMakeFiles/VM_cor.dir/op.c.o" \
 "CMakeFiles/VM_cor.dir/dump_flag.c.o" \
-"CMakeFiles/VM_cor.dir/ns_cursor_create.c.o"
+"CMakeFiles/VM_cor.dir/ns_cursor_create.c.o" \
+"CMakeFiles/VM_cor.dir/operations/ns_add.c.o" \
+"CMakeFiles/VM_cor.dir/operations/ns_sub.c.o" \
+"CMakeFiles/VM_cor.dir/operations/ns_and.c.o" \
+"CMakeFiles/VM_cor.dir/operations/ns_xor.c.o" \
+"CMakeFiles/VM_cor.dir/operations/ns_or.c.o"
 
 # External object files for target VM_cor
 VM_cor_EXTERNAL_OBJECTS =
@@ -2871,9 +2996,14 @@ VM_cor: CMakeFiles/VM_cor.dir/ns_zero_struct.c.o
 VM_cor: CMakeFiles/VM_cor.dir/op.c.o
 VM_cor: CMakeFiles/VM_cor.dir/dump_flag.c.o
 VM_cor: CMakeFiles/VM_cor.dir/ns_cursor_create.c.o
+VM_cor: CMakeFiles/VM_cor.dir/operations/ns_add.c.o
+VM_cor: CMakeFiles/VM_cor.dir/operations/ns_sub.c.o
+VM_cor: CMakeFiles/VM_cor.dir/operations/ns_and.c.o
+VM_cor: CMakeFiles/VM_cor.dir/operations/ns_xor.c.o
+VM_cor: CMakeFiles/VM_cor.dir/operations/ns_or.c.o
 VM_cor: CMakeFiles/VM_cor.dir/build.make
 VM_cor: CMakeFiles/VM_cor.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_109) "Linking C executable VM_cor"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_114) "Linking C executable VM_cor"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/VM_cor.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -2989,6 +3119,11 @@ CMakeFiles/VM_cor.dir/requires: CMakeFiles/VM_cor.dir/ns_zero_struct.c.o.require
 CMakeFiles/VM_cor.dir/requires: CMakeFiles/VM_cor.dir/op.c.o.requires
 CMakeFiles/VM_cor.dir/requires: CMakeFiles/VM_cor.dir/dump_flag.c.o.requires
 CMakeFiles/VM_cor.dir/requires: CMakeFiles/VM_cor.dir/ns_cursor_create.c.o.requires
+CMakeFiles/VM_cor.dir/requires: CMakeFiles/VM_cor.dir/operations/ns_add.c.o.requires
+CMakeFiles/VM_cor.dir/requires: CMakeFiles/VM_cor.dir/operations/ns_sub.c.o.requires
+CMakeFiles/VM_cor.dir/requires: CMakeFiles/VM_cor.dir/operations/ns_and.c.o.requires
+CMakeFiles/VM_cor.dir/requires: CMakeFiles/VM_cor.dir/operations/ns_xor.c.o.requires
+CMakeFiles/VM_cor.dir/requires: CMakeFiles/VM_cor.dir/operations/ns_or.c.o.requires
 
 .PHONY : CMakeFiles/VM_cor.dir/requires
 

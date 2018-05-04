@@ -87,7 +87,7 @@ typedef struct		s_op
 	unsigned int 	cycles;
 	char			*description;
 	unsigned int 	codeg_octal;
-	unsigned int 	label_size;
+	unsigned int 	label_size; // 0 - 4, 1 - 2 по таблице
 }					t_op;
 
 #endif

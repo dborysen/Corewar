@@ -107,6 +107,11 @@ file(REMOVE_RECURSE
   "CMakeFiles/VM_cor.dir/op.c.o"
   "CMakeFiles/VM_cor.dir/dump_flag.c.o"
   "CMakeFiles/VM_cor.dir/ns_cursor_create.c.o"
+  "CMakeFiles/VM_cor.dir/operations/ns_add.c.o"
+  "CMakeFiles/VM_cor.dir/operations/ns_sub.c.o"
+  "CMakeFiles/VM_cor.dir/operations/ns_and.c.o"
+  "CMakeFiles/VM_cor.dir/operations/ns_xor.c.o"
+  "CMakeFiles/VM_cor.dir/operations/ns_or.c.o"
   "VM_cor.pdb"
   "VM_cor"
 )

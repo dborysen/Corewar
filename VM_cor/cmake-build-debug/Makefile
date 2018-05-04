@@ -3039,6 +3039,141 @@ op.c.s:
 	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/op.c.s
 .PHONY : op.c.s
 
+operations/ns_add.o: operations/ns_add.c.o
+
+.PHONY : operations/ns_add.o
+
+# target to build an object file
+operations/ns_add.c.o:
+	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/operations/ns_add.c.o
+.PHONY : operations/ns_add.c.o
+
+operations/ns_add.i: operations/ns_add.c.i
+
+.PHONY : operations/ns_add.i
+
+# target to preprocess a source file
+operations/ns_add.c.i:
+	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/operations/ns_add.c.i
+.PHONY : operations/ns_add.c.i
+
+operations/ns_add.s: operations/ns_add.c.s
+
+.PHONY : operations/ns_add.s
+
+# target to generate assembly for a file
+operations/ns_add.c.s:
+	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/operations/ns_add.c.s
+.PHONY : operations/ns_add.c.s
+
+operations/ns_and.o: operations/ns_and.c.o
+
+.PHONY : operations/ns_and.o
+
+# target to build an object file
+operations/ns_and.c.o:
+	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/operations/ns_and.c.o
+.PHONY : operations/ns_and.c.o
+
+operations/ns_and.i: operations/ns_and.c.i
+
+.PHONY : operations/ns_and.i
+
+# target to preprocess a source file
+operations/ns_and.c.i:
+	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/operations/ns_and.c.i
+.PHONY : operations/ns_and.c.i
+
+operations/ns_and.s: operations/ns_and.c.s
+
+.PHONY : operations/ns_and.s
+
+# target to generate assembly for a file
+operations/ns_and.c.s:
+	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/operations/ns_and.c.s
+.PHONY : operations/ns_and.c.s
+
+operations/ns_or.o: operations/ns_or.c.o
+
+.PHONY : operations/ns_or.o
+
+# target to build an object file
+operations/ns_or.c.o:
+	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/operations/ns_or.c.o
+.PHONY : operations/ns_or.c.o
+
+operations/ns_or.i: operations/ns_or.c.i
+
+.PHONY : operations/ns_or.i
+
+# target to preprocess a source file
+operations/ns_or.c.i:
+	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/operations/ns_or.c.i
+.PHONY : operations/ns_or.c.i
+
+operations/ns_or.s: operations/ns_or.c.s
+
+.PHONY : operations/ns_or.s
+
+# target to generate assembly for a file
+operations/ns_or.c.s:
+	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/operations/ns_or.c.s
+.PHONY : operations/ns_or.c.s
+
+operations/ns_sub.o: operations/ns_sub.c.o
+
+.PHONY : operations/ns_sub.o
+
+# target to build an object file
+operations/ns_sub.c.o:
+	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/operations/ns_sub.c.o
+.PHONY : operations/ns_sub.c.o
+
+operations/ns_sub.i: operations/ns_sub.c.i
+
+.PHONY : operations/ns_sub.i
+
+# target to preprocess a source file
+operations/ns_sub.c.i:
+	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/operations/ns_sub.c.i
+.PHONY : operations/ns_sub.c.i
+
+operations/ns_sub.s: operations/ns_sub.c.s
+
+.PHONY : operations/ns_sub.s
+
+# target to generate assembly for a file
+operations/ns_sub.c.s:
+	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/operations/ns_sub.c.s
+.PHONY : operations/ns_sub.c.s
+
+operations/ns_xor.o: operations/ns_xor.c.o
+
+.PHONY : operations/ns_xor.o
+
+# target to build an object file
+operations/ns_xor.c.o:
+	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/operations/ns_xor.c.o
+.PHONY : operations/ns_xor.c.o
+
+operations/ns_xor.i: operations/ns_xor.c.i
+
+.PHONY : operations/ns_xor.i
+
+# target to preprocess a source file
+operations/ns_xor.c.i:
+	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/operations/ns_xor.c.i
+.PHONY : operations/ns_xor.c.i
+
+operations/ns_xor.s: operations/ns_xor.c.s
+
+.PHONY : operations/ns_xor.s
+
+# target to generate assembly for a file
+operations/ns_xor.c.s:
+	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/operations/ns_xor.c.s
+.PHONY : operations/ns_xor.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -3372,6 +3507,21 @@ help:
 	@echo "... op.o"
 	@echo "... op.i"
 	@echo "... op.s"
+	@echo "... operations/ns_add.o"
+	@echo "... operations/ns_add.i"
+	@echo "... operations/ns_add.s"
+	@echo "... operations/ns_and.o"
+	@echo "... operations/ns_and.i"
+	@echo "... operations/ns_and.s"
+	@echo "... operations/ns_or.o"
+	@echo "... operations/ns_or.i"
+	@echo "... operations/ns_or.s"
+	@echo "... operations/ns_sub.o"
+	@echo "... operations/ns_sub.i"
+	@echo "... operations/ns_sub.s"
+	@echo "... operations/ns_xor.o"
+	@echo "... operations/ns_xor.i"
+	@echo "... operations/ns_xor.s"
 .PHONY : help
 
 

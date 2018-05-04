@@ -6,7 +6,7 @@
 /*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/23 13:20:36 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/03 18:45:33 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/04 14:10:37 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 void		usage()
 {
 	ft_printf("Usage: ./corewar [-dump N | "
-					  " -n N] [-v] <champion1.cor> <...>");
+			" -n N] [-v] <champion1.cor> <...>");
 }
 
 void		ns_save_flags(char **av, t_fl *flags, int *i)
@@ -94,8 +94,8 @@ void		ns_check_flags(int ac, char **av, t_fl *flags, t_champion **champ)
 	}
 	if ((*champ)->id == 0 || !ns_check_id(*champ))
 		ns_error("wrong number champions");
-	if(!flags->dump && !flags->n && !flags->v)
-		ns_error("wrong num of flags");
+//	if(!flags->dump && !flags->n && !flags->v)
+//		ns_error("wrong num of flags");
 	temp->next = NULL;
 }
 

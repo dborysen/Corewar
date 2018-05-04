@@ -53,3 +53,5 @@ void 	ns_error(char *err_message)
 	ft_printf("Error with problem: %s.\n", err_message);
 	exit(0);
 }
+
+

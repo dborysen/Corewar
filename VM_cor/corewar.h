@@ -6,7 +6,7 @@
 /*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/23 13:22:27 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/03 16:59:00 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/04 16:23:21 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,6 +62,7 @@ typedef struct			s_champion
 	unsigned char		*exec_code;
 	int					id;
 	int					position_to_start;
+	int 				life;
 	struct s_champion	*next;
 }						t_champion;
 
@@ -78,13 +79,15 @@ typedef struct			s_cursor
 	int					wait_cycle;
 	int					commad;
 	int 				live_or_die;
-	int 				registr[16];
+	int 				registr[REG_NUMBER];
+	int 				carry;
 	struct s_cursor		*next;
 }						t_cursor;
 
 typedef struct			s_info
 {
 	int 				total_cycles;
+	int 				winner;
 }						t_info;
 
 t_champion				*ns_read_champion(char *av, t_champion **champ);
