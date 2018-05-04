@@ -37,11 +37,14 @@ int				g_position;
 
 int				corefile(t_str_tokens *input, header_t header, char *name_of_file, int	position)
 {
+	int	fd;
+
 	g_position = position;
+	if (header.magic && name_of_file)
+	;
+	fd = open("file.cor", O_WRONLY | O_CREAT, S_IRUSR | S_IWUSR);
 	construct_data(input);
- 	ft_printf("\n%s - header name\n", header.prog_name);
-	ft_printf("%s - name of file\n\n", name_of_file);
-	write_in_file(input, header, name_of_file);
+	write_in_file(input, fd);
 	return(0);
 }
 
@@ -132,25 +135,17 @@ int				search_size_of_label(t_tokens *tokens)
 	return (ERROR);
 }
 
-void			write_in_file(t_str_tokens *input, header_t header, char *name_of_file)
+void			write_in_file(t_str_tokens *input, int fd)
 {
 	t_str_tokens		*start_of_list;
 	t_str_tokens		*copy_input;
-	int					fd;
 
 	copy_input = input;
 	start_of_list = input;
-	if (input)
-		;
-	if (header.prog_size)
-		;
-	if (name_of_file)
-		;
-	fd = open("file.cor", O_WRONLY | O_CREAT, S_IRUSR | S_IWUSR);
 	while (copy_input)
 	{
 		copy_input->code =  build_code(copy_input, start_of_list);
-		lseek(fd, 0, SEEK_END);
+		lseek(fd, 0, SEEK_CUR);
 		write(fd, copy_input->code, copy_input->size);
 		copy_input = copy_input->next;
 	}
@@ -177,6 +172,7 @@ unsigned char 			*build_code(t_str_tokens *input, t_str_tokens *start_of_list)
 		}
 	}
 	int	i = 0;
+	ft_printf("pos = [%d] ", input->position);
 	while (i < input->size)
 		ft_printf("[%.2x] ", start_of_code[i++]);
 	ft_printf("\n");
@@ -193,8 +189,8 @@ int				convert_token(t_tokens *tokens, t_str_tokens *input, t_str_tokens *start_
 		return (code_reg(tokens, input, code));
 	if (tokens->token == T_DIR)
 		return (code_dir(tokens, input, start_of_list, code));
-	if (input->valid->token == T_IND)
-		return (code_ind(tokens, code));
+	if (tokens->token == T_IND)
+		return (code_ind(tokens, input, start_of_list, code));
 	else
 		return (1);
 	return (ERROR);
@@ -246,38 +242,47 @@ int				codage(t_str_tokens *input)
 {
 	int			size;
 	t_tokens	*tokens;
+	int			i;
 
 	tokens = input->valid;
 	size = 0;
-	if (tokens->token == T_LAB)
-		tokens = tokens->next;
-	tokens = tokens->next;
-	while (tokens)
+	i = 3;
+	while (i > 0 && tokens)
 	{
-		if (tokens->token == T_REG)
-			size = (size + 1) << 2;
-		if (tokens->token == T_DIR)
-			size = (size + 2) << 2;
-		if (tokens->token == T_IND)
-			size = (size + 3) << 2;
+		if (tokens->token == T_REG || tokens->token == T_DIR || tokens->token == T_IND)
+		{
+			size = codage_args(size, tokens);
+			size = size << 2;
+			i--;
+		}
 		tokens = tokens->next;
 	}
+	if (i > 0)
+		size = size << 2;
 	return (size);
 }
 
-int				code_dir(t_tokens *tokens, t_str_tokens *input, t_str_tokens *start_of_list, unsigned char **code)
+int				codage_args(int size, t_tokens *tokens)
+{
+	if (tokens->token == T_DIR)
+		return (size + 2);
+	if (tokens->token == T_REG)
+		return (size + 1);
+	if (tokens->token == T_IND)
+		return (size + 3);
+	return (ERROR);
+}
+
+int				code_dir(t_tokens *tokens, t_str_tokens *input,
+				t_str_tokens *start_of_list, unsigned char **code)
 {
 	int				t_dir;
 	unsigned int	result;
 
 	result = 0;
 	t_dir = search_size_of_label(input->valid);
-	if (tokens && code && start_of_list)
-		;
 	if (tokens->current_str_piece[1] == ':')
-	{
 		result = position_of_label(tokens->current_str_piece + 2, input, start_of_list);
-	}
 	else
 		result = ft_atoi(tokens->current_str_piece + 1);
 	write_dir_in_code(code, result, t_dir);	
@@ -287,15 +292,18 @@ int				code_dir(t_tokens *tokens, t_str_tokens *input, t_str_tokens *start_of_li
 int				position_of_label(char *label, t_str_tokens *input, t_str_tokens *start_of_list)
 {
 	int		result;
+	char	*copy_label;
 
+	copy_label = ft_strjoin(label, ":");
 	result = 0;
 	while (start_of_list)
 	{
-		if (ft_strncmp(start_of_list->valid->current_str_piece, label, ft_strlen(label)) == 0)
+		if (ft_strcmp(start_of_list->valid->current_str_piece, copy_label) == 0)
 			break ;
 		start_of_list = start_of_list->next;
 	}
 	result = start_of_list->position - input->position;
+	free (copy_label);
 	return (result);
 }
 
@@ -328,11 +336,15 @@ void			when_size_dir_four(unsigned char **code, unsigned int result)
 	(*code)++;
 }
 
-int				code_ind(t_tokens *tokens, unsigned char **code)
+int				code_ind(t_tokens *tokens, t_str_tokens *input,
+				t_str_tokens *start_of_list, unsigned char **code)
 {
 	unsigned int res;
 
-	res = ft_atoi(tokens->current_str_piece);
+	if (tokens->current_str_piece[0] == ':')
+		res = position_of_label(tokens->current_str_piece + 1, input, start_of_list);
+	else
+		res = (unsigned char)ft_atoi(tokens->current_str_piece);
 	when_size_dir_two(code, res);
 	return (OK);
 }

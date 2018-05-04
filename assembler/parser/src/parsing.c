@@ -75,6 +75,8 @@ int			after_label(t_str_tokens *input, int index)
 		input_tokens = input_tokens->next;
 	if (input_tokens->token == OPERATION)
 		operation = input_tokens->current_str_piece;
+	else if (input_tokens->token == EOL || input_tokens->token == ERROR)
+		return (0);
 	else
 		return (error_messege(input, input_tokens, index));
 	args = f_arguments(operation);

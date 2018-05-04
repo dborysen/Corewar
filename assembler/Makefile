@@ -14,9 +14,9 @@ NAME = asm
 
 FT_PRINTF = ft_printf
 
-SRCS =  main.c lexer/read_data.c lexer/lexer.c lexer/free_job.c lexer/state_functions/0-4_state_column.c lexer/state_functions/5-9_state_column.c header_validation/header_validation.c parser/src/parsing.c parser/src/error_messege.c
+SRCS =  main.c lexer/read_data.c lexer/lexer.c lexer/free_job.c lexer/state_functions/0-4_state_column.c lexer/state_functions/5-9_state_column.c header_validation/header_validation.c parser/src/parsing.c parser/src/error_messege.c validation.c
 
-OBJECT = main.o read_data.o lexer.o free_job.o 0-4_state_column.o 5-9_state_column.o parser/parsing.o parser/error_message.o header_validation.o parsing.o error_messege.o
+OBJECT = main.o read_data.o lexer.o free_job.o 0-4_state_column.o 5-9_state_column.o parser/parsing.o parser/error_message.o header_validation.o parsing.o error_messege.o validation.o
 
 INCLUDES = lexer/ft_printf/ft_printf.h 
 
