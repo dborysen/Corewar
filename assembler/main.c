@@ -32,26 +32,7 @@ int     main(void)
 
     data_from_file = NULL;
 	read_data(&data_from_file);
-	validation(data_from_file);
+	validation(data_from_file, "name of program");
 	free_list(&data_from_file);
     return (0);
-}
-
-int		validation(t_data *data_from_file)
-{
-	t_str_tokens	*str_tokens;
-	int				skipped_rows;
-	header_t		header;
-
-	header.magic = 0;
-	str_tokens = NULL;
-	skipped_rows = 0;
-	if (header_validation(data_from_file) == OK)
-	{
-		skipped_rows = rows_before_operation(data_from_file);
-		lexer(data_from_file, &str_tokens);
-		parsing(str_tokens, skipped_rows);
-		free_str_tokens(&str_tokens);
-	}
-	return (OK);
 }

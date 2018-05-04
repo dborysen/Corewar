@@ -17,6 +17,46 @@
 **	error messege
 */
 
+static char		*dop_funct(int i, size_t o, char *s1, char *s2)
+{
+	int		d;
+
+	if (*s1 && *s2)
+		while (i >= 0)
+		{
+			d = i;
+			o = 0;
+			while (s2[o])
+			{
+				if (s1[d] == s2[o])
+					o++;
+				else
+					break ;
+				d++;
+			}
+			if (o == ft_strlen(s2))
+				return (s1 + i);
+			i--;
+		}
+	return (0);
+}
+
+char			*t_strrstr(const char *big, const char *little)
+{
+	int		i;
+	size_t	o;
+	char	*s1;
+	char	*s2;
+
+	o = 0;
+	s1 = (char*)big;
+	s2 = (char*)little;
+	i = ft_strlen(s1);
+	if (ft_strlen(s2) == 0)
+		return (s1);
+	return (dop_funct(i - 1 , o, s1, s2));
+}
+
 int			error_messege(t_str_tokens *input,
 			t_tokens *input_tokens, int index)
 {
@@ -26,14 +66,15 @@ int			error_messege(t_str_tokens *input,
 	char	*trimmed_str;
 
 	trimmed_str = ft_strtrim(input->current_str);
-	place_in_str = ft_strrstr(input->current_str, input_tokens->current_str_piece) - input->current_str;
-	place_in_trimmed_str = ft_strrstr(trimmed_str, input_tokens->current_str_piece) - trimmed_str;
+	place_in_str = t_strrstr(input->current_str, input_tokens->current_str_piece) - input->current_str;
+	place_in_trimmed_str = t_strrstr(trimmed_str, input_tokens->current_str_piece) - trimmed_str;
 	copy_str = arrow_in_str(trimmed_str, place_in_trimmed_str);
 	ft_printf("\n\e[1;31mSYNTAX ERROR: \e[0m");
 	ft_printf("\e[1;37mat [%d:%d]\e[0m\n", index, place_in_str);
 	ft_printf("\t\e[1;37m%s\e[0m\n", trimmed_str);
 	ft_printf("\t\e[1;36m%s\e[0m\n", copy_str);
 	ft_strdel(&trimmed_str);
+	ft_strdel(&copy_str);
 	return (ERROR);
 }
 
@@ -42,7 +83,7 @@ t_tokens *input_tokens, t_op args, int index)
 {
 	int		place_in_str;
 	
-	place_in_str = ft_strrstr(input->current_str, input_tokens->current_str_piece) - input->current_str;
+	place_in_str = t_strrstr(input->current_str, input_tokens->current_str_piece) - input->current_str;
 	if (input_tokens->token != EOL)
 	{
 		ft_printf("\n\e[1;31mERROR:\e[0m\e[1;37m at [%d:%d]\n\e[0m", index, place_in_str);

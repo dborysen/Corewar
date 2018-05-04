@@ -20,16 +20,16 @@ static char		*dop_funct(int i, size_t o, char *s1, char *s2)
 		while (i >= 0)
 		{
 			d = i;
-			o = 0;
-			while (s2[o])
+			o = ft_strlen(s2);
+			while (d >= 0)
 			{
 				if (s1[d] == s2[o])
-					o++;
+					o--;
 				else
 					break ;
-				d++;
+				d--;
 			}
-			if (o == ft_strlen(s2))
+			if (o == (size_t)-1)
 				return (s1 + i);
 			i--;
 		}
@@ -49,5 +49,6 @@ char			*ft_strrstr(const char *big, const char *little)
 	i = ft_strlen(s1);
 	if (ft_strlen(s2) == 0)
 		return (s1);
-	return (dop_funct(i - 1 , o, s1, s2));
+	return (dop_funct(i, o, s1, s2));
 }
+

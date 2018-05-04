@@ -69,8 +69,7 @@ int			after_label(t_str_tokens *input, int index)
 
 	input_tokens = input->valid;
 	operation = NULL;
-	if (input_tokens->token == EOL || input_tokens->token == ERROR
-	|| input_tokens->token == COMMENT)
+	if (input_tokens->token == EOL || input_tokens->token == ERROR)
 		return (0);
 	if (input_tokens->token == T_LAB)
 		input_tokens = input_tokens->next;

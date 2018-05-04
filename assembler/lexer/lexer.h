@@ -13,7 +13,7 @@
 #ifndef LEXER_H
 # define LEXER_H
 #include "../op.h"
-#include "ft_printf/ft_printf.h"
+#include "../parser/libft/includes/libft.h"
 
 # define ERROR -1
 # define OK 0
@@ -73,7 +73,6 @@ void            lexer(t_data *data_from_file, t_str_tokens **str_tokens);
 int				read_data(t_data **champ_data);
 
 void			new_node(t_data **head, char *line);
-int				validation(t_data *champ_data);
 void			free_list(t_data **head);
 void			save_name_and_comment(t_data *data_from_file, int row_num);
 void			free_two_dem_array(char **array);
