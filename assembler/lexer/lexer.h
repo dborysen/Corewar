@@ -100,5 +100,9 @@ void			catch_error(int state, int column, int row, char *str);
 int             skip_name_comment_rows(t_data **data_from_file);
 char			*create_error_arrow_str(char *str, int column);
 int				only_hesh_coomment_line(char *str);
+void			create_counter_struct(t_counters **head);
+void			update_counters(t_counters *counter);
+void			change_state(t_counters *counter);
+void			set_state(t_counters *counter, char *trimed_str, t_func_list *state_funcs);
 
 #endif

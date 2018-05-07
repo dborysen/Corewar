@@ -132,43 +132,67 @@ int		skip_name_comment_rows(t_data **data_from_file)
 	return (skipped_rows);
 }
 
-void	find_tokens(char *str, t_tokens **tokens_list, t_func_list *state_funcs, int row_num)
+void	find_tokens(char *str, t_tokens **tokens_list,
+					t_func_list *state_funcs, int row_num)
 {
-	t_counters	counter;
+	t_counters	*counter;
 	char		*trimed_str;
 	
+	counter = NULL;
+	create_counter_struct(&counter);
 	trimed_str = ft_strtrim(str);
-	counter.i = 0;
-	counter.j = 0;
-	counter.state = 0;
-	counter.state_column = 0;
 	while (1)
 	{	
-		counter.state_column = find_correct_state_column(trimed_str[counter.i], state_funcs);
-		counter.state = state_table[counter.state][counter.state_column];
-		catch_error(counter.state, counter.i + 1, row_num, str);
-		if (is_a_token(counter.state) == TRUE)
+		set_state(counter, trimed_str, state_funcs);
+		catch_error(counter->state, counter->i + 1, row_num, str);
+		if (is_a_token(counter->state) == TRUE)
 		{
-			add_new_token_node(&(*tokens_list), counter.state, ft_strsub(trimed_str, counter.j, counter.i - counter.j));
-			if (counter.state_column == 7 || counter.state == 32)
+			add_new_token_node(&(*tokens_list), counter->state, ft_strsub(trimed_str, counter->j, counter->i - counter->j));
+			if (counter->state_column == 7 || counter->state == T_ERROR)
 			{
 				add_new_token_node(&(*tokens_list), EOL, NULL);
 				ft_strdel(&trimed_str);
+				free(counter);
 				return ;
 			}
-			counter.j = counter.i;
-			counter.state = 0;
-			counter.state_column = 0;
+			update_counters(counter);
 		}
 		else
-		{
-			counter.state = counter.state - 100;
-			counter.i++;
-		}
+			change_state(counter);
 	}
 }
 
-void	catch_error(int state, int column, int row, char *str)
+void	set_state(t_counters *counter, char *trimed_str, t_func_list *state_funcs)
+{
+	counter->state_column = find_correct_state_column(trimed_str[counter->i], state_funcs);
+	counter->state = state_table[counter->state][counter->state_column];
+}
+
+void	update_counters(t_counters *counter)
+{
+	counter->j = counter->i;
+	counter->state = 0;
+	counter->state_column = 0;
+}
+
+void	change_state(t_counters *counter)
+{
+	counter->state = counter->state - 100;
+	counter->i++;
+}
+
+void	create_counter_struct(t_counters **head)
+{
+	t_counters *counter;
+	counter = (t_counters*)malloc(sizeof(t_counters));
+	counter->i = 0;
+	counter->j = 0;
+	counter->state = 0;
+	counter->state_column = 0;
+	*head = counter;
+}
+
+void		catch_error(int state, int column, int row, char *str)
 {
 	char *error_arrow_str;
 	char *trimed_str;

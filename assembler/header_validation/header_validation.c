@@ -68,7 +68,7 @@ int		find_header(t_data *data_from_file, char *current_header)
 	{
 		if (ft_strchr(data_from_file->data, '.') != 0)
 		{
-			str_split = ft_strsplit(data_from_file->data, ' ');
+			str_split = ft_splitwhtsp(data_from_file->data);
 			if (ft_strcmp(str_split[0], current_header) == 0)
 				header_count++;
 			free_two_dem_array(str_split);
@@ -204,7 +204,7 @@ int		open_brackets_on_place(char *header_str, int line_num)
 {
 	char **split_line;
 
-	split_line = ft_strsplit(header_str, ' ');
+	split_line = ft_splitwhtsp(header_str);
 	if (split_line[1][0] == '"')
 	{
 		free_two_dem_array(split_line);

@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "validation.h"
+#include "../corewar.h"
 
 int		validation(t_data *data_from_file, char *name_of_program)
 {
@@ -26,7 +26,7 @@ int		validation(t_data *data_from_file, char *name_of_program)
 		lexer(data_from_file, &str_tokens);
 		parsing(str_tokens, skipped_rows);
 		header_data = fill_header_data(data_from_file, name_of_program);
-
+		
 		free_str_tokens(&str_tokens);
 		ft_strdel(&header_data.bot_comment);
 		ft_strdel(&header_data.bot_name);
@@ -60,7 +60,7 @@ char			*find_bot_header(t_data *data_from_file, int header_type)
 	else if (header_type == HEADER_COMMENT)
 	{
 		ft_strcpy(what_to_search_in_str, ".comment");
-		max_header_length = COMMENT_LENGTH;
+		max_header_length = COMMENT_LENGTH + 4;
 	}
 	while (data_from_file != NULL)
 	{
@@ -97,8 +97,6 @@ char			*save_header(char *str, int max_length, int header_type)
 		header = fill_header(str, start_of_header, max_length);
 	return (header);
 }
-
-#include "stdio.h"
 
 char			*fill_header(char *str, int start_of_header, int max_length)
 {
