@@ -6,14 +6,14 @@
 /*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/24 14:49:11 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/02 17:00:09 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/07 17:33:33 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "corewar.h"
 
 
-int		unsigned_char_to_int(unsigned char *str)
+int				unsigned_char_to_int(unsigned char *str)
 {
 	int nbr;
 
@@ -24,7 +24,20 @@ int		unsigned_char_to_int(unsigned char *str)
 	return (nbr);
 }
 
-void	ns_position_start(t_champion **champ)
+unsigned char	*int_to_unsigned_char(int nbr)
+{
+	unsigned char *str;
+
+	str = (unsigned char *)malloc(sizeof(unsigned char) + 5);
+	str[0] = (unsigned char)nbr >> 24;
+	str[1] = (unsigned char)nbr >> 16;
+	str[2] = (unsigned char)nbr >> 8;
+	str[3] = (unsigned char)nbr;
+	str[4] = '\0';
+	return (str);
+}
+
+void			ns_position_start(t_champion **champ)
 {
 	int			len;
 	int			before_pos;
@@ -48,10 +61,19 @@ void	ns_position_start(t_champion **champ)
 	}
 }
 
-void 	ns_error(char *err_message)
+void 			ns_error(char *err_message)
 {
 	ft_printf("Error with problem: %s.\n", err_message);
 	exit(0);
+}
+
+int 			ns_check_register(unsigned char r1, unsigned char r2, unsigned char r3)
+{
+	if (r1 > REG_NUMBER || r2 > REG_NUMBER || r3 > REG_NUMBER)
+		return (0);
+	if (r1 == 0 || r2 == 0 || r3 == 0)
+		return (0);
+	return (1);
 }
 
 

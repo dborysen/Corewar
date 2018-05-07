@@ -112,6 +112,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/VM_cor.dir/operations/ns_and.c.o"
   "CMakeFiles/VM_cor.dir/operations/ns_xor.c.o"
   "CMakeFiles/VM_cor.dir/operations/ns_or.c.o"
+  "CMakeFiles/VM_cor.dir/operations/ns_st.c.o"
   "VM_cor.pdb"
   "VM_cor"
 )

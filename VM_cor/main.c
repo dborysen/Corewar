@@ -6,12 +6,11 @@
 /*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/23 13:20:36 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/04 14:10:37 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/07 17:12:59 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "corewar.h"
-
 
 void		usage()
 {
@@ -38,7 +37,6 @@ void		ns_save_flags(char **av, t_fl *flags, int *i)
 		flags->n = ft_atoi(av[*i]);
 	}
 }
-
 
 t_champion	*ns_check_champions(char *av, t_champion **champ, t_fl *fl)
 {
@@ -120,14 +118,17 @@ int			main(int ac, char **av)
 	ns_dump_flag(champ, map);
 	ns_position_start(&champ);
 	ns_fill_map(champ, &map);
+	ns_create_cursor(&cursor, champ);
+	ns_game_start(&cursor, &map, &info);
 	ns_print_map(map);
-//	ns_create_cursor(&cursor, champ);
-//	ns_game_start(&cursor, &map, &info);
 	while (cursor->next)
 	{
 		ft_printf("start_pos = %d\n", cursor->index_pos);
 		cursor = cursor->next;
 	}
+//	char *s = ft_itoa_base(84, 2, 1);
+//	rev(s, (int)ft_strlen(s));
+//	ft_printf("%s\n", s);
 //	while (champ->next)
 //	{
 ////		ft_printf("champ name = %s\n", champ->prog_name);

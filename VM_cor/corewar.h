@@ -6,7 +6,7 @@
 /*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/23 13:22:27 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/04 16:23:21 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/07 17:33:33 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,20 @@
 
 #include "libft/libft.h"
 #include "op.h"
+# define T_RIR 0b01110100
+# define T_RDR 0b01100100
+# define T_IRR 0b11010100
+# define T_IIR 0b11110100
+# define T_IDR 0b11100100
+# define T_DRR 0b10010100
+# define t_DIR 0b10110100
+# define T_DDR 0b10100100
+# define T_RDD 0b01101000
+# define T_RID 0b01111000
+# define T_IR 0b11010000
+# define T_DR 0b10010000
+# define T_RI 0b01110000
+# define T_RR 0b01010000
 
 static const	t_op    g_op_tab[17] =
 {
@@ -104,5 +118,10 @@ void 					ns_error(char *err_message);
 void					ns_zero_cursor(t_cursor **cursor);
 void					ns_create_cursor(t_cursor **cursor, t_champion *champ);
 void					ns_game_start(t_cursor **cursor, t_map *m_map, t_info *info);
-
+int 					ns_check_register(unsigned char r1, unsigned char r2, unsigned char r3);
+void					ns_add(t_cursor **cur, t_map *m_map);
+void					ns_sub(t_cursor **cur, t_map *m_map);
+void					ns_st(t_cursor **cur, t_map *m_map);
+typedef void 			(*ns_array_of_functions)(t_cursor **cur, t_map *m_map);
+unsigned char			*int_to_unsigned_char(int nbr);
 #endif

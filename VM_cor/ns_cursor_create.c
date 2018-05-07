@@ -6,11 +6,16 @@
 /*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/02 15:09:56 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/03 15:05:13 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/07 16:48:29 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "corewar.h"
+
+ns_array_of_functions g_func[16] =
+		{
+				ns_add, ns_sub, ns_st
+		};
 
 void		ns_create_cursor(t_cursor **cursor, t_champion *champ)
 {
@@ -56,7 +61,7 @@ void	ns_create_cycle(t_cursor **cursor, t_map *m_map)
 	}
 }
 
-void	ns_move_cursor(t_cursor **cursor, int *dead)
+void	ns_move_cursor(t_cursor **cursor, int *dead, t_map *map)
 {
 	t_cursor *temp;
 
@@ -66,16 +71,16 @@ void	ns_move_cursor(t_cursor **cursor, int *dead)
 		if (temp->wait_cycle == 0 && temp->commad != 0)
 		{
 			//do instractions
-			ft_printf("HELLO\n");
+			(*g_func[2])(cursor, map);
 			temp->wait_cycle = 0;
 			temp->commad = 0;
 			*dead = 0;
 		}
 		else if (temp->wait_cycle != 0 && temp->commad != 0)
 		{
-			ft_printf("wait cycle = %d\n", temp->wait_cycle);
+//			ft_printf("wait cycle = %d\n", temp->wait_cycle);
 			temp->wait_cycle--;
-			ft_printf("opcode = %d\n", temp->commad);
+//			ft_printf("opcode = %d\n", temp->commad);
 		}
 		else
 			temp->index_pos++;
@@ -93,8 +98,8 @@ void	ns_game_start(t_cursor **cursor, t_map *m_map, t_info *info)
 	while (dead)
 	{
 		ns_create_cycle(&temp, m_map);
-		ns_move_cursor(&temp, &dead);
+		ns_move_cursor(&temp, &dead, m_map);
 		info->total_cycles++;
-		ft_printf("total cycle = %d\n", info->total_cycles);
+//		ft_printf("total cycle = %d\n", info->total_cycles);
 	}
 }

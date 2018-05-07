@@ -6,7 +6,7 @@
 /*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/04 17:09:29 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/04 17:09:56 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/07 14:32:02 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,12 +20,23 @@ void	ns_sub(t_cursor **cur, t_map *m_map)
 	unsigned char r3;
 
 	temp = *cur;
-	r1 = m_map->map[temp->index_pos + 2];
-	r2 = m_map->map[temp->index_pos + 3];
-	r3 = m_map->map[temp->index_pos + 4];
-	temp->registr[r3] = r1 - r2;
-	if (temp->registr[r3] == 0)
-		temp->carry = 1;
+	if (m_map->map[temp->index_pos + 1] == 0x54)
+	{
+		r1 = m_map->map[temp->index_pos + 2];
+		r2 = m_map->map[temp->index_pos + 3];
+		r3 = m_map->map[temp->index_pos + 4];
+		if (ns_check_register(r1, r2, r3))
+		{
+			temp->registr[r3] = r1 - r2;
+			temp->index_pos += 5;
+			if (temp->registr[r3] == 0)
+				temp->carry = 1;
+			else
+				temp->carry = 0;
+		}
+		else
+			temp->index_pos += 5;
+	}
 	else
-		temp->carry = 0;
+		temp->index_pos += 2;
 }

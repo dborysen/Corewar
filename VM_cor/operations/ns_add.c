@@ -6,7 +6,7 @@
 /*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/04 15:58:01 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/04 16:49:44 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/07 15:18:59 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,12 +20,24 @@ void	ns_add(t_cursor **cur, t_map *m_map)
 	unsigned char r3;
 
 	temp = *cur;
-	r1 = m_map->map[temp->index_pos + 2];
-	r2 = m_map->map[temp->index_pos + 3];
-	r3 = m_map->map[temp->index_pos + 4];
-	temp->registr[r3] = r1 + r2;
-	if (temp->registr[r3] == 0)
-		temp->carry = 1;
+	if (m_map->map[temp->index_pos + 1] == 0x54)
+	{
+		ft_printf("HERE\n");
+		r1 = m_map->map[temp->index_pos + 2];
+		r2 = m_map->map[temp->index_pos + 3];
+		r3 = m_map->map[temp->index_pos + 4];
+		if (ns_check_register(r1, r2, r3))
+		{
+			temp->registr[r3] = r1 + r2;
+			temp->index_pos += 5;
+			if (temp->registr[r3] == 0)
+				temp->carry = 1;
+			else
+				temp->carry = 0;
+		}
+		else
+			temp->index_pos += 5;
+	}
 	else
-		temp->carry = 0;
+		temp->index_pos += 2;
 }

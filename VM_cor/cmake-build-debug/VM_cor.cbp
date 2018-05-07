@@ -422,6 +422,9 @@
 		<Unit filename="/Users/myprosku/corTwar/VM_cor/operations/ns_or.c">
 			<Option target="VM_cor"/>
 		</Unit>
+		<Unit filename="/Users/myprosku/corTwar/VM_cor/operations/ns_st.c">
+			<Option target="VM_cor"/>
+		</Unit>
 		<Unit filename="/Users/myprosku/corTwar/VM_cor/operations/ns_sub.c">
 			<Option target="VM_cor"/>
 		</Unit>
