@@ -35,16 +35,17 @@ byte_tab_t		g_b_tab[17] =
 
 int				g_position;
 
-int				corefile(t_str_tokens *input, header_t header, char *name_of_file, int	position)
+int				corefile(t_str_tokens *input, header_data_t header, int	position)
 {
-	int	fd;
+	int			fd;
+	char		*prog_name;
 
 	g_position = position;
-	if (header.magic && name_of_file)
-	;
-	fd = open("file.cor", O_WRONLY | O_CREAT, S_IRUSR | S_IWUSR);
+	prog_name = correct_name(header);
+	fd = open(header.program_name,  O_WRONLY | O_CREAT, S_IRUSR | S_IWUSR);
 	construct_data(input);
-	write_in_file(input, fd);
+	write_in_file(input, header, fd);
+	free(prog_name);
 	return(0);
 }
 
@@ -135,13 +136,18 @@ int				search_size_of_label(t_tokens *tokens)
 	return (ERROR);
 }
 
-void			write_in_file(t_str_tokens *input, int fd)
+void			write_in_file(t_str_tokens *input, header_data_t header, int fd)
 {
 	t_str_tokens		*start_of_list;
 	t_str_tokens		*copy_input;
 
+
 	copy_input = input;
 	start_of_list = input;
+	magic_number(fd);
+	write(fd, header.bot_name, PROG_NAME_LENGTH);
+	prog_length(input, fd);
+	write(fd, header.bot_comment, COMMENT_LENGTH + 4);
 	while (copy_input)
 	{
 		copy_input->code =  build_code(copy_input, start_of_list);
@@ -155,11 +161,12 @@ unsigned char 			*build_code(t_str_tokens *input, t_str_tokens *start_of_list)
 {
 	unsigned char			*code;
 	unsigned char			*start_of_code;
-	t_tokens		*tokens;
+	t_tokens				*tokens;
 
 
 	code = NULL;
 	tokens = input->valid;
+	start_of_code = code;
 	if (input->size > 0)
 	{
 		code = malloc(sizeof(char) * input->size);
@@ -171,11 +178,6 @@ unsigned char 			*build_code(t_str_tokens *input, t_str_tokens *start_of_list)
 			tokens = tokens->next;
 		}
 	}
-	int	i = 0;
-	ft_printf("pos = [%d] ", input->position);
-	while (i < input->size)
-		ft_printf("[%.2x] ", start_of_code[i++]);
-	ft_printf("\n");
 	return (start_of_code);
 }
 
@@ -336,6 +338,26 @@ void			when_size_dir_four(unsigned char **code, unsigned int result)
 	(*code)++;
 }
 
+void			when_size_dir_eight(unsigned char **code, unsigned int result)
+{
+	(*code)[0] = (result & 0xff00000000000000) >> 56;
+	(*code)++;
+	(*code)[0] = (result & 0xff000000000000) >> 48;
+	(*code)++;
+	(*code)[0] = (result & 0xff0000000000) >> 40;
+	(*code)++;
+	(*code)[0] = (result & 0xff00000000) >> 32;
+	(*code)++;
+	(*code)[0] = (result & 0xff000000) >> 24;
+	(*code)++;
+	(*code)[0] = (result & 0xff0000) >> 16;
+	(*code)++;
+	(*code)[0] = (result & 0xff00) >> 8;
+	(*code)++;
+	(*code)[0] = (result & 0xff);
+	(*code)++;
+}
+
 int				code_ind(t_tokens *tokens, t_str_tokens *input,
 				t_str_tokens *start_of_list, unsigned char **code)
 {
@@ -347,4 +369,54 @@ int				code_ind(t_tokens *tokens, t_str_tokens *input,
 		res = (unsigned char)ft_atoi(tokens->current_str_piece);
 	when_size_dir_two(code, res);
 	return (OK);
+}
+char			*correct_name(header_data_t header)
+{
+	int		position;
+	char	*res;
+
+	if (ft_strchr(header.program_name, '.'))
+	{
+		position = ft_strchr(header.program_name, '.') - header.program_name;
+		res = ft_strdup(header.program_name);
+		res[position] = '\0';
+		ft_join_free(&res, ".cor");
+	}
+	else
+	{
+		res = ft_strdup(header.program_name);
+		ft_join_free(&res, ".cor");
+	}
+	return (res);
+}
+
+void			magic_number(int fd)
+{
+	unsigned char		magic[4];
+	
+	magic[0] = 0x00;
+	magic[1] = 0xea;
+	magic[2] = 0x83;
+	magic[3] = 0xf3;
+	write(fd, magic, 4);
+}
+
+void			prog_length(t_str_tokens *input, int fd)
+{
+	unsigned char	*length;
+	int				size;
+	t_str_tokens	*start;
+	unsigned char	*copy;
+
+	size = 0;
+	start = input;
+	length = (unsigned char*)malloc(sizeof(unsigned char) * 8);
+	copy = length;
+	while (start)
+	{
+		size += start->size;
+		start = start->next;
+	}
+	when_size_dir_eight(&length, size);
+	write(fd, copy, 8);
 }
