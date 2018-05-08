@@ -26,7 +26,7 @@
 ** 9 - [-]
 ** 10 - [other]
 **
-** you can find final state table int colour at 
+** you can find final state table in colour at 
 **'https://github.com/dborysen/Corewar/blob/master/
 ** assembler/lexer/Final%20state%20table.xlsx'
 **
@@ -185,10 +185,11 @@ void	find_tokens(char *str, t_tokens **tokens_list,
 	}
 }
 
-void	set_state(t_counters *counter, char *trimed_str, t_func_list *state_funcs)
+void	set_state(t_counters *c, char *trimed_str,
+								t_func_list *state_funcs)
 {
-	counter->state_column = find_correct_state_column(trimed_str[counter->i], state_funcs);
-	counter->state = state_table[counter->state][counter->state_column];
+	c->state_column = find_correct_state_column(trimed_str[c->i], state_funcs);
+	c->state = state_table[c->state][c->state_column];
 }
 
 void	update_counters(t_counters *counter)
@@ -224,7 +225,8 @@ void		catch_error(int state, int column, int row, char *str)
 	if (state == T_ERROR)
 	{
 		error_arrow_str = create_error_arrow_str(str, column - 1);		
-		ft_printf("\n\e[1;31mLEXICAL ERROR: \e[1;37mat [%d:%d]\e[0m\e[0m\n", row, column);
+		ft_printf("\n\e[1;31mLEXICAL ERROR:\e[0m");
+		ft_printf("\e[1;37mat [%d:%d]\e[0m", row, column);
 		ft_printf("\t\e[1;37m%s\e[0m\n", trimed_str);
 		ft_printf("\t\e[1;36m%s\e[0m\n", error_arrow_str);
 		ft_strdel(&error_arrow_str);
@@ -298,7 +300,8 @@ void	add_node_in_tokens_strings(t_str_tokens **str_tokens, char *str)
 int		is_a_token(int num)
 {
 	int i;
-	int token_array[9] = {T_LAB, SEP_CHAR, T_ERROR, OPERATION, COMMENT, EOL, T_REG, T_DIR, T_IND};
+	int token_array[9] = {T_LAB, SEP_CHAR, T_ERROR, OPERATION,
+							COMMENT, EOL, T_REG, T_DIR, T_IND};
 
 	i = 0;
 	while (i < 9)
