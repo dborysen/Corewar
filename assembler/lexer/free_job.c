@@ -50,7 +50,6 @@ void	free_str_tokens(t_str_tokens **str_tokens)
 		{
 			tmp = *str_tokens;
 			ft_strdel(&tmp->current_str);
-			// free(tmp->code);
 			free_tokens(&tmp->valid);
 			free(tmp);
 			tmp = NULL;

@@ -33,7 +33,7 @@ int		read_data(t_data **champ_data)
     char	*line;
 	int		fd;
 
-	fd = open("/Users/dborysen/Downloads/corewar_all_versions/corewar_8_05/assembler/test.s", O_RDONLY);
+	fd = open("/Users/dborysen/Downloads/corewar_all_versions/corewar_8_05_1/assembler/test.s", O_RDONLY);
     line = NULL;
     while (get_next_line(fd, &line) > 0)
     {

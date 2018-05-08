@@ -17,10 +17,17 @@ LIBFT = parser/libft
 SRCS =  main.c\
 		lexer/read_data.c\
 		lexer/lexer.c\
+		lexer/find_tokens.c\
+		lexer/show_error.c\
+		lexer/final_state_attributes.c\
 		lexer/free_job.c\
-		lexer/state_functions/0-4_state_column.c\
-		lexer/state_functions/5-9_state_column.c\
+		lexer/state_functions/first_five_state_column.c\
+		lexer/state_functions/last_five_state_column.c\
 		header_validation/header_validation.c\
+		header_validation/name_and_comment_present_and_only_one.c\
+		header_validation/brackets_validation.c\
+		header_validation/show_header_error.c\
+		header_validation/save_header.c\
 		parser/src/parsing.c\
 		parser/src/error_messege.c\
 		validation.c\
