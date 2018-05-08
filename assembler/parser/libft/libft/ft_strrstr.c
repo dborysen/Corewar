@@ -12,7 +12,7 @@
 
 #include "../includes/libft.h"
 
-static char	*dop_funct(int i, size_t o, char *s1, char *s2)
+static char		*dop_funct(int i, size_t o, char *s1, char *s2)
 {
 	int		d;
 
@@ -51,4 +51,3 @@ char			*ft_strrstr(const char *big, const char *little)
 		return (s1);
 	return (dop_funct(i - 1, o, s1, s2));
 }
-

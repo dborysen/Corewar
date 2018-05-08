@@ -53,8 +53,8 @@ int			parsing(t_str_tokens *input, int count)
 	op = 0;
 	while (input)
 	{
-		if (after_label(input, i + count) == -1)
-			op = -1;
+		if (after_label(input, i + count) == ERROR)
+			op = ERROR;
 		input = input->next;
 		i++;
 	}
@@ -69,16 +69,16 @@ int			after_label(t_str_tokens *input, int index)
 
 	input_tokens = input->valid;
 	operation = NULL;
-	if (input_tokens->token == EOL
-	|| input_tokens->token == ERROR
-	|| input_tokens->token == COMMENT)
-		return (0);
+	if (input_tokens->token == EOL || input_tokens->token == COMMENT)
+		return (OK);
 	if (input_tokens->token == T_LAB)
 		input_tokens = input_tokens->next;
 	if (input_tokens->token == OPERATION)
 		operation = input_tokens->current_str_piece;
-	else if (input_tokens->token == EOL || input_tokens->token == ERROR)
-		return (0);
+	else if (input_tokens->token == EOL)
+		return (OK);
+	else if (input_tokens->token == T_ERROR)
+		return (ERROR);
 	else
 		return (error_messege(input, input_tokens, index));
 	args = f_arguments(operation);
@@ -86,7 +86,7 @@ int			after_label(t_str_tokens *input, int index)
 		return (check_the_args(args, input, index));
 	else
 		return (error_messege_for_operation(input, input_tokens, index));
-	return (0);
+	return (OK);
 }
 
 /*
@@ -129,7 +129,7 @@ int			check_the_args(t_op args, t_str_tokens *input, int index)
 	while (input_tokens && i < args.numb)
 	{
 		if (input_tokens->token == T_ERROR)
-			return (0);
+			return (ERROR);
 		if (input_tokens->token != SEP_CHAR && input_tokens->token != COMMENT)
 		{
 			if (((input_tokens->token & args.arg[i]) == 0))
