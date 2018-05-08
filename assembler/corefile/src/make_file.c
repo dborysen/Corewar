@@ -35,20 +35,21 @@ byte_tab_t		g_b_tab[17] =
 
 int				g_position;
 
-int				corefile(t_str_tokens *input, header_data_t header, int	position)
+int				corefile(t_str_tokens *input,
+	header_data_t header, int position)
 {
 	int			fd;
 	char		*prog_name;
 
 	g_position = position;
 	prog_name = correct_name(header);
-	fd = open(prog_name,  O_WRONLY | O_CREAT, S_IRUSR | S_IWUSR);
+	fd = open(prog_name, O_TRUNC | O_WRONLY | O_CREAT, S_IRUSR | S_IWUSR);
 	construct_data(input);
 	write_in_file(input, header, fd);
 	ft_printf("\n\e[1;37mWriting output program to \e[0m");
 	ft_printf("\e[1;36m%s\e[0m\n\n", prog_name);
 	free(prog_name);
-	return(0);
+	return (0);
 }
 
 void			construct_data(t_str_tokens *input)
@@ -61,7 +62,7 @@ void			construct_data(t_str_tokens *input)
 	while (track)
 	{
 		track->position = position;
-		track->size =  count_bytes(track);
+		track->size = count_bytes(track);
 		position = position + track->size;
 		track = track->next;
 	}
@@ -143,7 +144,6 @@ void			write_in_file(t_str_tokens *input, header_data_t header, int fd)
 	t_str_tokens		*start_of_list;
 	t_str_tokens		*copy_input;
 
-
 	copy_input = input;
 	start_of_list = input;
 	magic_number(fd);
@@ -152,19 +152,19 @@ void			write_in_file(t_str_tokens *input, header_data_t header, int fd)
 	write(fd, header.bot_comment, COMMENT_LENGTH + 4);
 	while (copy_input)
 	{
-		copy_input->code =  build_code(copy_input, start_of_list);
+		copy_input->code = build_code(copy_input, start_of_list);
 		lseek(fd, 0, SEEK_CUR);
 		write(fd, copy_input->code, copy_input->size);
 		copy_input = copy_input->next;
 	}
 }
 
-unsigned char 			*build_code(t_str_tokens *input, t_str_tokens *start_of_list)
+unsigned char	*build_code(
+	t_str_tokens *input, t_str_tokens *start_of_list)
 {
 	unsigned char			*code;
 	unsigned char			*start_of_code;
 	t_tokens				*tokens;
-
 
 	code = NULL;
 	tokens = input->valid;
@@ -183,10 +183,10 @@ unsigned char 			*build_code(t_str_tokens *input, t_str_tokens *start_of_list)
 	return (start_of_code);
 }
 
-int				convert_token(t_tokens *tokens, t_str_tokens *input, t_str_tokens *start_of_list, unsigned char **code)
+int				convert_token(
+	t_tokens *tokens, t_str_tokens *input,
+	t_str_tokens *start_of_list, unsigned char **code)
 {
-	if (start_of_list)
-	;
 	if (tokens->token == OPERATION)
 		return (code_op(tokens, input, code));
 	if (tokens->token == T_REG)
@@ -200,14 +200,15 @@ int				convert_token(t_tokens *tokens, t_str_tokens *input, t_str_tokens *start_
 	return (ERROR);
 }
 
-int				code_op(t_tokens *tokens, t_str_tokens *input, unsigned char **code)
+int				code_op(
+	t_tokens *tokens, t_str_tokens *input, unsigned char **code)
 {
 	int		i;
 
 	i = 0;
 	while (g_b_tab[i].name)
 	{
-		if (ft_strcmp(g_b_tab[i].name,tokens->current_str_piece) == 0)
+		if (ft_strcmp(g_b_tab[i].name, tokens->current_str_piece) == 0)
 		{
 			(*code)[0] = g_b_tab[i].code;
 			(*code)++;
@@ -223,7 +224,8 @@ int				code_op(t_tokens *tokens, t_str_tokens *input, unsigned char **code)
 	return (OK);
 }
 
-int				code_reg(t_tokens *tokens, t_str_tokens *input, unsigned char **code)
+int				code_reg(
+	t_tokens *tokens, t_str_tokens *input, unsigned char **code)
 {
 	char	*str;
 	int		result;
@@ -239,7 +241,7 @@ int				code_reg(t_tokens *tokens, t_str_tokens *input, unsigned char **code)
 		(*code)++;
 		return (OK);
 	}
-	return (result);	
+	return (result);
 }
 
 int				codage(t_str_tokens *input)
@@ -253,7 +255,8 @@ int				codage(t_str_tokens *input)
 	i = 3;
 	while (i > 0 && tokens)
 	{
-		if (tokens->token == T_REG || tokens->token == T_DIR || tokens->token == T_IND)
+		if (tokens->token == T_REG
+			|| tokens->token == T_DIR || tokens->token == T_IND)
 		{
 			size = codage_args(size, tokens);
 			size = size << 2;
@@ -286,14 +289,16 @@ int				code_dir(t_tokens *tokens, t_str_tokens *input,
 	result = 0;
 	t_dir = search_size_of_label(input->valid);
 	if (tokens->current_str_piece[1] == ':')
-		result = position_of_label(tokens->current_str_piece + 2, input, start_of_list);
+		result = position_of_label(
+			tokens->current_str_piece + 2, input, start_of_list);
 	else
 		result = ft_atoi(tokens->current_str_piece + 1);
-	write_dir_in_code(code, result, t_dir);	
+	write_dir_in_code(code, result, t_dir);
 	return (OK);
 }
 
-int				position_of_label(char *label, t_str_tokens *input, t_str_tokens *start_of_list)
+int				position_of_label(
+	char *label, t_str_tokens *input, t_str_tokens *start_of_list)
 {
 	int		result;
 	char	*copy_label;
@@ -307,11 +312,12 @@ int				position_of_label(char *label, t_str_tokens *input, t_str_tokens *start_o
 		start_of_list = start_of_list->next;
 	}
 	result = start_of_list->position - input->position;
-	free (copy_label);
+	free(copy_label);
 	return (result);
 }
 
-void			write_dir_in_code(unsigned char **code, unsigned int result, int size)
+void			write_dir_in_code(
+	unsigned char **code, unsigned int result, int size)
 {
 	if (size == 2)
 		when_size_dir_two(code, result);
@@ -361,17 +367,19 @@ void			when_size_dir_eight(unsigned char **code, unsigned int result)
 }
 
 int				code_ind(t_tokens *tokens, t_str_tokens *input,
-				t_str_tokens *start_of_list, unsigned char **code)
+	t_str_tokens *start_of_list, unsigned char **code)
 {
-	unsigned int res;
+	int res;
 
 	if (tokens->current_str_piece[0] == ':')
-		res = position_of_label(tokens->current_str_piece + 1, input, start_of_list);
+		res = position_of_label(
+			tokens->current_str_piece + 1, input, start_of_list);
 	else
-		res = (unsigned char)ft_atoi(tokens->current_str_piece);
+		res = ft_atoi(tokens->current_str_piece);
 	when_size_dir_two(code, res);
 	return (OK);
 }
+
 char			*correct_name(header_data_t header)
 {
 	int		position;
@@ -395,7 +403,7 @@ char			*correct_name(header_data_t header)
 void			magic_number(int fd)
 {
 	unsigned char		magic[4];
-	
+
 	magic[0] = 0x00;
 	magic[1] = 0xea;
 	magic[2] = 0x83;
