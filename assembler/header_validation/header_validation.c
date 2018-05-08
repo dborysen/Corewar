@@ -35,7 +35,7 @@ int		header_is_here(t_data *data_from_file, int type_of_header)
 {
 	int		header_count;
 	char	current_header[8];
-	char	what_to_find_in_str[8];	
+	char	what_to_find_in_str[9];	
 
 	header_count = 0;
 	if (type_of_header == HEADER_NAME)
@@ -102,7 +102,8 @@ int		current_brackets_is_ok(t_data *data_from_file, int type_of_bracket)
 		f = close_brackets_on_place;
 	while (headers_count < 2)
 	{
-		if (ft_strchr(data_from_file->data, '.') != 0)
+		if (ft_strchr(data_from_file->data, '.') != 0 &&
+		only_hesh_coomment_line(data_from_file->data) == FALSE)
 		{
 			if (f(data_from_file->data, line_num) == FALSE)
 				status = FALSE;

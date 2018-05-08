@@ -23,7 +23,8 @@ SRCS =  main.c\
 		header_validation/header_validation.c\
 		parser/src/parsing.c\
 		parser/src/error_messege.c\
-		validation.c
+		validation.c\
+		corefile/src/make_file.c
 
 OBJECT = $(SRCS:.c=.o)
 

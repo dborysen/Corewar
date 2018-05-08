@@ -25,6 +25,7 @@
 ** 8 - [#]
 ** 9 - [-]
 ** 10 - [other]
+** 
 */
 
 int state_table[19][11] = 
@@ -120,7 +121,8 @@ int		skip_name_comment_rows(t_data **data_from_file)
 	headers_count = 0;
 	while (headers_count != 2)
 	{
-		if (ft_strchr((*data_from_file)->data, '.') != 0)
+		if (ft_strchr((*data_from_file)->data, '.') != 0 &&
+		only_hesh_coomment_line((*data_from_file)->data) == FALSE)
 		{
 			headers_count++;
 			skipped_rows++;
@@ -135,30 +137,30 @@ int		skip_name_comment_rows(t_data **data_from_file)
 void	find_tokens(char *str, t_tokens **tokens_list,
 					t_func_list *state_funcs, int row_num)
 {
-	t_counters	*counter;
+	t_counters	*c;
 	char		*trimed_str;
 	
-	counter = NULL;
-	create_counter_struct(&counter);
+	c = NULL;
+	create_counter_struct(&c);
 	trimed_str = ft_strtrim(str);
 	while (1)
 	{	
-		set_state(counter, trimed_str, state_funcs);
-		catch_error(counter->state, counter->i + 1, row_num, str);
-		if (is_a_token(counter->state) == TRUE)
+		set_state(c, trimed_str, state_funcs);
+		catch_error(c->state, c->i + 1, row_num, str);
+		if (is_a_token(c->state) == TRUE)
 		{
-			add_new_token_node(&(*tokens_list), counter->state, ft_strsub(trimed_str, counter->j, counter->i - counter->j));
-			if (counter->state_column == 7 || counter->state == T_ERROR)
+			add_new_token_node(&(*tokens_list), c->state, ft_strsub(trimed_str, c->j, c->i - c->j));
+			if (c->state_column == 7 || c->state == T_ERROR)
 			{
 				add_new_token_node(&(*tokens_list), EOL, NULL);
 				ft_strdel(&trimed_str);
-				free(counter);
+				free(c);
 				return ;
 			}
-			update_counters(counter);
+			update_counters(c);
 		}
 		else
-			change_state(counter);
+			change_state(c);
 	}
 }
 

@@ -42,9 +42,11 @@ int				corefile(t_str_tokens *input, header_data_t header, int	position)
 
 	g_position = position;
 	prog_name = correct_name(header);
-	fd = open(header.program_name,  O_WRONLY | O_CREAT, S_IRUSR | S_IWUSR);
+	fd = open(prog_name,  O_WRONLY | O_CREAT, S_IRUSR | S_IWUSR);
 	construct_data(input);
 	write_in_file(input, header, fd);
+	ft_printf("\n\e[1;37mWriting output program to \e[0m");
+	ft_printf("\e[1;36m%s\e[0m\n\n", prog_name);
 	free(prog_name);
 	return(0);
 }
