@@ -419,10 +419,19 @@
 		<Unit filename="/Users/myprosku/corTwar/VM_cor/operations/ns_and.c">
 			<Option target="VM_cor"/>
 		</Unit>
+		<Unit filename="/Users/myprosku/corTwar/VM_cor/operations/ns_ld.c">
+			<Option target="VM_cor"/>
+		</Unit>
+		<Unit filename="/Users/myprosku/corTwar/VM_cor/operations/ns_lld.c">
+			<Option target="VM_cor"/>
+		</Unit>
 		<Unit filename="/Users/myprosku/corTwar/VM_cor/operations/ns_or.c">
 			<Option target="VM_cor"/>
 		</Unit>
 		<Unit filename="/Users/myprosku/corTwar/VM_cor/operations/ns_st.c">
+			<Option target="VM_cor"/>
+		</Unit>
+		<Unit filename="/Users/myprosku/corTwar/VM_cor/operations/ns_sti.c">
 			<Option target="VM_cor"/>
 		</Unit>
 		<Unit filename="/Users/myprosku/corTwar/VM_cor/operations/ns_sub.c">

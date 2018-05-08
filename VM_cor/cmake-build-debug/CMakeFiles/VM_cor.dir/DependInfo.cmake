@@ -114,8 +114,11 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/myprosku/corTwar/VM_cor/op.c" "/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles/VM_cor.dir/op.c.o"
   "/Users/myprosku/corTwar/VM_cor/operations/ns_add.c" "/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles/VM_cor.dir/operations/ns_add.c.o"
   "/Users/myprosku/corTwar/VM_cor/operations/ns_and.c" "/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles/VM_cor.dir/operations/ns_and.c.o"
+  "/Users/myprosku/corTwar/VM_cor/operations/ns_ld.c" "/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles/VM_cor.dir/operations/ns_ld.c.o"
+  "/Users/myprosku/corTwar/VM_cor/operations/ns_lld.c" "/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles/VM_cor.dir/operations/ns_lld.c.o"
   "/Users/myprosku/corTwar/VM_cor/operations/ns_or.c" "/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles/VM_cor.dir/operations/ns_or.c.o"
   "/Users/myprosku/corTwar/VM_cor/operations/ns_st.c" "/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles/VM_cor.dir/operations/ns_st.c.o"
+  "/Users/myprosku/corTwar/VM_cor/operations/ns_sti.c" "/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles/VM_cor.dir/operations/ns_sti.c.o"
   "/Users/myprosku/corTwar/VM_cor/operations/ns_sub.c" "/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles/VM_cor.dir/operations/ns_sub.c.o"
   "/Users/myprosku/corTwar/VM_cor/operations/ns_xor.c" "/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles/VM_cor.dir/operations/ns_xor.c.o"
   )

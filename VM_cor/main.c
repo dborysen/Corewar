@@ -6,7 +6,7 @@
 /*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/23 13:20:36 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/07 17:12:59 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/08 15:24:13 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -119,11 +119,11 @@ int			main(int ac, char **av)
 	ns_position_start(&champ);
 	ns_fill_map(champ, &map);
 	ns_create_cursor(&cursor, champ);
-	ns_game_start(&cursor, &map, &info);
+	ns_game_start(&cursor, &map, &info, flags);
 	ns_print_map(map);
 	while (cursor->next)
 	{
-		ft_printf("start_pos = %d\n", cursor->index_pos);
+		ft_printf("pos = %d\n", cursor->index_pos);
 		cursor = cursor->next;
 	}
 //	char *s = ft_itoa_base(84, 2, 1);

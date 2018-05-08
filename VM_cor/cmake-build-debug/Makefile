@@ -3093,6 +3093,60 @@ operations/ns_and.c.s:
 	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/operations/ns_and.c.s
 .PHONY : operations/ns_and.c.s
 
+operations/ns_ld.o: operations/ns_ld.c.o
+
+.PHONY : operations/ns_ld.o
+
+# target to build an object file
+operations/ns_ld.c.o:
+	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/operations/ns_ld.c.o
+.PHONY : operations/ns_ld.c.o
+
+operations/ns_ld.i: operations/ns_ld.c.i
+
+.PHONY : operations/ns_ld.i
+
+# target to preprocess a source file
+operations/ns_ld.c.i:
+	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/operations/ns_ld.c.i
+.PHONY : operations/ns_ld.c.i
+
+operations/ns_ld.s: operations/ns_ld.c.s
+
+.PHONY : operations/ns_ld.s
+
+# target to generate assembly for a file
+operations/ns_ld.c.s:
+	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/operations/ns_ld.c.s
+.PHONY : operations/ns_ld.c.s
+
+operations/ns_lld.o: operations/ns_lld.c.o
+
+.PHONY : operations/ns_lld.o
+
+# target to build an object file
+operations/ns_lld.c.o:
+	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/operations/ns_lld.c.o
+.PHONY : operations/ns_lld.c.o
+
+operations/ns_lld.i: operations/ns_lld.c.i
+
+.PHONY : operations/ns_lld.i
+
+# target to preprocess a source file
+operations/ns_lld.c.i:
+	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/operations/ns_lld.c.i
+.PHONY : operations/ns_lld.c.i
+
+operations/ns_lld.s: operations/ns_lld.c.s
+
+.PHONY : operations/ns_lld.s
+
+# target to generate assembly for a file
+operations/ns_lld.c.s:
+	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/operations/ns_lld.c.s
+.PHONY : operations/ns_lld.c.s
+
 operations/ns_or.o: operations/ns_or.c.o
 
 .PHONY : operations/ns_or.o
@@ -3146,6 +3200,33 @@ operations/ns_st.s: operations/ns_st.c.s
 operations/ns_st.c.s:
 	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/operations/ns_st.c.s
 .PHONY : operations/ns_st.c.s
+
+operations/ns_sti.o: operations/ns_sti.c.o
+
+.PHONY : operations/ns_sti.o
+
+# target to build an object file
+operations/ns_sti.c.o:
+	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/operations/ns_sti.c.o
+.PHONY : operations/ns_sti.c.o
+
+operations/ns_sti.i: operations/ns_sti.c.i
+
+.PHONY : operations/ns_sti.i
+
+# target to preprocess a source file
+operations/ns_sti.c.i:
+	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/operations/ns_sti.c.i
+.PHONY : operations/ns_sti.c.i
+
+operations/ns_sti.s: operations/ns_sti.c.s
+
+.PHONY : operations/ns_sti.s
+
+# target to generate assembly for a file
+operations/ns_sti.c.s:
+	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/operations/ns_sti.c.s
+.PHONY : operations/ns_sti.c.s
 
 operations/ns_sub.o: operations/ns_sub.c.o
 
@@ -3540,12 +3621,21 @@ help:
 	@echo "... operations/ns_and.o"
 	@echo "... operations/ns_and.i"
 	@echo "... operations/ns_and.s"
+	@echo "... operations/ns_ld.o"
+	@echo "... operations/ns_ld.i"
+	@echo "... operations/ns_ld.s"
+	@echo "... operations/ns_lld.o"
+	@echo "... operations/ns_lld.i"
+	@echo "... operations/ns_lld.s"
 	@echo "... operations/ns_or.o"
 	@echo "... operations/ns_or.i"
 	@echo "... operations/ns_or.s"
 	@echo "... operations/ns_st.o"
 	@echo "... operations/ns_st.i"
 	@echo "... operations/ns_st.s"
+	@echo "... operations/ns_sti.o"
+	@echo "... operations/ns_sti.i"
+	@echo "... operations/ns_sti.s"
 	@echo "... operations/ns_sub.o"
 	@echo "... operations/ns_sub.i"
 	@echo "... operations/ns_sub.s"

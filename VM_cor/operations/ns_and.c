@@ -20,7 +20,7 @@ void	ns_and(t_cursor **cur, t_map *m_map)
 	unsigned char r3;
 
 	temp = *cur;
-	if (m_map->map[temp->index_pos + 1] == 0x54)
+	if (m_map->map[temp->index_pos + 1] == T_RRR)
 	{
 		r1 = m_map->map[temp->index_pos + 2];
 		r2 = m_map->map[temp->index_pos + 3];

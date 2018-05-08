@@ -1,4 +1,4 @@
 .name "zork"
 .comment "I'M ALIIIIVE"
 
-st r1, 42
+ld 54, r1

@@ -6,7 +6,7 @@
 /*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/23 13:22:27 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/07 17:33:33 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/08 18:13:01 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 
 #include "libft/libft.h"
 #include "op.h"
+# define T_RRR 0b01010100
 # define T_RIR 0b01110100
 # define T_RDR 0b01100100
 # define T_IRR 0b11010100
@@ -104,6 +105,16 @@ typedef struct			s_info
 	int 				winner;
 }						t_info;
 
+typedef struct 			s_reg
+{
+	int 				r1;
+	int 				r2;
+	int 				r3;
+	int 				index;
+	short				dir;
+	short				dir2;
+}						t_reg;
+
 t_champion				*ns_read_champion(char *av, t_champion **champ);
 int						unsigned_char_to_int(unsigned char *str);
 void					ns_zero_flags(t_fl *flags);
@@ -117,11 +128,22 @@ void					ns_fill_map(t_champion *champ, t_map *map);
 void 					ns_error(char *err_message);
 void					ns_zero_cursor(t_cursor **cursor);
 void					ns_create_cursor(t_cursor **cursor, t_champion *champ);
-void					ns_game_start(t_cursor **cursor, t_map *m_map, t_info *info);
+void					ns_game_start(t_cursor **cursor, t_map *m_map, t_info *info, t_fl flags);
 int 					ns_check_register(unsigned char r1, unsigned char r2, unsigned char r3);
+
+//Champ functions
 void					ns_add(t_cursor **cur, t_map *m_map);
 void					ns_sub(t_cursor **cur, t_map *m_map);
 void					ns_st(t_cursor **cur, t_map *m_map);
+void					ns_sti(t_cursor **cur, t_map *m_map);
+void					ns_ld(t_cursor **cur, t_map *m_map);
+void					ns_lld(t_cursor **cur, t_map *m_map);
+
+//*************
+
 typedef void 			(*ns_array_of_functions)(t_cursor **cur, t_map *m_map);
-unsigned char			*int_to_unsigned_char(int nbr);
+char					*int_to_char(int nbr);
+int						char_to_int(char *str);
+char					*find_fbytes_tind(t_map *map, int index);
+
 #endif
