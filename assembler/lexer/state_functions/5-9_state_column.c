@@ -35,7 +35,7 @@ int	is_eol(char c)
 
 int	is_hash(char c)
 {
-	if (c == '#')
+	if (c == '#' || c == ';')
 		return (TRUE);
 	return (FALSE);
 }

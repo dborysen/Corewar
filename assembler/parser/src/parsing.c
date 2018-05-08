@@ -53,8 +53,8 @@ int			parsing(t_str_tokens *input, int count)
 	op = 0;
 	while (input)
 	{
-		if (after_label(input, i + count) == -1)
-			op = -1;
+		if (after_label(input, i + count) == ERROR)
+			op = ERROR;
 		input = input->next;
 		i++;
 	}

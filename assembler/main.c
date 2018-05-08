@@ -45,5 +45,3 @@ int     main(void)
 	free_list(&data_from_file);
     return (0);
 }
-
-// MAKE VALID ';' COMMENT STRINGS

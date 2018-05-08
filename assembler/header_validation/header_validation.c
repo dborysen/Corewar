@@ -193,7 +193,7 @@ char	*cut_hash(char *header_str)
 	{
 		if (header_str[i] == '\"')
 			bracket_count++;
-		if (header_str[i] == '#' && bracket_count == 2)
+		if ((header_str[i] == '#' || header_str[i] == ';') && bracket_count == 2)
 			break;
 		i++;
 	}

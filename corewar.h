@@ -13,3 +13,5 @@
 #include "assembler/lexer/lexer.h"
 #include "assembler/parser/includes/parsing.h"
 #include "assembler/header_validation/header_validation.h"
+#include "assembler/validation.h"
+#include "assembler/corefile/includes/corefile.h"
