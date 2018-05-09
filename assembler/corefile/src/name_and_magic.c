@@ -61,4 +61,5 @@ void			prog_length(t_str_tokens *input, int fd)
 	}
 	when_size_dir_eight(&length, size);
 	write(fd, copy, 8);
+	free(copy);
 }

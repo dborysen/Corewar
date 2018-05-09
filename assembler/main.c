@@ -14,7 +14,7 @@
 
 // void	show_usage(char *str)
 // {
-// 	ft_printf("\n\e[1;37mUSAGE:	%s <sourcefile.s>\e[0m\e[0m\n\n", str);
+// 	ft_printf("\n\e[1;37mUSAGE:	s <sourcefile.s>\e[0m\e[0m\n\n", str);
 // }
 
 // int     main(int argc, char **argv)
@@ -30,32 +30,22 @@
 // 	}
 // 	else
 // 		show_usage(argv[argc - 1]);
+// 	// while(1)
+// 	// ;
 //     return (0);
 // }
 
 
 
-// int     main(void)
-// {
-// 	t_data	*data_from_file;
-
-//     data_from_file = NULL;
-// 	read_data(&data_from_file);
-// 	validation(data_from_file, "name of program");
-// 	free_list(&data_from_file);
-//     return (0);
-// }
-
-int     main(int argc, char **argv)
+int     main(void)
 {
 	t_data	*data_from_file;
 
     data_from_file = NULL;
-	if (argc > 1)
-	{
-		read_data(&data_from_file, argv[1]);
-		validation(data_from_file, argv[1]);
-		free_list(&data_from_file);
-	}
+	read_data(&data_from_file);
+	validation(data_from_file, "name of program");
+	free_list(&data_from_file);
+	// while (1)
+	// ;
     return (0);
 }
