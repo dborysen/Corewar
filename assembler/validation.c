@@ -16,7 +16,7 @@ int		validation(t_data *data_from_file, char *name_of_program)
 {
 	int				skipped_rows;
 	t_str_tokens	*str_tokens;
-	header_data_t	header_data;
+	t_header_data	header_data;
 
 	str_tokens = NULL;
 	skipped_rows = 0;

@@ -19,12 +19,12 @@
 
 # include "../lexer/lexer.h"
 
-typedef struct	header_data_s
+typedef struct	s_header_data
 {
 	char *program_name;
 	char *bot_name;
 	char *bot_comment;
-}				header_data_t;
+}				t_header_data;
 
 int				header_validation(t_data *data_from_file);
 int				is_only_one_name_and_one_comment(t_data *data_from_file);
@@ -47,7 +47,7 @@ int				count_words(char const *s, char c);
 void			show_no_close_bracket_error(char *header_str, int line_num);
 
 int				validation(t_data *data_from_file, char *name_of_program);
-header_data_t	fill_header_data(t_data *data_from_file, char *name_of_program);
+t_header_data	fill_header_data(t_data *data_from_file, char *name_of_program);
 char			*find_bot_header(t_data *data_from_file, int header_type);
 char			*save_header(char *str, int max_length, int header_type);
 void			show_not_valid_header_length_error(int header_type,

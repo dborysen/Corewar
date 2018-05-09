@@ -13,33 +13,18 @@
 #include "lexer.h"
 #include <fcntl.h>
 
-// int		read_data(t_data **champ_data, char *name_of_file)
-// {
-//     char	*line;
-// 	int		fd;
-
-// 	fd = open(name_of_file, O_RDONLY);
-//     line = NULL;
-//     while (get_next_line(fd, &line) > 0)
-//     {
-//         new_node(&(*champ_data), line);
-//         ft_strdel(&line);
-//     }
-// 	return (OK);
-// }
-
-int		read_data(t_data **champ_data)
+int		read_data(t_data **champ_data, char *name_of_file)
 {
-    char	*line;
+	char	*line;
 	int		fd;
 
-	fd = open("/Users/klee/klee/work/Corewar/work_dir5/assembler/test1.s", O_RDONLY);
-    line = NULL;
-    while (get_next_line(fd, &line) > 0)
-    {
-        new_node(&(*champ_data), line);
-        ft_strdel(&line);
-    }
+	fd = open(name_of_file, O_RDONLY);
+	line = NULL;
+	while (get_next_line(fd, &line) > 0)
+	{
+		new_node(&(*champ_data), line);
+		ft_strdel(&line);
+	}
 	return (OK);
 }
 

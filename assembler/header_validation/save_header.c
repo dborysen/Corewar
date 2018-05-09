@@ -12,9 +12,9 @@
 
 #include "header_validation.h"
 
-header_data_t	fill_header_data(t_data *data_from_file, char *name_of_program)
+t_header_data	fill_header_data(t_data *data_from_file, char *name_of_program)
 {
-	header_data_t header_data;
+	t_header_data header_data;
 
 	header_data.program_name = ft_strdup(name_of_program);
 	header_data.bot_name = find_bot_header(data_from_file, HEADER_NAME);

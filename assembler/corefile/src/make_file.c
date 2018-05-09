@@ -15,7 +15,7 @@
 int				g_position;
 
 int				corefile(t_str_tokens *input,
-	header_data_t header, int position)
+	t_header_data header, int position)
 {
 	int			fd;
 	char		*prog_name;
@@ -31,7 +31,7 @@ int				corefile(t_str_tokens *input,
 	return (0);
 }
 
-void			write_in_file(t_str_tokens *input, header_data_t header, int fd)
+void			write_in_file(t_str_tokens *input, t_header_data header, int fd)
 {
 	t_str_tokens		*start_of_list;
 	t_str_tokens		*copy_input;

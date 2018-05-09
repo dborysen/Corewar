@@ -12,7 +12,7 @@
 
 #include "../../../corewar.h"
 
-char			*correct_name(header_data_t header)
+char			*correct_name(t_header_data header)
 {
 	int		position;
 	char	*res;
