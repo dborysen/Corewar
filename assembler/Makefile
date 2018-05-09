@@ -43,14 +43,18 @@ INCLUDES = corewar.h
 
 FLAGS = -Wall -Wextra -Werror
 
+%.o	: %.c
+		@gcc $(FLAGS) -I corewar.h -c $< -o $@
+		@echo "\033[1mASM :\033[0m		 \033[37m[Compilation:\033[0m\033[36m $@\033[0m]"
+
 all: $(NAME)
 
 $(NAME): $(OBJECT)
 	@make -C $(LIBFT)
 	@gcc $(FLAGS) -I $(INCLUDES) -g $(SRCS) parser/libft/libft.a -o ./$(NAME)
-
-%.o: %.c
-	gcc $(FLAGS) -I corewar.h -c $< 
+	@echo "\033[5;32m--------------------------\033[0m"
+	@echo "\033[5;32m         ASM - OK 😁       \033[0m"
+	@echo "\033[5;32m--------------------------\033[0m"
 
 norm:
 	@norminette -R CheckForbiddenSourceHeader $(SRCS) corewar.h
@@ -58,11 +62,11 @@ norm:
 clean:
 	@rm -f $(OBJECT) *.o
 	@make clean -C $(LIBFT)
-	@echo .o files has been deleted
+	@echo "\033[32m[.o files has been deleted]\033[0m"
 
 fclean: clean
 	@rm -f $(NAME)
 	@make fclean -C $(LIBFT)
-	@echo asm binary has been deleted
+	@echo "\033[32m[asm binary has been deleted]\033[0m"
 
 re: fclean all
