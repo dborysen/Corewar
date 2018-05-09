@@ -15,12 +15,6 @@
 # include "libft.h"
 # include "../../../corewar.h"
 
-typedef struct	s_list
-{
-	char		*data;
-	int			size;
-}				t_list;
-
 typedef struct	s_byte_tab
 {
 	char	*name;

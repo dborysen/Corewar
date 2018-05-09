@@ -12,29 +12,26 @@
 
 #include "../../../corewar.h"
 
-unsigned char	*build_code(
-	t_str_tokens *input, t_str_tokens *start_of_list)
+t_byte_tab		g_b_tab[17] =
 {
-	unsigned char			*code;
-	unsigned char			*start_of_code;
-	t_tokens				*tokens;
-
-	code = NULL;
-	tokens = input->valid;
-	start_of_code = code;
-	if (input->size > 0)
-	{
-		code = malloc(sizeof(char) * input->size);
-		start_of_code = code;
-		while (tokens)
-		{
-			if (tokens->token != T_LAB && tokens->token != EOL)
-				convert_token(tokens, input, start_of_list, &code);
-			tokens = tokens->next;
-		}
-	}
-	return (start_of_code);
-}
+	{"live", 4, 0x01},
+	{"ld", 4, 0x02},
+	{"st", 0, 0x03},
+	{"add", 0, 0x04},
+	{"sub", 0, 0x05},
+	{"and", 4, 0x06},
+	{"or", 4, 0x07},
+	{"xor", 4, 0x08},
+	{"zjmp", 2, 0x09},
+	{"ldi", 2, 0x0a},
+	{"sti", 2, 0x0b},
+	{"fork", 2, 0x0c},
+	{"lld", 4, 0x0d},
+	{"lldi", 2, 0x0e},
+	{"lfork", 2, 0x0f},
+	{"aff", 0, 0x10},
+	{0, 0, 0}
+};
 
 int				convert_token(
 	t_tokens *tokens, t_str_tokens *input,
@@ -77,24 +74,18 @@ int				code_op(
 	return (OK);
 }
 
-int				code_reg(
-	t_tokens *tokens, t_str_tokens *input, unsigned char **code)
+int				code_ind(t_tokens *tokens, t_str_tokens *input,
+	t_str_tokens *start_of_list, unsigned char **code)
 {
-	char	*str;
-	int		result;
+	int res;
 
-	str = tokens->current_str_piece;
-	str++;
-	result = ft_atoi(str);
-	if (result >= 100)
-		return (error_messege(input, tokens, g_position));
+	if (tokens->current_str_piece[0] == ':')
+		res = position_of_label(
+			tokens->current_str_piece + 1, input, start_of_list);
 	else
-	{
-		(*code)[0] = result;
-		(*code)++;
-		return (OK);
-	}
-	return (result);
+		res = ft_atoi(tokens->current_str_piece);
+	when_size_dir_two(code, res);
+	return (OK);
 }
 
 int				codage(t_str_tokens *input)
@@ -120,4 +111,20 @@ int				codage(t_str_tokens *input)
 	if (i > 0)
 		size = size << 2;
 	return (size);
+}
+
+int				search_size_of_label(t_tokens *tokens)
+{
+	int		i;
+
+	i = 0;
+	if (tokens->token == T_LAB)
+		tokens = tokens->next;
+	while (g_b_tab[i].name)
+	{
+		if (ft_strcmp(g_b_tab[i].name, tokens->current_str_piece) == 0)
+			return (g_b_tab[i].size);
+		i++;
+	}
+	return (ERROR);
 }

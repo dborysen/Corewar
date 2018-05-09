@@ -12,27 +12,6 @@
 
 #include "../../../corewar.h"
 
-byte_tab_t		g_b_tab[17] =
-{
-	{"live", 4, 0x01},
-	{"ld", 4, 0x02},
-	{"st", 0, 0x03},
-	{"add", 0, 0x04},
-	{"sub", 0, 0x05},
-	{"and", 4, 0x06},
-	{"or", 4, 0x07},
-	{"xor", 4, 0x08},
-	{"zjmp", 2, 0x09},
-	{"ldi", 2, 0x0a},
-	{"sti", 2, 0x0b},
-	{"fork", 2, 0x0c},
-	{"lld", 4, 0x0d},
-	{"lldi", 2, 0x0e},
-	{"lfork", 2, 0x0f},
-	{"aff", 0, 0x10},
-	{0, 0, 0}
-};
-
 int				g_position;
 
 int				corefile(t_str_tokens *input,
@@ -100,16 +79,22 @@ void			write_dir_in_code(
 		when_size_dir_four(code, result);
 }
 
-int				code_ind(t_tokens *tokens, t_str_tokens *input,
-	t_str_tokens *start_of_list, unsigned char **code)
+int				code_reg(
+	t_tokens *tokens, t_str_tokens *input, unsigned char **code)
 {
-	int res;
+	char	*str;
+	int		result;
 
-	if (tokens->current_str_piece[0] == ':')
-		res = position_of_label(
-			tokens->current_str_piece + 1, input, start_of_list);
+	str = tokens->current_str_piece;
+	str++;
+	result = ft_atoi(str);
+	if (result >= 100)
+		return (error_messege(input, tokens, g_position));
 	else
-		res = ft_atoi(tokens->current_str_piece);
-	when_size_dir_two(code, res);
-	return (OK);
+	{
+		(*code)[0] = result;
+		(*code)++;
+		return (OK);
+	}
+	return (result);
 }

@@ -83,18 +83,26 @@ int				size_of_arg(t_tokens *tokens, int t_dir)
 	return (size);
 }
 
-int				search_size_of_label(t_tokens *tokens)
+unsigned char	*build_code(
+	t_str_tokens *input, t_str_tokens *start_of_list)
 {
-	int		i;
+	unsigned char			*code;
+	unsigned char			*start_of_code;
+	t_tokens				*tokens;
 
-	i = 0;
-	if (tokens->token == T_LAB)
-		tokens = tokens->next;
-	while (g_b_tab[i].name)
+	code = NULL;
+	tokens = input->valid;
+	start_of_code = code;
+	if (input->size > 0)
 	{
-		if (ft_strcmp(g_b_tab[i].name, tokens->current_str_piece) == 0)
-			return (g_b_tab[i].size);
-		i++;
+		code = malloc(sizeof(char) * input->size);
+		start_of_code = code;
+		while (tokens)
+		{
+			if (tokens->token != T_LAB && tokens->token != EOL)
+				convert_token(tokens, input, start_of_list, &code);
+			tokens = tokens->next;
+		}
 	}
-	return (ERROR);
+	return (start_of_code);
 }

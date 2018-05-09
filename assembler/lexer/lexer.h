@@ -70,8 +70,8 @@ void			find_tokens(char *str, t_tokens **tokens_list,
 						t_func_list *state_funcs, int row_num);
 void			lexer(t_data *data_from_file, t_str_tokens **str_tokens);
 
-// int				read_data(t_data **champ_data, char *name_of_file);
-int				read_data(t_data **champ_data);
+int				read_data(t_data **champ_data, char *name_of_file);
+// int				read_data(t_data **champ_data);
 
 void			new_node(t_data **head, char *line);
 void			free_list(t_data **head);

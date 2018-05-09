@@ -35,13 +35,27 @@
 
 
 
-int     main(void)
+// int     main(void)
+// {
+// 	t_data	*data_from_file;
+
+//     data_from_file = NULL;
+// 	read_data(&data_from_file);
+// 	validation(data_from_file, "name of program");
+// 	free_list(&data_from_file);
+//     return (0);
+// }
+
+int     main(int argc, char **argv)
 {
 	t_data	*data_from_file;
 
     data_from_file = NULL;
-	read_data(&data_from_file);
-	validation(data_from_file, "name of program");
-	free_list(&data_from_file);
+	if (argc > 1)
+	{
+		read_data(&data_from_file, argv[1]);
+		validation(data_from_file, argv[1]);
+		free_list(&data_from_file);
+	}
     return (0);
 }

@@ -31,7 +31,11 @@ SRCS =  main.c\
 		parser/src/parsing.c\
 		parser/src/error_messege.c\
 		validation.c\
-		corefile/src/make_file.c
+		corefile/src/make_file.c\
+		corefile/src/build_code.c\
+		corefile/src/construct_data.c\
+		corefile/src/convert_tokens.c\
+		corefile/src/name_and_magic.c
 
 OBJECT = $(SRCS:.c=.o)
 
