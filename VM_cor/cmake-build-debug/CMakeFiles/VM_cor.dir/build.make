@@ -2865,6 +2865,54 @@ CMakeFiles/VM_cor.dir/operations/ns_lld.c.o.provides: CMakeFiles/VM_cor.dir/oper
 CMakeFiles/VM_cor.dir/operations/ns_lld.c.o.provides.build: CMakeFiles/VM_cor.dir/operations/ns_lld.c.o
 
 
+CMakeFiles/VM_cor.dir/operations/ns_ldi.c.o: CMakeFiles/VM_cor.dir/flags.make
+CMakeFiles/VM_cor.dir/operations/ns_ldi.c.o: ../operations/ns_ldi.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_118) "Building C object CMakeFiles/VM_cor.dir/operations/ns_ldi.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/operations/ns_ldi.c.o   -c /Users/myprosku/corTwar/VM_cor/operations/ns_ldi.c
+
+CMakeFiles/VM_cor.dir/operations/ns_ldi.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/operations/ns_ldi.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/operations/ns_ldi.c > CMakeFiles/VM_cor.dir/operations/ns_ldi.c.i
+
+CMakeFiles/VM_cor.dir/operations/ns_ldi.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/operations/ns_ldi.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/operations/ns_ldi.c -o CMakeFiles/VM_cor.dir/operations/ns_ldi.c.s
+
+CMakeFiles/VM_cor.dir/operations/ns_ldi.c.o.requires:
+
+.PHONY : CMakeFiles/VM_cor.dir/operations/ns_ldi.c.o.requires
+
+CMakeFiles/VM_cor.dir/operations/ns_ldi.c.o.provides: CMakeFiles/VM_cor.dir/operations/ns_ldi.c.o.requires
+	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/operations/ns_ldi.c.o.provides.build
+.PHONY : CMakeFiles/VM_cor.dir/operations/ns_ldi.c.o.provides
+
+CMakeFiles/VM_cor.dir/operations/ns_ldi.c.o.provides.build: CMakeFiles/VM_cor.dir/operations/ns_ldi.c.o
+
+
+CMakeFiles/VM_cor.dir/operations/ns_lldi.c.o: CMakeFiles/VM_cor.dir/flags.make
+CMakeFiles/VM_cor.dir/operations/ns_lldi.c.o: ../operations/ns_lldi.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_119) "Building C object CMakeFiles/VM_cor.dir/operations/ns_lldi.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/operations/ns_lldi.c.o   -c /Users/myprosku/corTwar/VM_cor/operations/ns_lldi.c
+
+CMakeFiles/VM_cor.dir/operations/ns_lldi.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/operations/ns_lldi.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/operations/ns_lldi.c > CMakeFiles/VM_cor.dir/operations/ns_lldi.c.i
+
+CMakeFiles/VM_cor.dir/operations/ns_lldi.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/operations/ns_lldi.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/operations/ns_lldi.c -o CMakeFiles/VM_cor.dir/operations/ns_lldi.c.s
+
+CMakeFiles/VM_cor.dir/operations/ns_lldi.c.o.requires:
+
+.PHONY : CMakeFiles/VM_cor.dir/operations/ns_lldi.c.o.requires
+
+CMakeFiles/VM_cor.dir/operations/ns_lldi.c.o.provides: CMakeFiles/VM_cor.dir/operations/ns_lldi.c.o.requires
+	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/operations/ns_lldi.c.o.provides.build
+.PHONY : CMakeFiles/VM_cor.dir/operations/ns_lldi.c.o.provides
+
+CMakeFiles/VM_cor.dir/operations/ns_lldi.c.o.provides.build: CMakeFiles/VM_cor.dir/operations/ns_lldi.c.o
+
+
 # Object files for target VM_cor
 VM_cor_OBJECTS = \
 "CMakeFiles/VM_cor.dir/libft/af_per_doxu.c.o" \
@@ -2983,7 +3031,9 @@ VM_cor_OBJECTS = \
 "CMakeFiles/VM_cor.dir/operations/ns_st.c.o" \
 "CMakeFiles/VM_cor.dir/operations/ns_sti.c.o" \
 "CMakeFiles/VM_cor.dir/operations/ns_ld.c.o" \
-"CMakeFiles/VM_cor.dir/operations/ns_lld.c.o"
+"CMakeFiles/VM_cor.dir/operations/ns_lld.c.o" \
+"CMakeFiles/VM_cor.dir/operations/ns_ldi.c.o" \
+"CMakeFiles/VM_cor.dir/operations/ns_lldi.c.o"
 
 # External object files for target VM_cor
 VM_cor_EXTERNAL_OBJECTS =
@@ -3105,9 +3155,11 @@ VM_cor: CMakeFiles/VM_cor.dir/operations/ns_st.c.o
 VM_cor: CMakeFiles/VM_cor.dir/operations/ns_sti.c.o
 VM_cor: CMakeFiles/VM_cor.dir/operations/ns_ld.c.o
 VM_cor: CMakeFiles/VM_cor.dir/operations/ns_lld.c.o
+VM_cor: CMakeFiles/VM_cor.dir/operations/ns_ldi.c.o
+VM_cor: CMakeFiles/VM_cor.dir/operations/ns_lldi.c.o
 VM_cor: CMakeFiles/VM_cor.dir/build.make
 VM_cor: CMakeFiles/VM_cor.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_118) "Linking C executable VM_cor"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_120) "Linking C executable VM_cor"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/VM_cor.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -3232,6 +3284,8 @@ CMakeFiles/VM_cor.dir/requires: CMakeFiles/VM_cor.dir/operations/ns_st.c.o.requi
 CMakeFiles/VM_cor.dir/requires: CMakeFiles/VM_cor.dir/operations/ns_sti.c.o.requires
 CMakeFiles/VM_cor.dir/requires: CMakeFiles/VM_cor.dir/operations/ns_ld.c.o.requires
 CMakeFiles/VM_cor.dir/requires: CMakeFiles/VM_cor.dir/operations/ns_lld.c.o.requires
+CMakeFiles/VM_cor.dir/requires: CMakeFiles/VM_cor.dir/operations/ns_ldi.c.o.requires
+CMakeFiles/VM_cor.dir/requires: CMakeFiles/VM_cor.dir/operations/ns_lldi.c.o.requires
 
 .PHONY : CMakeFiles/VM_cor.dir/requires
 

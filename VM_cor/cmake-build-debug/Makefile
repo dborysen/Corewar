@@ -3120,6 +3120,33 @@ operations/ns_ld.c.s:
 	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/operations/ns_ld.c.s
 .PHONY : operations/ns_ld.c.s
 
+operations/ns_ldi.o: operations/ns_ldi.c.o
+
+.PHONY : operations/ns_ldi.o
+
+# target to build an object file
+operations/ns_ldi.c.o:
+	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/operations/ns_ldi.c.o
+.PHONY : operations/ns_ldi.c.o
+
+operations/ns_ldi.i: operations/ns_ldi.c.i
+
+.PHONY : operations/ns_ldi.i
+
+# target to preprocess a source file
+operations/ns_ldi.c.i:
+	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/operations/ns_ldi.c.i
+.PHONY : operations/ns_ldi.c.i
+
+operations/ns_ldi.s: operations/ns_ldi.c.s
+
+.PHONY : operations/ns_ldi.s
+
+# target to generate assembly for a file
+operations/ns_ldi.c.s:
+	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/operations/ns_ldi.c.s
+.PHONY : operations/ns_ldi.c.s
+
 operations/ns_lld.o: operations/ns_lld.c.o
 
 .PHONY : operations/ns_lld.o
@@ -3146,6 +3173,33 @@ operations/ns_lld.s: operations/ns_lld.c.s
 operations/ns_lld.c.s:
 	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/operations/ns_lld.c.s
 .PHONY : operations/ns_lld.c.s
+
+operations/ns_lldi.o: operations/ns_lldi.c.o
+
+.PHONY : operations/ns_lldi.o
+
+# target to build an object file
+operations/ns_lldi.c.o:
+	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/operations/ns_lldi.c.o
+.PHONY : operations/ns_lldi.c.o
+
+operations/ns_lldi.i: operations/ns_lldi.c.i
+
+.PHONY : operations/ns_lldi.i
+
+# target to preprocess a source file
+operations/ns_lldi.c.i:
+	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/operations/ns_lldi.c.i
+.PHONY : operations/ns_lldi.c.i
+
+operations/ns_lldi.s: operations/ns_lldi.c.s
+
+.PHONY : operations/ns_lldi.s
+
+# target to generate assembly for a file
+operations/ns_lldi.c.s:
+	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/operations/ns_lldi.c.s
+.PHONY : operations/ns_lldi.c.s
 
 operations/ns_or.o: operations/ns_or.c.o
 
@@ -3624,9 +3678,15 @@ help:
 	@echo "... operations/ns_ld.o"
 	@echo "... operations/ns_ld.i"
 	@echo "... operations/ns_ld.s"
+	@echo "... operations/ns_ldi.o"
+	@echo "... operations/ns_ldi.i"
+	@echo "... operations/ns_ldi.s"
 	@echo "... operations/ns_lld.o"
 	@echo "... operations/ns_lld.i"
 	@echo "... operations/ns_lld.s"
+	@echo "... operations/ns_lldi.o"
+	@echo "... operations/ns_lldi.i"
+	@echo "... operations/ns_lldi.s"
 	@echo "... operations/ns_or.o"
 	@echo "... operations/ns_or.i"
 	@echo "... operations/ns_or.s"

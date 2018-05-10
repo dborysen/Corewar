@@ -6,7 +6,7 @@
 /*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/23 13:22:27 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/08 18:13:01 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/10 14:09:14 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -138,6 +138,8 @@ void					ns_st(t_cursor **cur, t_map *m_map);
 void					ns_sti(t_cursor **cur, t_map *m_map);
 void					ns_ld(t_cursor **cur, t_map *m_map);
 void					ns_lld(t_cursor **cur, t_map *m_map);
+void					ns_ldi(t_cursor **cur, t_map *m_map);
+void					ns_lldi(t_cursor **cur, t_map *m_map);
 
 //*************
 
@@ -145,5 +147,6 @@ typedef void 			(*ns_array_of_functions)(t_cursor **cur, t_map *m_map);
 char					*int_to_char(int nbr);
 int						char_to_int(char *str);
 char					*find_fbytes_tind(t_map *map, int index);
+
 
 #endif

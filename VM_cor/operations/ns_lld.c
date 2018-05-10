@@ -6,7 +6,7 @@
 /*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/08 19:13:52 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/08 19:14:55 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/10 13:29:27 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,14 +23,14 @@ void	ns_lld(t_cursor **cur, t_map *m_map)
 	{
 		reg.r1 = m_map->map[temp->index_pos + 6];
 		str = find_fbytes_tind(m_map, temp->index_pos + 2);
-		reg.dir = (short)char_to_int(str);
-		temp->registr[reg.r1] = reg.dir;
+		reg.index = char_to_int(str); // reg.dir ?? cast to short
+		temp->registr[reg.r1] = reg.index;
 		temp->index_pos += 7;
 	}
 	else if (m_map->map[temp->index_pos + 1] == T_IR)
 	{
 		reg.r1 = m_map->map[temp->index_pos + 4];
-		reg.index = (m_map->map[temp->index_pos + 2] << 8) | (m_map->map[temp->index_pos + 3]);
+		reg.index = (short)(m_map->map[temp->index_pos + 2] << 8) | (m_map->map[temp->index_pos + 3]);
 		str = find_fbytes_tind(m_map, (temp->index_pos + reg.index));
 		reg.index = char_to_int(str);
 		temp->registr[reg.r1] = reg.index;

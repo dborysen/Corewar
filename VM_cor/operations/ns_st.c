@@ -6,7 +6,7 @@
 /*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/07 15:38:50 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/08 16:47:15 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/10 15:00:48 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,21 +17,21 @@ void	set_on_map(t_map **map, t_cursor *temp, t_reg reg)
 	int		i;
 	int		pos;
 	char	*str;
-	t_map *map_t;
+	t_map 	*map_t;
 
 	map_t = *map;
 	i = 0;
-	reg.index = (map_t->map[temp->index_pos + 3] << 8) | (map_t->map[temp->index_pos + 4]);
+	reg.index = (short)(map_t->map[temp->index_pos + 3] << 8) | (map_t->map[temp->index_pos + 4]);
 	str = int_to_char(temp->registr[reg.r1]);
 	reg.index = temp->index_pos + (reg.index % IDX_MOD);
-	reg.index = reg.index % MEM_SIZE;
+	reg.index %= MEM_SIZE;
 	while (i < 4)
 	{
 		pos = reg.index + i;
 		if (pos < 0)
-			pos = MEM_SIZE + pos;
+			pos += MEM_SIZE;
 		if (pos >= MEM_SIZE)
-			pos = pos % MEM_SIZE;
+			pos %= MEM_SIZE;
 		map_t->map[pos] = (unsigned char)str[i];
 		i++;
 	}

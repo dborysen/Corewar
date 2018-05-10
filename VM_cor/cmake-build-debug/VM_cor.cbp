@@ -422,7 +422,13 @@
 		<Unit filename="/Users/myprosku/corTwar/VM_cor/operations/ns_ld.c">
 			<Option target="VM_cor"/>
 		</Unit>
+		<Unit filename="/Users/myprosku/corTwar/VM_cor/operations/ns_ldi.c">
+			<Option target="VM_cor"/>
+		</Unit>
 		<Unit filename="/Users/myprosku/corTwar/VM_cor/operations/ns_lld.c">
+			<Option target="VM_cor"/>
+		</Unit>
+		<Unit filename="/Users/myprosku/corTwar/VM_cor/operations/ns_lldi.c">
 			<Option target="VM_cor"/>
 		</Unit>
 		<Unit filename="/Users/myprosku/corTwar/VM_cor/operations/ns_or.c">
