@@ -112,4 +112,4 @@ add_executable(VM_cor
         ns_read_champion.c
         ns_zero_struct.c
         op.c
-        op.h dump_flag.c ns_cursor_create.c operations/ns_add.c operations/ns_sub.c operations/ns_and.c operations/ns_xor.c operations/ns_or.c operations/ns_st.c operations/ns_sti.c operations/ns_ld.c operations/ns_lld.c operations/ns_ldi.c operations/ns_lldi.c)
+        op.h dump_flag.c ns_cursor_create.c operations/ns_add.c operations/ns_sub.c operations/ns_and.c operations/ns_xor.c operations/ns_or.c operations/ns_st.c operations/ns_sti.c operations/ns_ld.c operations/ns_lld.c operations/ns_ldi.c operations/ns_lldi.c operations/ns_zjmp.c operations/ns_aff.c operations/ns_live.c)

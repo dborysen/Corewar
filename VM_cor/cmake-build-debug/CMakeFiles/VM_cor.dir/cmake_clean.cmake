@@ -118,6 +118,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/VM_cor.dir/operations/ns_lld.c.o"
   "CMakeFiles/VM_cor.dir/operations/ns_ldi.c.o"
   "CMakeFiles/VM_cor.dir/operations/ns_lldi.c.o"
+  "CMakeFiles/VM_cor.dir/operations/ns_zjmp.c.o"
+  "CMakeFiles/VM_cor.dir/operations/ns_aff.c.o"
+  "CMakeFiles/VM_cor.dir/operations/ns_live.c.o"
   "VM_cor.pdb"
   "VM_cor"
 )

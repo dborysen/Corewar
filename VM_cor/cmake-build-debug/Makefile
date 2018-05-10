@@ -3066,6 +3066,33 @@ operations/ns_add.c.s:
 	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/operations/ns_add.c.s
 .PHONY : operations/ns_add.c.s
 
+operations/ns_aff.o: operations/ns_aff.c.o
+
+.PHONY : operations/ns_aff.o
+
+# target to build an object file
+operations/ns_aff.c.o:
+	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/operations/ns_aff.c.o
+.PHONY : operations/ns_aff.c.o
+
+operations/ns_aff.i: operations/ns_aff.c.i
+
+.PHONY : operations/ns_aff.i
+
+# target to preprocess a source file
+operations/ns_aff.c.i:
+	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/operations/ns_aff.c.i
+.PHONY : operations/ns_aff.c.i
+
+operations/ns_aff.s: operations/ns_aff.c.s
+
+.PHONY : operations/ns_aff.s
+
+# target to generate assembly for a file
+operations/ns_aff.c.s:
+	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/operations/ns_aff.c.s
+.PHONY : operations/ns_aff.c.s
+
 operations/ns_and.o: operations/ns_and.c.o
 
 .PHONY : operations/ns_and.o
@@ -3146,6 +3173,33 @@ operations/ns_ldi.s: operations/ns_ldi.c.s
 operations/ns_ldi.c.s:
 	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/operations/ns_ldi.c.s
 .PHONY : operations/ns_ldi.c.s
+
+operations/ns_live.o: operations/ns_live.c.o
+
+.PHONY : operations/ns_live.o
+
+# target to build an object file
+operations/ns_live.c.o:
+	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/operations/ns_live.c.o
+.PHONY : operations/ns_live.c.o
+
+operations/ns_live.i: operations/ns_live.c.i
+
+.PHONY : operations/ns_live.i
+
+# target to preprocess a source file
+operations/ns_live.c.i:
+	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/operations/ns_live.c.i
+.PHONY : operations/ns_live.c.i
+
+operations/ns_live.s: operations/ns_live.c.s
+
+.PHONY : operations/ns_live.s
+
+# target to generate assembly for a file
+operations/ns_live.c.s:
+	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/operations/ns_live.c.s
+.PHONY : operations/ns_live.c.s
 
 operations/ns_lld.o: operations/ns_lld.c.o
 
@@ -3335,6 +3389,33 @@ operations/ns_xor.s: operations/ns_xor.c.s
 operations/ns_xor.c.s:
 	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/operations/ns_xor.c.s
 .PHONY : operations/ns_xor.c.s
+
+operations/ns_zjmp.o: operations/ns_zjmp.c.o
+
+.PHONY : operations/ns_zjmp.o
+
+# target to build an object file
+operations/ns_zjmp.c.o:
+	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/operations/ns_zjmp.c.o
+.PHONY : operations/ns_zjmp.c.o
+
+operations/ns_zjmp.i: operations/ns_zjmp.c.i
+
+.PHONY : operations/ns_zjmp.i
+
+# target to preprocess a source file
+operations/ns_zjmp.c.i:
+	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/operations/ns_zjmp.c.i
+.PHONY : operations/ns_zjmp.c.i
+
+operations/ns_zjmp.s: operations/ns_zjmp.c.s
+
+.PHONY : operations/ns_zjmp.s
+
+# target to generate assembly for a file
+operations/ns_zjmp.c.s:
+	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/operations/ns_zjmp.c.s
+.PHONY : operations/ns_zjmp.c.s
 
 # Help Target
 help:
@@ -3672,6 +3753,9 @@ help:
 	@echo "... operations/ns_add.o"
 	@echo "... operations/ns_add.i"
 	@echo "... operations/ns_add.s"
+	@echo "... operations/ns_aff.o"
+	@echo "... operations/ns_aff.i"
+	@echo "... operations/ns_aff.s"
 	@echo "... operations/ns_and.o"
 	@echo "... operations/ns_and.i"
 	@echo "... operations/ns_and.s"
@@ -3681,6 +3765,9 @@ help:
 	@echo "... operations/ns_ldi.o"
 	@echo "... operations/ns_ldi.i"
 	@echo "... operations/ns_ldi.s"
+	@echo "... operations/ns_live.o"
+	@echo "... operations/ns_live.i"
+	@echo "... operations/ns_live.s"
 	@echo "... operations/ns_lld.o"
 	@echo "... operations/ns_lld.i"
 	@echo "... operations/ns_lld.s"
@@ -3702,6 +3789,9 @@ help:
 	@echo "... operations/ns_xor.o"
 	@echo "... operations/ns_xor.i"
 	@echo "... operations/ns_xor.s"
+	@echo "... operations/ns_zjmp.o"
+	@echo "... operations/ns_zjmp.i"
+	@echo "... operations/ns_zjmp.s"
 .PHONY : help
 
 

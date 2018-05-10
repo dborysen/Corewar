@@ -6,7 +6,7 @@
 /*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/02 15:09:56 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/10 15:37:12 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/10 19:11:49 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,8 @@
 
 ns_array_of_functions g_func[16] =
 		{
-				ns_add, ns_sub, ns_st, ns_sti, ns_ld, ns_lld, ns_ldi, ns_lldi
+				ns_add, ns_sub, ns_st, ns_sti, ns_ld, ns_lld, ns_ldi, ns_lldi,
+				ns_zjmp, ns_aff, ns_live
 		};
 
 void		ns_create_cursor(t_cursor **cursor, t_champion *champ)
@@ -29,10 +30,11 @@ void		ns_create_cursor(t_cursor **cursor, t_champion *champ)
 		temp->nbr_player = champ->id;
 		temp->index_pos = champ->position_to_start;
 		temp->commad = 0;
-		champ = champ->next;
 		temp->next = (t_cursor *)malloc(sizeof(t_cursor));
 		temp->registr[1] = -temp->nbr_player;
+		temp->champ = champ;
 		temp = temp->next;
+		champ = champ->next;
 	}
 }
 
@@ -52,7 +54,6 @@ void	ns_create_cycle(t_cursor **cursor, t_map *m_map)
 				if (m_map->map[temp->index_pos] == g_op_tab[i].opcode)
 				{
 					temp->wait_cycle = g_op_tab[i].cycles;
-					ft_printf("wait = %d\n", temp->wait_cycle);
 					temp->commad = g_op_tab[i].opcode;
 					break;
 				}
@@ -70,12 +71,12 @@ void	ns_move_cursor(t_cursor **cursor, int *dead, t_map *map)
 	temp = *cursor;
 	while (temp->next)
 	{
-		if (temp->wait_cycle == 0 && temp->commad != 0)
+		if (temp->wait_cycle == 1 && temp->commad != 0)
 		{
 			/*
 			 ** do instractions
 			 */
-			(*g_func[7])(&temp, map);
+			(*g_func[10])(&temp, map);
 			temp->wait_cycle = 0;
 			temp->commad = 0;
 			*dead = 0;
@@ -101,6 +102,6 @@ void	ns_game_start(t_cursor **cursor, t_map *m_map, t_info *info, t_fl fl)
 		ns_move_cursor(&temp, &dead, m_map);
 		info->total_cycles++;
 		fl.dump--;
-		ft_printf("total cycle = %d\n", info->total_cycles);
+//		ft_printf("total cycle = %d\n", info->total_cycles);
 	}
 }

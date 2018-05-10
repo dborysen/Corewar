@@ -6,7 +6,7 @@
 /*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/23 13:22:27 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/10 14:09:14 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/10 17:15:34 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -96,6 +96,7 @@ typedef struct			s_cursor
 	int 				live_or_die;
 	int 				registr[REG_NUMBER];
 	int 				carry;
+	t_champion			*champ;
 	struct s_cursor		*next;
 }						t_cursor;
 
@@ -140,6 +141,9 @@ void					ns_ld(t_cursor **cur, t_map *m_map);
 void					ns_lld(t_cursor **cur, t_map *m_map);
 void					ns_ldi(t_cursor **cur, t_map *m_map);
 void					ns_lldi(t_cursor **cur, t_map *m_map);
+void					ns_zjmp(t_cursor **cur, t_map *m_map);
+void					ns_aff(t_cursor **cur, t_map *m_map);
+void					ns_live(t_cursor **cur, t_map *m_map);
 
 //*************
 

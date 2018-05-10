@@ -416,6 +416,9 @@
 		<Unit filename="/Users/myprosku/corTwar/VM_cor/operations/ns_add.c">
 			<Option target="VM_cor"/>
 		</Unit>
+		<Unit filename="/Users/myprosku/corTwar/VM_cor/operations/ns_aff.c">
+			<Option target="VM_cor"/>
+		</Unit>
 		<Unit filename="/Users/myprosku/corTwar/VM_cor/operations/ns_and.c">
 			<Option target="VM_cor"/>
 		</Unit>
@@ -423,6 +426,9 @@
 			<Option target="VM_cor"/>
 		</Unit>
 		<Unit filename="/Users/myprosku/corTwar/VM_cor/operations/ns_ldi.c">
+			<Option target="VM_cor"/>
+		</Unit>
+		<Unit filename="/Users/myprosku/corTwar/VM_cor/operations/ns_live.c">
 			<Option target="VM_cor"/>
 		</Unit>
 		<Unit filename="/Users/myprosku/corTwar/VM_cor/operations/ns_lld.c">
@@ -444,6 +450,9 @@
 			<Option target="VM_cor"/>
 		</Unit>
 		<Unit filename="/Users/myprosku/corTwar/VM_cor/operations/ns_xor.c">
+			<Option target="VM_cor"/>
+		</Unit>
+		<Unit filename="/Users/myprosku/corTwar/VM_cor/operations/ns_zjmp.c">
 			<Option target="VM_cor"/>
 		</Unit>
 		<Unit filename="/Users/myprosku/corTwar/VM_cor/CMakeLists.txt">
