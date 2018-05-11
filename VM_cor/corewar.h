@@ -6,7 +6,7 @@
 /*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/23 13:22:27 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/10 17:15:34 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/11 16:25:35 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -103,7 +103,10 @@ typedef struct			s_cursor
 typedef struct			s_info
 {
 	int 				total_cycles;
+	int 				cycles;
 	int 				winner;
+	int 				checks;
+	int 				die;
 }						t_info;
 
 typedef struct 			s_reg
@@ -123,14 +126,24 @@ void					ns_zero_champ(t_champion **champ);
 void					ns_zero_info(t_info *info);
 void					ns_create_map(t_map *map);
 void					ns_print_map(t_map memory_map);
-void					ns_dump_flag(t_champion *champ, t_map memory_map);
+void					ns_dump_flag(t_champion *champ);
 void					ns_position_start(t_champion **champ);
 void					ns_fill_map(t_champion *champ, t_map *map);
 void 					ns_error(char *err_message);
 void					ns_zero_cursor(t_cursor **cursor);
+void					ns_zero_reg(t_reg *reg);
 void					ns_create_cursor(t_cursor **cursor, t_champion *champ);
 void					ns_game_start(t_cursor **cursor, t_map *m_map, t_info *info, t_fl flags);
 int 					ns_check_register(int r1, int r2, int r3);
+void					usage();
+int						ns_check_id(t_champion *champ);
+void					ns_check_flags(int ac, char **av, t_fl *flags, t_champion **champ);
+void					ns_save_execute_code(t_champion **champ, unsigned char *file_info, int fd);
+void 					ns_save_program_name(t_champion **champ, unsigned char *file_info);
+void					ns_save_comment(t_champion **champ, unsigned char *file_info);
+void					ns_save_magic(t_champion **champ, unsigned char *file_info);
+void					ns_save_program_size(t_champion **champ, unsigned char *file_info);
+void					ns_check_lives(t_cursor *cur, t_info **info);
 
 //Champ functions
 void					ns_add(t_cursor **cur, t_map *m_map);

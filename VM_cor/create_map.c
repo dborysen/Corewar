@@ -6,7 +6,7 @@
 /*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/24 16:30:21 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/02 17:27:23 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/11 16:01:49 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 void	ns_create_map(t_map *memory_map)
 {
 	int i;
-	int j;
 
 	i = 0;
 	while (i < MEM_SIZE)
@@ -24,8 +23,8 @@ void	ns_create_map(t_map *memory_map)
 
 void	ns_ch_map(t_champion *champ, t_map **map)
 {
-	int		i;
-	int 	ind;
+	int				i;
+	unsigned int 	ind;
 	t_map	*memory_map;
 
 	ind = 0;

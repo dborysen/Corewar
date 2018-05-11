@@ -6,96 +6,11 @@
 /*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/23 13:20:36 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/08 15:24:13 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/11 15:58:37 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "corewar.h"
-
-void		usage()
-{
-	ft_printf("Usage: ./corewar [-dump N | "
-			" -n N] [-v] <champion1.cor> <...>");
-}
-
-void		ns_save_flags(char **av, t_fl *flags, int *i)
-{
-	static int j = 0;
-
-	if(ft_strcmp(av[*i], "-dump") == 0)
-	{
-		*i += 1;
-		if (!ft_isdigit(av[*i][0]))
-			ns_error("not a digit after flag");
-		flags->dump = ft_atoi(av[*i]);
-	}
-	else if(ft_strcmp(av[*i], "-n") == 0)
-	{
-		*i += 1;
-		if (!ft_isdigit(av[*i][0]))
-			ns_error("not a digit after flag");
-		flags->n = ft_atoi(av[*i]);
-	}
-}
-
-t_champion	*ns_check_champions(char *av, t_champion **champ, t_fl *fl)
-{
-	static int id = 1;
-	t_champion *temp;
-
-	temp = *champ;
-	if(ft_strstr(av , ".cor"))
-	{
-		if (fl->n)
-		{
-			temp->id = fl->n;
-			fl->n = 0;
-		}
-		else
-		{
-			temp->id = id;
-			id++;
-		}
-		temp = ns_read_champion(av, &temp);
-	}
-	else
-		ns_error("wrong champion name");
-	if (id - 1 > MAX_PLAYERS)
-		ns_error("to much champions");
-	return (temp);
-}
-
-int			ns_check_id(t_champion *champ)
-{
-	while (champ->next)
-	{
-		if (champ->id == champ->next->id)
-			return (0);
-		champ = champ->next;
-	}
-	return (1);
-}
-
-void		ns_check_flags(int ac, char **av, t_fl *flags, t_champion **champ)
-{
-	int i;
-
-	i = 1;
-	t_champion *temp = *champ;
-	while (i < ac)
-	{
-		if (av[i][0] == '-')
-			ns_save_flags(av, flags, &i);
-		else
-			temp = ns_check_champions(av[i], &temp, flags);
-		i++;
-	}
-	if ((*champ)->id == 0 || !ns_check_id(*champ))
-		ns_error("wrong number champions");
-//	if(!flags->dump && !flags->n && !flags->v)
-//		ns_error("wrong num of flags");
-	temp->next = NULL;
-}
 
 int			main(int ac, char **av)
 {
@@ -115,7 +30,7 @@ int			main(int ac, char **av)
 	ns_zero_info(&info);
 	ns_check_flags(ac, av, &flags, &champ);
 	ns_create_map(&map);
-	ns_dump_flag(champ, map);
+	ns_dump_flag(champ);
 	ns_position_start(&champ);
 	ns_fill_map(champ, &map);
 	ns_create_cursor(&cursor, champ);

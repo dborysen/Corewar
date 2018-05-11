@@ -112,20 +112,3 @@ void			ns_position_start(t_champion **champ)
 		temp = temp->next;
 	}
 }
-
-void 			ns_error(char *err_message)
-{
-	ft_printf("Error with problem: %s.\n", err_message);
-	exit(0);
-}
-
-int 			ns_check_register(int r1, int r2, int r3)
-{
-	if (r1 > REG_NUMBER || r2 > REG_NUMBER || r3 > REG_NUMBER)
-		return (0);
-	if (r1 == 0 || r2 == 0 || r3 == 0)
-		return (0);
-	return (1);
-}
-
-

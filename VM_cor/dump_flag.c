@@ -12,7 +12,7 @@
 
 #include "corewar.h"
 
-void	ns_dump_flag(t_champion *champ, t_map memory_map)
+void	ns_dump_flag(t_champion *champ)
 {
 	t_champion *temp;
 

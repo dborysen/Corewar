@@ -6,12 +6,11 @@
 /*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/23 17:23:34 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/02 13:17:34 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/11 15:58:50 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "corewar.h"
-
 
 void	ns_save_program_size(t_champion **champ, unsigned char *file_info)
 {
@@ -97,39 +96,4 @@ void	ns_save_execute_code(t_champion **champ, unsigned char *file_info, int fd)
 		i++;
 	}
 	temp->exec_code[i] = '\0';
-}
-
-t_champion	*ns_save_champs(t_champion **champ, unsigned char *file_info, int fd)
-{
-	t_champion *temp;
-
-	temp = *champ;
-	ns_save_magic(&temp, file_info);
-	ns_save_program_name(&temp, file_info);
-	ns_save_program_size(&temp, file_info);
-	ns_save_comment(&temp, file_info);
-	ns_save_execute_code(&temp, file_info, fd);
-	temp->next = (t_champion *)malloc(sizeof(t_champion));
-	temp = temp->next;
-	return (temp);
-}
-
-t_champion	*ns_read_champion(char *av, t_champion **champ)
-{
-	int 			fd;
-	off_t 			size_file;
-	unsigned char	*file_info;
-	t_champion		*temp;
-
-	temp = *champ;
-	if ((fd = open(av, O_RDONLY)) == -1)
-		ns_error("wrong file name");
-	size_file = lseek(fd, 0, SEEK_END);
-	lseek(fd, 0, SEEK_SET);
-	file_info = (unsigned char *)ft_strnew((size_t)size_file);
-	read(fd, file_info, (size_t)size_file);
-	temp->file_size = (size_t)size_file;
-	if (temp->file_size > sizeof(header_t) + CHAMP_MAX_SIZE)
-		ns_error("large file");
-	return (ns_save_champs(&temp, file_info, fd));
 }

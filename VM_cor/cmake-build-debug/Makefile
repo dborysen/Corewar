@@ -48,10 +48,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/ssavchen/coretwar/VM_cor
+CMAKE_SOURCE_DIR = /Users/myprosku/corTwar/VM_cor
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/ssavchen/coretwar/VM_cor/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/myprosku/corTwar/VM_cor/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles /Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles /Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -2931,6 +2931,33 @@ ns_additional_func.c.s:
 	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/ns_additional_func.c.s
 .PHONY : ns_additional_func.c.s
 
+ns_additional_func2.o: ns_additional_func2.c.o
+
+.PHONY : ns_additional_func2.o
+
+# target to build an object file
+ns_additional_func2.c.o:
+	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/ns_additional_func2.c.o
+.PHONY : ns_additional_func2.c.o
+
+ns_additional_func2.i: ns_additional_func2.c.i
+
+.PHONY : ns_additional_func2.i
+
+# target to preprocess a source file
+ns_additional_func2.c.i:
+	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/ns_additional_func2.c.i
+.PHONY : ns_additional_func2.c.i
+
+ns_additional_func2.s: ns_additional_func2.c.s
+
+.PHONY : ns_additional_func2.s
+
+# target to generate assembly for a file
+ns_additional_func2.c.s:
+	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/ns_additional_func2.c.s
+.PHONY : ns_additional_func2.c.s
+
 ns_cursor_create.o: ns_cursor_create.c.o
 
 .PHONY : ns_cursor_create.o
@@ -2984,6 +3011,33 @@ ns_read_champion.s: ns_read_champion.c.s
 ns_read_champion.c.s:
 	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/ns_read_champion.c.s
 .PHONY : ns_read_champion.c.s
+
+ns_save_fch.o: ns_save_fch.c.o
+
+.PHONY : ns_save_fch.o
+
+# target to build an object file
+ns_save_fch.c.o:
+	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/ns_save_fch.c.o
+.PHONY : ns_save_fch.c.o
+
+ns_save_fch.i: ns_save_fch.c.i
+
+.PHONY : ns_save_fch.i
+
+# target to preprocess a source file
+ns_save_fch.c.i:
+	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/ns_save_fch.c.i
+.PHONY : ns_save_fch.c.i
+
+ns_save_fch.s: ns_save_fch.c.s
+
+.PHONY : ns_save_fch.s
+
+# target to generate assembly for a file
+ns_save_fch.c.s:
+	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/ns_save_fch.c.s
+.PHONY : ns_save_fch.c.s
 
 ns_zero_struct.o: ns_zero_struct.c.o
 
@@ -3738,12 +3792,18 @@ help:
 	@echo "... ns_additional_func.o"
 	@echo "... ns_additional_func.i"
 	@echo "... ns_additional_func.s"
+	@echo "... ns_additional_func2.o"
+	@echo "... ns_additional_func2.i"
+	@echo "... ns_additional_func2.s"
 	@echo "... ns_cursor_create.o"
 	@echo "... ns_cursor_create.i"
 	@echo "... ns_cursor_create.s"
 	@echo "... ns_read_champion.o"
 	@echo "... ns_read_champion.i"
 	@echo "... ns_read_champion.s"
+	@echo "... ns_save_fch.o"
+	@echo "... ns_save_fch.i"
+	@echo "... ns_save_fch.s"
 	@echo "... ns_zero_struct.o"
 	@echo "... ns_zero_struct.i"
 	@echo "... ns_zero_struct.s"

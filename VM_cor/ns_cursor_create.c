@@ -6,7 +6,7 @@
 /*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/02 15:09:56 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/11 15:02:03 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/11 16:30:06 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -85,6 +85,8 @@ void	ns_move_cursor(t_cursor **cursor, int *dead, t_map *map)
 			temp->wait_cycle--;
 		else
 			temp->index_pos++;
+		if (temp->index_pos >= MEM_SIZE)
+			temp->index_pos %= MEM_SIZE;
 		temp = temp->next;
 	}
 }
@@ -101,6 +103,13 @@ void	ns_game_start(t_cursor **cursor, t_map *m_map, t_info *info, t_fl fl)
 		ns_create_cycle(&temp, m_map);
 		ns_move_cursor(&temp, &dead, m_map);
 		info->total_cycles++;
+		info->cycles++;
+		if (info->cycles == CYCLE_TO_DIE)
+		{
+			ns_check_lives(temp, &info);
+			info->cycles = 0;
+			ft_printf("die = %d : checks %d\n", info->die, info->checks);
+		}
 		fl.dump--;
 //		ft_printf("total cycle = %d\n", info->total_cycles);
 	}

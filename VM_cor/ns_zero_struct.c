@@ -6,7 +6,7 @@
 /*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/24 15:27:39 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/04 15:29:19 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/11 16:23:35 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,5 +53,18 @@ void	ns_zero_cursor(t_cursor **cursor)
 void	ns_zero_info(t_info *info)
 {
 	info->total_cycles = 0;
+	info->cycles = 0;
+	info->checks = MAX_CHECKS;
+	info->winner = 0;
+	info->die = CYCLE_TO_DIE;
 }
 
+void	ns_zero_reg(t_reg *reg)
+{
+	reg->r1 = 0;
+	reg->r2 = 0;
+	reg->r3 = 0;
+	reg->dir = 0;
+	reg->dir2 = 0;
+	reg->index = 0;
+}

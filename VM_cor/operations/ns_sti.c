@@ -156,28 +156,33 @@ void	ns_sti(t_cursor **cur, t_map *m_map)
 	reg.r1 = m_map->map[temp->index_pos + 2];
 	if (m_map->map[temp->index_pos + 1] == T_RRR)
 	{
-		set_on_map_rrr(&m_map, *cur, reg);
+		if (ns_check_register(reg.r1, 1, 1))
+			set_on_map_rrr(&m_map, *cur, reg);
 		temp->index_pos += 5;
 	}
 	else if (m_map->map[temp->index_pos + 1] == T_RDR)
 	{
-		set_on_map_rdr(&m_map, *cur, reg);
+		if (ns_check_register(reg.r1, 1, 1))
+			set_on_map_rdr(&m_map, *cur, reg);
 		temp->index_pos += 6;
 	}
 	else if (m_map->map[temp->index_pos + 1] == T_RDD)
 	{
-		set_on_map_rdd(&m_map, *cur, reg);
+		if (ns_check_register(reg.r1, 1, 1))
+			set_on_map_rdd(&m_map, *cur, reg);
 		temp->index_pos += 7;
 	}
 	else if (m_map->map[temp->index_pos + 1] == T_RID)
 	{
-		set_on_map_rid(&m_map, *cur, reg);
+		if (ns_check_register(reg.r1, 1, 1))
+			set_on_map_rid(&m_map, *cur, reg);
 		temp->index_pos += 7;
 
 	}
 	else if (m_map->map[temp->index_pos + 1] == T_RIR)
 	{
-		set_on_map_rir(&m_map, *cur, reg);
+		if (ns_check_register(reg.r1, 1, 1))
+			set_on_map_rir(&m_map, *cur, reg);
 		temp->index_pos += 6;
 	}
 }

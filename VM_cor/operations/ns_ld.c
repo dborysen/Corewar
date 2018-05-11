@@ -6,7 +6,7 @@
 /*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/08 17:58:58 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/11 15:22:55 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/11 16:04:36 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,6 +39,8 @@ void	ns_ld(t_cursor **cur, t_map *m_map)
 	char 		*str;
 
 	temp = *cur;
+	str = NULL;
+	ns_zero_reg(&reg);
 	if (m_map->map[temp->index_pos + 1] == T_DR)
 	{
 		reg.r1 = m_map->map[temp->index_pos + 6];
