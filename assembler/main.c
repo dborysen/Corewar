@@ -27,6 +27,7 @@ int		main(int argc, char **argv)
 	if (argc > 1)
 		while (i < argc)
 		{
+			ft_printf("\n\n\e[1;4;37m%s\e[0m\n", argv[i]);
 			read_data(&data_from_file, argv[i]);
 			validation(data_from_file, argv[i]);
 			free_list(&data_from_file);

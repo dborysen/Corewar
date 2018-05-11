@@ -36,6 +36,7 @@
 /*
 ** OPERATION - 64
 ** T_ERROR	 - 32
+** FUCK NORMINETTE !
 */
 
 int	g_state_table[19][11] =
