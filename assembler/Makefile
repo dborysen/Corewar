@@ -35,7 +35,8 @@ SRCS =  main.c\
 		corefile/src/build_code.c\
 		corefile/src/construct_data.c\
 		corefile/src/convert_tokens.c\
-		corefile/src/name_and_magic.c
+		corefile/src/name_and_magic.c\
+		corefile/src/plus_validation.c
 
 OBJECT = $(SRCS:.c=.o)
 

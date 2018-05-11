@@ -12,8 +12,6 @@
 
 #include "../../../corewar.h"
 
-int				g_position;
-
 int				corefile(t_str_tokens *input,
 	t_header_data header, int position)
 {
@@ -22,8 +20,10 @@ int				corefile(t_str_tokens *input,
 
 	g_position = position;
 	prog_name = correct_name(header);
-	fd = open(prog_name, O_TRUNC | O_WRONLY | O_CREAT, S_IRUSR | S_IWUSR);
 	construct_data(input);
+	if (plus_validation(input) == ERROR)
+		return (ERROR);
+	fd = open(prog_name, O_TRUNC | O_WRONLY | O_CREAT, S_IRUSR | S_IWUSR);
 	write_in_file(input, header, fd);
 	ft_printf("\n\e[1;37mWriting output program to \e[0m");
 	ft_printf("\e[1;36m%s\e[0m\n\n", prog_name);
@@ -43,9 +43,10 @@ void			write_in_file(t_str_tokens *input, t_header_data header, int fd)
 	write(fd, header.bot_name, PROG_NAME_LENGTH);
 	prog_length(input, fd);
 	write(fd, header.bot_comment, COMMENT_LENGTH + 4);
+	copy_input = input;
 	while (copy_input)
 	{
-		code = build_code(copy_input, start_of_list);
+		build_code(copy_input, start_of_list, &code);
 		lseek(fd, 0, SEEK_CUR);
 		write(fd, code, copy_input->size);
 		free(code);

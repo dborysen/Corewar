@@ -80,8 +80,13 @@ int				code_ind(t_tokens *tokens, t_str_tokens *input,
 	int res;
 
 	if (tokens->current_str_piece[0] == ':')
+	{
+		if (valid_label(
+		tokens->current_str_piece + 2, start_of_list) == ERROR)
+			return (error_messege(input, tokens, g_position));
 		res = position_of_label(
-			tokens->current_str_piece + 1, input, start_of_list);
+		tokens->current_str_piece + 1, input, start_of_list);
+	}
 	else
 		res = ft_atoi(tokens->current_str_piece);
 	when_size_dir_two(code, res);

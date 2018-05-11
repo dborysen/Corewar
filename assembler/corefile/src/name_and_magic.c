@@ -63,3 +63,17 @@ void			prog_length(t_str_tokens *input, int fd)
 	write(fd, copy, 8);
 	free(copy);
 }
+
+int				valid_label(char *label, t_str_tokens *start_of_list)
+{
+	char	*copy_label;
+
+	copy_label = ft_strjoin(label, ":");
+	while (start_of_list)
+	{
+		if (ft_strcmp(start_of_list->valid->current_str_piece, copy_label) == 0)
+			return (OK);
+		start_of_list = start_of_list->next;
+	}
+	return (ERROR);
+}

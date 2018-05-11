@@ -22,6 +22,8 @@ typedef struct	s_byte_tab
 	int		code;
 }				t_byte_tab;
 
+int				g_position;
+
 void			construct_data(t_str_tokens *input);
 int				corefile(t_str_tokens *input,
 	t_header_data header, int	position);
@@ -29,8 +31,8 @@ int				count_bytes(t_str_tokens *input);
 int				op_with_codage(t_tokens *tokens);
 int				size_of_arg(t_tokens *tokens, int t_dir);
 int				search_size_of_label(t_tokens *tokens);
-unsigned char	*build_code(t_str_tokens *input,
-t_str_tokens *start_of_list);
+int				build_code(t_str_tokens *input,
+t_str_tokens *start_of_list, unsigned char **code);
 int				convert_token(t_tokens *tokens,
 t_str_tokens *input, t_str_tokens *start_of_list, unsigned char **code);
 int				code_op(t_tokens *tokens,
@@ -58,5 +60,7 @@ int				codage_args(int size, t_tokens *tokens);
 char			*correct_name(t_header_data header);
 void			magic_number(int fd);
 void			prog_length(t_str_tokens *input, int fd);
+int				valid_label(char *label, t_str_tokens *start_of_list);
+int				plus_validation(t_str_tokens *input);
 
 #endif

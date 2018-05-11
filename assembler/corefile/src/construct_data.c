@@ -83,8 +83,8 @@ int				size_of_arg(t_tokens *tokens, int t_dir)
 	return (size);
 }
 
-unsigned char	*build_code(
-	t_str_tokens *input, t_str_tokens *start_of_list)
+int				build_code(t_str_tokens *input,
+t_str_tokens *start_of_list, unsigned char **input_code)
 {
 	unsigned char			*code;
 	unsigned char			*start_of_code;
@@ -100,9 +100,14 @@ unsigned char	*build_code(
 		while (tokens)
 		{
 			if (tokens->token != T_LAB && tokens->token != EOL)
-				convert_token(tokens, input, start_of_list, &code);
+				if (convert_token(tokens, input, start_of_list, &code) == ERROR)
+				{
+					*input_code = start_of_code;
+					return (ERROR);
+				}
 			tokens = tokens->next;
 		}
 	}
-	return (start_of_code);
+	*input_code = start_of_code;
+	return (OK);
 }

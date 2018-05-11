@@ -32,8 +32,13 @@ int				code_dir(t_tokens *tokens, t_str_tokens *input,
 	result = 0;
 	t_dir = search_size_of_label(input->valid);
 	if (tokens->current_str_piece[1] == ':')
+	{
+		if (valid_label(
+			tokens->current_str_piece + 2, start_of_list) == ERROR)
+			return (error_messege(input, tokens, g_position));
 		result = position_of_label(
 			tokens->current_str_piece + 2, input, start_of_list);
+	}
 	else
 		result = ft_atoi(tokens->current_str_piece + 1);
 	write_dir_in_code(code, result, t_dir);
