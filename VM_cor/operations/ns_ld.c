@@ -22,9 +22,12 @@ void	ns_ld(t_cursor **cur, t_map *m_map)
 	if (m_map->map[temp->index_pos + 1] == T_DR)
 	{
 		reg.r1 = m_map->map[temp->index_pos + 6];
-		str = find_fbytes_tind(m_map, temp->index_pos + 2);
-		reg.index = char_to_int(str); // reg.dir ??? был каст в short
-		temp->registr[reg.r1] = reg.index;
+		if (ns_check_register(reg.r1, 1, 1))
+		{
+			str = find_fbytes_tind(m_map, temp->index_pos + 2);
+			reg.index = char_to_int(str); // reg.dir ??? был каст в short
+			temp->registr[reg.r1] = reg.index;
+		}
 		temp->index_pos += 7;
 	}
 	else if (m_map->map[temp->index_pos + 1] == T_IR)

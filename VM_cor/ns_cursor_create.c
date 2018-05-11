@@ -6,17 +6,17 @@
 /*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/02 15:09:56 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/10 19:11:49 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/11 15:02:03 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "corewar.h"
 
 ns_array_of_functions g_func[16] =
-		{
-				ns_add, ns_sub, ns_st, ns_sti, ns_ld, ns_lld, ns_ldi, ns_lldi,
-				ns_zjmp, ns_aff, ns_live
-		};
+{
+		ns_live, ns_ld, ns_st, ns_add, ns_sub, ns_zjmp, ns_ldi, ns_sti, ns_lld,  ns_lldi,
+		ns_aff
+};
 
 void		ns_create_cursor(t_cursor **cursor, t_champion *champ)
 {

@@ -20,7 +20,6 @@ void	ns_add(t_cursor **cur, t_map *m_map)
 	temp = *cur;
 	if (m_map->map[temp->index_pos + 1] == T_RRR)
 	{
-		ft_printf("HERE\n");
 		reg.r1 = m_map->map[temp->index_pos + 2];
 		reg.r2 = m_map->map[temp->index_pos + 3];
 		reg.r3 = m_map->map[temp->index_pos + 4];
