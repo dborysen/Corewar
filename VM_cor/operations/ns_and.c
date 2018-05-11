@@ -6,7 +6,7 @@
 /*   By: ssavchen <ssavchen@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/11 15:11:53 by ssavchen          #+#    #+#             */
-/*   Updated: 2018/05/11 15:11:53 by ssavchen         ###   ########.fr       */
+/*   Updated: 2018/05/11 16:20:16 by ssavchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,12 +51,15 @@ void	ns_iir_and(t_cursor **cur, t_map *m_map)
 	str2 = find_fbytes_tind(m_map, (temp->index_pos + index2));
 	index2 = char_to_int(str2);
 	reg.r3 = m_map->map[temp->index_pos + 6];
-	temp->registr[reg.r3] = reg.index & index2;
+	if (ns_check_register(1, 1, reg.r3))
+	{
+		temp->registr[reg.r3] = reg.index & index2;
+		if (temp->registr[reg.r3] == 0)
+			temp->carry = 1;
+		else
+			temp->carry = 0;
+	}
 	temp->index_pos += 7;
-	if (temp->registr[reg.r3] == 0)
-		temp->carry = 1;
-	else
-		temp->carry = 0;
 }
 
 void	ns_idr_and(t_cursor **cur, t_map *m_map)
@@ -74,12 +77,15 @@ void	ns_idr_and(t_cursor **cur, t_map *m_map)
 	str2 = find_fbytes_tind(m_map, temp->index_pos + 4);
 	index2 = char_to_int(str2);
 	reg.r3 = m_map->map[temp->index_pos + 8];
-	temp->registr[reg.r3] = reg.index & index2;
+	if (ns_check_register(1, 1, reg.r3))
+	{
+		temp->registr[reg.r3] = reg.index & index2;
+		if (temp->registr[reg.r3] == 0)
+			temp->carry = 1;
+		else
+			temp->carry = 0;
+	}
 	temp->index_pos += 9;
-	if (temp->registr[reg.r3] == 0)
-		temp->carry = 1;
-	else
-		temp->carry = 0;
 }
 
 void	ns_irr_and(t_cursor **cur, t_map *m_map)
@@ -94,12 +100,15 @@ void	ns_irr_and(t_cursor **cur, t_map *m_map)
 	reg.index = char_to_int(str);
 	reg.r2 = m_map->map[temp->index_pos + 4];
 	reg.r3 = m_map->map[temp->index_pos + 5];
-	temp->registr[reg.r3] = reg.index & reg.r2;
+	if (ns_check_register(1, reg.r2, reg.r3))
+	{
+		temp->registr[reg.r3] = reg.index & reg.r2;
+		if (temp->registr[reg.r3] == 0)
+			temp->carry = 1;
+		else
+			temp->carry = 0;
+	}
 	temp->index_pos += 6;
-	if (temp->registr[reg.r3] == 0)
-		temp->carry = 1;
-	else
-		temp->carry = 0;
 }
 
 void	ns_dir_and(t_cursor **cur, t_map *m_map)
@@ -117,12 +126,15 @@ void	ns_dir_and(t_cursor **cur, t_map *m_map)
 	str2 = find_fbytes_tind(m_map, temp->index_pos + index2);
 	index2 = char_to_int(str2);
 	reg.r3 = m_map->map[temp->index_pos + 8];
-	temp->registr[reg.r3] = reg.index & index2;
+	if (ns_check_register(1, 1, reg.r3))
+	{
+		temp->registr[reg.r3] = reg.index & index2;
+		if (temp->registr[reg.r3] == 0)
+			temp->carry = 1;
+		else
+			temp->carry = 0;
+	}
 	temp->index_pos += 9;
-	if (temp->registr[reg.r3] == 0)
-		temp->carry = 1;
-	else
-		temp->carry = 0;
 }
 
 void	ns_ddr_and(t_cursor **cur, t_map *m_map)
@@ -139,12 +151,15 @@ void	ns_ddr_and(t_cursor **cur, t_map *m_map)
 	str2 = find_fbytes_tind(m_map, temp->index_pos + 6);
 	index2 = char_to_int(str2);
 	reg.r3 = m_map->map[temp->index_pos + 10];
-	temp->registr[reg.r3] = reg.index & index2;
+	if (ns_check_register(1, 1, reg.r3))
+	{
+		temp->registr[reg.r3] = reg.index & index2;
+		if (temp->registr[reg.r3] == 0)
+			temp->carry = 1;
+		else
+			temp->carry = 0;
+	}
 	temp->index_pos += 11;
-	if (temp->registr[reg.r3] == 0)
-		temp->carry = 1;
-	else
-		temp->carry = 0;
 }
 
 void	ns_drr_and(t_cursor **cur, t_map *m_map)
@@ -158,12 +173,15 @@ void	ns_drr_and(t_cursor **cur, t_map *m_map)
 	reg.index = char_to_int(str);
 	reg.r2 = m_map->map[temp->index_pos + 6];
 	reg.r3 = m_map->map[temp->index_pos + 7];
-	temp->registr[reg.r3] = reg.index & reg.r2;
+	if (ns_check_register(1, reg.r2, reg.r3))
+	{
+		temp->registr[reg.r3] = reg.index & reg.r2;
+		if (temp->registr[reg.r3] == 0)
+			temp->carry = 1;
+		else
+			temp->carry = 0;
+	}
 	temp->index_pos += 8;
-	if (temp->registr[reg.r3] == 0)
-		temp->carry = 1;
-	else
-		temp->carry = 0;
 }
 
 void	ns_rir_and(t_cursor **cur, t_map *m_map)
@@ -178,12 +196,15 @@ void	ns_rir_and(t_cursor **cur, t_map *m_map)
 	str = find_fbytes_tind(m_map, (temp->index_pos + reg.index));
 	reg.index = (short)char_to_int(str);
 	reg.r3 = m_map->map[temp->index_pos + 5];
-	temp->registr[reg.r3] = reg.r1 & reg.index;
+	if (ns_check_register(reg.r1, 1, reg.r3))
+	{
+		temp->registr[reg.r3] = reg.r1 & reg.index;
+		if (temp->registr[reg.r3] == 0)
+			temp->carry = 1;
+		else
+			temp->carry = 0;
+	}
 	temp->index_pos += 6;
-	if (temp->registr[reg.r3] == 0)
-		temp->carry = 1;
-	else
-		temp->carry = 0;
 }
 
 void	ns_rdr_and(t_cursor **cur, t_map *m_map)
@@ -198,11 +219,14 @@ void	ns_rdr_and(t_cursor **cur, t_map *m_map)
 	reg.index = char_to_int(str);
 	reg.r3 = m_map->map[temp->index_pos + 7];
 	temp->registr[reg.r3] = reg.r1 & reg.index;
+	if (ns_check_register(reg.r1, 1, reg.r3))
+	{
+		if (temp->registr[reg.r3] == 0)
+			temp->carry = 1;
+		else
+			temp->carry = 0;
+	}
 	temp->index_pos += 8;
-	if (temp->registr[reg.r3] == 0)
-		temp->carry = 1;
-	else
-		temp->carry = 0;
 }
 
 void	ns_rrr_and(t_cursor **cur, t_map *m_map)
@@ -231,4 +255,3 @@ void	ns_rrr_and(t_cursor **cur, t_map *m_map)
 			temp->index_pos += 5;
 	}
 }
-
