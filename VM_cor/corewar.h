@@ -152,5 +152,15 @@ char					*int_to_char(int nbr);
 int						char_to_int(char *str);
 char					*find_fbytes_tind(t_map *map, int index);
 
+void					ns_and(t_cursor **cur, t_map *m_map);
+void					ns_iir_and(t_cursor **cur, t_map *m_map);
+void					ns_idr_and(t_cursor **cur, t_map *m_map);
+void					ns_irr_and(t_cursor **cur, t_map *m_map);
+void					ns_dir_and(t_cursor **cur, t_map *m_map);
+void					ns_ddr_and(t_cursor **cur, t_map *m_map);
+void					ns_drr_and(t_cursor **cur, t_map *m_map);
+void					ns_rir_and(t_cursor **cur, t_map *m_map);
+void					ns_rdr_and(t_cursor **cur, t_map *m_map);
+void					ns_rrr_and(t_cursor **cur, t_map *m_map);
 
 #endif
