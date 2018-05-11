@@ -6,7 +6,7 @@
 /*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/11 15:49:08 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/11 15:52:38 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/11 16:51:59 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,16 +44,19 @@ int			ns_check_id(t_champion *champ)
 	return (1);
 }
 
-void	ns_check_lives(t_cursor *cur, t_info **info)
+void	ns_check_lives(t_cursor **cur, t_info **info)
 {
 	int count;
 
 	count = 0;
-	while (cur->next)
+	while ((*cur)->next)
 	{
-		if (cur->live_or_die)
+		if ((*cur)->live_or_die)
+		{
+			(*cur)->live_or_die = 0;
 			count++;
-		cur = cur->next;
+		}
+		(*cur) = (*cur)->next;
 	}
 	if (count >= 21)
 		(*info)->checks -= 1;

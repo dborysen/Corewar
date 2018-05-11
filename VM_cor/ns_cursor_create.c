@@ -6,7 +6,7 @@
 /*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/02 15:09:56 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/11 16:30:06 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/11 16:33:07 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -106,7 +106,7 @@ void	ns_game_start(t_cursor **cursor, t_map *m_map, t_info *info, t_fl fl)
 		info->cycles++;
 		if (info->cycles == CYCLE_TO_DIE)
 		{
-			ns_check_lives(temp, &info);
+			ns_check_lives(&temp, &info);
 			info->cycles = 0;
 			ft_printf("die = %d : checks %d\n", info->die, info->checks);
 		}
