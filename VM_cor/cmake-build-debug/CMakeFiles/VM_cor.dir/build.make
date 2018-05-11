@@ -43,10 +43,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/myprosku/corTwar/VM_cor
+CMAKE_SOURCE_DIR = /Users/ssavchen/coretwar/VM_cor
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/myprosku/corTwar/VM_cor/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/ssavchen/coretwar/VM_cor/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/VM_cor.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/VM_cor.dir/flags.make
 
 CMakeFiles/VM_cor.dir/libft/af_per_doxu.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/libft/af_per_doxu.c.o: ../libft/af_per_doxu.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/VM_cor.dir/libft/af_per_doxu.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/af_per_doxu.c.o   -c /Users/myprosku/corTwar/VM_cor/libft/af_per_doxu.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/VM_cor.dir/libft/af_per_doxu.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/af_per_doxu.c.o   -c /Users/ssavchen/coretwar/VM_cor/libft/af_per_doxu.c
 
 CMakeFiles/VM_cor.dir/libft/af_per_doxu.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/libft/af_per_doxu.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/libft/af_per_doxu.c > CMakeFiles/VM_cor.dir/libft/af_per_doxu.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/libft/af_per_doxu.c > CMakeFiles/VM_cor.dir/libft/af_per_doxu.c.i
 
 CMakeFiles/VM_cor.dir/libft/af_per_doxu.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/libft/af_per_doxu.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/libft/af_per_doxu.c -o CMakeFiles/VM_cor.dir/libft/af_per_doxu.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/libft/af_per_doxu.c -o CMakeFiles/VM_cor.dir/libft/af_per_doxu.c.s
 
 CMakeFiles/VM_cor.dir/libft/af_per_doxu.c.o.requires:
 
@@ -83,16 +83,16 @@ CMakeFiles/VM_cor.dir/libft/af_per_doxu.c.o.provides.build: CMakeFiles/VM_cor.di
 
 CMakeFiles/VM_cor.dir/libft/af_per_sc.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/libft/af_per_sc.c.o: ../libft/af_per_sc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/VM_cor.dir/libft/af_per_sc.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/af_per_sc.c.o   -c /Users/myprosku/corTwar/VM_cor/libft/af_per_sc.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/VM_cor.dir/libft/af_per_sc.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/af_per_sc.c.o   -c /Users/ssavchen/coretwar/VM_cor/libft/af_per_sc.c
 
 CMakeFiles/VM_cor.dir/libft/af_per_sc.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/libft/af_per_sc.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/libft/af_per_sc.c > CMakeFiles/VM_cor.dir/libft/af_per_sc.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/libft/af_per_sc.c > CMakeFiles/VM_cor.dir/libft/af_per_sc.c.i
 
 CMakeFiles/VM_cor.dir/libft/af_per_sc.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/libft/af_per_sc.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/libft/af_per_sc.c -o CMakeFiles/VM_cor.dir/libft/af_per_sc.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/libft/af_per_sc.c -o CMakeFiles/VM_cor.dir/libft/af_per_sc.c.s
 
 CMakeFiles/VM_cor.dir/libft/af_per_sc.c.o.requires:
 
@@ -107,16 +107,16 @@ CMakeFiles/VM_cor.dir/libft/af_per_sc.c.o.provides.build: CMakeFiles/VM_cor.dir/
 
 CMakeFiles/VM_cor.dir/libft/alignment_p.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/libft/alignment_p.c.o: ../libft/alignment_p.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/VM_cor.dir/libft/alignment_p.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/alignment_p.c.o   -c /Users/myprosku/corTwar/VM_cor/libft/alignment_p.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/VM_cor.dir/libft/alignment_p.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/alignment_p.c.o   -c /Users/ssavchen/coretwar/VM_cor/libft/alignment_p.c
 
 CMakeFiles/VM_cor.dir/libft/alignment_p.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/libft/alignment_p.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/libft/alignment_p.c > CMakeFiles/VM_cor.dir/libft/alignment_p.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/libft/alignment_p.c > CMakeFiles/VM_cor.dir/libft/alignment_p.c.i
 
 CMakeFiles/VM_cor.dir/libft/alignment_p.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/libft/alignment_p.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/libft/alignment_p.c -o CMakeFiles/VM_cor.dir/libft/alignment_p.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/libft/alignment_p.c -o CMakeFiles/VM_cor.dir/libft/alignment_p.c.s
 
 CMakeFiles/VM_cor.dir/libft/alignment_p.c.o.requires:
 
@@ -131,16 +131,16 @@ CMakeFiles/VM_cor.dir/libft/alignment_p.c.o.provides.build: CMakeFiles/VM_cor.di
 
 CMakeFiles/VM_cor.dir/libft/alignment_s.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/libft/alignment_s.c.o: ../libft/alignment_s.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/VM_cor.dir/libft/alignment_s.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/alignment_s.c.o   -c /Users/myprosku/corTwar/VM_cor/libft/alignment_s.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/VM_cor.dir/libft/alignment_s.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/alignment_s.c.o   -c /Users/ssavchen/coretwar/VM_cor/libft/alignment_s.c
 
 CMakeFiles/VM_cor.dir/libft/alignment_s.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/libft/alignment_s.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/libft/alignment_s.c > CMakeFiles/VM_cor.dir/libft/alignment_s.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/libft/alignment_s.c > CMakeFiles/VM_cor.dir/libft/alignment_s.c.i
 
 CMakeFiles/VM_cor.dir/libft/alignment_s.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/libft/alignment_s.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/libft/alignment_s.c -o CMakeFiles/VM_cor.dir/libft/alignment_s.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/libft/alignment_s.c -o CMakeFiles/VM_cor.dir/libft/alignment_s.c.s
 
 CMakeFiles/VM_cor.dir/libft/alignment_s.c.o.requires:
 
@@ -155,16 +155,16 @@ CMakeFiles/VM_cor.dir/libft/alignment_s.c.o.provides.build: CMakeFiles/VM_cor.di
 
 CMakeFiles/VM_cor.dir/libft/find_flags.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/libft/find_flags.c.o: ../libft/find_flags.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/VM_cor.dir/libft/find_flags.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/find_flags.c.o   -c /Users/myprosku/corTwar/VM_cor/libft/find_flags.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/VM_cor.dir/libft/find_flags.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/find_flags.c.o   -c /Users/ssavchen/coretwar/VM_cor/libft/find_flags.c
 
 CMakeFiles/VM_cor.dir/libft/find_flags.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/libft/find_flags.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/libft/find_flags.c > CMakeFiles/VM_cor.dir/libft/find_flags.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/libft/find_flags.c > CMakeFiles/VM_cor.dir/libft/find_flags.c.i
 
 CMakeFiles/VM_cor.dir/libft/find_flags.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/libft/find_flags.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/libft/find_flags.c -o CMakeFiles/VM_cor.dir/libft/find_flags.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/libft/find_flags.c -o CMakeFiles/VM_cor.dir/libft/find_flags.c.s
 
 CMakeFiles/VM_cor.dir/libft/find_flags.c.o.requires:
 
@@ -179,16 +179,16 @@ CMakeFiles/VM_cor.dir/libft/find_flags.c.o.provides.build: CMakeFiles/VM_cor.dir
 
 CMakeFiles/VM_cor.dir/libft/flag_hljz.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/libft/flag_hljz.c.o: ../libft/flag_hljz.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/VM_cor.dir/libft/flag_hljz.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/flag_hljz.c.o   -c /Users/myprosku/corTwar/VM_cor/libft/flag_hljz.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/VM_cor.dir/libft/flag_hljz.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/flag_hljz.c.o   -c /Users/ssavchen/coretwar/VM_cor/libft/flag_hljz.c
 
 CMakeFiles/VM_cor.dir/libft/flag_hljz.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/libft/flag_hljz.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/libft/flag_hljz.c > CMakeFiles/VM_cor.dir/libft/flag_hljz.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/libft/flag_hljz.c > CMakeFiles/VM_cor.dir/libft/flag_hljz.c.i
 
 CMakeFiles/VM_cor.dir/libft/flag_hljz.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/libft/flag_hljz.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/libft/flag_hljz.c -o CMakeFiles/VM_cor.dir/libft/flag_hljz.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/libft/flag_hljz.c -o CMakeFiles/VM_cor.dir/libft/flag_hljz.c.s
 
 CMakeFiles/VM_cor.dir/libft/flag_hljz.c.o.requires:
 
@@ -203,16 +203,16 @@ CMakeFiles/VM_cor.dir/libft/flag_hljz.c.o.provides.build: CMakeFiles/VM_cor.dir/
 
 CMakeFiles/VM_cor.dir/libft/format_b.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/libft/format_b.c.o: ../libft/format_b.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/VM_cor.dir/libft/format_b.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/format_b.c.o   -c /Users/myprosku/corTwar/VM_cor/libft/format_b.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/VM_cor.dir/libft/format_b.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/format_b.c.o   -c /Users/ssavchen/coretwar/VM_cor/libft/format_b.c
 
 CMakeFiles/VM_cor.dir/libft/format_b.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/libft/format_b.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/libft/format_b.c > CMakeFiles/VM_cor.dir/libft/format_b.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/libft/format_b.c > CMakeFiles/VM_cor.dir/libft/format_b.c.i
 
 CMakeFiles/VM_cor.dir/libft/format_b.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/libft/format_b.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/libft/format_b.c -o CMakeFiles/VM_cor.dir/libft/format_b.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/libft/format_b.c -o CMakeFiles/VM_cor.dir/libft/format_b.c.s
 
 CMakeFiles/VM_cor.dir/libft/format_b.c.o.requires:
 
@@ -227,16 +227,16 @@ CMakeFiles/VM_cor.dir/libft/format_b.c.o.provides.build: CMakeFiles/VM_cor.dir/l
 
 CMakeFiles/VM_cor.dir/libft/format_b_jz.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/libft/format_b_jz.c.o: ../libft/format_b_jz.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/VM_cor.dir/libft/format_b_jz.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/format_b_jz.c.o   -c /Users/myprosku/corTwar/VM_cor/libft/format_b_jz.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/VM_cor.dir/libft/format_b_jz.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/format_b_jz.c.o   -c /Users/ssavchen/coretwar/VM_cor/libft/format_b_jz.c
 
 CMakeFiles/VM_cor.dir/libft/format_b_jz.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/libft/format_b_jz.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/libft/format_b_jz.c > CMakeFiles/VM_cor.dir/libft/format_b_jz.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/libft/format_b_jz.c > CMakeFiles/VM_cor.dir/libft/format_b_jz.c.i
 
 CMakeFiles/VM_cor.dir/libft/format_b_jz.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/libft/format_b_jz.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/libft/format_b_jz.c -o CMakeFiles/VM_cor.dir/libft/format_b_jz.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/libft/format_b_jz.c -o CMakeFiles/VM_cor.dir/libft/format_b_jz.c.s
 
 CMakeFiles/VM_cor.dir/libft/format_b_jz.c.o.requires:
 
@@ -251,16 +251,16 @@ CMakeFiles/VM_cor.dir/libft/format_b_jz.c.o.provides.build: CMakeFiles/VM_cor.di
 
 CMakeFiles/VM_cor.dir/libft/format_c.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/libft/format_c.c.o: ../libft/format_c.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/VM_cor.dir/libft/format_c.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/format_c.c.o   -c /Users/myprosku/corTwar/VM_cor/libft/format_c.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/VM_cor.dir/libft/format_c.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/format_c.c.o   -c /Users/ssavchen/coretwar/VM_cor/libft/format_c.c
 
 CMakeFiles/VM_cor.dir/libft/format_c.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/libft/format_c.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/libft/format_c.c > CMakeFiles/VM_cor.dir/libft/format_c.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/libft/format_c.c > CMakeFiles/VM_cor.dir/libft/format_c.c.i
 
 CMakeFiles/VM_cor.dir/libft/format_c.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/libft/format_c.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/libft/format_c.c -o CMakeFiles/VM_cor.dir/libft/format_c.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/libft/format_c.c -o CMakeFiles/VM_cor.dir/libft/format_c.c.s
 
 CMakeFiles/VM_cor.dir/libft/format_c.c.o.requires:
 
@@ -275,16 +275,16 @@ CMakeFiles/VM_cor.dir/libft/format_c.c.o.provides.build: CMakeFiles/VM_cor.dir/l
 
 CMakeFiles/VM_cor.dir/libft/format_di.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/libft/format_di.c.o: ../libft/format_di.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/VM_cor.dir/libft/format_di.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/format_di.c.o   -c /Users/myprosku/corTwar/VM_cor/libft/format_di.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/VM_cor.dir/libft/format_di.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/format_di.c.o   -c /Users/ssavchen/coretwar/VM_cor/libft/format_di.c
 
 CMakeFiles/VM_cor.dir/libft/format_di.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/libft/format_di.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/libft/format_di.c > CMakeFiles/VM_cor.dir/libft/format_di.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/libft/format_di.c > CMakeFiles/VM_cor.dir/libft/format_di.c.i
 
 CMakeFiles/VM_cor.dir/libft/format_di.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/libft/format_di.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/libft/format_di.c -o CMakeFiles/VM_cor.dir/libft/format_di.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/libft/format_di.c -o CMakeFiles/VM_cor.dir/libft/format_di.c.s
 
 CMakeFiles/VM_cor.dir/libft/format_di.c.o.requires:
 
@@ -299,16 +299,16 @@ CMakeFiles/VM_cor.dir/libft/format_di.c.o.provides.build: CMakeFiles/VM_cor.dir/
 
 CMakeFiles/VM_cor.dir/libft/format_di_jz.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/libft/format_di_jz.c.o: ../libft/format_di_jz.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/VM_cor.dir/libft/format_di_jz.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/format_di_jz.c.o   -c /Users/myprosku/corTwar/VM_cor/libft/format_di_jz.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/VM_cor.dir/libft/format_di_jz.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/format_di_jz.c.o   -c /Users/ssavchen/coretwar/VM_cor/libft/format_di_jz.c
 
 CMakeFiles/VM_cor.dir/libft/format_di_jz.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/libft/format_di_jz.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/libft/format_di_jz.c > CMakeFiles/VM_cor.dir/libft/format_di_jz.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/libft/format_di_jz.c > CMakeFiles/VM_cor.dir/libft/format_di_jz.c.i
 
 CMakeFiles/VM_cor.dir/libft/format_di_jz.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/libft/format_di_jz.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/libft/format_di_jz.c -o CMakeFiles/VM_cor.dir/libft/format_di_jz.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/libft/format_di_jz.c -o CMakeFiles/VM_cor.dir/libft/format_di_jz.c.s
 
 CMakeFiles/VM_cor.dir/libft/format_di_jz.c.o.requires:
 
@@ -323,16 +323,16 @@ CMakeFiles/VM_cor.dir/libft/format_di_jz.c.o.provides.build: CMakeFiles/VM_cor.d
 
 CMakeFiles/VM_cor.dir/libft/format_dig.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/libft/format_dig.c.o: ../libft/format_dig.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/VM_cor.dir/libft/format_dig.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/format_dig.c.o   -c /Users/myprosku/corTwar/VM_cor/libft/format_dig.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/VM_cor.dir/libft/format_dig.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/format_dig.c.o   -c /Users/ssavchen/coretwar/VM_cor/libft/format_dig.c
 
 CMakeFiles/VM_cor.dir/libft/format_dig.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/libft/format_dig.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/libft/format_dig.c > CMakeFiles/VM_cor.dir/libft/format_dig.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/libft/format_dig.c > CMakeFiles/VM_cor.dir/libft/format_dig.c.i
 
 CMakeFiles/VM_cor.dir/libft/format_dig.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/libft/format_dig.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/libft/format_dig.c -o CMakeFiles/VM_cor.dir/libft/format_dig.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/libft/format_dig.c -o CMakeFiles/VM_cor.dir/libft/format_dig.c.s
 
 CMakeFiles/VM_cor.dir/libft/format_dig.c.o.requires:
 
@@ -347,16 +347,16 @@ CMakeFiles/VM_cor.dir/libft/format_dig.c.o.provides.build: CMakeFiles/VM_cor.dir
 
 CMakeFiles/VM_cor.dir/libft/format_o.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/libft/format_o.c.o: ../libft/format_o.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/VM_cor.dir/libft/format_o.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/format_o.c.o   -c /Users/myprosku/corTwar/VM_cor/libft/format_o.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/VM_cor.dir/libft/format_o.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/format_o.c.o   -c /Users/ssavchen/coretwar/VM_cor/libft/format_o.c
 
 CMakeFiles/VM_cor.dir/libft/format_o.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/libft/format_o.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/libft/format_o.c > CMakeFiles/VM_cor.dir/libft/format_o.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/libft/format_o.c > CMakeFiles/VM_cor.dir/libft/format_o.c.i
 
 CMakeFiles/VM_cor.dir/libft/format_o.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/libft/format_o.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/libft/format_o.c -o CMakeFiles/VM_cor.dir/libft/format_o.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/libft/format_o.c -o CMakeFiles/VM_cor.dir/libft/format_o.c.s
 
 CMakeFiles/VM_cor.dir/libft/format_o.c.o.requires:
 
@@ -371,16 +371,16 @@ CMakeFiles/VM_cor.dir/libft/format_o.c.o.provides.build: CMakeFiles/VM_cor.dir/l
 
 CMakeFiles/VM_cor.dir/libft/format_o_jz.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/libft/format_o_jz.c.o: ../libft/format_o_jz.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/VM_cor.dir/libft/format_o_jz.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/format_o_jz.c.o   -c /Users/myprosku/corTwar/VM_cor/libft/format_o_jz.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/VM_cor.dir/libft/format_o_jz.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/format_o_jz.c.o   -c /Users/ssavchen/coretwar/VM_cor/libft/format_o_jz.c
 
 CMakeFiles/VM_cor.dir/libft/format_o_jz.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/libft/format_o_jz.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/libft/format_o_jz.c > CMakeFiles/VM_cor.dir/libft/format_o_jz.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/libft/format_o_jz.c > CMakeFiles/VM_cor.dir/libft/format_o_jz.c.i
 
 CMakeFiles/VM_cor.dir/libft/format_o_jz.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/libft/format_o_jz.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/libft/format_o_jz.c -o CMakeFiles/VM_cor.dir/libft/format_o_jz.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/libft/format_o_jz.c -o CMakeFiles/VM_cor.dir/libft/format_o_jz.c.s
 
 CMakeFiles/VM_cor.dir/libft/format_o_jz.c.o.requires:
 
@@ -395,16 +395,16 @@ CMakeFiles/VM_cor.dir/libft/format_o_jz.c.o.provides.build: CMakeFiles/VM_cor.di
 
 CMakeFiles/VM_cor.dir/libft/format_p.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/libft/format_p.c.o: ../libft/format_p.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/VM_cor.dir/libft/format_p.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/format_p.c.o   -c /Users/myprosku/corTwar/VM_cor/libft/format_p.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/VM_cor.dir/libft/format_p.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/format_p.c.o   -c /Users/ssavchen/coretwar/VM_cor/libft/format_p.c
 
 CMakeFiles/VM_cor.dir/libft/format_p.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/libft/format_p.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/libft/format_p.c > CMakeFiles/VM_cor.dir/libft/format_p.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/libft/format_p.c > CMakeFiles/VM_cor.dir/libft/format_p.c.i
 
 CMakeFiles/VM_cor.dir/libft/format_p.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/libft/format_p.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/libft/format_p.c -o CMakeFiles/VM_cor.dir/libft/format_p.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/libft/format_p.c -o CMakeFiles/VM_cor.dir/libft/format_p.c.s
 
 CMakeFiles/VM_cor.dir/libft/format_p.c.o.requires:
 
@@ -419,16 +419,16 @@ CMakeFiles/VM_cor.dir/libft/format_p.c.o.provides.build: CMakeFiles/VM_cor.dir/l
 
 CMakeFiles/VM_cor.dir/libft/format_s.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/libft/format_s.c.o: ../libft/format_s.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/VM_cor.dir/libft/format_s.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/format_s.c.o   -c /Users/myprosku/corTwar/VM_cor/libft/format_s.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/VM_cor.dir/libft/format_s.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/format_s.c.o   -c /Users/ssavchen/coretwar/VM_cor/libft/format_s.c
 
 CMakeFiles/VM_cor.dir/libft/format_s.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/libft/format_s.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/libft/format_s.c > CMakeFiles/VM_cor.dir/libft/format_s.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/libft/format_s.c > CMakeFiles/VM_cor.dir/libft/format_s.c.i
 
 CMakeFiles/VM_cor.dir/libft/format_s.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/libft/format_s.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/libft/format_s.c -o CMakeFiles/VM_cor.dir/libft/format_s.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/libft/format_s.c -o CMakeFiles/VM_cor.dir/libft/format_s.c.s
 
 CMakeFiles/VM_cor.dir/libft/format_s.c.o.requires:
 
@@ -443,16 +443,16 @@ CMakeFiles/VM_cor.dir/libft/format_s.c.o.provides.build: CMakeFiles/VM_cor.dir/l
 
 CMakeFiles/VM_cor.dir/libft/format_u.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/libft/format_u.c.o: ../libft/format_u.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/VM_cor.dir/libft/format_u.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/format_u.c.o   -c /Users/myprosku/corTwar/VM_cor/libft/format_u.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/VM_cor.dir/libft/format_u.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/format_u.c.o   -c /Users/ssavchen/coretwar/VM_cor/libft/format_u.c
 
 CMakeFiles/VM_cor.dir/libft/format_u.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/libft/format_u.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/libft/format_u.c > CMakeFiles/VM_cor.dir/libft/format_u.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/libft/format_u.c > CMakeFiles/VM_cor.dir/libft/format_u.c.i
 
 CMakeFiles/VM_cor.dir/libft/format_u.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/libft/format_u.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/libft/format_u.c -o CMakeFiles/VM_cor.dir/libft/format_u.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/libft/format_u.c -o CMakeFiles/VM_cor.dir/libft/format_u.c.s
 
 CMakeFiles/VM_cor.dir/libft/format_u.c.o.requires:
 
@@ -467,16 +467,16 @@ CMakeFiles/VM_cor.dir/libft/format_u.c.o.provides.build: CMakeFiles/VM_cor.dir/l
 
 CMakeFiles/VM_cor.dir/libft/format_u_jz.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/libft/format_u_jz.c.o: ../libft/format_u_jz.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/VM_cor.dir/libft/format_u_jz.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/format_u_jz.c.o   -c /Users/myprosku/corTwar/VM_cor/libft/format_u_jz.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/VM_cor.dir/libft/format_u_jz.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/format_u_jz.c.o   -c /Users/ssavchen/coretwar/VM_cor/libft/format_u_jz.c
 
 CMakeFiles/VM_cor.dir/libft/format_u_jz.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/libft/format_u_jz.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/libft/format_u_jz.c > CMakeFiles/VM_cor.dir/libft/format_u_jz.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/libft/format_u_jz.c > CMakeFiles/VM_cor.dir/libft/format_u_jz.c.i
 
 CMakeFiles/VM_cor.dir/libft/format_u_jz.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/libft/format_u_jz.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/libft/format_u_jz.c -o CMakeFiles/VM_cor.dir/libft/format_u_jz.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/libft/format_u_jz.c -o CMakeFiles/VM_cor.dir/libft/format_u_jz.c.s
 
 CMakeFiles/VM_cor.dir/libft/format_u_jz.c.o.requires:
 
@@ -491,16 +491,16 @@ CMakeFiles/VM_cor.dir/libft/format_u_jz.c.o.provides.build: CMakeFiles/VM_cor.di
 
 CMakeFiles/VM_cor.dir/libft/format_x.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/libft/format_x.c.o: ../libft/format_x.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/VM_cor.dir/libft/format_x.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/format_x.c.o   -c /Users/myprosku/corTwar/VM_cor/libft/format_x.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/VM_cor.dir/libft/format_x.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/format_x.c.o   -c /Users/ssavchen/coretwar/VM_cor/libft/format_x.c
 
 CMakeFiles/VM_cor.dir/libft/format_x.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/libft/format_x.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/libft/format_x.c > CMakeFiles/VM_cor.dir/libft/format_x.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/libft/format_x.c > CMakeFiles/VM_cor.dir/libft/format_x.c.i
 
 CMakeFiles/VM_cor.dir/libft/format_x.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/libft/format_x.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/libft/format_x.c -o CMakeFiles/VM_cor.dir/libft/format_x.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/libft/format_x.c -o CMakeFiles/VM_cor.dir/libft/format_x.c.s
 
 CMakeFiles/VM_cor.dir/libft/format_x.c.o.requires:
 
@@ -515,16 +515,16 @@ CMakeFiles/VM_cor.dir/libft/format_x.c.o.provides.build: CMakeFiles/VM_cor.dir/l
 
 CMakeFiles/VM_cor.dir/libft/format_x_jz.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/libft/format_x_jz.c.o: ../libft/format_x_jz.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/VM_cor.dir/libft/format_x_jz.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/format_x_jz.c.o   -c /Users/myprosku/corTwar/VM_cor/libft/format_x_jz.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/VM_cor.dir/libft/format_x_jz.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/format_x_jz.c.o   -c /Users/ssavchen/coretwar/VM_cor/libft/format_x_jz.c
 
 CMakeFiles/VM_cor.dir/libft/format_x_jz.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/libft/format_x_jz.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/libft/format_x_jz.c > CMakeFiles/VM_cor.dir/libft/format_x_jz.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/libft/format_x_jz.c > CMakeFiles/VM_cor.dir/libft/format_x_jz.c.i
 
 CMakeFiles/VM_cor.dir/libft/format_x_jz.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/libft/format_x_jz.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/libft/format_x_jz.c -o CMakeFiles/VM_cor.dir/libft/format_x_jz.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/libft/format_x_jz.c -o CMakeFiles/VM_cor.dir/libft/format_x_jz.c.s
 
 CMakeFiles/VM_cor.dir/libft/format_x_jz.c.o.requires:
 
@@ -539,16 +539,16 @@ CMakeFiles/VM_cor.dir/libft/format_x_jz.c.o.provides.build: CMakeFiles/VM_cor.di
 
 CMakeFiles/VM_cor.dir/libft/ft_aligment_sharp.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/libft/ft_aligment_sharp.c.o: ../libft/ft_aligment_sharp.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/VM_cor.dir/libft/ft_aligment_sharp.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_aligment_sharp.c.o   -c /Users/myprosku/corTwar/VM_cor/libft/ft_aligment_sharp.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/VM_cor.dir/libft/ft_aligment_sharp.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_aligment_sharp.c.o   -c /Users/ssavchen/coretwar/VM_cor/libft/ft_aligment_sharp.c
 
 CMakeFiles/VM_cor.dir/libft/ft_aligment_sharp.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/libft/ft_aligment_sharp.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/libft/ft_aligment_sharp.c > CMakeFiles/VM_cor.dir/libft/ft_aligment_sharp.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/libft/ft_aligment_sharp.c > CMakeFiles/VM_cor.dir/libft/ft_aligment_sharp.c.i
 
 CMakeFiles/VM_cor.dir/libft/ft_aligment_sharp.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/libft/ft_aligment_sharp.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/libft/ft_aligment_sharp.c -o CMakeFiles/VM_cor.dir/libft/ft_aligment_sharp.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/libft/ft_aligment_sharp.c -o CMakeFiles/VM_cor.dir/libft/ft_aligment_sharp.c.s
 
 CMakeFiles/VM_cor.dir/libft/ft_aligment_sharp.c.o.requires:
 
@@ -563,16 +563,16 @@ CMakeFiles/VM_cor.dir/libft/ft_aligment_sharp.c.o.provides.build: CMakeFiles/VM_
 
 CMakeFiles/VM_cor.dir/libft/ft_aligment_wchar.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/libft/ft_aligment_wchar.c.o: ../libft/ft_aligment_wchar.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/VM_cor.dir/libft/ft_aligment_wchar.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_aligment_wchar.c.o   -c /Users/myprosku/corTwar/VM_cor/libft/ft_aligment_wchar.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/VM_cor.dir/libft/ft_aligment_wchar.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_aligment_wchar.c.o   -c /Users/ssavchen/coretwar/VM_cor/libft/ft_aligment_wchar.c
 
 CMakeFiles/VM_cor.dir/libft/ft_aligment_wchar.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/libft/ft_aligment_wchar.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/libft/ft_aligment_wchar.c > CMakeFiles/VM_cor.dir/libft/ft_aligment_wchar.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/libft/ft_aligment_wchar.c > CMakeFiles/VM_cor.dir/libft/ft_aligment_wchar.c.i
 
 CMakeFiles/VM_cor.dir/libft/ft_aligment_wchar.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/libft/ft_aligment_wchar.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/libft/ft_aligment_wchar.c -o CMakeFiles/VM_cor.dir/libft/ft_aligment_wchar.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/libft/ft_aligment_wchar.c -o CMakeFiles/VM_cor.dir/libft/ft_aligment_wchar.c.s
 
 CMakeFiles/VM_cor.dir/libft/ft_aligment_wchar.c.o.requires:
 
@@ -587,16 +587,16 @@ CMakeFiles/VM_cor.dir/libft/ft_aligment_wchar.c.o.provides.build: CMakeFiles/VM_
 
 CMakeFiles/VM_cor.dir/libft/ft_alignment.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/libft/ft_alignment.c.o: ../libft/ft_alignment.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/VM_cor.dir/libft/ft_alignment.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_alignment.c.o   -c /Users/myprosku/corTwar/VM_cor/libft/ft_alignment.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/VM_cor.dir/libft/ft_alignment.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_alignment.c.o   -c /Users/ssavchen/coretwar/VM_cor/libft/ft_alignment.c
 
 CMakeFiles/VM_cor.dir/libft/ft_alignment.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/libft/ft_alignment.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/libft/ft_alignment.c > CMakeFiles/VM_cor.dir/libft/ft_alignment.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/libft/ft_alignment.c > CMakeFiles/VM_cor.dir/libft/ft_alignment.c.i
 
 CMakeFiles/VM_cor.dir/libft/ft_alignment.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/libft/ft_alignment.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/libft/ft_alignment.c -o CMakeFiles/VM_cor.dir/libft/ft_alignment.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/libft/ft_alignment.c -o CMakeFiles/VM_cor.dir/libft/ft_alignment.c.s
 
 CMakeFiles/VM_cor.dir/libft/ft_alignment.c.o.requires:
 
@@ -611,16 +611,16 @@ CMakeFiles/VM_cor.dir/libft/ft_alignment.c.o.provides.build: CMakeFiles/VM_cor.d
 
 CMakeFiles/VM_cor.dir/libft/ft_alignment_di.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/libft/ft_alignment_di.c.o: ../libft/ft_alignment_di.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/VM_cor.dir/libft/ft_alignment_di.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_alignment_di.c.o   -c /Users/myprosku/corTwar/VM_cor/libft/ft_alignment_di.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/VM_cor.dir/libft/ft_alignment_di.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_alignment_di.c.o   -c /Users/ssavchen/coretwar/VM_cor/libft/ft_alignment_di.c
 
 CMakeFiles/VM_cor.dir/libft/ft_alignment_di.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/libft/ft_alignment_di.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/libft/ft_alignment_di.c > CMakeFiles/VM_cor.dir/libft/ft_alignment_di.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/libft/ft_alignment_di.c > CMakeFiles/VM_cor.dir/libft/ft_alignment_di.c.i
 
 CMakeFiles/VM_cor.dir/libft/ft_alignment_di.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/libft/ft_alignment_di.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/libft/ft_alignment_di.c -o CMakeFiles/VM_cor.dir/libft/ft_alignment_di.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/libft/ft_alignment_di.c -o CMakeFiles/VM_cor.dir/libft/ft_alignment_di.c.s
 
 CMakeFiles/VM_cor.dir/libft/ft_alignment_di.c.o.requires:
 
@@ -635,16 +635,16 @@ CMakeFiles/VM_cor.dir/libft/ft_alignment_di.c.o.provides.build: CMakeFiles/VM_co
 
 CMakeFiles/VM_cor.dir/libft/ft_atoi.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/libft/ft_atoi.c.o: ../libft/ft_atoi.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/VM_cor.dir/libft/ft_atoi.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_atoi.c.o   -c /Users/myprosku/corTwar/VM_cor/libft/ft_atoi.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/VM_cor.dir/libft/ft_atoi.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_atoi.c.o   -c /Users/ssavchen/coretwar/VM_cor/libft/ft_atoi.c
 
 CMakeFiles/VM_cor.dir/libft/ft_atoi.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/libft/ft_atoi.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/libft/ft_atoi.c > CMakeFiles/VM_cor.dir/libft/ft_atoi.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/libft/ft_atoi.c > CMakeFiles/VM_cor.dir/libft/ft_atoi.c.i
 
 CMakeFiles/VM_cor.dir/libft/ft_atoi.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/libft/ft_atoi.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/libft/ft_atoi.c -o CMakeFiles/VM_cor.dir/libft/ft_atoi.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/libft/ft_atoi.c -o CMakeFiles/VM_cor.dir/libft/ft_atoi.c.s
 
 CMakeFiles/VM_cor.dir/libft/ft_atoi.c.o.requires:
 
@@ -659,16 +659,16 @@ CMakeFiles/VM_cor.dir/libft/ft_atoi.c.o.provides.build: CMakeFiles/VM_cor.dir/li
 
 CMakeFiles/VM_cor.dir/libft/ft_bzero.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/libft/ft_bzero.c.o: ../libft/ft_bzero.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/VM_cor.dir/libft/ft_bzero.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_bzero.c.o   -c /Users/myprosku/corTwar/VM_cor/libft/ft_bzero.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/VM_cor.dir/libft/ft_bzero.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_bzero.c.o   -c /Users/ssavchen/coretwar/VM_cor/libft/ft_bzero.c
 
 CMakeFiles/VM_cor.dir/libft/ft_bzero.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/libft/ft_bzero.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/libft/ft_bzero.c > CMakeFiles/VM_cor.dir/libft/ft_bzero.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/libft/ft_bzero.c > CMakeFiles/VM_cor.dir/libft/ft_bzero.c.i
 
 CMakeFiles/VM_cor.dir/libft/ft_bzero.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/libft/ft_bzero.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/libft/ft_bzero.c -o CMakeFiles/VM_cor.dir/libft/ft_bzero.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/libft/ft_bzero.c -o CMakeFiles/VM_cor.dir/libft/ft_bzero.c.s
 
 CMakeFiles/VM_cor.dir/libft/ft_bzero.c.o.requires:
 
@@ -683,16 +683,16 @@ CMakeFiles/VM_cor.dir/libft/ft_bzero.c.o.provides.build: CMakeFiles/VM_cor.dir/l
 
 CMakeFiles/VM_cor.dir/libft/ft_dot.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/libft/ft_dot.c.o: ../libft/ft_dot.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/VM_cor.dir/libft/ft_dot.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_dot.c.o   -c /Users/myprosku/corTwar/VM_cor/libft/ft_dot.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/VM_cor.dir/libft/ft_dot.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_dot.c.o   -c /Users/ssavchen/coretwar/VM_cor/libft/ft_dot.c
 
 CMakeFiles/VM_cor.dir/libft/ft_dot.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/libft/ft_dot.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/libft/ft_dot.c > CMakeFiles/VM_cor.dir/libft/ft_dot.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/libft/ft_dot.c > CMakeFiles/VM_cor.dir/libft/ft_dot.c.i
 
 CMakeFiles/VM_cor.dir/libft/ft_dot.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/libft/ft_dot.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/libft/ft_dot.c -o CMakeFiles/VM_cor.dir/libft/ft_dot.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/libft/ft_dot.c -o CMakeFiles/VM_cor.dir/libft/ft_dot.c.s
 
 CMakeFiles/VM_cor.dir/libft/ft_dot.c.o.requires:
 
@@ -707,16 +707,16 @@ CMakeFiles/VM_cor.dir/libft/ft_dot.c.o.provides.build: CMakeFiles/VM_cor.dir/lib
 
 CMakeFiles/VM_cor.dir/libft/ft_intlen.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/libft/ft_intlen.c.o: ../libft/ft_intlen.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/VM_cor.dir/libft/ft_intlen.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_intlen.c.o   -c /Users/myprosku/corTwar/VM_cor/libft/ft_intlen.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/VM_cor.dir/libft/ft_intlen.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_intlen.c.o   -c /Users/ssavchen/coretwar/VM_cor/libft/ft_intlen.c
 
 CMakeFiles/VM_cor.dir/libft/ft_intlen.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/libft/ft_intlen.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/libft/ft_intlen.c > CMakeFiles/VM_cor.dir/libft/ft_intlen.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/libft/ft_intlen.c > CMakeFiles/VM_cor.dir/libft/ft_intlen.c.i
 
 CMakeFiles/VM_cor.dir/libft/ft_intlen.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/libft/ft_intlen.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/libft/ft_intlen.c -o CMakeFiles/VM_cor.dir/libft/ft_intlen.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/libft/ft_intlen.c -o CMakeFiles/VM_cor.dir/libft/ft_intlen.c.s
 
 CMakeFiles/VM_cor.dir/libft/ft_intlen.c.o.requires:
 
@@ -731,16 +731,16 @@ CMakeFiles/VM_cor.dir/libft/ft_intlen.c.o.provides.build: CMakeFiles/VM_cor.dir/
 
 CMakeFiles/VM_cor.dir/libft/ft_isalnum.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/libft/ft_isalnum.c.o: ../libft/ft_isalnum.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/VM_cor.dir/libft/ft_isalnum.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_isalnum.c.o   -c /Users/myprosku/corTwar/VM_cor/libft/ft_isalnum.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/VM_cor.dir/libft/ft_isalnum.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_isalnum.c.o   -c /Users/ssavchen/coretwar/VM_cor/libft/ft_isalnum.c
 
 CMakeFiles/VM_cor.dir/libft/ft_isalnum.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/libft/ft_isalnum.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/libft/ft_isalnum.c > CMakeFiles/VM_cor.dir/libft/ft_isalnum.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/libft/ft_isalnum.c > CMakeFiles/VM_cor.dir/libft/ft_isalnum.c.i
 
 CMakeFiles/VM_cor.dir/libft/ft_isalnum.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/libft/ft_isalnum.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/libft/ft_isalnum.c -o CMakeFiles/VM_cor.dir/libft/ft_isalnum.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/libft/ft_isalnum.c -o CMakeFiles/VM_cor.dir/libft/ft_isalnum.c.s
 
 CMakeFiles/VM_cor.dir/libft/ft_isalnum.c.o.requires:
 
@@ -755,16 +755,16 @@ CMakeFiles/VM_cor.dir/libft/ft_isalnum.c.o.provides.build: CMakeFiles/VM_cor.dir
 
 CMakeFiles/VM_cor.dir/libft/ft_isalpha.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/libft/ft_isalpha.c.o: ../libft/ft_isalpha.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/VM_cor.dir/libft/ft_isalpha.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_isalpha.c.o   -c /Users/myprosku/corTwar/VM_cor/libft/ft_isalpha.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/VM_cor.dir/libft/ft_isalpha.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_isalpha.c.o   -c /Users/ssavchen/coretwar/VM_cor/libft/ft_isalpha.c
 
 CMakeFiles/VM_cor.dir/libft/ft_isalpha.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/libft/ft_isalpha.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/libft/ft_isalpha.c > CMakeFiles/VM_cor.dir/libft/ft_isalpha.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/libft/ft_isalpha.c > CMakeFiles/VM_cor.dir/libft/ft_isalpha.c.i
 
 CMakeFiles/VM_cor.dir/libft/ft_isalpha.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/libft/ft_isalpha.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/libft/ft_isalpha.c -o CMakeFiles/VM_cor.dir/libft/ft_isalpha.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/libft/ft_isalpha.c -o CMakeFiles/VM_cor.dir/libft/ft_isalpha.c.s
 
 CMakeFiles/VM_cor.dir/libft/ft_isalpha.c.o.requires:
 
@@ -779,16 +779,16 @@ CMakeFiles/VM_cor.dir/libft/ft_isalpha.c.o.provides.build: CMakeFiles/VM_cor.dir
 
 CMakeFiles/VM_cor.dir/libft/ft_isascii.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/libft/ft_isascii.c.o: ../libft/ft_isascii.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/VM_cor.dir/libft/ft_isascii.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_isascii.c.o   -c /Users/myprosku/corTwar/VM_cor/libft/ft_isascii.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/VM_cor.dir/libft/ft_isascii.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_isascii.c.o   -c /Users/ssavchen/coretwar/VM_cor/libft/ft_isascii.c
 
 CMakeFiles/VM_cor.dir/libft/ft_isascii.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/libft/ft_isascii.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/libft/ft_isascii.c > CMakeFiles/VM_cor.dir/libft/ft_isascii.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/libft/ft_isascii.c > CMakeFiles/VM_cor.dir/libft/ft_isascii.c.i
 
 CMakeFiles/VM_cor.dir/libft/ft_isascii.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/libft/ft_isascii.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/libft/ft_isascii.c -o CMakeFiles/VM_cor.dir/libft/ft_isascii.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/libft/ft_isascii.c -o CMakeFiles/VM_cor.dir/libft/ft_isascii.c.s
 
 CMakeFiles/VM_cor.dir/libft/ft_isascii.c.o.requires:
 
@@ -803,16 +803,16 @@ CMakeFiles/VM_cor.dir/libft/ft_isascii.c.o.provides.build: CMakeFiles/VM_cor.dir
 
 CMakeFiles/VM_cor.dir/libft/ft_isdigit.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/libft/ft_isdigit.c.o: ../libft/ft_isdigit.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/VM_cor.dir/libft/ft_isdigit.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_isdigit.c.o   -c /Users/myprosku/corTwar/VM_cor/libft/ft_isdigit.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/VM_cor.dir/libft/ft_isdigit.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_isdigit.c.o   -c /Users/ssavchen/coretwar/VM_cor/libft/ft_isdigit.c
 
 CMakeFiles/VM_cor.dir/libft/ft_isdigit.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/libft/ft_isdigit.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/libft/ft_isdigit.c > CMakeFiles/VM_cor.dir/libft/ft_isdigit.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/libft/ft_isdigit.c > CMakeFiles/VM_cor.dir/libft/ft_isdigit.c.i
 
 CMakeFiles/VM_cor.dir/libft/ft_isdigit.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/libft/ft_isdigit.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/libft/ft_isdigit.c -o CMakeFiles/VM_cor.dir/libft/ft_isdigit.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/libft/ft_isdigit.c -o CMakeFiles/VM_cor.dir/libft/ft_isdigit.c.s
 
 CMakeFiles/VM_cor.dir/libft/ft_isdigit.c.o.requires:
 
@@ -827,16 +827,16 @@ CMakeFiles/VM_cor.dir/libft/ft_isdigit.c.o.provides.build: CMakeFiles/VM_cor.dir
 
 CMakeFiles/VM_cor.dir/libft/ft_isprint.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/libft/ft_isprint.c.o: ../libft/ft_isprint.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/VM_cor.dir/libft/ft_isprint.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_isprint.c.o   -c /Users/myprosku/corTwar/VM_cor/libft/ft_isprint.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/VM_cor.dir/libft/ft_isprint.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_isprint.c.o   -c /Users/ssavchen/coretwar/VM_cor/libft/ft_isprint.c
 
 CMakeFiles/VM_cor.dir/libft/ft_isprint.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/libft/ft_isprint.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/libft/ft_isprint.c > CMakeFiles/VM_cor.dir/libft/ft_isprint.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/libft/ft_isprint.c > CMakeFiles/VM_cor.dir/libft/ft_isprint.c.i
 
 CMakeFiles/VM_cor.dir/libft/ft_isprint.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/libft/ft_isprint.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/libft/ft_isprint.c -o CMakeFiles/VM_cor.dir/libft/ft_isprint.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/libft/ft_isprint.c -o CMakeFiles/VM_cor.dir/libft/ft_isprint.c.s
 
 CMakeFiles/VM_cor.dir/libft/ft_isprint.c.o.requires:
 
@@ -851,16 +851,16 @@ CMakeFiles/VM_cor.dir/libft/ft_isprint.c.o.provides.build: CMakeFiles/VM_cor.dir
 
 CMakeFiles/VM_cor.dir/libft/ft_isspace.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/libft/ft_isspace.c.o: ../libft/ft_isspace.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/VM_cor.dir/libft/ft_isspace.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_isspace.c.o   -c /Users/myprosku/corTwar/VM_cor/libft/ft_isspace.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/VM_cor.dir/libft/ft_isspace.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_isspace.c.o   -c /Users/ssavchen/coretwar/VM_cor/libft/ft_isspace.c
 
 CMakeFiles/VM_cor.dir/libft/ft_isspace.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/libft/ft_isspace.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/libft/ft_isspace.c > CMakeFiles/VM_cor.dir/libft/ft_isspace.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/libft/ft_isspace.c > CMakeFiles/VM_cor.dir/libft/ft_isspace.c.i
 
 CMakeFiles/VM_cor.dir/libft/ft_isspace.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/libft/ft_isspace.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/libft/ft_isspace.c -o CMakeFiles/VM_cor.dir/libft/ft_isspace.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/libft/ft_isspace.c -o CMakeFiles/VM_cor.dir/libft/ft_isspace.c.s
 
 CMakeFiles/VM_cor.dir/libft/ft_isspace.c.o.requires:
 
@@ -875,16 +875,16 @@ CMakeFiles/VM_cor.dir/libft/ft_isspace.c.o.provides.build: CMakeFiles/VM_cor.dir
 
 CMakeFiles/VM_cor.dir/libft/ft_itoa.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/libft/ft_itoa.c.o: ../libft/ft_itoa.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/VM_cor.dir/libft/ft_itoa.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_itoa.c.o   -c /Users/myprosku/corTwar/VM_cor/libft/ft_itoa.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/VM_cor.dir/libft/ft_itoa.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_itoa.c.o   -c /Users/ssavchen/coretwar/VM_cor/libft/ft_itoa.c
 
 CMakeFiles/VM_cor.dir/libft/ft_itoa.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/libft/ft_itoa.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/libft/ft_itoa.c > CMakeFiles/VM_cor.dir/libft/ft_itoa.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/libft/ft_itoa.c > CMakeFiles/VM_cor.dir/libft/ft_itoa.c.i
 
 CMakeFiles/VM_cor.dir/libft/ft_itoa.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/libft/ft_itoa.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/libft/ft_itoa.c -o CMakeFiles/VM_cor.dir/libft/ft_itoa.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/libft/ft_itoa.c -o CMakeFiles/VM_cor.dir/libft/ft_itoa.c.s
 
 CMakeFiles/VM_cor.dir/libft/ft_itoa.c.o.requires:
 
@@ -899,16 +899,16 @@ CMakeFiles/VM_cor.dir/libft/ft_itoa.c.o.provides.build: CMakeFiles/VM_cor.dir/li
 
 CMakeFiles/VM_cor.dir/libft/ft_itoa_base.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/libft/ft_itoa_base.c.o: ../libft/ft_itoa_base.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/VM_cor.dir/libft/ft_itoa_base.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_itoa_base.c.o   -c /Users/myprosku/corTwar/VM_cor/libft/ft_itoa_base.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/VM_cor.dir/libft/ft_itoa_base.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_itoa_base.c.o   -c /Users/ssavchen/coretwar/VM_cor/libft/ft_itoa_base.c
 
 CMakeFiles/VM_cor.dir/libft/ft_itoa_base.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/libft/ft_itoa_base.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/libft/ft_itoa_base.c > CMakeFiles/VM_cor.dir/libft/ft_itoa_base.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/libft/ft_itoa_base.c > CMakeFiles/VM_cor.dir/libft/ft_itoa_base.c.i
 
 CMakeFiles/VM_cor.dir/libft/ft_itoa_base.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/libft/ft_itoa_base.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/libft/ft_itoa_base.c -o CMakeFiles/VM_cor.dir/libft/ft_itoa_base.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/libft/ft_itoa_base.c -o CMakeFiles/VM_cor.dir/libft/ft_itoa_base.c.s
 
 CMakeFiles/VM_cor.dir/libft/ft_itoa_base.c.o.requires:
 
@@ -923,16 +923,16 @@ CMakeFiles/VM_cor.dir/libft/ft_itoa_base.c.o.provides.build: CMakeFiles/VM_cor.d
 
 CMakeFiles/VM_cor.dir/libft/ft_itoa_intmax.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/libft/ft_itoa_intmax.c.o: ../libft/ft_itoa_intmax.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/VM_cor.dir/libft/ft_itoa_intmax.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_itoa_intmax.c.o   -c /Users/myprosku/corTwar/VM_cor/libft/ft_itoa_intmax.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/VM_cor.dir/libft/ft_itoa_intmax.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_itoa_intmax.c.o   -c /Users/ssavchen/coretwar/VM_cor/libft/ft_itoa_intmax.c
 
 CMakeFiles/VM_cor.dir/libft/ft_itoa_intmax.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/libft/ft_itoa_intmax.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/libft/ft_itoa_intmax.c > CMakeFiles/VM_cor.dir/libft/ft_itoa_intmax.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/libft/ft_itoa_intmax.c > CMakeFiles/VM_cor.dir/libft/ft_itoa_intmax.c.i
 
 CMakeFiles/VM_cor.dir/libft/ft_itoa_intmax.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/libft/ft_itoa_intmax.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/libft/ft_itoa_intmax.c -o CMakeFiles/VM_cor.dir/libft/ft_itoa_intmax.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/libft/ft_itoa_intmax.c -o CMakeFiles/VM_cor.dir/libft/ft_itoa_intmax.c.s
 
 CMakeFiles/VM_cor.dir/libft/ft_itoa_intmax.c.o.requires:
 
@@ -947,16 +947,16 @@ CMakeFiles/VM_cor.dir/libft/ft_itoa_intmax.c.o.provides.build: CMakeFiles/VM_cor
 
 CMakeFiles/VM_cor.dir/libft/ft_lstadd.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/libft/ft_lstadd.c.o: ../libft/ft_lstadd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/VM_cor.dir/libft/ft_lstadd.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_lstadd.c.o   -c /Users/myprosku/corTwar/VM_cor/libft/ft_lstadd.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/VM_cor.dir/libft/ft_lstadd.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_lstadd.c.o   -c /Users/ssavchen/coretwar/VM_cor/libft/ft_lstadd.c
 
 CMakeFiles/VM_cor.dir/libft/ft_lstadd.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/libft/ft_lstadd.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/libft/ft_lstadd.c > CMakeFiles/VM_cor.dir/libft/ft_lstadd.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/libft/ft_lstadd.c > CMakeFiles/VM_cor.dir/libft/ft_lstadd.c.i
 
 CMakeFiles/VM_cor.dir/libft/ft_lstadd.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/libft/ft_lstadd.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/libft/ft_lstadd.c -o CMakeFiles/VM_cor.dir/libft/ft_lstadd.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/libft/ft_lstadd.c -o CMakeFiles/VM_cor.dir/libft/ft_lstadd.c.s
 
 CMakeFiles/VM_cor.dir/libft/ft_lstadd.c.o.requires:
 
@@ -971,16 +971,16 @@ CMakeFiles/VM_cor.dir/libft/ft_lstadd.c.o.provides.build: CMakeFiles/VM_cor.dir/
 
 CMakeFiles/VM_cor.dir/libft/ft_lstdel.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/libft/ft_lstdel.c.o: ../libft/ft_lstdel.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/VM_cor.dir/libft/ft_lstdel.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_lstdel.c.o   -c /Users/myprosku/corTwar/VM_cor/libft/ft_lstdel.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/VM_cor.dir/libft/ft_lstdel.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_lstdel.c.o   -c /Users/ssavchen/coretwar/VM_cor/libft/ft_lstdel.c
 
 CMakeFiles/VM_cor.dir/libft/ft_lstdel.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/libft/ft_lstdel.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/libft/ft_lstdel.c > CMakeFiles/VM_cor.dir/libft/ft_lstdel.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/libft/ft_lstdel.c > CMakeFiles/VM_cor.dir/libft/ft_lstdel.c.i
 
 CMakeFiles/VM_cor.dir/libft/ft_lstdel.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/libft/ft_lstdel.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/libft/ft_lstdel.c -o CMakeFiles/VM_cor.dir/libft/ft_lstdel.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/libft/ft_lstdel.c -o CMakeFiles/VM_cor.dir/libft/ft_lstdel.c.s
 
 CMakeFiles/VM_cor.dir/libft/ft_lstdel.c.o.requires:
 
@@ -995,16 +995,16 @@ CMakeFiles/VM_cor.dir/libft/ft_lstdel.c.o.provides.build: CMakeFiles/VM_cor.dir/
 
 CMakeFiles/VM_cor.dir/libft/ft_lstdelone.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/libft/ft_lstdelone.c.o: ../libft/ft_lstdelone.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/VM_cor.dir/libft/ft_lstdelone.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_lstdelone.c.o   -c /Users/myprosku/corTwar/VM_cor/libft/ft_lstdelone.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/VM_cor.dir/libft/ft_lstdelone.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_lstdelone.c.o   -c /Users/ssavchen/coretwar/VM_cor/libft/ft_lstdelone.c
 
 CMakeFiles/VM_cor.dir/libft/ft_lstdelone.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/libft/ft_lstdelone.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/libft/ft_lstdelone.c > CMakeFiles/VM_cor.dir/libft/ft_lstdelone.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/libft/ft_lstdelone.c > CMakeFiles/VM_cor.dir/libft/ft_lstdelone.c.i
 
 CMakeFiles/VM_cor.dir/libft/ft_lstdelone.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/libft/ft_lstdelone.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/libft/ft_lstdelone.c -o CMakeFiles/VM_cor.dir/libft/ft_lstdelone.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/libft/ft_lstdelone.c -o CMakeFiles/VM_cor.dir/libft/ft_lstdelone.c.s
 
 CMakeFiles/VM_cor.dir/libft/ft_lstdelone.c.o.requires:
 
@@ -1019,16 +1019,16 @@ CMakeFiles/VM_cor.dir/libft/ft_lstdelone.c.o.provides.build: CMakeFiles/VM_cor.d
 
 CMakeFiles/VM_cor.dir/libft/ft_lstiter.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/libft/ft_lstiter.c.o: ../libft/ft_lstiter.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/VM_cor.dir/libft/ft_lstiter.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_lstiter.c.o   -c /Users/myprosku/corTwar/VM_cor/libft/ft_lstiter.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/VM_cor.dir/libft/ft_lstiter.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_lstiter.c.o   -c /Users/ssavchen/coretwar/VM_cor/libft/ft_lstiter.c
 
 CMakeFiles/VM_cor.dir/libft/ft_lstiter.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/libft/ft_lstiter.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/libft/ft_lstiter.c > CMakeFiles/VM_cor.dir/libft/ft_lstiter.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/libft/ft_lstiter.c > CMakeFiles/VM_cor.dir/libft/ft_lstiter.c.i
 
 CMakeFiles/VM_cor.dir/libft/ft_lstiter.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/libft/ft_lstiter.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/libft/ft_lstiter.c -o CMakeFiles/VM_cor.dir/libft/ft_lstiter.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/libft/ft_lstiter.c -o CMakeFiles/VM_cor.dir/libft/ft_lstiter.c.s
 
 CMakeFiles/VM_cor.dir/libft/ft_lstiter.c.o.requires:
 
@@ -1043,16 +1043,16 @@ CMakeFiles/VM_cor.dir/libft/ft_lstiter.c.o.provides.build: CMakeFiles/VM_cor.dir
 
 CMakeFiles/VM_cor.dir/libft/ft_lstmap.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/libft/ft_lstmap.c.o: ../libft/ft_lstmap.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/VM_cor.dir/libft/ft_lstmap.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_lstmap.c.o   -c /Users/myprosku/corTwar/VM_cor/libft/ft_lstmap.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/VM_cor.dir/libft/ft_lstmap.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_lstmap.c.o   -c /Users/ssavchen/coretwar/VM_cor/libft/ft_lstmap.c
 
 CMakeFiles/VM_cor.dir/libft/ft_lstmap.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/libft/ft_lstmap.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/libft/ft_lstmap.c > CMakeFiles/VM_cor.dir/libft/ft_lstmap.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/libft/ft_lstmap.c > CMakeFiles/VM_cor.dir/libft/ft_lstmap.c.i
 
 CMakeFiles/VM_cor.dir/libft/ft_lstmap.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/libft/ft_lstmap.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/libft/ft_lstmap.c -o CMakeFiles/VM_cor.dir/libft/ft_lstmap.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/libft/ft_lstmap.c -o CMakeFiles/VM_cor.dir/libft/ft_lstmap.c.s
 
 CMakeFiles/VM_cor.dir/libft/ft_lstmap.c.o.requires:
 
@@ -1067,16 +1067,16 @@ CMakeFiles/VM_cor.dir/libft/ft_lstmap.c.o.provides.build: CMakeFiles/VM_cor.dir/
 
 CMakeFiles/VM_cor.dir/libft/ft_lstnew.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/libft/ft_lstnew.c.o: ../libft/ft_lstnew.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object CMakeFiles/VM_cor.dir/libft/ft_lstnew.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_lstnew.c.o   -c /Users/myprosku/corTwar/VM_cor/libft/ft_lstnew.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object CMakeFiles/VM_cor.dir/libft/ft_lstnew.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_lstnew.c.o   -c /Users/ssavchen/coretwar/VM_cor/libft/ft_lstnew.c
 
 CMakeFiles/VM_cor.dir/libft/ft_lstnew.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/libft/ft_lstnew.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/libft/ft_lstnew.c > CMakeFiles/VM_cor.dir/libft/ft_lstnew.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/libft/ft_lstnew.c > CMakeFiles/VM_cor.dir/libft/ft_lstnew.c.i
 
 CMakeFiles/VM_cor.dir/libft/ft_lstnew.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/libft/ft_lstnew.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/libft/ft_lstnew.c -o CMakeFiles/VM_cor.dir/libft/ft_lstnew.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/libft/ft_lstnew.c -o CMakeFiles/VM_cor.dir/libft/ft_lstnew.c.s
 
 CMakeFiles/VM_cor.dir/libft/ft_lstnew.c.o.requires:
 
@@ -1091,16 +1091,16 @@ CMakeFiles/VM_cor.dir/libft/ft_lstnew.c.o.provides.build: CMakeFiles/VM_cor.dir/
 
 CMakeFiles/VM_cor.dir/libft/ft_memalloc.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/libft/ft_memalloc.c.o: ../libft/ft_memalloc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/VM_cor.dir/libft/ft_memalloc.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_memalloc.c.o   -c /Users/myprosku/corTwar/VM_cor/libft/ft_memalloc.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/VM_cor.dir/libft/ft_memalloc.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_memalloc.c.o   -c /Users/ssavchen/coretwar/VM_cor/libft/ft_memalloc.c
 
 CMakeFiles/VM_cor.dir/libft/ft_memalloc.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/libft/ft_memalloc.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/libft/ft_memalloc.c > CMakeFiles/VM_cor.dir/libft/ft_memalloc.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/libft/ft_memalloc.c > CMakeFiles/VM_cor.dir/libft/ft_memalloc.c.i
 
 CMakeFiles/VM_cor.dir/libft/ft_memalloc.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/libft/ft_memalloc.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/libft/ft_memalloc.c -o CMakeFiles/VM_cor.dir/libft/ft_memalloc.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/libft/ft_memalloc.c -o CMakeFiles/VM_cor.dir/libft/ft_memalloc.c.s
 
 CMakeFiles/VM_cor.dir/libft/ft_memalloc.c.o.requires:
 
@@ -1115,16 +1115,16 @@ CMakeFiles/VM_cor.dir/libft/ft_memalloc.c.o.provides.build: CMakeFiles/VM_cor.di
 
 CMakeFiles/VM_cor.dir/libft/ft_memccpy.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/libft/ft_memccpy.c.o: ../libft/ft_memccpy.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/VM_cor.dir/libft/ft_memccpy.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_memccpy.c.o   -c /Users/myprosku/corTwar/VM_cor/libft/ft_memccpy.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/VM_cor.dir/libft/ft_memccpy.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_memccpy.c.o   -c /Users/ssavchen/coretwar/VM_cor/libft/ft_memccpy.c
 
 CMakeFiles/VM_cor.dir/libft/ft_memccpy.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/libft/ft_memccpy.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/libft/ft_memccpy.c > CMakeFiles/VM_cor.dir/libft/ft_memccpy.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/libft/ft_memccpy.c > CMakeFiles/VM_cor.dir/libft/ft_memccpy.c.i
 
 CMakeFiles/VM_cor.dir/libft/ft_memccpy.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/libft/ft_memccpy.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/libft/ft_memccpy.c -o CMakeFiles/VM_cor.dir/libft/ft_memccpy.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/libft/ft_memccpy.c -o CMakeFiles/VM_cor.dir/libft/ft_memccpy.c.s
 
 CMakeFiles/VM_cor.dir/libft/ft_memccpy.c.o.requires:
 
@@ -1139,16 +1139,16 @@ CMakeFiles/VM_cor.dir/libft/ft_memccpy.c.o.provides.build: CMakeFiles/VM_cor.dir
 
 CMakeFiles/VM_cor.dir/libft/ft_memchr.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/libft/ft_memchr.c.o: ../libft/ft_memchr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/VM_cor.dir/libft/ft_memchr.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_memchr.c.o   -c /Users/myprosku/corTwar/VM_cor/libft/ft_memchr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/VM_cor.dir/libft/ft_memchr.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_memchr.c.o   -c /Users/ssavchen/coretwar/VM_cor/libft/ft_memchr.c
 
 CMakeFiles/VM_cor.dir/libft/ft_memchr.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/libft/ft_memchr.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/libft/ft_memchr.c > CMakeFiles/VM_cor.dir/libft/ft_memchr.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/libft/ft_memchr.c > CMakeFiles/VM_cor.dir/libft/ft_memchr.c.i
 
 CMakeFiles/VM_cor.dir/libft/ft_memchr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/libft/ft_memchr.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/libft/ft_memchr.c -o CMakeFiles/VM_cor.dir/libft/ft_memchr.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/libft/ft_memchr.c -o CMakeFiles/VM_cor.dir/libft/ft_memchr.c.s
 
 CMakeFiles/VM_cor.dir/libft/ft_memchr.c.o.requires:
 
@@ -1163,16 +1163,16 @@ CMakeFiles/VM_cor.dir/libft/ft_memchr.c.o.provides.build: CMakeFiles/VM_cor.dir/
 
 CMakeFiles/VM_cor.dir/libft/ft_memcmp.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/libft/ft_memcmp.c.o: ../libft/ft_memcmp.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/VM_cor.dir/libft/ft_memcmp.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_memcmp.c.o   -c /Users/myprosku/corTwar/VM_cor/libft/ft_memcmp.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/VM_cor.dir/libft/ft_memcmp.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_memcmp.c.o   -c /Users/ssavchen/coretwar/VM_cor/libft/ft_memcmp.c
 
 CMakeFiles/VM_cor.dir/libft/ft_memcmp.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/libft/ft_memcmp.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/libft/ft_memcmp.c > CMakeFiles/VM_cor.dir/libft/ft_memcmp.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/libft/ft_memcmp.c > CMakeFiles/VM_cor.dir/libft/ft_memcmp.c.i
 
 CMakeFiles/VM_cor.dir/libft/ft_memcmp.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/libft/ft_memcmp.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/libft/ft_memcmp.c -o CMakeFiles/VM_cor.dir/libft/ft_memcmp.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/libft/ft_memcmp.c -o CMakeFiles/VM_cor.dir/libft/ft_memcmp.c.s
 
 CMakeFiles/VM_cor.dir/libft/ft_memcmp.c.o.requires:
 
@@ -1187,16 +1187,16 @@ CMakeFiles/VM_cor.dir/libft/ft_memcmp.c.o.provides.build: CMakeFiles/VM_cor.dir/
 
 CMakeFiles/VM_cor.dir/libft/ft_memcpy.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/libft/ft_memcpy.c.o: ../libft/ft_memcpy.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/VM_cor.dir/libft/ft_memcpy.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_memcpy.c.o   -c /Users/myprosku/corTwar/VM_cor/libft/ft_memcpy.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/VM_cor.dir/libft/ft_memcpy.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_memcpy.c.o   -c /Users/ssavchen/coretwar/VM_cor/libft/ft_memcpy.c
 
 CMakeFiles/VM_cor.dir/libft/ft_memcpy.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/libft/ft_memcpy.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/libft/ft_memcpy.c > CMakeFiles/VM_cor.dir/libft/ft_memcpy.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/libft/ft_memcpy.c > CMakeFiles/VM_cor.dir/libft/ft_memcpy.c.i
 
 CMakeFiles/VM_cor.dir/libft/ft_memcpy.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/libft/ft_memcpy.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/libft/ft_memcpy.c -o CMakeFiles/VM_cor.dir/libft/ft_memcpy.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/libft/ft_memcpy.c -o CMakeFiles/VM_cor.dir/libft/ft_memcpy.c.s
 
 CMakeFiles/VM_cor.dir/libft/ft_memcpy.c.o.requires:
 
@@ -1211,16 +1211,16 @@ CMakeFiles/VM_cor.dir/libft/ft_memcpy.c.o.provides.build: CMakeFiles/VM_cor.dir/
 
 CMakeFiles/VM_cor.dir/libft/ft_memdel.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/libft/ft_memdel.c.o: ../libft/ft_memdel.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object CMakeFiles/VM_cor.dir/libft/ft_memdel.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_memdel.c.o   -c /Users/myprosku/corTwar/VM_cor/libft/ft_memdel.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object CMakeFiles/VM_cor.dir/libft/ft_memdel.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_memdel.c.o   -c /Users/ssavchen/coretwar/VM_cor/libft/ft_memdel.c
 
 CMakeFiles/VM_cor.dir/libft/ft_memdel.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/libft/ft_memdel.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/libft/ft_memdel.c > CMakeFiles/VM_cor.dir/libft/ft_memdel.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/libft/ft_memdel.c > CMakeFiles/VM_cor.dir/libft/ft_memdel.c.i
 
 CMakeFiles/VM_cor.dir/libft/ft_memdel.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/libft/ft_memdel.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/libft/ft_memdel.c -o CMakeFiles/VM_cor.dir/libft/ft_memdel.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/libft/ft_memdel.c -o CMakeFiles/VM_cor.dir/libft/ft_memdel.c.s
 
 CMakeFiles/VM_cor.dir/libft/ft_memdel.c.o.requires:
 
@@ -1235,16 +1235,16 @@ CMakeFiles/VM_cor.dir/libft/ft_memdel.c.o.provides.build: CMakeFiles/VM_cor.dir/
 
 CMakeFiles/VM_cor.dir/libft/ft_memmove.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/libft/ft_memmove.c.o: ../libft/ft_memmove.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object CMakeFiles/VM_cor.dir/libft/ft_memmove.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_memmove.c.o   -c /Users/myprosku/corTwar/VM_cor/libft/ft_memmove.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object CMakeFiles/VM_cor.dir/libft/ft_memmove.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_memmove.c.o   -c /Users/ssavchen/coretwar/VM_cor/libft/ft_memmove.c
 
 CMakeFiles/VM_cor.dir/libft/ft_memmove.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/libft/ft_memmove.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/libft/ft_memmove.c > CMakeFiles/VM_cor.dir/libft/ft_memmove.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/libft/ft_memmove.c > CMakeFiles/VM_cor.dir/libft/ft_memmove.c.i
 
 CMakeFiles/VM_cor.dir/libft/ft_memmove.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/libft/ft_memmove.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/libft/ft_memmove.c -o CMakeFiles/VM_cor.dir/libft/ft_memmove.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/libft/ft_memmove.c -o CMakeFiles/VM_cor.dir/libft/ft_memmove.c.s
 
 CMakeFiles/VM_cor.dir/libft/ft_memmove.c.o.requires:
 
@@ -1259,16 +1259,16 @@ CMakeFiles/VM_cor.dir/libft/ft_memmove.c.o.provides.build: CMakeFiles/VM_cor.dir
 
 CMakeFiles/VM_cor.dir/libft/ft_memset.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/libft/ft_memset.c.o: ../libft/ft_memset.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object CMakeFiles/VM_cor.dir/libft/ft_memset.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_memset.c.o   -c /Users/myprosku/corTwar/VM_cor/libft/ft_memset.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object CMakeFiles/VM_cor.dir/libft/ft_memset.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_memset.c.o   -c /Users/ssavchen/coretwar/VM_cor/libft/ft_memset.c
 
 CMakeFiles/VM_cor.dir/libft/ft_memset.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/libft/ft_memset.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/libft/ft_memset.c > CMakeFiles/VM_cor.dir/libft/ft_memset.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/libft/ft_memset.c > CMakeFiles/VM_cor.dir/libft/ft_memset.c.i
 
 CMakeFiles/VM_cor.dir/libft/ft_memset.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/libft/ft_memset.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/libft/ft_memset.c -o CMakeFiles/VM_cor.dir/libft/ft_memset.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/libft/ft_memset.c -o CMakeFiles/VM_cor.dir/libft/ft_memset.c.s
 
 CMakeFiles/VM_cor.dir/libft/ft_memset.c.o.requires:
 
@@ -1283,16 +1283,16 @@ CMakeFiles/VM_cor.dir/libft/ft_memset.c.o.provides.build: CMakeFiles/VM_cor.dir/
 
 CMakeFiles/VM_cor.dir/libft/ft_min_max.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/libft/ft_min_max.c.o: ../libft/ft_min_max.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object CMakeFiles/VM_cor.dir/libft/ft_min_max.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_min_max.c.o   -c /Users/myprosku/corTwar/VM_cor/libft/ft_min_max.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object CMakeFiles/VM_cor.dir/libft/ft_min_max.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_min_max.c.o   -c /Users/ssavchen/coretwar/VM_cor/libft/ft_min_max.c
 
 CMakeFiles/VM_cor.dir/libft/ft_min_max.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/libft/ft_min_max.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/libft/ft_min_max.c > CMakeFiles/VM_cor.dir/libft/ft_min_max.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/libft/ft_min_max.c > CMakeFiles/VM_cor.dir/libft/ft_min_max.c.i
 
 CMakeFiles/VM_cor.dir/libft/ft_min_max.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/libft/ft_min_max.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/libft/ft_min_max.c -o CMakeFiles/VM_cor.dir/libft/ft_min_max.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/libft/ft_min_max.c -o CMakeFiles/VM_cor.dir/libft/ft_min_max.c.s
 
 CMakeFiles/VM_cor.dir/libft/ft_min_max.c.o.requires:
 
@@ -1307,16 +1307,16 @@ CMakeFiles/VM_cor.dir/libft/ft_min_max.c.o.provides.build: CMakeFiles/VM_cor.dir
 
 CMakeFiles/VM_cor.dir/libft/ft_printf.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/libft/ft_printf.c.o: ../libft/ft_printf.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object CMakeFiles/VM_cor.dir/libft/ft_printf.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_printf.c.o   -c /Users/myprosku/corTwar/VM_cor/libft/ft_printf.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object CMakeFiles/VM_cor.dir/libft/ft_printf.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_printf.c.o   -c /Users/ssavchen/coretwar/VM_cor/libft/ft_printf.c
 
 CMakeFiles/VM_cor.dir/libft/ft_printf.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/libft/ft_printf.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/libft/ft_printf.c > CMakeFiles/VM_cor.dir/libft/ft_printf.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/libft/ft_printf.c > CMakeFiles/VM_cor.dir/libft/ft_printf.c.i
 
 CMakeFiles/VM_cor.dir/libft/ft_printf.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/libft/ft_printf.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/libft/ft_printf.c -o CMakeFiles/VM_cor.dir/libft/ft_printf.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/libft/ft_printf.c -o CMakeFiles/VM_cor.dir/libft/ft_printf.c.s
 
 CMakeFiles/VM_cor.dir/libft/ft_printf.c.o.requires:
 
@@ -1331,16 +1331,16 @@ CMakeFiles/VM_cor.dir/libft/ft_printf.c.o.provides.build: CMakeFiles/VM_cor.dir/
 
 CMakeFiles/VM_cor.dir/libft/ft_putchar.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/libft/ft_putchar.c.o: ../libft/ft_putchar.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object CMakeFiles/VM_cor.dir/libft/ft_putchar.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_putchar.c.o   -c /Users/myprosku/corTwar/VM_cor/libft/ft_putchar.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object CMakeFiles/VM_cor.dir/libft/ft_putchar.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_putchar.c.o   -c /Users/ssavchen/coretwar/VM_cor/libft/ft_putchar.c
 
 CMakeFiles/VM_cor.dir/libft/ft_putchar.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/libft/ft_putchar.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/libft/ft_putchar.c > CMakeFiles/VM_cor.dir/libft/ft_putchar.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/libft/ft_putchar.c > CMakeFiles/VM_cor.dir/libft/ft_putchar.c.i
 
 CMakeFiles/VM_cor.dir/libft/ft_putchar.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/libft/ft_putchar.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/libft/ft_putchar.c -o CMakeFiles/VM_cor.dir/libft/ft_putchar.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/libft/ft_putchar.c -o CMakeFiles/VM_cor.dir/libft/ft_putchar.c.s
 
 CMakeFiles/VM_cor.dir/libft/ft_putchar.c.o.requires:
 
@@ -1355,16 +1355,16 @@ CMakeFiles/VM_cor.dir/libft/ft_putchar.c.o.provides.build: CMakeFiles/VM_cor.dir
 
 CMakeFiles/VM_cor.dir/libft/ft_putchar_fd.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/libft/ft_putchar_fd.c.o: ../libft/ft_putchar_fd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object CMakeFiles/VM_cor.dir/libft/ft_putchar_fd.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_putchar_fd.c.o   -c /Users/myprosku/corTwar/VM_cor/libft/ft_putchar_fd.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object CMakeFiles/VM_cor.dir/libft/ft_putchar_fd.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_putchar_fd.c.o   -c /Users/ssavchen/coretwar/VM_cor/libft/ft_putchar_fd.c
 
 CMakeFiles/VM_cor.dir/libft/ft_putchar_fd.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/libft/ft_putchar_fd.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/libft/ft_putchar_fd.c > CMakeFiles/VM_cor.dir/libft/ft_putchar_fd.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/libft/ft_putchar_fd.c > CMakeFiles/VM_cor.dir/libft/ft_putchar_fd.c.i
 
 CMakeFiles/VM_cor.dir/libft/ft_putchar_fd.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/libft/ft_putchar_fd.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/libft/ft_putchar_fd.c -o CMakeFiles/VM_cor.dir/libft/ft_putchar_fd.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/libft/ft_putchar_fd.c -o CMakeFiles/VM_cor.dir/libft/ft_putchar_fd.c.s
 
 CMakeFiles/VM_cor.dir/libft/ft_putchar_fd.c.o.requires:
 
@@ -1379,16 +1379,16 @@ CMakeFiles/VM_cor.dir/libft/ft_putchar_fd.c.o.provides.build: CMakeFiles/VM_cor.
 
 CMakeFiles/VM_cor.dir/libft/ft_putendl.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/libft/ft_putendl.c.o: ../libft/ft_putendl.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object CMakeFiles/VM_cor.dir/libft/ft_putendl.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_putendl.c.o   -c /Users/myprosku/corTwar/VM_cor/libft/ft_putendl.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object CMakeFiles/VM_cor.dir/libft/ft_putendl.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_putendl.c.o   -c /Users/ssavchen/coretwar/VM_cor/libft/ft_putendl.c
 
 CMakeFiles/VM_cor.dir/libft/ft_putendl.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/libft/ft_putendl.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/libft/ft_putendl.c > CMakeFiles/VM_cor.dir/libft/ft_putendl.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/libft/ft_putendl.c > CMakeFiles/VM_cor.dir/libft/ft_putendl.c.i
 
 CMakeFiles/VM_cor.dir/libft/ft_putendl.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/libft/ft_putendl.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/libft/ft_putendl.c -o CMakeFiles/VM_cor.dir/libft/ft_putendl.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/libft/ft_putendl.c -o CMakeFiles/VM_cor.dir/libft/ft_putendl.c.s
 
 CMakeFiles/VM_cor.dir/libft/ft_putendl.c.o.requires:
 
@@ -1403,16 +1403,16 @@ CMakeFiles/VM_cor.dir/libft/ft_putendl.c.o.provides.build: CMakeFiles/VM_cor.dir
 
 CMakeFiles/VM_cor.dir/libft/ft_putendl_fd.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/libft/ft_putendl_fd.c.o: ../libft/ft_putendl_fd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object CMakeFiles/VM_cor.dir/libft/ft_putendl_fd.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_putendl_fd.c.o   -c /Users/myprosku/corTwar/VM_cor/libft/ft_putendl_fd.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object CMakeFiles/VM_cor.dir/libft/ft_putendl_fd.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_putendl_fd.c.o   -c /Users/ssavchen/coretwar/VM_cor/libft/ft_putendl_fd.c
 
 CMakeFiles/VM_cor.dir/libft/ft_putendl_fd.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/libft/ft_putendl_fd.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/libft/ft_putendl_fd.c > CMakeFiles/VM_cor.dir/libft/ft_putendl_fd.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/libft/ft_putendl_fd.c > CMakeFiles/VM_cor.dir/libft/ft_putendl_fd.c.i
 
 CMakeFiles/VM_cor.dir/libft/ft_putendl_fd.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/libft/ft_putendl_fd.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/libft/ft_putendl_fd.c -o CMakeFiles/VM_cor.dir/libft/ft_putendl_fd.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/libft/ft_putendl_fd.c -o CMakeFiles/VM_cor.dir/libft/ft_putendl_fd.c.s
 
 CMakeFiles/VM_cor.dir/libft/ft_putendl_fd.c.o.requires:
 
@@ -1427,16 +1427,16 @@ CMakeFiles/VM_cor.dir/libft/ft_putendl_fd.c.o.provides.build: CMakeFiles/VM_cor.
 
 CMakeFiles/VM_cor.dir/libft/ft_putnbr.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/libft/ft_putnbr.c.o: ../libft/ft_putnbr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object CMakeFiles/VM_cor.dir/libft/ft_putnbr.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_putnbr.c.o   -c /Users/myprosku/corTwar/VM_cor/libft/ft_putnbr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object CMakeFiles/VM_cor.dir/libft/ft_putnbr.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_putnbr.c.o   -c /Users/ssavchen/coretwar/VM_cor/libft/ft_putnbr.c
 
 CMakeFiles/VM_cor.dir/libft/ft_putnbr.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/libft/ft_putnbr.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/libft/ft_putnbr.c > CMakeFiles/VM_cor.dir/libft/ft_putnbr.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/libft/ft_putnbr.c > CMakeFiles/VM_cor.dir/libft/ft_putnbr.c.i
 
 CMakeFiles/VM_cor.dir/libft/ft_putnbr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/libft/ft_putnbr.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/libft/ft_putnbr.c -o CMakeFiles/VM_cor.dir/libft/ft_putnbr.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/libft/ft_putnbr.c -o CMakeFiles/VM_cor.dir/libft/ft_putnbr.c.s
 
 CMakeFiles/VM_cor.dir/libft/ft_putnbr.c.o.requires:
 
@@ -1451,16 +1451,16 @@ CMakeFiles/VM_cor.dir/libft/ft_putnbr.c.o.provides.build: CMakeFiles/VM_cor.dir/
 
 CMakeFiles/VM_cor.dir/libft/ft_putnbr_fd.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/libft/ft_putnbr_fd.c.o: ../libft/ft_putnbr_fd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object CMakeFiles/VM_cor.dir/libft/ft_putnbr_fd.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_putnbr_fd.c.o   -c /Users/myprosku/corTwar/VM_cor/libft/ft_putnbr_fd.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object CMakeFiles/VM_cor.dir/libft/ft_putnbr_fd.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_putnbr_fd.c.o   -c /Users/ssavchen/coretwar/VM_cor/libft/ft_putnbr_fd.c
 
 CMakeFiles/VM_cor.dir/libft/ft_putnbr_fd.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/libft/ft_putnbr_fd.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/libft/ft_putnbr_fd.c > CMakeFiles/VM_cor.dir/libft/ft_putnbr_fd.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/libft/ft_putnbr_fd.c > CMakeFiles/VM_cor.dir/libft/ft_putnbr_fd.c.i
 
 CMakeFiles/VM_cor.dir/libft/ft_putnbr_fd.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/libft/ft_putnbr_fd.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/libft/ft_putnbr_fd.c -o CMakeFiles/VM_cor.dir/libft/ft_putnbr_fd.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/libft/ft_putnbr_fd.c -o CMakeFiles/VM_cor.dir/libft/ft_putnbr_fd.c.s
 
 CMakeFiles/VM_cor.dir/libft/ft_putnbr_fd.c.o.requires:
 
@@ -1475,16 +1475,16 @@ CMakeFiles/VM_cor.dir/libft/ft_putnbr_fd.c.o.provides.build: CMakeFiles/VM_cor.d
 
 CMakeFiles/VM_cor.dir/libft/ft_putnbr_u.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/libft/ft_putnbr_u.c.o: ../libft/ft_putnbr_u.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object CMakeFiles/VM_cor.dir/libft/ft_putnbr_u.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_putnbr_u.c.o   -c /Users/myprosku/corTwar/VM_cor/libft/ft_putnbr_u.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object CMakeFiles/VM_cor.dir/libft/ft_putnbr_u.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_putnbr_u.c.o   -c /Users/ssavchen/coretwar/VM_cor/libft/ft_putnbr_u.c
 
 CMakeFiles/VM_cor.dir/libft/ft_putnbr_u.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/libft/ft_putnbr_u.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/libft/ft_putnbr_u.c > CMakeFiles/VM_cor.dir/libft/ft_putnbr_u.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/libft/ft_putnbr_u.c > CMakeFiles/VM_cor.dir/libft/ft_putnbr_u.c.i
 
 CMakeFiles/VM_cor.dir/libft/ft_putnbr_u.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/libft/ft_putnbr_u.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/libft/ft_putnbr_u.c -o CMakeFiles/VM_cor.dir/libft/ft_putnbr_u.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/libft/ft_putnbr_u.c -o CMakeFiles/VM_cor.dir/libft/ft_putnbr_u.c.s
 
 CMakeFiles/VM_cor.dir/libft/ft_putnbr_u.c.o.requires:
 
@@ -1499,16 +1499,16 @@ CMakeFiles/VM_cor.dir/libft/ft_putnbr_u.c.o.provides.build: CMakeFiles/VM_cor.di
 
 CMakeFiles/VM_cor.dir/libft/ft_putstr.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/libft/ft_putstr.c.o: ../libft/ft_putstr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object CMakeFiles/VM_cor.dir/libft/ft_putstr.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_putstr.c.o   -c /Users/myprosku/corTwar/VM_cor/libft/ft_putstr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object CMakeFiles/VM_cor.dir/libft/ft_putstr.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_putstr.c.o   -c /Users/ssavchen/coretwar/VM_cor/libft/ft_putstr.c
 
 CMakeFiles/VM_cor.dir/libft/ft_putstr.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/libft/ft_putstr.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/libft/ft_putstr.c > CMakeFiles/VM_cor.dir/libft/ft_putstr.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/libft/ft_putstr.c > CMakeFiles/VM_cor.dir/libft/ft_putstr.c.i
 
 CMakeFiles/VM_cor.dir/libft/ft_putstr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/libft/ft_putstr.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/libft/ft_putstr.c -o CMakeFiles/VM_cor.dir/libft/ft_putstr.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/libft/ft_putstr.c -o CMakeFiles/VM_cor.dir/libft/ft_putstr.c.s
 
 CMakeFiles/VM_cor.dir/libft/ft_putstr.c.o.requires:
 
@@ -1523,16 +1523,16 @@ CMakeFiles/VM_cor.dir/libft/ft_putstr.c.o.provides.build: CMakeFiles/VM_cor.dir/
 
 CMakeFiles/VM_cor.dir/libft/ft_putstr_fd.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/libft/ft_putstr_fd.c.o: ../libft/ft_putstr_fd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building C object CMakeFiles/VM_cor.dir/libft/ft_putstr_fd.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_putstr_fd.c.o   -c /Users/myprosku/corTwar/VM_cor/libft/ft_putstr_fd.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building C object CMakeFiles/VM_cor.dir/libft/ft_putstr_fd.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_putstr_fd.c.o   -c /Users/ssavchen/coretwar/VM_cor/libft/ft_putstr_fd.c
 
 CMakeFiles/VM_cor.dir/libft/ft_putstr_fd.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/libft/ft_putstr_fd.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/libft/ft_putstr_fd.c > CMakeFiles/VM_cor.dir/libft/ft_putstr_fd.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/libft/ft_putstr_fd.c > CMakeFiles/VM_cor.dir/libft/ft_putstr_fd.c.i
 
 CMakeFiles/VM_cor.dir/libft/ft_putstr_fd.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/libft/ft_putstr_fd.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/libft/ft_putstr_fd.c -o CMakeFiles/VM_cor.dir/libft/ft_putstr_fd.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/libft/ft_putstr_fd.c -o CMakeFiles/VM_cor.dir/libft/ft_putstr_fd.c.s
 
 CMakeFiles/VM_cor.dir/libft/ft_putstr_fd.c.o.requires:
 
@@ -1547,16 +1547,16 @@ CMakeFiles/VM_cor.dir/libft/ft_putstr_fd.c.o.provides.build: CMakeFiles/VM_cor.d
 
 CMakeFiles/VM_cor.dir/libft/ft_putstr_u.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/libft/ft_putstr_u.c.o: ../libft/ft_putstr_u.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object CMakeFiles/VM_cor.dir/libft/ft_putstr_u.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_putstr_u.c.o   -c /Users/myprosku/corTwar/VM_cor/libft/ft_putstr_u.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object CMakeFiles/VM_cor.dir/libft/ft_putstr_u.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_putstr_u.c.o   -c /Users/ssavchen/coretwar/VM_cor/libft/ft_putstr_u.c
 
 CMakeFiles/VM_cor.dir/libft/ft_putstr_u.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/libft/ft_putstr_u.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/libft/ft_putstr_u.c > CMakeFiles/VM_cor.dir/libft/ft_putstr_u.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/libft/ft_putstr_u.c > CMakeFiles/VM_cor.dir/libft/ft_putstr_u.c.i
 
 CMakeFiles/VM_cor.dir/libft/ft_putstr_u.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/libft/ft_putstr_u.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/libft/ft_putstr_u.c -o CMakeFiles/VM_cor.dir/libft/ft_putstr_u.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/libft/ft_putstr_u.c -o CMakeFiles/VM_cor.dir/libft/ft_putstr_u.c.s
 
 CMakeFiles/VM_cor.dir/libft/ft_putstr_u.c.o.requires:
 
@@ -1571,16 +1571,16 @@ CMakeFiles/VM_cor.dir/libft/ft_putstr_u.c.o.provides.build: CMakeFiles/VM_cor.di
 
 CMakeFiles/VM_cor.dir/libft/ft_strcat.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/libft/ft_strcat.c.o: ../libft/ft_strcat.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building C object CMakeFiles/VM_cor.dir/libft/ft_strcat.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_strcat.c.o   -c /Users/myprosku/corTwar/VM_cor/libft/ft_strcat.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building C object CMakeFiles/VM_cor.dir/libft/ft_strcat.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_strcat.c.o   -c /Users/ssavchen/coretwar/VM_cor/libft/ft_strcat.c
 
 CMakeFiles/VM_cor.dir/libft/ft_strcat.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/libft/ft_strcat.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/libft/ft_strcat.c > CMakeFiles/VM_cor.dir/libft/ft_strcat.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/libft/ft_strcat.c > CMakeFiles/VM_cor.dir/libft/ft_strcat.c.i
 
 CMakeFiles/VM_cor.dir/libft/ft_strcat.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/libft/ft_strcat.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/libft/ft_strcat.c -o CMakeFiles/VM_cor.dir/libft/ft_strcat.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/libft/ft_strcat.c -o CMakeFiles/VM_cor.dir/libft/ft_strcat.c.s
 
 CMakeFiles/VM_cor.dir/libft/ft_strcat.c.o.requires:
 
@@ -1595,16 +1595,16 @@ CMakeFiles/VM_cor.dir/libft/ft_strcat.c.o.provides.build: CMakeFiles/VM_cor.dir/
 
 CMakeFiles/VM_cor.dir/libft/ft_strchr.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/libft/ft_strchr.c.o: ../libft/ft_strchr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building C object CMakeFiles/VM_cor.dir/libft/ft_strchr.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_strchr.c.o   -c /Users/myprosku/corTwar/VM_cor/libft/ft_strchr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building C object CMakeFiles/VM_cor.dir/libft/ft_strchr.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_strchr.c.o   -c /Users/ssavchen/coretwar/VM_cor/libft/ft_strchr.c
 
 CMakeFiles/VM_cor.dir/libft/ft_strchr.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/libft/ft_strchr.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/libft/ft_strchr.c > CMakeFiles/VM_cor.dir/libft/ft_strchr.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/libft/ft_strchr.c > CMakeFiles/VM_cor.dir/libft/ft_strchr.c.i
 
 CMakeFiles/VM_cor.dir/libft/ft_strchr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/libft/ft_strchr.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/libft/ft_strchr.c -o CMakeFiles/VM_cor.dir/libft/ft_strchr.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/libft/ft_strchr.c -o CMakeFiles/VM_cor.dir/libft/ft_strchr.c.s
 
 CMakeFiles/VM_cor.dir/libft/ft_strchr.c.o.requires:
 
@@ -1619,16 +1619,16 @@ CMakeFiles/VM_cor.dir/libft/ft_strchr.c.o.provides.build: CMakeFiles/VM_cor.dir/
 
 CMakeFiles/VM_cor.dir/libft/ft_strclr.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/libft/ft_strclr.c.o: ../libft/ft_strclr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building C object CMakeFiles/VM_cor.dir/libft/ft_strclr.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_strclr.c.o   -c /Users/myprosku/corTwar/VM_cor/libft/ft_strclr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building C object CMakeFiles/VM_cor.dir/libft/ft_strclr.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_strclr.c.o   -c /Users/ssavchen/coretwar/VM_cor/libft/ft_strclr.c
 
 CMakeFiles/VM_cor.dir/libft/ft_strclr.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/libft/ft_strclr.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/libft/ft_strclr.c > CMakeFiles/VM_cor.dir/libft/ft_strclr.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/libft/ft_strclr.c > CMakeFiles/VM_cor.dir/libft/ft_strclr.c.i
 
 CMakeFiles/VM_cor.dir/libft/ft_strclr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/libft/ft_strclr.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/libft/ft_strclr.c -o CMakeFiles/VM_cor.dir/libft/ft_strclr.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/libft/ft_strclr.c -o CMakeFiles/VM_cor.dir/libft/ft_strclr.c.s
 
 CMakeFiles/VM_cor.dir/libft/ft_strclr.c.o.requires:
 
@@ -1643,16 +1643,16 @@ CMakeFiles/VM_cor.dir/libft/ft_strclr.c.o.provides.build: CMakeFiles/VM_cor.dir/
 
 CMakeFiles/VM_cor.dir/libft/ft_strcmp.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/libft/ft_strcmp.c.o: ../libft/ft_strcmp.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object CMakeFiles/VM_cor.dir/libft/ft_strcmp.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_strcmp.c.o   -c /Users/myprosku/corTwar/VM_cor/libft/ft_strcmp.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object CMakeFiles/VM_cor.dir/libft/ft_strcmp.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_strcmp.c.o   -c /Users/ssavchen/coretwar/VM_cor/libft/ft_strcmp.c
 
 CMakeFiles/VM_cor.dir/libft/ft_strcmp.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/libft/ft_strcmp.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/libft/ft_strcmp.c > CMakeFiles/VM_cor.dir/libft/ft_strcmp.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/libft/ft_strcmp.c > CMakeFiles/VM_cor.dir/libft/ft_strcmp.c.i
 
 CMakeFiles/VM_cor.dir/libft/ft_strcmp.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/libft/ft_strcmp.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/libft/ft_strcmp.c -o CMakeFiles/VM_cor.dir/libft/ft_strcmp.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/libft/ft_strcmp.c -o CMakeFiles/VM_cor.dir/libft/ft_strcmp.c.s
 
 CMakeFiles/VM_cor.dir/libft/ft_strcmp.c.o.requires:
 
@@ -1667,16 +1667,16 @@ CMakeFiles/VM_cor.dir/libft/ft_strcmp.c.o.provides.build: CMakeFiles/VM_cor.dir/
 
 CMakeFiles/VM_cor.dir/libft/ft_strcpy.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/libft/ft_strcpy.c.o: ../libft/ft_strcpy.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object CMakeFiles/VM_cor.dir/libft/ft_strcpy.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_strcpy.c.o   -c /Users/myprosku/corTwar/VM_cor/libft/ft_strcpy.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object CMakeFiles/VM_cor.dir/libft/ft_strcpy.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_strcpy.c.o   -c /Users/ssavchen/coretwar/VM_cor/libft/ft_strcpy.c
 
 CMakeFiles/VM_cor.dir/libft/ft_strcpy.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/libft/ft_strcpy.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/libft/ft_strcpy.c > CMakeFiles/VM_cor.dir/libft/ft_strcpy.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/libft/ft_strcpy.c > CMakeFiles/VM_cor.dir/libft/ft_strcpy.c.i
 
 CMakeFiles/VM_cor.dir/libft/ft_strcpy.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/libft/ft_strcpy.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/libft/ft_strcpy.c -o CMakeFiles/VM_cor.dir/libft/ft_strcpy.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/libft/ft_strcpy.c -o CMakeFiles/VM_cor.dir/libft/ft_strcpy.c.s
 
 CMakeFiles/VM_cor.dir/libft/ft_strcpy.c.o.requires:
 
@@ -1691,16 +1691,16 @@ CMakeFiles/VM_cor.dir/libft/ft_strcpy.c.o.provides.build: CMakeFiles/VM_cor.dir/
 
 CMakeFiles/VM_cor.dir/libft/ft_strdel.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/libft/ft_strdel.c.o: ../libft/ft_strdel.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building C object CMakeFiles/VM_cor.dir/libft/ft_strdel.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_strdel.c.o   -c /Users/myprosku/corTwar/VM_cor/libft/ft_strdel.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building C object CMakeFiles/VM_cor.dir/libft/ft_strdel.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_strdel.c.o   -c /Users/ssavchen/coretwar/VM_cor/libft/ft_strdel.c
 
 CMakeFiles/VM_cor.dir/libft/ft_strdel.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/libft/ft_strdel.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/libft/ft_strdel.c > CMakeFiles/VM_cor.dir/libft/ft_strdel.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/libft/ft_strdel.c > CMakeFiles/VM_cor.dir/libft/ft_strdel.c.i
 
 CMakeFiles/VM_cor.dir/libft/ft_strdel.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/libft/ft_strdel.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/libft/ft_strdel.c -o CMakeFiles/VM_cor.dir/libft/ft_strdel.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/libft/ft_strdel.c -o CMakeFiles/VM_cor.dir/libft/ft_strdel.c.s
 
 CMakeFiles/VM_cor.dir/libft/ft_strdel.c.o.requires:
 
@@ -1715,16 +1715,16 @@ CMakeFiles/VM_cor.dir/libft/ft_strdel.c.o.provides.build: CMakeFiles/VM_cor.dir/
 
 CMakeFiles/VM_cor.dir/libft/ft_strdup.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/libft/ft_strdup.c.o: ../libft/ft_strdup.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object CMakeFiles/VM_cor.dir/libft/ft_strdup.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_strdup.c.o   -c /Users/myprosku/corTwar/VM_cor/libft/ft_strdup.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object CMakeFiles/VM_cor.dir/libft/ft_strdup.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_strdup.c.o   -c /Users/ssavchen/coretwar/VM_cor/libft/ft_strdup.c
 
 CMakeFiles/VM_cor.dir/libft/ft_strdup.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/libft/ft_strdup.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/libft/ft_strdup.c > CMakeFiles/VM_cor.dir/libft/ft_strdup.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/libft/ft_strdup.c > CMakeFiles/VM_cor.dir/libft/ft_strdup.c.i
 
 CMakeFiles/VM_cor.dir/libft/ft_strdup.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/libft/ft_strdup.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/libft/ft_strdup.c -o CMakeFiles/VM_cor.dir/libft/ft_strdup.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/libft/ft_strdup.c -o CMakeFiles/VM_cor.dir/libft/ft_strdup.c.s
 
 CMakeFiles/VM_cor.dir/libft/ft_strdup.c.o.requires:
 
@@ -1739,16 +1739,16 @@ CMakeFiles/VM_cor.dir/libft/ft_strdup.c.o.provides.build: CMakeFiles/VM_cor.dir/
 
 CMakeFiles/VM_cor.dir/libft/ft_strequ.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/libft/ft_strequ.c.o: ../libft/ft_strequ.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object CMakeFiles/VM_cor.dir/libft/ft_strequ.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_strequ.c.o   -c /Users/myprosku/corTwar/VM_cor/libft/ft_strequ.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object CMakeFiles/VM_cor.dir/libft/ft_strequ.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_strequ.c.o   -c /Users/ssavchen/coretwar/VM_cor/libft/ft_strequ.c
 
 CMakeFiles/VM_cor.dir/libft/ft_strequ.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/libft/ft_strequ.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/libft/ft_strequ.c > CMakeFiles/VM_cor.dir/libft/ft_strequ.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/libft/ft_strequ.c > CMakeFiles/VM_cor.dir/libft/ft_strequ.c.i
 
 CMakeFiles/VM_cor.dir/libft/ft_strequ.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/libft/ft_strequ.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/libft/ft_strequ.c -o CMakeFiles/VM_cor.dir/libft/ft_strequ.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/libft/ft_strequ.c -o CMakeFiles/VM_cor.dir/libft/ft_strequ.c.s
 
 CMakeFiles/VM_cor.dir/libft/ft_strequ.c.o.requires:
 
@@ -1763,16 +1763,16 @@ CMakeFiles/VM_cor.dir/libft/ft_strequ.c.o.provides.build: CMakeFiles/VM_cor.dir/
 
 CMakeFiles/VM_cor.dir/libft/ft_striter.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/libft/ft_striter.c.o: ../libft/ft_striter.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building C object CMakeFiles/VM_cor.dir/libft/ft_striter.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_striter.c.o   -c /Users/myprosku/corTwar/VM_cor/libft/ft_striter.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building C object CMakeFiles/VM_cor.dir/libft/ft_striter.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_striter.c.o   -c /Users/ssavchen/coretwar/VM_cor/libft/ft_striter.c
 
 CMakeFiles/VM_cor.dir/libft/ft_striter.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/libft/ft_striter.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/libft/ft_striter.c > CMakeFiles/VM_cor.dir/libft/ft_striter.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/libft/ft_striter.c > CMakeFiles/VM_cor.dir/libft/ft_striter.c.i
 
 CMakeFiles/VM_cor.dir/libft/ft_striter.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/libft/ft_striter.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/libft/ft_striter.c -o CMakeFiles/VM_cor.dir/libft/ft_striter.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/libft/ft_striter.c -o CMakeFiles/VM_cor.dir/libft/ft_striter.c.s
 
 CMakeFiles/VM_cor.dir/libft/ft_striter.c.o.requires:
 
@@ -1787,16 +1787,16 @@ CMakeFiles/VM_cor.dir/libft/ft_striter.c.o.provides.build: CMakeFiles/VM_cor.dir
 
 CMakeFiles/VM_cor.dir/libft/ft_striteri.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/libft/ft_striteri.c.o: ../libft/ft_striteri.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building C object CMakeFiles/VM_cor.dir/libft/ft_striteri.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_striteri.c.o   -c /Users/myprosku/corTwar/VM_cor/libft/ft_striteri.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building C object CMakeFiles/VM_cor.dir/libft/ft_striteri.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_striteri.c.o   -c /Users/ssavchen/coretwar/VM_cor/libft/ft_striteri.c
 
 CMakeFiles/VM_cor.dir/libft/ft_striteri.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/libft/ft_striteri.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/libft/ft_striteri.c > CMakeFiles/VM_cor.dir/libft/ft_striteri.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/libft/ft_striteri.c > CMakeFiles/VM_cor.dir/libft/ft_striteri.c.i
 
 CMakeFiles/VM_cor.dir/libft/ft_striteri.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/libft/ft_striteri.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/libft/ft_striteri.c -o CMakeFiles/VM_cor.dir/libft/ft_striteri.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/libft/ft_striteri.c -o CMakeFiles/VM_cor.dir/libft/ft_striteri.c.s
 
 CMakeFiles/VM_cor.dir/libft/ft_striteri.c.o.requires:
 
@@ -1811,16 +1811,16 @@ CMakeFiles/VM_cor.dir/libft/ft_striteri.c.o.provides.build: CMakeFiles/VM_cor.di
 
 CMakeFiles/VM_cor.dir/libft/ft_strjoin.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/libft/ft_strjoin.c.o: ../libft/ft_strjoin.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building C object CMakeFiles/VM_cor.dir/libft/ft_strjoin.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_strjoin.c.o   -c /Users/myprosku/corTwar/VM_cor/libft/ft_strjoin.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building C object CMakeFiles/VM_cor.dir/libft/ft_strjoin.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_strjoin.c.o   -c /Users/ssavchen/coretwar/VM_cor/libft/ft_strjoin.c
 
 CMakeFiles/VM_cor.dir/libft/ft_strjoin.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/libft/ft_strjoin.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/libft/ft_strjoin.c > CMakeFiles/VM_cor.dir/libft/ft_strjoin.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/libft/ft_strjoin.c > CMakeFiles/VM_cor.dir/libft/ft_strjoin.c.i
 
 CMakeFiles/VM_cor.dir/libft/ft_strjoin.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/libft/ft_strjoin.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/libft/ft_strjoin.c -o CMakeFiles/VM_cor.dir/libft/ft_strjoin.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/libft/ft_strjoin.c -o CMakeFiles/VM_cor.dir/libft/ft_strjoin.c.s
 
 CMakeFiles/VM_cor.dir/libft/ft_strjoin.c.o.requires:
 
@@ -1835,16 +1835,16 @@ CMakeFiles/VM_cor.dir/libft/ft_strjoin.c.o.provides.build: CMakeFiles/VM_cor.dir
 
 CMakeFiles/VM_cor.dir/libft/ft_strlcat.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/libft/ft_strlcat.c.o: ../libft/ft_strlcat.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building C object CMakeFiles/VM_cor.dir/libft/ft_strlcat.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_strlcat.c.o   -c /Users/myprosku/corTwar/VM_cor/libft/ft_strlcat.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building C object CMakeFiles/VM_cor.dir/libft/ft_strlcat.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_strlcat.c.o   -c /Users/ssavchen/coretwar/VM_cor/libft/ft_strlcat.c
 
 CMakeFiles/VM_cor.dir/libft/ft_strlcat.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/libft/ft_strlcat.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/libft/ft_strlcat.c > CMakeFiles/VM_cor.dir/libft/ft_strlcat.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/libft/ft_strlcat.c > CMakeFiles/VM_cor.dir/libft/ft_strlcat.c.i
 
 CMakeFiles/VM_cor.dir/libft/ft_strlcat.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/libft/ft_strlcat.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/libft/ft_strlcat.c -o CMakeFiles/VM_cor.dir/libft/ft_strlcat.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/libft/ft_strlcat.c -o CMakeFiles/VM_cor.dir/libft/ft_strlcat.c.s
 
 CMakeFiles/VM_cor.dir/libft/ft_strlcat.c.o.requires:
 
@@ -1859,16 +1859,16 @@ CMakeFiles/VM_cor.dir/libft/ft_strlcat.c.o.provides.build: CMakeFiles/VM_cor.dir
 
 CMakeFiles/VM_cor.dir/libft/ft_strlen.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/libft/ft_strlen.c.o: ../libft/ft_strlen.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building C object CMakeFiles/VM_cor.dir/libft/ft_strlen.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_strlen.c.o   -c /Users/myprosku/corTwar/VM_cor/libft/ft_strlen.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building C object CMakeFiles/VM_cor.dir/libft/ft_strlen.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_strlen.c.o   -c /Users/ssavchen/coretwar/VM_cor/libft/ft_strlen.c
 
 CMakeFiles/VM_cor.dir/libft/ft_strlen.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/libft/ft_strlen.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/libft/ft_strlen.c > CMakeFiles/VM_cor.dir/libft/ft_strlen.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/libft/ft_strlen.c > CMakeFiles/VM_cor.dir/libft/ft_strlen.c.i
 
 CMakeFiles/VM_cor.dir/libft/ft_strlen.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/libft/ft_strlen.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/libft/ft_strlen.c -o CMakeFiles/VM_cor.dir/libft/ft_strlen.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/libft/ft_strlen.c -o CMakeFiles/VM_cor.dir/libft/ft_strlen.c.s
 
 CMakeFiles/VM_cor.dir/libft/ft_strlen.c.o.requires:
 
@@ -1883,16 +1883,16 @@ CMakeFiles/VM_cor.dir/libft/ft_strlen.c.o.provides.build: CMakeFiles/VM_cor.dir/
 
 CMakeFiles/VM_cor.dir/libft/ft_strmap.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/libft/ft_strmap.c.o: ../libft/ft_strmap.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building C object CMakeFiles/VM_cor.dir/libft/ft_strmap.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_strmap.c.o   -c /Users/myprosku/corTwar/VM_cor/libft/ft_strmap.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building C object CMakeFiles/VM_cor.dir/libft/ft_strmap.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_strmap.c.o   -c /Users/ssavchen/coretwar/VM_cor/libft/ft_strmap.c
 
 CMakeFiles/VM_cor.dir/libft/ft_strmap.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/libft/ft_strmap.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/libft/ft_strmap.c > CMakeFiles/VM_cor.dir/libft/ft_strmap.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/libft/ft_strmap.c > CMakeFiles/VM_cor.dir/libft/ft_strmap.c.i
 
 CMakeFiles/VM_cor.dir/libft/ft_strmap.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/libft/ft_strmap.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/libft/ft_strmap.c -o CMakeFiles/VM_cor.dir/libft/ft_strmap.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/libft/ft_strmap.c -o CMakeFiles/VM_cor.dir/libft/ft_strmap.c.s
 
 CMakeFiles/VM_cor.dir/libft/ft_strmap.c.o.requires:
 
@@ -1907,16 +1907,16 @@ CMakeFiles/VM_cor.dir/libft/ft_strmap.c.o.provides.build: CMakeFiles/VM_cor.dir/
 
 CMakeFiles/VM_cor.dir/libft/ft_strmapi.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/libft/ft_strmapi.c.o: ../libft/ft_strmapi.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building C object CMakeFiles/VM_cor.dir/libft/ft_strmapi.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_strmapi.c.o   -c /Users/myprosku/corTwar/VM_cor/libft/ft_strmapi.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building C object CMakeFiles/VM_cor.dir/libft/ft_strmapi.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_strmapi.c.o   -c /Users/ssavchen/coretwar/VM_cor/libft/ft_strmapi.c
 
 CMakeFiles/VM_cor.dir/libft/ft_strmapi.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/libft/ft_strmapi.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/libft/ft_strmapi.c > CMakeFiles/VM_cor.dir/libft/ft_strmapi.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/libft/ft_strmapi.c > CMakeFiles/VM_cor.dir/libft/ft_strmapi.c.i
 
 CMakeFiles/VM_cor.dir/libft/ft_strmapi.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/libft/ft_strmapi.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/libft/ft_strmapi.c -o CMakeFiles/VM_cor.dir/libft/ft_strmapi.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/libft/ft_strmapi.c -o CMakeFiles/VM_cor.dir/libft/ft_strmapi.c.s
 
 CMakeFiles/VM_cor.dir/libft/ft_strmapi.c.o.requires:
 
@@ -1931,16 +1931,16 @@ CMakeFiles/VM_cor.dir/libft/ft_strmapi.c.o.provides.build: CMakeFiles/VM_cor.dir
 
 CMakeFiles/VM_cor.dir/libft/ft_strncat.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/libft/ft_strncat.c.o: ../libft/ft_strncat.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building C object CMakeFiles/VM_cor.dir/libft/ft_strncat.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_strncat.c.o   -c /Users/myprosku/corTwar/VM_cor/libft/ft_strncat.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building C object CMakeFiles/VM_cor.dir/libft/ft_strncat.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_strncat.c.o   -c /Users/ssavchen/coretwar/VM_cor/libft/ft_strncat.c
 
 CMakeFiles/VM_cor.dir/libft/ft_strncat.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/libft/ft_strncat.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/libft/ft_strncat.c > CMakeFiles/VM_cor.dir/libft/ft_strncat.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/libft/ft_strncat.c > CMakeFiles/VM_cor.dir/libft/ft_strncat.c.i
 
 CMakeFiles/VM_cor.dir/libft/ft_strncat.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/libft/ft_strncat.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/libft/ft_strncat.c -o CMakeFiles/VM_cor.dir/libft/ft_strncat.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/libft/ft_strncat.c -o CMakeFiles/VM_cor.dir/libft/ft_strncat.c.s
 
 CMakeFiles/VM_cor.dir/libft/ft_strncat.c.o.requires:
 
@@ -1955,16 +1955,16 @@ CMakeFiles/VM_cor.dir/libft/ft_strncat.c.o.provides.build: CMakeFiles/VM_cor.dir
 
 CMakeFiles/VM_cor.dir/libft/ft_strncmp.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/libft/ft_strncmp.c.o: ../libft/ft_strncmp.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building C object CMakeFiles/VM_cor.dir/libft/ft_strncmp.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_strncmp.c.o   -c /Users/myprosku/corTwar/VM_cor/libft/ft_strncmp.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building C object CMakeFiles/VM_cor.dir/libft/ft_strncmp.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_strncmp.c.o   -c /Users/ssavchen/coretwar/VM_cor/libft/ft_strncmp.c
 
 CMakeFiles/VM_cor.dir/libft/ft_strncmp.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/libft/ft_strncmp.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/libft/ft_strncmp.c > CMakeFiles/VM_cor.dir/libft/ft_strncmp.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/libft/ft_strncmp.c > CMakeFiles/VM_cor.dir/libft/ft_strncmp.c.i
 
 CMakeFiles/VM_cor.dir/libft/ft_strncmp.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/libft/ft_strncmp.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/libft/ft_strncmp.c -o CMakeFiles/VM_cor.dir/libft/ft_strncmp.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/libft/ft_strncmp.c -o CMakeFiles/VM_cor.dir/libft/ft_strncmp.c.s
 
 CMakeFiles/VM_cor.dir/libft/ft_strncmp.c.o.requires:
 
@@ -1979,16 +1979,16 @@ CMakeFiles/VM_cor.dir/libft/ft_strncmp.c.o.provides.build: CMakeFiles/VM_cor.dir
 
 CMakeFiles/VM_cor.dir/libft/ft_strncpy.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/libft/ft_strncpy.c.o: ../libft/ft_strncpy.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building C object CMakeFiles/VM_cor.dir/libft/ft_strncpy.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_strncpy.c.o   -c /Users/myprosku/corTwar/VM_cor/libft/ft_strncpy.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building C object CMakeFiles/VM_cor.dir/libft/ft_strncpy.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_strncpy.c.o   -c /Users/ssavchen/coretwar/VM_cor/libft/ft_strncpy.c
 
 CMakeFiles/VM_cor.dir/libft/ft_strncpy.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/libft/ft_strncpy.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/libft/ft_strncpy.c > CMakeFiles/VM_cor.dir/libft/ft_strncpy.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/libft/ft_strncpy.c > CMakeFiles/VM_cor.dir/libft/ft_strncpy.c.i
 
 CMakeFiles/VM_cor.dir/libft/ft_strncpy.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/libft/ft_strncpy.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/libft/ft_strncpy.c -o CMakeFiles/VM_cor.dir/libft/ft_strncpy.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/libft/ft_strncpy.c -o CMakeFiles/VM_cor.dir/libft/ft_strncpy.c.s
 
 CMakeFiles/VM_cor.dir/libft/ft_strncpy.c.o.requires:
 
@@ -2003,16 +2003,16 @@ CMakeFiles/VM_cor.dir/libft/ft_strncpy.c.o.provides.build: CMakeFiles/VM_cor.dir
 
 CMakeFiles/VM_cor.dir/libft/ft_strndup.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/libft/ft_strndup.c.o: ../libft/ft_strndup.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building C object CMakeFiles/VM_cor.dir/libft/ft_strndup.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_strndup.c.o   -c /Users/myprosku/corTwar/VM_cor/libft/ft_strndup.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building C object CMakeFiles/VM_cor.dir/libft/ft_strndup.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_strndup.c.o   -c /Users/ssavchen/coretwar/VM_cor/libft/ft_strndup.c
 
 CMakeFiles/VM_cor.dir/libft/ft_strndup.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/libft/ft_strndup.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/libft/ft_strndup.c > CMakeFiles/VM_cor.dir/libft/ft_strndup.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/libft/ft_strndup.c > CMakeFiles/VM_cor.dir/libft/ft_strndup.c.i
 
 CMakeFiles/VM_cor.dir/libft/ft_strndup.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/libft/ft_strndup.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/libft/ft_strndup.c -o CMakeFiles/VM_cor.dir/libft/ft_strndup.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/libft/ft_strndup.c -o CMakeFiles/VM_cor.dir/libft/ft_strndup.c.s
 
 CMakeFiles/VM_cor.dir/libft/ft_strndup.c.o.requires:
 
@@ -2027,16 +2027,16 @@ CMakeFiles/VM_cor.dir/libft/ft_strndup.c.o.provides.build: CMakeFiles/VM_cor.dir
 
 CMakeFiles/VM_cor.dir/libft/ft_strnequ.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/libft/ft_strnequ.c.o: ../libft/ft_strnequ.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building C object CMakeFiles/VM_cor.dir/libft/ft_strnequ.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_strnequ.c.o   -c /Users/myprosku/corTwar/VM_cor/libft/ft_strnequ.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building C object CMakeFiles/VM_cor.dir/libft/ft_strnequ.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_strnequ.c.o   -c /Users/ssavchen/coretwar/VM_cor/libft/ft_strnequ.c
 
 CMakeFiles/VM_cor.dir/libft/ft_strnequ.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/libft/ft_strnequ.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/libft/ft_strnequ.c > CMakeFiles/VM_cor.dir/libft/ft_strnequ.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/libft/ft_strnequ.c > CMakeFiles/VM_cor.dir/libft/ft_strnequ.c.i
 
 CMakeFiles/VM_cor.dir/libft/ft_strnequ.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/libft/ft_strnequ.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/libft/ft_strnequ.c -o CMakeFiles/VM_cor.dir/libft/ft_strnequ.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/libft/ft_strnequ.c -o CMakeFiles/VM_cor.dir/libft/ft_strnequ.c.s
 
 CMakeFiles/VM_cor.dir/libft/ft_strnequ.c.o.requires:
 
@@ -2051,16 +2051,16 @@ CMakeFiles/VM_cor.dir/libft/ft_strnequ.c.o.provides.build: CMakeFiles/VM_cor.dir
 
 CMakeFiles/VM_cor.dir/libft/ft_strnew.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/libft/ft_strnew.c.o: ../libft/ft_strnew.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building C object CMakeFiles/VM_cor.dir/libft/ft_strnew.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_strnew.c.o   -c /Users/myprosku/corTwar/VM_cor/libft/ft_strnew.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building C object CMakeFiles/VM_cor.dir/libft/ft_strnew.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_strnew.c.o   -c /Users/ssavchen/coretwar/VM_cor/libft/ft_strnew.c
 
 CMakeFiles/VM_cor.dir/libft/ft_strnew.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/libft/ft_strnew.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/libft/ft_strnew.c > CMakeFiles/VM_cor.dir/libft/ft_strnew.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/libft/ft_strnew.c > CMakeFiles/VM_cor.dir/libft/ft_strnew.c.i
 
 CMakeFiles/VM_cor.dir/libft/ft_strnew.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/libft/ft_strnew.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/libft/ft_strnew.c -o CMakeFiles/VM_cor.dir/libft/ft_strnew.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/libft/ft_strnew.c -o CMakeFiles/VM_cor.dir/libft/ft_strnew.c.s
 
 CMakeFiles/VM_cor.dir/libft/ft_strnew.c.o.requires:
 
@@ -2075,16 +2075,16 @@ CMakeFiles/VM_cor.dir/libft/ft_strnew.c.o.provides.build: CMakeFiles/VM_cor.dir/
 
 CMakeFiles/VM_cor.dir/libft/ft_strnstr.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/libft/ft_strnstr.c.o: ../libft/ft_strnstr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building C object CMakeFiles/VM_cor.dir/libft/ft_strnstr.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_strnstr.c.o   -c /Users/myprosku/corTwar/VM_cor/libft/ft_strnstr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building C object CMakeFiles/VM_cor.dir/libft/ft_strnstr.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_strnstr.c.o   -c /Users/ssavchen/coretwar/VM_cor/libft/ft_strnstr.c
 
 CMakeFiles/VM_cor.dir/libft/ft_strnstr.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/libft/ft_strnstr.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/libft/ft_strnstr.c > CMakeFiles/VM_cor.dir/libft/ft_strnstr.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/libft/ft_strnstr.c > CMakeFiles/VM_cor.dir/libft/ft_strnstr.c.i
 
 CMakeFiles/VM_cor.dir/libft/ft_strnstr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/libft/ft_strnstr.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/libft/ft_strnstr.c -o CMakeFiles/VM_cor.dir/libft/ft_strnstr.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/libft/ft_strnstr.c -o CMakeFiles/VM_cor.dir/libft/ft_strnstr.c.s
 
 CMakeFiles/VM_cor.dir/libft/ft_strnstr.c.o.requires:
 
@@ -2099,16 +2099,16 @@ CMakeFiles/VM_cor.dir/libft/ft_strnstr.c.o.provides.build: CMakeFiles/VM_cor.dir
 
 CMakeFiles/VM_cor.dir/libft/ft_strrchr.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/libft/ft_strrchr.c.o: ../libft/ft_strrchr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building C object CMakeFiles/VM_cor.dir/libft/ft_strrchr.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_strrchr.c.o   -c /Users/myprosku/corTwar/VM_cor/libft/ft_strrchr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building C object CMakeFiles/VM_cor.dir/libft/ft_strrchr.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_strrchr.c.o   -c /Users/ssavchen/coretwar/VM_cor/libft/ft_strrchr.c
 
 CMakeFiles/VM_cor.dir/libft/ft_strrchr.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/libft/ft_strrchr.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/libft/ft_strrchr.c > CMakeFiles/VM_cor.dir/libft/ft_strrchr.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/libft/ft_strrchr.c > CMakeFiles/VM_cor.dir/libft/ft_strrchr.c.i
 
 CMakeFiles/VM_cor.dir/libft/ft_strrchr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/libft/ft_strrchr.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/libft/ft_strrchr.c -o CMakeFiles/VM_cor.dir/libft/ft_strrchr.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/libft/ft_strrchr.c -o CMakeFiles/VM_cor.dir/libft/ft_strrchr.c.s
 
 CMakeFiles/VM_cor.dir/libft/ft_strrchr.c.o.requires:
 
@@ -2123,16 +2123,16 @@ CMakeFiles/VM_cor.dir/libft/ft_strrchr.c.o.provides.build: CMakeFiles/VM_cor.dir
 
 CMakeFiles/VM_cor.dir/libft/ft_strsplit.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/libft/ft_strsplit.c.o: ../libft/ft_strsplit.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Building C object CMakeFiles/VM_cor.dir/libft/ft_strsplit.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_strsplit.c.o   -c /Users/myprosku/corTwar/VM_cor/libft/ft_strsplit.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Building C object CMakeFiles/VM_cor.dir/libft/ft_strsplit.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_strsplit.c.o   -c /Users/ssavchen/coretwar/VM_cor/libft/ft_strsplit.c
 
 CMakeFiles/VM_cor.dir/libft/ft_strsplit.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/libft/ft_strsplit.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/libft/ft_strsplit.c > CMakeFiles/VM_cor.dir/libft/ft_strsplit.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/libft/ft_strsplit.c > CMakeFiles/VM_cor.dir/libft/ft_strsplit.c.i
 
 CMakeFiles/VM_cor.dir/libft/ft_strsplit.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/libft/ft_strsplit.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/libft/ft_strsplit.c -o CMakeFiles/VM_cor.dir/libft/ft_strsplit.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/libft/ft_strsplit.c -o CMakeFiles/VM_cor.dir/libft/ft_strsplit.c.s
 
 CMakeFiles/VM_cor.dir/libft/ft_strsplit.c.o.requires:
 
@@ -2147,16 +2147,16 @@ CMakeFiles/VM_cor.dir/libft/ft_strsplit.c.o.provides.build: CMakeFiles/VM_cor.di
 
 CMakeFiles/VM_cor.dir/libft/ft_strstr.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/libft/ft_strstr.c.o: ../libft/ft_strstr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Building C object CMakeFiles/VM_cor.dir/libft/ft_strstr.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_strstr.c.o   -c /Users/myprosku/corTwar/VM_cor/libft/ft_strstr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Building C object CMakeFiles/VM_cor.dir/libft/ft_strstr.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_strstr.c.o   -c /Users/ssavchen/coretwar/VM_cor/libft/ft_strstr.c
 
 CMakeFiles/VM_cor.dir/libft/ft_strstr.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/libft/ft_strstr.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/libft/ft_strstr.c > CMakeFiles/VM_cor.dir/libft/ft_strstr.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/libft/ft_strstr.c > CMakeFiles/VM_cor.dir/libft/ft_strstr.c.i
 
 CMakeFiles/VM_cor.dir/libft/ft_strstr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/libft/ft_strstr.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/libft/ft_strstr.c -o CMakeFiles/VM_cor.dir/libft/ft_strstr.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/libft/ft_strstr.c -o CMakeFiles/VM_cor.dir/libft/ft_strstr.c.s
 
 CMakeFiles/VM_cor.dir/libft/ft_strstr.c.o.requires:
 
@@ -2171,16 +2171,16 @@ CMakeFiles/VM_cor.dir/libft/ft_strstr.c.o.provides.build: CMakeFiles/VM_cor.dir/
 
 CMakeFiles/VM_cor.dir/libft/ft_strsub.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/libft/ft_strsub.c.o: ../libft/ft_strsub.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_89) "Building C object CMakeFiles/VM_cor.dir/libft/ft_strsub.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_strsub.c.o   -c /Users/myprosku/corTwar/VM_cor/libft/ft_strsub.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_89) "Building C object CMakeFiles/VM_cor.dir/libft/ft_strsub.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_strsub.c.o   -c /Users/ssavchen/coretwar/VM_cor/libft/ft_strsub.c
 
 CMakeFiles/VM_cor.dir/libft/ft_strsub.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/libft/ft_strsub.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/libft/ft_strsub.c > CMakeFiles/VM_cor.dir/libft/ft_strsub.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/libft/ft_strsub.c > CMakeFiles/VM_cor.dir/libft/ft_strsub.c.i
 
 CMakeFiles/VM_cor.dir/libft/ft_strsub.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/libft/ft_strsub.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/libft/ft_strsub.c -o CMakeFiles/VM_cor.dir/libft/ft_strsub.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/libft/ft_strsub.c -o CMakeFiles/VM_cor.dir/libft/ft_strsub.c.s
 
 CMakeFiles/VM_cor.dir/libft/ft_strsub.c.o.requires:
 
@@ -2195,16 +2195,16 @@ CMakeFiles/VM_cor.dir/libft/ft_strsub.c.o.provides.build: CMakeFiles/VM_cor.dir/
 
 CMakeFiles/VM_cor.dir/libft/ft_strtrim.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/libft/ft_strtrim.c.o: ../libft/ft_strtrim.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_90) "Building C object CMakeFiles/VM_cor.dir/libft/ft_strtrim.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_strtrim.c.o   -c /Users/myprosku/corTwar/VM_cor/libft/ft_strtrim.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_90) "Building C object CMakeFiles/VM_cor.dir/libft/ft_strtrim.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_strtrim.c.o   -c /Users/ssavchen/coretwar/VM_cor/libft/ft_strtrim.c
 
 CMakeFiles/VM_cor.dir/libft/ft_strtrim.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/libft/ft_strtrim.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/libft/ft_strtrim.c > CMakeFiles/VM_cor.dir/libft/ft_strtrim.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/libft/ft_strtrim.c > CMakeFiles/VM_cor.dir/libft/ft_strtrim.c.i
 
 CMakeFiles/VM_cor.dir/libft/ft_strtrim.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/libft/ft_strtrim.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/libft/ft_strtrim.c -o CMakeFiles/VM_cor.dir/libft/ft_strtrim.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/libft/ft_strtrim.c -o CMakeFiles/VM_cor.dir/libft/ft_strtrim.c.s
 
 CMakeFiles/VM_cor.dir/libft/ft_strtrim.c.o.requires:
 
@@ -2219,16 +2219,16 @@ CMakeFiles/VM_cor.dir/libft/ft_strtrim.c.o.provides.build: CMakeFiles/VM_cor.dir
 
 CMakeFiles/VM_cor.dir/libft/ft_swap.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/libft/ft_swap.c.o: ../libft/ft_swap.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_91) "Building C object CMakeFiles/VM_cor.dir/libft/ft_swap.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_swap.c.o   -c /Users/myprosku/corTwar/VM_cor/libft/ft_swap.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_91) "Building C object CMakeFiles/VM_cor.dir/libft/ft_swap.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_swap.c.o   -c /Users/ssavchen/coretwar/VM_cor/libft/ft_swap.c
 
 CMakeFiles/VM_cor.dir/libft/ft_swap.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/libft/ft_swap.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/libft/ft_swap.c > CMakeFiles/VM_cor.dir/libft/ft_swap.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/libft/ft_swap.c > CMakeFiles/VM_cor.dir/libft/ft_swap.c.i
 
 CMakeFiles/VM_cor.dir/libft/ft_swap.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/libft/ft_swap.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/libft/ft_swap.c -o CMakeFiles/VM_cor.dir/libft/ft_swap.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/libft/ft_swap.c -o CMakeFiles/VM_cor.dir/libft/ft_swap.c.s
 
 CMakeFiles/VM_cor.dir/libft/ft_swap.c.o.requires:
 
@@ -2243,16 +2243,16 @@ CMakeFiles/VM_cor.dir/libft/ft_swap.c.o.provides.build: CMakeFiles/VM_cor.dir/li
 
 CMakeFiles/VM_cor.dir/libft/ft_tolower.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/libft/ft_tolower.c.o: ../libft/ft_tolower.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_92) "Building C object CMakeFiles/VM_cor.dir/libft/ft_tolower.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_tolower.c.o   -c /Users/myprosku/corTwar/VM_cor/libft/ft_tolower.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_92) "Building C object CMakeFiles/VM_cor.dir/libft/ft_tolower.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_tolower.c.o   -c /Users/ssavchen/coretwar/VM_cor/libft/ft_tolower.c
 
 CMakeFiles/VM_cor.dir/libft/ft_tolower.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/libft/ft_tolower.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/libft/ft_tolower.c > CMakeFiles/VM_cor.dir/libft/ft_tolower.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/libft/ft_tolower.c > CMakeFiles/VM_cor.dir/libft/ft_tolower.c.i
 
 CMakeFiles/VM_cor.dir/libft/ft_tolower.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/libft/ft_tolower.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/libft/ft_tolower.c -o CMakeFiles/VM_cor.dir/libft/ft_tolower.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/libft/ft_tolower.c -o CMakeFiles/VM_cor.dir/libft/ft_tolower.c.s
 
 CMakeFiles/VM_cor.dir/libft/ft_tolower.c.o.requires:
 
@@ -2267,16 +2267,16 @@ CMakeFiles/VM_cor.dir/libft/ft_tolower.c.o.provides.build: CMakeFiles/VM_cor.dir
 
 CMakeFiles/VM_cor.dir/libft/ft_toupper.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/libft/ft_toupper.c.o: ../libft/ft_toupper.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_93) "Building C object CMakeFiles/VM_cor.dir/libft/ft_toupper.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_toupper.c.o   -c /Users/myprosku/corTwar/VM_cor/libft/ft_toupper.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_93) "Building C object CMakeFiles/VM_cor.dir/libft/ft_toupper.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_toupper.c.o   -c /Users/ssavchen/coretwar/VM_cor/libft/ft_toupper.c
 
 CMakeFiles/VM_cor.dir/libft/ft_toupper.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/libft/ft_toupper.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/libft/ft_toupper.c > CMakeFiles/VM_cor.dir/libft/ft_toupper.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/libft/ft_toupper.c > CMakeFiles/VM_cor.dir/libft/ft_toupper.c.i
 
 CMakeFiles/VM_cor.dir/libft/ft_toupper.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/libft/ft_toupper.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/libft/ft_toupper.c -o CMakeFiles/VM_cor.dir/libft/ft_toupper.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/libft/ft_toupper.c -o CMakeFiles/VM_cor.dir/libft/ft_toupper.c.s
 
 CMakeFiles/VM_cor.dir/libft/ft_toupper.c.o.requires:
 
@@ -2291,16 +2291,16 @@ CMakeFiles/VM_cor.dir/libft/ft_toupper.c.o.provides.build: CMakeFiles/VM_cor.dir
 
 CMakeFiles/VM_cor.dir/libft/ft_zero.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/libft/ft_zero.c.o: ../libft/ft_zero.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_94) "Building C object CMakeFiles/VM_cor.dir/libft/ft_zero.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_zero.c.o   -c /Users/myprosku/corTwar/VM_cor/libft/ft_zero.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_94) "Building C object CMakeFiles/VM_cor.dir/libft/ft_zero.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/ft_zero.c.o   -c /Users/ssavchen/coretwar/VM_cor/libft/ft_zero.c
 
 CMakeFiles/VM_cor.dir/libft/ft_zero.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/libft/ft_zero.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/libft/ft_zero.c > CMakeFiles/VM_cor.dir/libft/ft_zero.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/libft/ft_zero.c > CMakeFiles/VM_cor.dir/libft/ft_zero.c.i
 
 CMakeFiles/VM_cor.dir/libft/ft_zero.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/libft/ft_zero.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/libft/ft_zero.c -o CMakeFiles/VM_cor.dir/libft/ft_zero.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/libft/ft_zero.c -o CMakeFiles/VM_cor.dir/libft/ft_zero.c.s
 
 CMakeFiles/VM_cor.dir/libft/ft_zero.c.o.requires:
 
@@ -2315,16 +2315,16 @@ CMakeFiles/VM_cor.dir/libft/ft_zero.c.o.provides.build: CMakeFiles/VM_cor.dir/li
 
 CMakeFiles/VM_cor.dir/libft/get_next_line.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/libft/get_next_line.c.o: ../libft/get_next_line.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_95) "Building C object CMakeFiles/VM_cor.dir/libft/get_next_line.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/get_next_line.c.o   -c /Users/myprosku/corTwar/VM_cor/libft/get_next_line.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_95) "Building C object CMakeFiles/VM_cor.dir/libft/get_next_line.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/get_next_line.c.o   -c /Users/ssavchen/coretwar/VM_cor/libft/get_next_line.c
 
 CMakeFiles/VM_cor.dir/libft/get_next_line.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/libft/get_next_line.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/libft/get_next_line.c > CMakeFiles/VM_cor.dir/libft/get_next_line.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/libft/get_next_line.c > CMakeFiles/VM_cor.dir/libft/get_next_line.c.i
 
 CMakeFiles/VM_cor.dir/libft/get_next_line.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/libft/get_next_line.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/libft/get_next_line.c -o CMakeFiles/VM_cor.dir/libft/get_next_line.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/libft/get_next_line.c -o CMakeFiles/VM_cor.dir/libft/get_next_line.c.s
 
 CMakeFiles/VM_cor.dir/libft/get_next_line.c.o.requires:
 
@@ -2339,16 +2339,16 @@ CMakeFiles/VM_cor.dir/libft/get_next_line.c.o.provides.build: CMakeFiles/VM_cor.
 
 CMakeFiles/VM_cor.dir/libft/print_addres.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/libft/print_addres.c.o: ../libft/print_addres.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_96) "Building C object CMakeFiles/VM_cor.dir/libft/print_addres.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/print_addres.c.o   -c /Users/myprosku/corTwar/VM_cor/libft/print_addres.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_96) "Building C object CMakeFiles/VM_cor.dir/libft/print_addres.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/print_addres.c.o   -c /Users/ssavchen/coretwar/VM_cor/libft/print_addres.c
 
 CMakeFiles/VM_cor.dir/libft/print_addres.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/libft/print_addres.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/libft/print_addres.c > CMakeFiles/VM_cor.dir/libft/print_addres.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/libft/print_addres.c > CMakeFiles/VM_cor.dir/libft/print_addres.c.i
 
 CMakeFiles/VM_cor.dir/libft/print_addres.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/libft/print_addres.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/libft/print_addres.c -o CMakeFiles/VM_cor.dir/libft/print_addres.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/libft/print_addres.c -o CMakeFiles/VM_cor.dir/libft/print_addres.c.s
 
 CMakeFiles/VM_cor.dir/libft/print_addres.c.o.requires:
 
@@ -2363,16 +2363,16 @@ CMakeFiles/VM_cor.dir/libft/print_addres.c.o.provides.build: CMakeFiles/VM_cor.d
 
 CMakeFiles/VM_cor.dir/libft/putchar_int.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/libft/putchar_int.c.o: ../libft/putchar_int.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_97) "Building C object CMakeFiles/VM_cor.dir/libft/putchar_int.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/putchar_int.c.o   -c /Users/myprosku/corTwar/VM_cor/libft/putchar_int.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_97) "Building C object CMakeFiles/VM_cor.dir/libft/putchar_int.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/putchar_int.c.o   -c /Users/ssavchen/coretwar/VM_cor/libft/putchar_int.c
 
 CMakeFiles/VM_cor.dir/libft/putchar_int.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/libft/putchar_int.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/libft/putchar_int.c > CMakeFiles/VM_cor.dir/libft/putchar_int.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/libft/putchar_int.c > CMakeFiles/VM_cor.dir/libft/putchar_int.c.i
 
 CMakeFiles/VM_cor.dir/libft/putchar_int.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/libft/putchar_int.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/libft/putchar_int.c -o CMakeFiles/VM_cor.dir/libft/putchar_int.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/libft/putchar_int.c -o CMakeFiles/VM_cor.dir/libft/putchar_int.c.s
 
 CMakeFiles/VM_cor.dir/libft/putchar_int.c.o.requires:
 
@@ -2387,16 +2387,16 @@ CMakeFiles/VM_cor.dir/libft/putchar_int.c.o.provides.build: CMakeFiles/VM_cor.di
 
 CMakeFiles/VM_cor.dir/libft/putstr_int.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/libft/putstr_int.c.o: ../libft/putstr_int.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_98) "Building C object CMakeFiles/VM_cor.dir/libft/putstr_int.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/putstr_int.c.o   -c /Users/myprosku/corTwar/VM_cor/libft/putstr_int.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_98) "Building C object CMakeFiles/VM_cor.dir/libft/putstr_int.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/putstr_int.c.o   -c /Users/ssavchen/coretwar/VM_cor/libft/putstr_int.c
 
 CMakeFiles/VM_cor.dir/libft/putstr_int.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/libft/putstr_int.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/libft/putstr_int.c > CMakeFiles/VM_cor.dir/libft/putstr_int.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/libft/putstr_int.c > CMakeFiles/VM_cor.dir/libft/putstr_int.c.i
 
 CMakeFiles/VM_cor.dir/libft/putstr_int.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/libft/putstr_int.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/libft/putstr_int.c -o CMakeFiles/VM_cor.dir/libft/putstr_int.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/libft/putstr_int.c -o CMakeFiles/VM_cor.dir/libft/putstr_int.c.s
 
 CMakeFiles/VM_cor.dir/libft/putstr_int.c.o.requires:
 
@@ -2411,16 +2411,16 @@ CMakeFiles/VM_cor.dir/libft/putstr_int.c.o.provides.build: CMakeFiles/VM_cor.dir
 
 CMakeFiles/VM_cor.dir/libft/unsigned_itoa.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/libft/unsigned_itoa.c.o: ../libft/unsigned_itoa.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_99) "Building C object CMakeFiles/VM_cor.dir/libft/unsigned_itoa.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/unsigned_itoa.c.o   -c /Users/myprosku/corTwar/VM_cor/libft/unsigned_itoa.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_99) "Building C object CMakeFiles/VM_cor.dir/libft/unsigned_itoa.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/unsigned_itoa.c.o   -c /Users/ssavchen/coretwar/VM_cor/libft/unsigned_itoa.c
 
 CMakeFiles/VM_cor.dir/libft/unsigned_itoa.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/libft/unsigned_itoa.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/libft/unsigned_itoa.c > CMakeFiles/VM_cor.dir/libft/unsigned_itoa.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/libft/unsigned_itoa.c > CMakeFiles/VM_cor.dir/libft/unsigned_itoa.c.i
 
 CMakeFiles/VM_cor.dir/libft/unsigned_itoa.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/libft/unsigned_itoa.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/libft/unsigned_itoa.c -o CMakeFiles/VM_cor.dir/libft/unsigned_itoa.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/libft/unsigned_itoa.c -o CMakeFiles/VM_cor.dir/libft/unsigned_itoa.c.s
 
 CMakeFiles/VM_cor.dir/libft/unsigned_itoa.c.o.requires:
 
@@ -2435,16 +2435,16 @@ CMakeFiles/VM_cor.dir/libft/unsigned_itoa.c.o.provides.build: CMakeFiles/VM_cor.
 
 CMakeFiles/VM_cor.dir/libft/zero_flags.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/libft/zero_flags.c.o: ../libft/zero_flags.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_100) "Building C object CMakeFiles/VM_cor.dir/libft/zero_flags.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/zero_flags.c.o   -c /Users/myprosku/corTwar/VM_cor/libft/zero_flags.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_100) "Building C object CMakeFiles/VM_cor.dir/libft/zero_flags.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/libft/zero_flags.c.o   -c /Users/ssavchen/coretwar/VM_cor/libft/zero_flags.c
 
 CMakeFiles/VM_cor.dir/libft/zero_flags.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/libft/zero_flags.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/libft/zero_flags.c > CMakeFiles/VM_cor.dir/libft/zero_flags.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/libft/zero_flags.c > CMakeFiles/VM_cor.dir/libft/zero_flags.c.i
 
 CMakeFiles/VM_cor.dir/libft/zero_flags.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/libft/zero_flags.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/libft/zero_flags.c -o CMakeFiles/VM_cor.dir/libft/zero_flags.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/libft/zero_flags.c -o CMakeFiles/VM_cor.dir/libft/zero_flags.c.s
 
 CMakeFiles/VM_cor.dir/libft/zero_flags.c.o.requires:
 
@@ -2459,16 +2459,16 @@ CMakeFiles/VM_cor.dir/libft/zero_flags.c.o.provides.build: CMakeFiles/VM_cor.dir
 
 CMakeFiles/VM_cor.dir/create_map.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/create_map.c.o: ../create_map.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_101) "Building C object CMakeFiles/VM_cor.dir/create_map.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/create_map.c.o   -c /Users/myprosku/corTwar/VM_cor/create_map.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_101) "Building C object CMakeFiles/VM_cor.dir/create_map.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/create_map.c.o   -c /Users/ssavchen/coretwar/VM_cor/create_map.c
 
 CMakeFiles/VM_cor.dir/create_map.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/create_map.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/create_map.c > CMakeFiles/VM_cor.dir/create_map.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/create_map.c > CMakeFiles/VM_cor.dir/create_map.c.i
 
 CMakeFiles/VM_cor.dir/create_map.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/create_map.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/create_map.c -o CMakeFiles/VM_cor.dir/create_map.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/create_map.c -o CMakeFiles/VM_cor.dir/create_map.c.s
 
 CMakeFiles/VM_cor.dir/create_map.c.o.requires:
 
@@ -2483,16 +2483,16 @@ CMakeFiles/VM_cor.dir/create_map.c.o.provides.build: CMakeFiles/VM_cor.dir/creat
 
 CMakeFiles/VM_cor.dir/main.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/main.c.o: ../main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_102) "Building C object CMakeFiles/VM_cor.dir/main.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/main.c.o   -c /Users/myprosku/corTwar/VM_cor/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_102) "Building C object CMakeFiles/VM_cor.dir/main.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/main.c.o   -c /Users/ssavchen/coretwar/VM_cor/main.c
 
 CMakeFiles/VM_cor.dir/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/main.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/main.c > CMakeFiles/VM_cor.dir/main.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/main.c > CMakeFiles/VM_cor.dir/main.c.i
 
 CMakeFiles/VM_cor.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/main.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/main.c -o CMakeFiles/VM_cor.dir/main.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/main.c -o CMakeFiles/VM_cor.dir/main.c.s
 
 CMakeFiles/VM_cor.dir/main.c.o.requires:
 
@@ -2507,16 +2507,16 @@ CMakeFiles/VM_cor.dir/main.c.o.provides.build: CMakeFiles/VM_cor.dir/main.c.o
 
 CMakeFiles/VM_cor.dir/ns_additional_func.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/ns_additional_func.c.o: ../ns_additional_func.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_103) "Building C object CMakeFiles/VM_cor.dir/ns_additional_func.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/ns_additional_func.c.o   -c /Users/myprosku/corTwar/VM_cor/ns_additional_func.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_103) "Building C object CMakeFiles/VM_cor.dir/ns_additional_func.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/ns_additional_func.c.o   -c /Users/ssavchen/coretwar/VM_cor/ns_additional_func.c
 
 CMakeFiles/VM_cor.dir/ns_additional_func.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/ns_additional_func.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/ns_additional_func.c > CMakeFiles/VM_cor.dir/ns_additional_func.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/ns_additional_func.c > CMakeFiles/VM_cor.dir/ns_additional_func.c.i
 
 CMakeFiles/VM_cor.dir/ns_additional_func.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/ns_additional_func.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/ns_additional_func.c -o CMakeFiles/VM_cor.dir/ns_additional_func.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/ns_additional_func.c -o CMakeFiles/VM_cor.dir/ns_additional_func.c.s
 
 CMakeFiles/VM_cor.dir/ns_additional_func.c.o.requires:
 
@@ -2531,16 +2531,16 @@ CMakeFiles/VM_cor.dir/ns_additional_func.c.o.provides.build: CMakeFiles/VM_cor.d
 
 CMakeFiles/VM_cor.dir/ns_read_champion.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/ns_read_champion.c.o: ../ns_read_champion.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_104) "Building C object CMakeFiles/VM_cor.dir/ns_read_champion.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/ns_read_champion.c.o   -c /Users/myprosku/corTwar/VM_cor/ns_read_champion.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_104) "Building C object CMakeFiles/VM_cor.dir/ns_read_champion.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/ns_read_champion.c.o   -c /Users/ssavchen/coretwar/VM_cor/ns_read_champion.c
 
 CMakeFiles/VM_cor.dir/ns_read_champion.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/ns_read_champion.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/ns_read_champion.c > CMakeFiles/VM_cor.dir/ns_read_champion.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/ns_read_champion.c > CMakeFiles/VM_cor.dir/ns_read_champion.c.i
 
 CMakeFiles/VM_cor.dir/ns_read_champion.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/ns_read_champion.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/ns_read_champion.c -o CMakeFiles/VM_cor.dir/ns_read_champion.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/ns_read_champion.c -o CMakeFiles/VM_cor.dir/ns_read_champion.c.s
 
 CMakeFiles/VM_cor.dir/ns_read_champion.c.o.requires:
 
@@ -2555,16 +2555,16 @@ CMakeFiles/VM_cor.dir/ns_read_champion.c.o.provides.build: CMakeFiles/VM_cor.dir
 
 CMakeFiles/VM_cor.dir/ns_zero_struct.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/ns_zero_struct.c.o: ../ns_zero_struct.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_105) "Building C object CMakeFiles/VM_cor.dir/ns_zero_struct.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/ns_zero_struct.c.o   -c /Users/myprosku/corTwar/VM_cor/ns_zero_struct.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_105) "Building C object CMakeFiles/VM_cor.dir/ns_zero_struct.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/ns_zero_struct.c.o   -c /Users/ssavchen/coretwar/VM_cor/ns_zero_struct.c
 
 CMakeFiles/VM_cor.dir/ns_zero_struct.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/ns_zero_struct.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/ns_zero_struct.c > CMakeFiles/VM_cor.dir/ns_zero_struct.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/ns_zero_struct.c > CMakeFiles/VM_cor.dir/ns_zero_struct.c.i
 
 CMakeFiles/VM_cor.dir/ns_zero_struct.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/ns_zero_struct.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/ns_zero_struct.c -o CMakeFiles/VM_cor.dir/ns_zero_struct.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/ns_zero_struct.c -o CMakeFiles/VM_cor.dir/ns_zero_struct.c.s
 
 CMakeFiles/VM_cor.dir/ns_zero_struct.c.o.requires:
 
@@ -2579,16 +2579,16 @@ CMakeFiles/VM_cor.dir/ns_zero_struct.c.o.provides.build: CMakeFiles/VM_cor.dir/n
 
 CMakeFiles/VM_cor.dir/op.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/op.c.o: ../op.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_106) "Building C object CMakeFiles/VM_cor.dir/op.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/op.c.o   -c /Users/myprosku/corTwar/VM_cor/op.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_106) "Building C object CMakeFiles/VM_cor.dir/op.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/op.c.o   -c /Users/ssavchen/coretwar/VM_cor/op.c
 
 CMakeFiles/VM_cor.dir/op.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/op.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/op.c > CMakeFiles/VM_cor.dir/op.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/op.c > CMakeFiles/VM_cor.dir/op.c.i
 
 CMakeFiles/VM_cor.dir/op.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/op.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/op.c -o CMakeFiles/VM_cor.dir/op.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/op.c -o CMakeFiles/VM_cor.dir/op.c.s
 
 CMakeFiles/VM_cor.dir/op.c.o.requires:
 
@@ -2603,16 +2603,16 @@ CMakeFiles/VM_cor.dir/op.c.o.provides.build: CMakeFiles/VM_cor.dir/op.c.o
 
 CMakeFiles/VM_cor.dir/dump_flag.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/dump_flag.c.o: ../dump_flag.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_107) "Building C object CMakeFiles/VM_cor.dir/dump_flag.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/dump_flag.c.o   -c /Users/myprosku/corTwar/VM_cor/dump_flag.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_107) "Building C object CMakeFiles/VM_cor.dir/dump_flag.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/dump_flag.c.o   -c /Users/ssavchen/coretwar/VM_cor/dump_flag.c
 
 CMakeFiles/VM_cor.dir/dump_flag.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/dump_flag.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/dump_flag.c > CMakeFiles/VM_cor.dir/dump_flag.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/dump_flag.c > CMakeFiles/VM_cor.dir/dump_flag.c.i
 
 CMakeFiles/VM_cor.dir/dump_flag.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/dump_flag.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/dump_flag.c -o CMakeFiles/VM_cor.dir/dump_flag.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/dump_flag.c -o CMakeFiles/VM_cor.dir/dump_flag.c.s
 
 CMakeFiles/VM_cor.dir/dump_flag.c.o.requires:
 
@@ -2627,16 +2627,16 @@ CMakeFiles/VM_cor.dir/dump_flag.c.o.provides.build: CMakeFiles/VM_cor.dir/dump_f
 
 CMakeFiles/VM_cor.dir/ns_cursor_create.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/ns_cursor_create.c.o: ../ns_cursor_create.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_108) "Building C object CMakeFiles/VM_cor.dir/ns_cursor_create.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/ns_cursor_create.c.o   -c /Users/myprosku/corTwar/VM_cor/ns_cursor_create.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_108) "Building C object CMakeFiles/VM_cor.dir/ns_cursor_create.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/ns_cursor_create.c.o   -c /Users/ssavchen/coretwar/VM_cor/ns_cursor_create.c
 
 CMakeFiles/VM_cor.dir/ns_cursor_create.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/ns_cursor_create.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/ns_cursor_create.c > CMakeFiles/VM_cor.dir/ns_cursor_create.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/ns_cursor_create.c > CMakeFiles/VM_cor.dir/ns_cursor_create.c.i
 
 CMakeFiles/VM_cor.dir/ns_cursor_create.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/ns_cursor_create.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/ns_cursor_create.c -o CMakeFiles/VM_cor.dir/ns_cursor_create.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/ns_cursor_create.c -o CMakeFiles/VM_cor.dir/ns_cursor_create.c.s
 
 CMakeFiles/VM_cor.dir/ns_cursor_create.c.o.requires:
 
@@ -2651,16 +2651,16 @@ CMakeFiles/VM_cor.dir/ns_cursor_create.c.o.provides.build: CMakeFiles/VM_cor.dir
 
 CMakeFiles/VM_cor.dir/operations/ns_add.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/operations/ns_add.c.o: ../operations/ns_add.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_109) "Building C object CMakeFiles/VM_cor.dir/operations/ns_add.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/operations/ns_add.c.o   -c /Users/myprosku/corTwar/VM_cor/operations/ns_add.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_109) "Building C object CMakeFiles/VM_cor.dir/operations/ns_add.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/operations/ns_add.c.o   -c /Users/ssavchen/coretwar/VM_cor/operations/ns_add.c
 
 CMakeFiles/VM_cor.dir/operations/ns_add.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/operations/ns_add.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/operations/ns_add.c > CMakeFiles/VM_cor.dir/operations/ns_add.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/operations/ns_add.c > CMakeFiles/VM_cor.dir/operations/ns_add.c.i
 
 CMakeFiles/VM_cor.dir/operations/ns_add.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/operations/ns_add.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/operations/ns_add.c -o CMakeFiles/VM_cor.dir/operations/ns_add.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/operations/ns_add.c -o CMakeFiles/VM_cor.dir/operations/ns_add.c.s
 
 CMakeFiles/VM_cor.dir/operations/ns_add.c.o.requires:
 
@@ -2675,16 +2675,16 @@ CMakeFiles/VM_cor.dir/operations/ns_add.c.o.provides.build: CMakeFiles/VM_cor.di
 
 CMakeFiles/VM_cor.dir/operations/ns_sub.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/operations/ns_sub.c.o: ../operations/ns_sub.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_110) "Building C object CMakeFiles/VM_cor.dir/operations/ns_sub.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/operations/ns_sub.c.o   -c /Users/myprosku/corTwar/VM_cor/operations/ns_sub.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_110) "Building C object CMakeFiles/VM_cor.dir/operations/ns_sub.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/operations/ns_sub.c.o   -c /Users/ssavchen/coretwar/VM_cor/operations/ns_sub.c
 
 CMakeFiles/VM_cor.dir/operations/ns_sub.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/operations/ns_sub.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/operations/ns_sub.c > CMakeFiles/VM_cor.dir/operations/ns_sub.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/operations/ns_sub.c > CMakeFiles/VM_cor.dir/operations/ns_sub.c.i
 
 CMakeFiles/VM_cor.dir/operations/ns_sub.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/operations/ns_sub.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/operations/ns_sub.c -o CMakeFiles/VM_cor.dir/operations/ns_sub.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/operations/ns_sub.c -o CMakeFiles/VM_cor.dir/operations/ns_sub.c.s
 
 CMakeFiles/VM_cor.dir/operations/ns_sub.c.o.requires:
 
@@ -2699,16 +2699,16 @@ CMakeFiles/VM_cor.dir/operations/ns_sub.c.o.provides.build: CMakeFiles/VM_cor.di
 
 CMakeFiles/VM_cor.dir/operations/ns_and.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/operations/ns_and.c.o: ../operations/ns_and.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_111) "Building C object CMakeFiles/VM_cor.dir/operations/ns_and.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/operations/ns_and.c.o   -c /Users/myprosku/corTwar/VM_cor/operations/ns_and.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_111) "Building C object CMakeFiles/VM_cor.dir/operations/ns_and.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/operations/ns_and.c.o   -c /Users/ssavchen/coretwar/VM_cor/operations/ns_and.c
 
 CMakeFiles/VM_cor.dir/operations/ns_and.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/operations/ns_and.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/operations/ns_and.c > CMakeFiles/VM_cor.dir/operations/ns_and.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/operations/ns_and.c > CMakeFiles/VM_cor.dir/operations/ns_and.c.i
 
 CMakeFiles/VM_cor.dir/operations/ns_and.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/operations/ns_and.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/operations/ns_and.c -o CMakeFiles/VM_cor.dir/operations/ns_and.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/operations/ns_and.c -o CMakeFiles/VM_cor.dir/operations/ns_and.c.s
 
 CMakeFiles/VM_cor.dir/operations/ns_and.c.o.requires:
 
@@ -2723,16 +2723,16 @@ CMakeFiles/VM_cor.dir/operations/ns_and.c.o.provides.build: CMakeFiles/VM_cor.di
 
 CMakeFiles/VM_cor.dir/operations/ns_xor.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/operations/ns_xor.c.o: ../operations/ns_xor.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_112) "Building C object CMakeFiles/VM_cor.dir/operations/ns_xor.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/operations/ns_xor.c.o   -c /Users/myprosku/corTwar/VM_cor/operations/ns_xor.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_112) "Building C object CMakeFiles/VM_cor.dir/operations/ns_xor.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/operations/ns_xor.c.o   -c /Users/ssavchen/coretwar/VM_cor/operations/ns_xor.c
 
 CMakeFiles/VM_cor.dir/operations/ns_xor.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/operations/ns_xor.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/operations/ns_xor.c > CMakeFiles/VM_cor.dir/operations/ns_xor.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/operations/ns_xor.c > CMakeFiles/VM_cor.dir/operations/ns_xor.c.i
 
 CMakeFiles/VM_cor.dir/operations/ns_xor.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/operations/ns_xor.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/operations/ns_xor.c -o CMakeFiles/VM_cor.dir/operations/ns_xor.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/operations/ns_xor.c -o CMakeFiles/VM_cor.dir/operations/ns_xor.c.s
 
 CMakeFiles/VM_cor.dir/operations/ns_xor.c.o.requires:
 
@@ -2747,16 +2747,16 @@ CMakeFiles/VM_cor.dir/operations/ns_xor.c.o.provides.build: CMakeFiles/VM_cor.di
 
 CMakeFiles/VM_cor.dir/operations/ns_or.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/operations/ns_or.c.o: ../operations/ns_or.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_113) "Building C object CMakeFiles/VM_cor.dir/operations/ns_or.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/operations/ns_or.c.o   -c /Users/myprosku/corTwar/VM_cor/operations/ns_or.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_113) "Building C object CMakeFiles/VM_cor.dir/operations/ns_or.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/operations/ns_or.c.o   -c /Users/ssavchen/coretwar/VM_cor/operations/ns_or.c
 
 CMakeFiles/VM_cor.dir/operations/ns_or.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/operations/ns_or.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/operations/ns_or.c > CMakeFiles/VM_cor.dir/operations/ns_or.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/operations/ns_or.c > CMakeFiles/VM_cor.dir/operations/ns_or.c.i
 
 CMakeFiles/VM_cor.dir/operations/ns_or.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/operations/ns_or.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/operations/ns_or.c -o CMakeFiles/VM_cor.dir/operations/ns_or.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/operations/ns_or.c -o CMakeFiles/VM_cor.dir/operations/ns_or.c.s
 
 CMakeFiles/VM_cor.dir/operations/ns_or.c.o.requires:
 
@@ -2771,16 +2771,16 @@ CMakeFiles/VM_cor.dir/operations/ns_or.c.o.provides.build: CMakeFiles/VM_cor.dir
 
 CMakeFiles/VM_cor.dir/operations/ns_st.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/operations/ns_st.c.o: ../operations/ns_st.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_114) "Building C object CMakeFiles/VM_cor.dir/operations/ns_st.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/operations/ns_st.c.o   -c /Users/myprosku/corTwar/VM_cor/operations/ns_st.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_114) "Building C object CMakeFiles/VM_cor.dir/operations/ns_st.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/operations/ns_st.c.o   -c /Users/ssavchen/coretwar/VM_cor/operations/ns_st.c
 
 CMakeFiles/VM_cor.dir/operations/ns_st.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/operations/ns_st.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/operations/ns_st.c > CMakeFiles/VM_cor.dir/operations/ns_st.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/operations/ns_st.c > CMakeFiles/VM_cor.dir/operations/ns_st.c.i
 
 CMakeFiles/VM_cor.dir/operations/ns_st.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/operations/ns_st.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/operations/ns_st.c -o CMakeFiles/VM_cor.dir/operations/ns_st.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/operations/ns_st.c -o CMakeFiles/VM_cor.dir/operations/ns_st.c.s
 
 CMakeFiles/VM_cor.dir/operations/ns_st.c.o.requires:
 
@@ -2795,16 +2795,16 @@ CMakeFiles/VM_cor.dir/operations/ns_st.c.o.provides.build: CMakeFiles/VM_cor.dir
 
 CMakeFiles/VM_cor.dir/operations/ns_sti.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/operations/ns_sti.c.o: ../operations/ns_sti.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_115) "Building C object CMakeFiles/VM_cor.dir/operations/ns_sti.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/operations/ns_sti.c.o   -c /Users/myprosku/corTwar/VM_cor/operations/ns_sti.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_115) "Building C object CMakeFiles/VM_cor.dir/operations/ns_sti.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/operations/ns_sti.c.o   -c /Users/ssavchen/coretwar/VM_cor/operations/ns_sti.c
 
 CMakeFiles/VM_cor.dir/operations/ns_sti.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/operations/ns_sti.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/operations/ns_sti.c > CMakeFiles/VM_cor.dir/operations/ns_sti.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/operations/ns_sti.c > CMakeFiles/VM_cor.dir/operations/ns_sti.c.i
 
 CMakeFiles/VM_cor.dir/operations/ns_sti.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/operations/ns_sti.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/operations/ns_sti.c -o CMakeFiles/VM_cor.dir/operations/ns_sti.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/operations/ns_sti.c -o CMakeFiles/VM_cor.dir/operations/ns_sti.c.s
 
 CMakeFiles/VM_cor.dir/operations/ns_sti.c.o.requires:
 
@@ -2819,16 +2819,16 @@ CMakeFiles/VM_cor.dir/operations/ns_sti.c.o.provides.build: CMakeFiles/VM_cor.di
 
 CMakeFiles/VM_cor.dir/operations/ns_ld.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/operations/ns_ld.c.o: ../operations/ns_ld.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_116) "Building C object CMakeFiles/VM_cor.dir/operations/ns_ld.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/operations/ns_ld.c.o   -c /Users/myprosku/corTwar/VM_cor/operations/ns_ld.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_116) "Building C object CMakeFiles/VM_cor.dir/operations/ns_ld.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/operations/ns_ld.c.o   -c /Users/ssavchen/coretwar/VM_cor/operations/ns_ld.c
 
 CMakeFiles/VM_cor.dir/operations/ns_ld.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/operations/ns_ld.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/operations/ns_ld.c > CMakeFiles/VM_cor.dir/operations/ns_ld.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/operations/ns_ld.c > CMakeFiles/VM_cor.dir/operations/ns_ld.c.i
 
 CMakeFiles/VM_cor.dir/operations/ns_ld.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/operations/ns_ld.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/operations/ns_ld.c -o CMakeFiles/VM_cor.dir/operations/ns_ld.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/operations/ns_ld.c -o CMakeFiles/VM_cor.dir/operations/ns_ld.c.s
 
 CMakeFiles/VM_cor.dir/operations/ns_ld.c.o.requires:
 
@@ -2843,16 +2843,16 @@ CMakeFiles/VM_cor.dir/operations/ns_ld.c.o.provides.build: CMakeFiles/VM_cor.dir
 
 CMakeFiles/VM_cor.dir/operations/ns_lld.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/operations/ns_lld.c.o: ../operations/ns_lld.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_117) "Building C object CMakeFiles/VM_cor.dir/operations/ns_lld.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/operations/ns_lld.c.o   -c /Users/myprosku/corTwar/VM_cor/operations/ns_lld.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_117) "Building C object CMakeFiles/VM_cor.dir/operations/ns_lld.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/operations/ns_lld.c.o   -c /Users/ssavchen/coretwar/VM_cor/operations/ns_lld.c
 
 CMakeFiles/VM_cor.dir/operations/ns_lld.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/operations/ns_lld.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/operations/ns_lld.c > CMakeFiles/VM_cor.dir/operations/ns_lld.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/operations/ns_lld.c > CMakeFiles/VM_cor.dir/operations/ns_lld.c.i
 
 CMakeFiles/VM_cor.dir/operations/ns_lld.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/operations/ns_lld.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/operations/ns_lld.c -o CMakeFiles/VM_cor.dir/operations/ns_lld.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/operations/ns_lld.c -o CMakeFiles/VM_cor.dir/operations/ns_lld.c.s
 
 CMakeFiles/VM_cor.dir/operations/ns_lld.c.o.requires:
 
@@ -2867,16 +2867,16 @@ CMakeFiles/VM_cor.dir/operations/ns_lld.c.o.provides.build: CMakeFiles/VM_cor.di
 
 CMakeFiles/VM_cor.dir/operations/ns_ldi.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/operations/ns_ldi.c.o: ../operations/ns_ldi.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_118) "Building C object CMakeFiles/VM_cor.dir/operations/ns_ldi.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/operations/ns_ldi.c.o   -c /Users/myprosku/corTwar/VM_cor/operations/ns_ldi.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_118) "Building C object CMakeFiles/VM_cor.dir/operations/ns_ldi.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/operations/ns_ldi.c.o   -c /Users/ssavchen/coretwar/VM_cor/operations/ns_ldi.c
 
 CMakeFiles/VM_cor.dir/operations/ns_ldi.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/operations/ns_ldi.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/operations/ns_ldi.c > CMakeFiles/VM_cor.dir/operations/ns_ldi.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/operations/ns_ldi.c > CMakeFiles/VM_cor.dir/operations/ns_ldi.c.i
 
 CMakeFiles/VM_cor.dir/operations/ns_ldi.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/operations/ns_ldi.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/operations/ns_ldi.c -o CMakeFiles/VM_cor.dir/operations/ns_ldi.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/operations/ns_ldi.c -o CMakeFiles/VM_cor.dir/operations/ns_ldi.c.s
 
 CMakeFiles/VM_cor.dir/operations/ns_ldi.c.o.requires:
 
@@ -2891,16 +2891,16 @@ CMakeFiles/VM_cor.dir/operations/ns_ldi.c.o.provides.build: CMakeFiles/VM_cor.di
 
 CMakeFiles/VM_cor.dir/operations/ns_lldi.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/operations/ns_lldi.c.o: ../operations/ns_lldi.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_119) "Building C object CMakeFiles/VM_cor.dir/operations/ns_lldi.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/operations/ns_lldi.c.o   -c /Users/myprosku/corTwar/VM_cor/operations/ns_lldi.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_119) "Building C object CMakeFiles/VM_cor.dir/operations/ns_lldi.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/operations/ns_lldi.c.o   -c /Users/ssavchen/coretwar/VM_cor/operations/ns_lldi.c
 
 CMakeFiles/VM_cor.dir/operations/ns_lldi.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/operations/ns_lldi.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/operations/ns_lldi.c > CMakeFiles/VM_cor.dir/operations/ns_lldi.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/operations/ns_lldi.c > CMakeFiles/VM_cor.dir/operations/ns_lldi.c.i
 
 CMakeFiles/VM_cor.dir/operations/ns_lldi.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/operations/ns_lldi.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/operations/ns_lldi.c -o CMakeFiles/VM_cor.dir/operations/ns_lldi.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/operations/ns_lldi.c -o CMakeFiles/VM_cor.dir/operations/ns_lldi.c.s
 
 CMakeFiles/VM_cor.dir/operations/ns_lldi.c.o.requires:
 
@@ -2915,16 +2915,16 @@ CMakeFiles/VM_cor.dir/operations/ns_lldi.c.o.provides.build: CMakeFiles/VM_cor.d
 
 CMakeFiles/VM_cor.dir/operations/ns_zjmp.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/operations/ns_zjmp.c.o: ../operations/ns_zjmp.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_120) "Building C object CMakeFiles/VM_cor.dir/operations/ns_zjmp.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/operations/ns_zjmp.c.o   -c /Users/myprosku/corTwar/VM_cor/operations/ns_zjmp.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_120) "Building C object CMakeFiles/VM_cor.dir/operations/ns_zjmp.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/operations/ns_zjmp.c.o   -c /Users/ssavchen/coretwar/VM_cor/operations/ns_zjmp.c
 
 CMakeFiles/VM_cor.dir/operations/ns_zjmp.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/operations/ns_zjmp.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/operations/ns_zjmp.c > CMakeFiles/VM_cor.dir/operations/ns_zjmp.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/operations/ns_zjmp.c > CMakeFiles/VM_cor.dir/operations/ns_zjmp.c.i
 
 CMakeFiles/VM_cor.dir/operations/ns_zjmp.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/operations/ns_zjmp.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/operations/ns_zjmp.c -o CMakeFiles/VM_cor.dir/operations/ns_zjmp.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/operations/ns_zjmp.c -o CMakeFiles/VM_cor.dir/operations/ns_zjmp.c.s
 
 CMakeFiles/VM_cor.dir/operations/ns_zjmp.c.o.requires:
 
@@ -2939,16 +2939,16 @@ CMakeFiles/VM_cor.dir/operations/ns_zjmp.c.o.provides.build: CMakeFiles/VM_cor.d
 
 CMakeFiles/VM_cor.dir/operations/ns_aff.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/operations/ns_aff.c.o: ../operations/ns_aff.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_121) "Building C object CMakeFiles/VM_cor.dir/operations/ns_aff.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/operations/ns_aff.c.o   -c /Users/myprosku/corTwar/VM_cor/operations/ns_aff.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_121) "Building C object CMakeFiles/VM_cor.dir/operations/ns_aff.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/operations/ns_aff.c.o   -c /Users/ssavchen/coretwar/VM_cor/operations/ns_aff.c
 
 CMakeFiles/VM_cor.dir/operations/ns_aff.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/operations/ns_aff.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/operations/ns_aff.c > CMakeFiles/VM_cor.dir/operations/ns_aff.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/operations/ns_aff.c > CMakeFiles/VM_cor.dir/operations/ns_aff.c.i
 
 CMakeFiles/VM_cor.dir/operations/ns_aff.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/operations/ns_aff.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/operations/ns_aff.c -o CMakeFiles/VM_cor.dir/operations/ns_aff.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/operations/ns_aff.c -o CMakeFiles/VM_cor.dir/operations/ns_aff.c.s
 
 CMakeFiles/VM_cor.dir/operations/ns_aff.c.o.requires:
 
@@ -2963,16 +2963,16 @@ CMakeFiles/VM_cor.dir/operations/ns_aff.c.o.provides.build: CMakeFiles/VM_cor.di
 
 CMakeFiles/VM_cor.dir/operations/ns_live.c.o: CMakeFiles/VM_cor.dir/flags.make
 CMakeFiles/VM_cor.dir/operations/ns_live.c.o: ../operations/ns_live.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_122) "Building C object CMakeFiles/VM_cor.dir/operations/ns_live.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/operations/ns_live.c.o   -c /Users/myprosku/corTwar/VM_cor/operations/ns_live.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_122) "Building C object CMakeFiles/VM_cor.dir/operations/ns_live.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/VM_cor.dir/operations/ns_live.c.o   -c /Users/ssavchen/coretwar/VM_cor/operations/ns_live.c
 
 CMakeFiles/VM_cor.dir/operations/ns_live.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/VM_cor.dir/operations/ns_live.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/myprosku/corTwar/VM_cor/operations/ns_live.c > CMakeFiles/VM_cor.dir/operations/ns_live.c.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ssavchen/coretwar/VM_cor/operations/ns_live.c > CMakeFiles/VM_cor.dir/operations/ns_live.c.i
 
 CMakeFiles/VM_cor.dir/operations/ns_live.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/VM_cor.dir/operations/ns_live.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/myprosku/corTwar/VM_cor/operations/ns_live.c -o CMakeFiles/VM_cor.dir/operations/ns_live.c.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ssavchen/coretwar/VM_cor/operations/ns_live.c -o CMakeFiles/VM_cor.dir/operations/ns_live.c.s
 
 CMakeFiles/VM_cor.dir/operations/ns_live.c.o.requires:
 
@@ -3237,7 +3237,7 @@ VM_cor: CMakeFiles/VM_cor.dir/operations/ns_aff.c.o
 VM_cor: CMakeFiles/VM_cor.dir/operations/ns_live.c.o
 VM_cor: CMakeFiles/VM_cor.dir/build.make
 VM_cor: CMakeFiles/VM_cor.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_123) "Linking C executable VM_cor"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_123) "Linking C executable VM_cor"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/VM_cor.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -3375,6 +3375,6 @@ CMakeFiles/VM_cor.dir/clean:
 .PHONY : CMakeFiles/VM_cor.dir/clean
 
 CMakeFiles/VM_cor.dir/depend:
-	cd /Users/myprosku/corTwar/VM_cor/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/myprosku/corTwar/VM_cor /Users/myprosku/corTwar/VM_cor /Users/myprosku/corTwar/VM_cor/cmake-build-debug /Users/myprosku/corTwar/VM_cor/cmake-build-debug /Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles/VM_cor.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/ssavchen/coretwar/VM_cor/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/ssavchen/coretwar/VM_cor /Users/ssavchen/coretwar/VM_cor /Users/ssavchen/coretwar/VM_cor/cmake-build-debug /Users/ssavchen/coretwar/VM_cor/cmake-build-debug /Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles/VM_cor.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/VM_cor.dir/depend
 
