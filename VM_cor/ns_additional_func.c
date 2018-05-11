@@ -119,7 +119,7 @@ void 			ns_error(char *err_message)
 	exit(0);
 }
 
-int 			ns_check_register(unsigned char r1, unsigned char r2, unsigned char r3)
+int 			ns_check_register(int r1, int r2, int r3)
 {
 	if (r1 > REG_NUMBER || r2 > REG_NUMBER || r3 > REG_NUMBER)
 		return (0);

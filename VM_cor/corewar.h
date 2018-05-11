@@ -130,7 +130,7 @@ void 					ns_error(char *err_message);
 void					ns_zero_cursor(t_cursor **cursor);
 void					ns_create_cursor(t_cursor **cursor, t_champion *champ);
 void					ns_game_start(t_cursor **cursor, t_map *m_map, t_info *info, t_fl flags);
-int 					ns_check_register(unsigned char r1, unsigned char r2, unsigned char r3);
+int 					ns_check_register(int r1, int r2, int r3);
 
 //Champ functions
 void					ns_add(t_cursor **cur, t_map *m_map);
