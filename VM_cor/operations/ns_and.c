@@ -24,7 +24,7 @@ void	ns_and(t_cursor **cur, t_map *m_map)
 		ns_drr_and(cur, m_map);
 	else if (m_map->map[(*cur)->index_pos + 1] == T_DDR)
 		ns_ddr_and(cur, m_map);
-	else if (m_map->map[(*cur)->index_pos + 1] == T_DIR)
+	else if (m_map->map[(*cur)->index_pos + 1] == t_DIR)
 		ns_dir_and(cur, m_map);
 	else if (m_map->map[(*cur)->index_pos + 1] == T_IRR)
 		ns_irr_and(cur, m_map);
@@ -218,9 +218,9 @@ void	ns_rdr_and(t_cursor **cur, t_map *m_map)
 	str = find_fbytes_tind(m_map, temp->index_pos + 3);
 	reg.index = char_to_int(str);
 	reg.r3 = m_map->map[temp->index_pos + 7];
-	temp->registr[reg.r3] = reg.r1 & reg.index;
 	if (ns_check_register(reg.r1, 1, reg.r3))
 	{
+		temp->registr[reg.r3] = reg.r1 & reg.index;
 		if (temp->registr[reg.r3] == 0)
 			temp->carry = 1;
 		else
@@ -231,27 +231,20 @@ void	ns_rdr_and(t_cursor **cur, t_map *m_map)
 
 void	ns_rrr_and(t_cursor **cur, t_map *m_map)
 {
-	t_cursor *temp;
-	unsigned char r1;
-	unsigned char r2;
-	unsigned char r3;
+	t_cursor	*temp;
+	t_reg		reg;
 
 	temp = *cur;
-	if (m_map->map[temp->index_pos + 1] == T_RRR)
+	reg.r1 = m_map->map[temp->index_pos + 2];
+	reg.r2 = m_map->map[temp->index_pos + 3];
+	reg.r3 = m_map->map[temp->index_pos + 4];
+	if (ns_check_register(reg.r1, reg.r2, reg.r3))
 	{
-		r1 = m_map->map[temp->index_pos + 2];
-		r2 = m_map->map[temp->index_pos + 3];
-		r3 = m_map->map[temp->index_pos + 4];
-		if (ns_check_register(r1, r2, r3))
-		{
-			temp->registr[r3] = r1 & r2;
-			temp->index_pos += 5;
-			if (temp->registr[r3] == 0)
-				temp->carry = 1;
-			else
-				temp->carry = 0;
-		}
+		temp->registr[reg.r3] = reg.r1 & reg.r2;
+		if (temp->registr[reg.r3] == 0)
+			temp->carry = 1;
 		else
-			temp->index_pos += 5;
+			temp->carry = 0;
 	}
+	temp->index_pos += 5;
 }
