@@ -200,4 +200,8 @@ void					ns_drr_xor(t_cursor **cur, t_map *m_map);
 void					ns_rir_xor(t_cursor **cur, t_map *m_map);
 void					ns_rdr_xor(t_cursor **cur, t_map *m_map);
 void					ns_rrr_xor(t_cursor **cur, t_map *m_map);
+
+char					*find_fbytes_tind2(t_map *map, int index);
+int						char_to_int2(char *str);
+
 #endif
