@@ -117,6 +117,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/home/arh/study/coretwar/VM_cor/operations/ns_add.c" "/home/arh/study/coretwar/VM_cor/cmake-build-debug/CMakeFiles/VM_cor.dir/operations/ns_add.c.o"
   "/home/arh/study/coretwar/VM_cor/operations/ns_aff.c" "/home/arh/study/coretwar/VM_cor/cmake-build-debug/CMakeFiles/VM_cor.dir/operations/ns_aff.c.o"
   "/home/arh/study/coretwar/VM_cor/operations/ns_and.c" "/home/arh/study/coretwar/VM_cor/cmake-build-debug/CMakeFiles/VM_cor.dir/operations/ns_and.c.o"
+  "/home/arh/study/coretwar/VM_cor/operations/ns_fork.c" "/home/arh/study/coretwar/VM_cor/cmake-build-debug/CMakeFiles/VM_cor.dir/operations/ns_fork.c.o"
   "/home/arh/study/coretwar/VM_cor/operations/ns_ld.c" "/home/arh/study/coretwar/VM_cor/cmake-build-debug/CMakeFiles/VM_cor.dir/operations/ns_ld.c.o"
   "/home/arh/study/coretwar/VM_cor/operations/ns_ldi.c" "/home/arh/study/coretwar/VM_cor/cmake-build-debug/CMakeFiles/VM_cor.dir/operations/ns_ldi.c.o"
   "/home/arh/study/coretwar/VM_cor/operations/ns_live.c" "/home/arh/study/coretwar/VM_cor/cmake-build-debug/CMakeFiles/VM_cor.dir/operations/ns_live.c.o"

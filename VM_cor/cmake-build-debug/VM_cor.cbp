@@ -432,6 +432,9 @@
 		<Unit filename="/home/arh/study/coretwar/VM_cor/operations/ns_and.c">
 			<Option target="VM_cor"/>
 		</Unit>
+		<Unit filename="/home/arh/study/coretwar/VM_cor/operations/ns_fork.c">
+			<Option target="VM_cor"/>
+		</Unit>
 		<Unit filename="/home/arh/study/coretwar/VM_cor/operations/ns_ld.c">
 			<Option target="VM_cor"/>
 		</Unit>
