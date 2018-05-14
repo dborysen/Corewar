@@ -6,7 +6,7 @@
 /*   By: ssavchen <ssavchen@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/13 13:32:00 by ssavchen          #+#    #+#             */
-/*   Updated: 2018/05/14 13:19:48 by ssavchen         ###   ########.fr       */
+/*   Updated: 2018/05/14 14:00:44 by ssavchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,31 +24,36 @@ void	ns_copy_reg(int *src, int *dest)
 	}
 }
 
-t_cursor	*ns_copy_cursor(t_cursor **cur, int index, int n)
+t_cursor	*ns_copy_cursor(t_cursor *tmp, int index, int n)
 {
 	t_cursor	*head;
-	t_cursor	*temp;
 
 	head = (t_cursor *)malloc(sizeof(t_cursor));
-	head->nbr_player = (*cur)->nbr_player);
-	head->step = (*cur)->step;
-	head->wait_cycle = (*cur)->wait_cycle;
-	head->commad = (*cur)->commad;
-	head->live_or_die = (*cur)->live_or_die;
-	ns_copy_reg((*cur)->registr, head->registr);
-	head->carry = (*cur)->carry;
-	head->champ = (*cur)->champ;
+	head->nbr_player = tmp->nbr_player;
+	head->step = tmp->step;
+	head->wait_cycle = tmp->wait_cycle;
+	head->commad = tmp->commad;
+	head->live_or_die = tmp->live_or_die;
+	ns_copy_reg(tmp->registr, head->registr);
+	head->carry = tmp->carry;
+	head->champ = tmp->champ;
 	if (n == 1)
-		head->index_pos = ((index % IDX_MOD) + temp->index_pos);
+		head->index_pos = ((index % IDX_MOD) + tmp->index_pos);
 	else
-		head->index_pos = (index + temp->index_pos);
-	temp = head;
-	temp->next = (*cur);
-	(*cur) = temp;
-	return (*cur);
+		head->index_pos = (index + tmp->index_pos);
+	return (head);
 }
 
-void	ns_fork(t_cursor **cur, t_map *m_map, int n)
+void	ns_add_head_cursor(t_cursor **cur, t_cursor *head)
+{
+//	t_cursor	*tmp;
+
+//	tmp = head;
+	head->next = *cur;
+	*cur = head;
+}
+
+void	ns_fork(t_cursor **cur, t_cursor **tmp, t_map *m_map, int n)
 {
 	t_cursor	*temp;
 	t_cursor	*fork;
@@ -57,7 +62,8 @@ void	ns_fork(t_cursor **cur, t_map *m_map, int n)
 
 	temp = *cur;
 	fork = NULL;
-	index = (short)(m_map->map[temp->index_pos + 1] << 8) | (m_map->map[temp->index_pos + 2]);
-	fork = ns_copy_cursor(&cur, index, n);
-	temp->index_pos += 3;
+	index = (short)(m_map->map[(*tmp)->index_pos + 1] << 8) | (m_map->map[(*tmp)->index_pos + 2]);
+	fork = ns_copy_cursor(*tmp, index, n);
+	ns_add_head_cursor(&temp, fork);
+	(*tmp)->index_pos += 3;
 }
