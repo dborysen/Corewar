@@ -48,10 +48,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/myprosku/corTwar/VM_cor
+CMAKE_SOURCE_DIR = /Users/ssavchen/coretwar/VM_cor
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/myprosku/corTwar/VM_cor/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/ssavchen/coretwar/VM_cor/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles /Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles /Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -3174,6 +3174,33 @@ operations/ns_and.c.s:
 	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/operations/ns_and.c.s
 .PHONY : operations/ns_and.c.s
 
+operations/ns_fork.o: operations/ns_fork.c.o
+
+.PHONY : operations/ns_fork.o
+
+# target to build an object file
+operations/ns_fork.c.o:
+	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/operations/ns_fork.c.o
+.PHONY : operations/ns_fork.c.o
+
+operations/ns_fork.i: operations/ns_fork.c.i
+
+.PHONY : operations/ns_fork.i
+
+# target to preprocess a source file
+operations/ns_fork.c.i:
+	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/operations/ns_fork.c.i
+.PHONY : operations/ns_fork.c.i
+
+operations/ns_fork.s: operations/ns_fork.c.s
+
+.PHONY : operations/ns_fork.s
+
+# target to generate assembly for a file
+operations/ns_fork.c.s:
+	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/operations/ns_fork.c.s
+.PHONY : operations/ns_fork.c.s
+
 operations/ns_ld.o: operations/ns_ld.c.o
 
 .PHONY : operations/ns_ld.o
@@ -3819,6 +3846,9 @@ help:
 	@echo "... operations/ns_and.o"
 	@echo "... operations/ns_and.i"
 	@echo "... operations/ns_and.s"
+	@echo "... operations/ns_fork.o"
+	@echo "... operations/ns_fork.i"
+	@echo "... operations/ns_fork.s"
 	@echo "... operations/ns_ld.o"
 	@echo "... operations/ns_ld.i"
 	@echo "... operations/ns_ld.s"

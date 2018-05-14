@@ -1,2 +1,6 @@
+cmake-build-debug
 .idea
-.DS_*
+.DS_Store*
+*.o
+*.so
+*.a

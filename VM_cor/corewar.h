@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   corewar.h                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
+/*   By: ssavchen <ssavchen@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/23 13:22:27 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/11 16:27:21 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/14 13:19:48 by ssavchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -165,6 +165,7 @@ char					*int_to_char(int nbr);
 int						char_to_int(char *str);
 char					*find_fbytes_tind(t_map *map, int index);
 
+// AND
 void					ns_and(t_cursor **cur, t_map *m_map);
 void					ns_iir_and(t_cursor **cur, t_map *m_map);
 void					ns_idr_and(t_cursor **cur, t_map *m_map);
@@ -175,5 +176,35 @@ void					ns_drr_and(t_cursor **cur, t_map *m_map);
 void					ns_rir_and(t_cursor **cur, t_map *m_map);
 void					ns_rdr_and(t_cursor **cur, t_map *m_map);
 void					ns_rrr_and(t_cursor **cur, t_map *m_map);
+
+//OR
+void					ns_or(t_cursor **cur, t_map *m_map);
+void					ns_iir_or(t_cursor **cur, t_map *m_map);
+void					ns_idr_or(t_cursor **cur, t_map *m_map);
+void					ns_irr_or(t_cursor **cur, t_map *m_map);
+void					ns_dir_or(t_cursor **cur, t_map *m_map);
+void					ns_ddr_or(t_cursor **cur, t_map *m_map);
+void					ns_drr_or(t_cursor **cur, t_map *m_map);
+void					ns_rir_or(t_cursor **cur, t_map *m_map);
+void					ns_rdr_or(t_cursor **cur, t_map *m_map);
+void					ns_rrr_or(t_cursor **cur, t_map *m_map);
+
+//XOR
+void					ns_xor(t_cursor **cur, t_map *m_map);
+void					ns_iir_xor(t_cursor **cur, t_map *m_map);
+void					ns_idr_xor(t_cursor **cur, t_map *m_map);
+void					ns_irr_xor(t_cursor **cur, t_map *m_map);
+void					ns_dir_xor(t_cursor **cur, t_map *m_map);
+void					ns_ddr_xor(t_cursor **cur, t_map *m_map);
+void					ns_drr_xor(t_cursor **cur, t_map *m_map);
+void					ns_rir_xor(t_cursor **cur, t_map *m_map);
+void					ns_rdr_xor(t_cursor **cur, t_map *m_map);
+void					ns_rrr_xor(t_cursor **cur, t_map *m_map);
+
+void					ns_copy_reg(int *src, int *dest);
+t_cursor				*ns_copy_cursor(t_cursor **cur, int index, int n);
+void					ns_fork(t_cursor **cur, t_map *m_map, int n);
+
+
 
 #endif
