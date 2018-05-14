@@ -6,7 +6,7 @@
 /*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/23 13:20:36 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/14 15:04:58 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/14 15:53:00 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,13 @@ int			main(int ac, char **av)
 	ns_position_start(&champ);
 	ns_fill_map(champ, &map);
 	ns_create_cursor(&cursor, champ);
+	ns_reverse_cursor(&cursor);
+//	while (cursor)
+//	{
+//		ft_printf("nbr = %d\n", cursor->nbr_player);
+//		cursor = cursor->next;
+//	}
+//	char *s = ft_itoa_base(84, 2, 1);
 	ns_game_start(&cursor, &map, &info, flags);
 	ns_print_map(map);
 //	while (cursor->next)
@@ -41,7 +48,6 @@ int			main(int ac, char **av)
 //		ft_printf("pos = %d\n", cursor->index_pos);
 //		cursor = cursor->next;
 //	}
-//	char *s = ft_itoa_base(84, 2, 1);
 //	rev(s, (int)ft_strlen(s));
 //	ft_printf("%s\n", s);
 //	while (champ->next)

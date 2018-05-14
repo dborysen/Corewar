@@ -6,7 +6,7 @@
 /*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/08 15:32:43 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/14 15:14:05 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/14 16:03:58 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,18 +23,21 @@ void	set_on_map_rrr(t_map **map, t_cursor *temp, t_reg reg)
 	i = 0;
 	reg.r2 = map_t->map[temp->index_pos + 3];
 	reg.r3 = map_t->map[temp->index_pos + 4];
-	str = int_to_char(temp->registr[reg.r1]);
-	reg.index = (temp->index_pos + (temp->registr[reg.r2] + temp->registr[reg.r3]) % IDX_MOD);
-	reg.index = reg.index % MEM_SIZE;
-	while (i < 4)
+	if (ns_check_register(1, reg.r2, reg.r3))
 	{
-		pos = reg.index + i;
-		if (pos < 0)
-			pos = MEM_SIZE + pos;
-		if (pos >= MEM_SIZE)
-			pos = pos % MEM_SIZE;
-		map_t->map[pos] = (unsigned char)str[i];
-		i++;
+		str = int_to_char(temp->registr[reg.r1]);
+		reg.index = (temp->index_pos + (temp->registr[reg.r2] + temp->registr[reg.r3]) % IDX_MOD);
+		reg.index = reg.index % MEM_SIZE;
+		while (i < 4)
+		{
+			pos = reg.index + i;
+			if (pos < 0)
+				pos = MEM_SIZE + pos;
+			if (pos >= MEM_SIZE)
+				pos = pos % MEM_SIZE;
+			map_t->map[pos] = (unsigned char)str[i];
+			i++;
+		}
 	}
 }
 
@@ -47,20 +50,22 @@ void	set_on_map_rdr(t_map **map, t_cursor *temp, t_reg reg)
 
 	map_t = *map;
 	i = 0;
-	reg.dir = (map_t->map[temp->index_pos + 3] << 8) | (map_t->map[temp->index_pos + 4]);
 	reg.r3 = map_t->map[temp->index_pos + 4];
-	str = int_to_char(temp->registr[reg.r1]);
-	reg.index = (temp->index_pos + (reg.dir + temp->registr[reg.r3]) % IDX_MOD);
-	reg.index = reg.index % MEM_SIZE;
-	while (i < 4)
+	if (ns_check_register(1, 1, reg.r3))
 	{
-		pos = reg.index + i;
-		if (pos < 0)
-			pos = MEM_SIZE + pos;
-		if (pos >= MEM_SIZE)
-			pos = pos % MEM_SIZE;
-		map_t->map[pos] = (unsigned char)str[i];
-		i++;
+		reg.dir = (map_t->map[temp->index_pos + 3] << 8) | (map_t->map[temp->index_pos + 4]);
+		str = int_to_char(temp->registr[reg.r1]);
+		reg.index = (temp->index_pos + (reg.dir + temp->registr[reg.r3]) % IDX_MOD);
+		reg.index = reg.index % MEM_SIZE;
+		while (i < 4) {
+			pos = reg.index + i;
+			if (pos < 0)
+				pos = MEM_SIZE + pos;
+			if (pos >= MEM_SIZE)
+				pos = pos % MEM_SIZE;
+			map_t->map[pos] = (unsigned char) str[i];
+			i++;
+		}
 	}
 }
 
@@ -128,22 +133,25 @@ void	set_on_map_rir(t_map **map, t_cursor *temp, t_reg reg)
 
 	map_t = *map;
 	i = 0;
-	reg.index = (short)(map_t->map[temp->index_pos + 3] << 8) | (map_t->map[temp->index_pos + 4]);
-	move_bytes = find_fbytes_tind(*map, (temp->index_pos + (reg.index % IDX_MOD)));
-	reg.index = char_to_int(move_bytes);
 	reg.r3 = map_t->map[temp->index_pos + 5];
-	str = int_to_char(temp->registr[reg.r1]);
-	reg.index = (temp->index_pos + (reg.index + temp->registr[reg.r3]) % IDX_MOD);
-	reg.index %= MEM_SIZE;
-	while (i < 4)
+	if (ns_check_register(1, 1, reg.r3))
 	{
-		pos = reg.index + i;
-		if (pos < 0)
-			pos += MEM_SIZE;
-		if (pos >= MEM_SIZE)
-			pos %= MEM_SIZE;
-		map_t->map[pos] = (unsigned char)str[i];
-		i++;
+		reg.index = (short) (map_t->map[temp->index_pos + 3] << 8) | (map_t->map[temp->index_pos + 4]);
+		move_bytes = find_fbytes_tind(*map, (temp->index_pos + (reg.index % IDX_MOD)));
+		reg.index = char_to_int(move_bytes);
+
+		str = int_to_char(temp->registr[reg.r1]);
+		reg.index = (temp->index_pos + (reg.index + temp->registr[reg.r3]) % IDX_MOD);
+		reg.index %= MEM_SIZE;
+		while (i < 4) {
+			pos = reg.index + i;
+			if (pos < 0)
+				pos += MEM_SIZE;
+			if (pos >= MEM_SIZE)
+				pos %= MEM_SIZE;
+			map_t->map[pos] = (unsigned char) str[i];
+			i++;
+		}
 	}
 }
 

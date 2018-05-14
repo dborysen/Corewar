@@ -6,7 +6,7 @@
 /*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/02 15:09:56 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/14 15:03:50 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/14 16:09:40 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,13 +38,31 @@ void		ns_create_cursor(t_cursor **cursor, t_champion *champ)
 	}
 }
 
+void		ns_reverse_cursor(t_cursor **cursor)
+{
+	t_cursor *prev;
+	t_cursor *current;
+	t_cursor *next;
+
+	prev = NULL;
+	current = *cursor;
+	while (current->next)
+	{
+		next = current->next;
+		current->next = prev;
+		prev = current;
+		current = next;
+	}
+	*cursor = prev;
+}
+
 void	ns_create_cycle(t_cursor **cursor, t_map *m_map)
 {
 	t_cursor	*temp;
 	int 		i;
 
 	temp = *cursor;
-	while (temp->next)
+	while (temp)
 	{
 		i = 0;
 		if (temp->wait_cycle == 0 && temp->commad == 0)
@@ -71,13 +89,10 @@ void	ns_move_cursor(t_cursor ***cursor, int *dead, t_map *map)
 
 	temp = *cursor;
 	tmp = *temp;
-	while (tmp->next)
+	while (tmp)
 	{
 		if (tmp->wait_cycle == 1 && tmp->commad != 0)
 		{
-			/*
-			 ** do instractions
-			 */
 			if (tmp->commad == 12 || tmp->commad == 15)
 			{
 				if (tmp->commad == 12)
@@ -105,10 +120,8 @@ void	ns_move_cursor(t_cursor ***cursor, int *dead, t_map *map)
 
 void	ns_game_start(t_cursor **cursor, t_map *m_map, t_info *info, t_fl fl)
 {
-	t_cursor	*temp;
 	int 		dead;
 
-	temp = *cursor;
 	dead = 1;
 	while (fl.dump > 0)
 	{
@@ -118,7 +131,7 @@ void	ns_game_start(t_cursor **cursor, t_map *m_map, t_info *info, t_fl fl)
 		info->cycles++;
 		if (info->cycles == CYCLE_TO_DIE)
 		{
-			ns_check_lives(&temp, &info);
+			ns_check_lives(cursor, &info);
 			info->cycles = 0;
 		}
 		fl.dump--;

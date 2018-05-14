@@ -6,7 +6,7 @@
 /*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/23 13:22:27 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/14 14:22:53 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/14 15:48:55 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -144,6 +144,7 @@ void					ns_save_comment(t_champion **champ, unsigned char *file_info);
 void					ns_save_magic(t_champion **champ, unsigned char *file_info);
 void					ns_save_program_size(t_champion **champ, unsigned char *file_info);
 void					ns_check_lives(t_cursor **cur, t_info **info);
+void					ns_reverse_cursor(t_cursor **cursor);
 
 //Champ functions
 void					ns_add(t_cursor **cur, t_map *m_map);
