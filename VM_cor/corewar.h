@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   corewar.h                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: arh <arh@student.42.fr>                    +#+  +:+       +#+        */
+/*   By: ssavchen <ssavchen@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/23 13:22:27 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/13 12:30:17 by arh              ###   ########.fr       */
+/*   Updated: 2018/05/14 13:19:48 by ssavchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -201,8 +201,6 @@ void					ns_rir_xor(t_cursor **cur, t_map *m_map);
 void					ns_rdr_xor(t_cursor **cur, t_map *m_map);
 void					ns_rrr_xor(t_cursor **cur, t_map *m_map);
 
-char					*find_fbytes_tind2(t_map *map, int index);
-int						char_to_int2(char *str);
 void					ns_copy_reg(int *src, int *dest);
 t_cursor				*ns_copy_cursor(t_cursor **cur, int index, int n);
 void					ns_fork(t_cursor **cur, t_map *m_map, int n);

@@ -6,43 +6,11 @@
 /*   By: ssavchen <ssavchen@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/13 13:32:00 by ssavchen          #+#    #+#             */
-/*   Updated: 2018/05/14 12:34:54 by ssavchen         ###   ########.fr       */
+/*   Updated: 2018/05/14 13:19:48 by ssavchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../corewar.h"
-
-int		char_to_int2(char *str)
-{
-	int num;
-
-	num = str[0] << 8;
-	num += str[1];
-	return (num);
-}
-
-char	*find_fbytes_tind2(t_map *map, int index)
-{
-	char	*str;
-	int		i;
-	int		pos;
-
-	i = 0;
-	str = (char *)malloc(sizeof(char) + 3);
-	index %= MEM_SIZE;
-	while (i < 2)
-	{
-		pos = index + i;
-		if (pos < 0)
-			pos += MEM_SIZE;
-		if (pos >= MEM_SIZE)
-			pos %= MEM_SIZE;
-		str[i] = map->map[pos];
-		i++;
-	}
-	str[i] = '\0';
-	return str;
-}
 
 void	ns_copy_reg(int *src, int *dest)
 {
@@ -89,8 +57,7 @@ void	ns_fork(t_cursor **cur, t_map *m_map, int n)
 
 	temp = *cur;
 	fork = NULL;
-	str = find_fbytes_tind2(m_map, temp->index_pos + 1);
-	index = char_to_int2(str);
+	index = (short)(m_map->map[temp->index_pos + 1] << 8) | (m_map->map[temp->index_pos + 2]);
 	fork = ns_copy_cursor(&cur, index, n);
 	temp->index_pos += 3;
 }
