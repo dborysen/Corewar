@@ -46,7 +46,7 @@ void	ns_zero_cursor(t_cursor **cursor)
 	temp->wait_cycle = 0;
 	temp->live_or_die = 0;
 	temp->carry = 0;
-	while (i < 16)
+	while (i < REG_NUMBER + 1)
 		temp->registr[i++] = 0;
 }
 

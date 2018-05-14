@@ -67,7 +67,7 @@ void	ns_print_map(t_map memory_map)
 		count++;
 		if (count == 64)
 		{
-			ft_printf("\n");
+			ft_printf(" \n");
 			count = 0;
 		}
 		i++;

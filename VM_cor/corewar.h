@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   corewar.h                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ssavchen <ssavchen@student.unit.ua>        +#+  +:+       +#+        */
+/*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/23 13:22:27 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/14 13:57:00 by ssavchen         ###   ########.fr       */
+/*   Updated: 2018/05/14 14:22:53 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -94,7 +94,7 @@ typedef struct			s_cursor
 	int					wait_cycle;
 	int					commad;
 	int 				live_or_die;
-	int 				registr[REG_NUMBER];
+	int 				registr[REG_NUMBER + 1];
 	int 				carry;
 	t_champion			*champ;
 	struct s_cursor		*next;
@@ -201,8 +201,6 @@ void					ns_rir_xor(t_cursor **cur, t_map *m_map);
 void					ns_rdr_xor(t_cursor **cur, t_map *m_map);
 void					ns_rrr_xor(t_cursor **cur, t_map *m_map);
 
-void	ns_fork(t_cursor **cur, t_cursor **tmp, t_map *m_map, int n);
-
-
+void	ns_fork(t_cursor ***cur, t_cursor **tmp, t_map *m_map, int n);
 
 #endif
