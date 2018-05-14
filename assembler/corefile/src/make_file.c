@@ -22,7 +22,10 @@ int				corefile(t_str_tokens *input,
 	prog_name = correct_name(header);
 	construct_data(input);
 	if (plus_validation(input) == ERROR)
+	{
+		ft_strdel(&prog_name);
 		return (ERROR);
+	}
 	fd = open(prog_name, O_TRUNC | O_WRONLY | O_CREAT, S_IRUSR | S_IWUSR);
 	write_in_file(input, header, fd);
 	ft_printf("\n\e[1;37mWriting output program to \e[0m");

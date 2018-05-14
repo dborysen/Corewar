@@ -72,8 +72,12 @@ int				valid_label(char *label, t_str_tokens *start_of_list)
 	while (start_of_list)
 	{
 		if (ft_strcmp(start_of_list->valid->current_str_piece, copy_label) == 0)
+		{
+			free (copy_label);
 			return (OK);
+		}
 		start_of_list = start_of_list->next;
 	}
+	free (copy_label);
 	return (ERROR);
 }
