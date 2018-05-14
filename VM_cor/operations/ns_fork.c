@@ -6,10 +6,9 @@
 /*   By: ssavchen <ssavchen@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/13 13:32:00 by ssavchen          #+#    #+#             */
-/*   Updated: 2018/05/13 13:32:00 by ssavchen         ###   ########.fr       */
+/*   Updated: 2018/05/14 12:34:54 by ssavchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 
 #include "../corewar.h"
 
@@ -57,7 +56,7 @@ void	ns_copy_reg(int *src, int *dest)
 	}
 }
 
-t_cursor	*ns_copy_cursor(t_cursor **cur)
+t_cursor	*ns_copy_cursor(t_cursor **cur, int index, int n)
 {
 	t_cursor	*head;
 	t_cursor	*temp;
@@ -71,14 +70,17 @@ t_cursor	*ns_copy_cursor(t_cursor **cur)
 	ns_copy_reg((*cur)->registr, head->registr);
 	head->carry = (*cur)->carry;
 	head->champ = (*cur)->champ;
-	head->index_pos = ((temp->index_pos % IDX_MOD) + temp->index_pos);
+	if (n == 1)
+		head->index_pos = ((index % IDX_MOD) + temp->index_pos);
+	else
+		head->index_pos = (index + temp->index_pos);
 	temp = head;
 	temp->next = (*cur);
 	(*cur) = temp;
 	return (*cur);
 }
 
-void	ns_fork(t_cursor **cur, t_map *m_map)
+void	ns_fork(t_cursor **cur, t_map *m_map, int n)
 {
 	t_cursor	*temp;
 	t_cursor	*fork;
@@ -89,6 +91,6 @@ void	ns_fork(t_cursor **cur, t_map *m_map)
 	fork = NULL;
 	str = find_fbytes_tind2(m_map, temp->index_pos + 1);
 	index = char_to_int2(str);
-	fork = ns_copy_cursor(&cur);
+	fork = ns_copy_cursor(&cur, index, n);
 	temp->index_pos += 3;
 }

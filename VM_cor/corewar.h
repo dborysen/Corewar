@@ -203,5 +203,10 @@ void					ns_rrr_xor(t_cursor **cur, t_map *m_map);
 
 char					*find_fbytes_tind2(t_map *map, int index);
 int						char_to_int2(char *str);
+void					ns_copy_reg(int *src, int *dest);
+t_cursor				*ns_copy_cursor(t_cursor **cur, int index, int n);
+void					ns_fork(t_cursor **cur, t_map *m_map, int n);
+
+
 
 #endif
