@@ -54,7 +54,7 @@ $(NAME): $(OBJECT)
 	@make -C $(LIBFT)
 	@gcc $(FLAGS) -I $(INCLUDES) -g $(SRCS) parser/libft/libft.a -o ./$(NAME)
 	@echo "\033[5;32m--------------------------\033[0m"
-	@echo "\033[5;32m         ASM - OK 😁       \033[0m"
+	@echo "\033[5;32m         ASM - OK         \033[0m"
 	@echo "\033[5;32m--------------------------\033[0m"
 
 norm:

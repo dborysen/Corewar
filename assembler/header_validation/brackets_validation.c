@@ -14,10 +14,14 @@
 
 int		brackets_are_ok(t_data *data_from_file)
 {
-	if (current_brackets_is_ok(data_from_file, OPEN_BRACKET) == TRUE
-	&& current_brackets_is_ok(data_from_file, CLOSE_BRACKET) == TRUE)
-		return (TRUE);
-	return (FALSE);
+	int status;
+
+	status = TRUE;
+	if (current_brackets_is_ok(data_from_file, OPEN_BRACKET) == FALSE)
+		status = FALSE;
+	if (current_brackets_is_ok(data_from_file, CLOSE_BRACKET) == FALSE)
+		status = FALSE;
+	return (status == FALSE) ? FALSE : TRUE;
 }
 
 int		current_brackets_is_ok(t_data *data_from_file, int type_of_bracket)
@@ -99,7 +103,8 @@ char	*bracket_place_in_str(char *head_line, int bracket_place, char c)
 	arrow_line = ft_strdup(head_line);
 	while (arrow_line[i] != '\0')
 	{
-		arrow_line[i] = ' ';
+		if (arrow_line[i] != '\t')
+			arrow_line[i] = ' ';
 		i++;
 	}
 	arrow_line[bracket_place] = c;
