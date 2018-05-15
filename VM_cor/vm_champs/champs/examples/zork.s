@@ -1,4 +1,4 @@
 .name "zork"
 .comment "I'M ALIIIIVE"
 
-fork %42;
+st r0, 42

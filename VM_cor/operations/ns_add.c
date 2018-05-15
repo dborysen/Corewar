@@ -18,11 +18,11 @@ void	ns_add(t_cursor **cur, t_map *m_map)
 	t_reg		reg;
 
 	temp = *cur;
-	if (m_map->map[temp->index_pos + 1] == T_RRR)
+	if (m_map->map[(temp->index_pos + 1 ) % MEM_SIZE] == T_RRR)
 	{
-		reg.r1 = m_map->map[temp->index_pos + 2];
-		reg.r2 = m_map->map[temp->index_pos + 3];
-		reg.r3 = m_map->map[temp->index_pos + 4];
+		reg.r1 = m_map->map[(temp->index_pos + 2) % MEM_SIZE];
+		reg.r2 = m_map->map[(temp->index_pos + 3) % MEM_SIZE];
+		reg.r3 = m_map->map[(temp->index_pos + 4) % MEM_SIZE];
 		if (ns_check_register(reg.r1, reg.r2, reg.r3))
 		{
 			temp->registr[reg.r3] = temp->registr[reg.r1] + temp->registr[reg.r2];
@@ -35,6 +35,4 @@ void	ns_add(t_cursor **cur, t_map *m_map)
 		else
 			temp->index_pos += 5;
 	}
-	else
-		temp->index_pos += 5;
 }

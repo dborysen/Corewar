@@ -6,7 +6,7 @@
 /*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/11 15:49:08 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/14 17:42:46 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/15 16:07:03 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -103,4 +103,9 @@ void	ns_check_lives(t_cursor **cur, t_info **info)
 		(*info)->die -= CYCLE_DELTA;
 		(*info)->checks = MAX_CHECKS;
 	}
+}
+
+short	ns_two_bytes(t_map *map, int pos1, int pos2)
+{
+	return ((map->map[pos1] << 8) | (map->map[pos2]));
 }

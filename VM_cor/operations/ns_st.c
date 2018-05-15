@@ -6,7 +6,7 @@
 /*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/07 15:38:50 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/15 14:05:51 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/15 17:44:35 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,9 +21,10 @@ void	set_on_map(t_map **map, t_cursor *temp, t_reg reg)
 
 	map_t = *map;
 	i = 0;
-	reg.index = (short)(map_t->map[temp->index_pos + 3] << 8) | (map_t->map[temp->index_pos + 4]);
+
+	reg.index = ns_two_bytes(map_t, (temp->index_pos + 3) % MEM_SIZE, (temp->index_pos + 4) % MEM_SIZE);
 	str = int_to_char(temp->registr[reg.r1]);
-	reg.index = temp->index_pos + (reg.index % IDX_MOD);
+	reg.index = temp->index_pos + reg.index % IDX_MOD;
 	reg.index %= MEM_SIZE;
 	while (i < 4)
 	{
@@ -43,14 +44,15 @@ void	ns_st(t_cursor **cur, t_map *m_map)
 	t_cursor	*temp;
 
 	temp = *cur;
-	reg.r1 = m_map->map[temp->index_pos + 2];
-	if (m_map->map[temp->index_pos + 1] == T_RR)
+	reg.r1 = m_map->map[(temp->index_pos + 2) % MEM_SIZE];
+	if (m_map->map[(temp->index_pos + 1) % MEM_SIZE] == T_RR)
 	{
-		if (ns_check_register(reg.r1, 1, 1))
-			temp->registr[m_map->map[temp->index_pos + 3]] = temp->registr[reg.r1];
+		reg.r2 = m_map->map[(temp->index_pos + 3) % MEM_SIZE];
+		if (ns_check_register(reg.r1, reg.r2, 1))
+			temp->registr[reg.r2] = temp->registr[reg.r1];
 		temp->index_pos += 4;
 	}
-	else if (m_map->map[temp->index_pos + 1] == T_RI)
+	else if (m_map->map[(temp->index_pos + 1) % MEM_SIZE] == T_RI)
 	{
 		if (ns_check_register(reg.r1, 1, 1))
 			set_on_map(&m_map, temp, reg);

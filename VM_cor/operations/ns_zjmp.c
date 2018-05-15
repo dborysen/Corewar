@@ -6,7 +6,7 @@
 /*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/10 15:47:23 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/15 13:45:19 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/15 19:14:58 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,9 +20,11 @@ void	ns_zjmp(t_cursor **cur, t_map *m_map)
 	temp = *cur;
 	if (temp->carry == 1)
 	{
-		reg.dir = (m_map->map[temp->index_pos + 1] << 8) | (m_map->map[temp->index_pos + 2]);
-		temp->index_pos = reg.dir % IDX_MOD;
+		reg.dir = ns_two_bytes(m_map, (temp->index_pos + 1) % MEM_SIZE, (temp->index_pos + 2) % MEM_SIZE);
+		ft_printf("dir = %d\n", reg.dir);
+		temp->index_pos += reg.dir % IDX_MOD;
 	}
 	else
 		temp->index_pos += 3;
 }
+

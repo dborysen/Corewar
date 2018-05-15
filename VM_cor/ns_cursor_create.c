@@ -6,7 +6,7 @@
 /*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/02 15:09:56 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/15 14:14:32 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/15 14:35:03 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -91,13 +91,10 @@ t_cursor	*ns_move_cursor(t_cursor **cursor, t_map *map)
 	{
 		if (temp->wait_cycle == 1 && temp->commad != 0)
 		{
-			if (temp->commad == 12 || temp->commad == 15)
-			{
-				if (temp->commad == 12)
+			if (temp->commad == 12)
 					*cursor = ns_fork(cursor, &temp, map, 1);
-				else
+			else if (temp->commad == 15)
 					*cursor = ns_fork(cursor, &temp, map, 0);
-			}
 			else
 				(*g_func[temp->commad - 1])(&temp, map);
 			temp->wait_cycle = 0;
