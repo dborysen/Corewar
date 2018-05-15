@@ -36,5 +36,5 @@ void	ns_add(t_cursor **cur, t_map *m_map)
 			temp->index_pos += 5;
 	}
 	else
-		temp->index_pos += 2;
+		temp->index_pos += 5;
 }

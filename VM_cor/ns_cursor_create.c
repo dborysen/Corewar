@@ -6,7 +6,7 @@
 /*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/02 15:09:56 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/14 16:09:40 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/15 14:14:32 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -82,51 +82,49 @@ void	ns_create_cycle(t_cursor **cursor, t_map *m_map)
 	}
 }
 
-void	ns_move_cursor(t_cursor ***cursor, int *dead, t_map *map)
+t_cursor	*ns_move_cursor(t_cursor **cursor, t_map *map)
 {
-	t_cursor **temp;
-	t_cursor *tmp;
+	t_cursor *temp;
 
 	temp = *cursor;
-	tmp = *temp;
-	while (tmp)
+	while (temp)
 	{
-		if (tmp->wait_cycle == 1 && tmp->commad != 0)
+		if (temp->wait_cycle == 1 && temp->commad != 0)
 		{
-			if (tmp->commad == 12 || tmp->commad == 15)
+			if (temp->commad == 12 || temp->commad == 15)
 			{
-				if (tmp->commad == 12)
-					ns_fork(cursor, &tmp, map, 1);
+				if (temp->commad == 12)
+					*cursor = ns_fork(cursor, &temp, map, 1);
 				else
-					ns_fork(cursor, &tmp, map, 0);
+					*cursor = ns_fork(cursor, &temp, map, 0);
 			}
 			else
-				(*g_func[tmp->commad - 1])(&tmp, map);
-			tmp->wait_cycle = 0;
-			tmp->commad = 0;
-			*dead = 0;
+				(*g_func[temp->commad - 1])(&temp, map);
+			temp->wait_cycle = 0;
+			temp->commad = 0;
 		}
-		else if (tmp->wait_cycle != 0 && tmp->commad != 0)
-			tmp->wait_cycle--;
+		else if (temp->wait_cycle != 0 && temp->commad != 0)
+			temp->wait_cycle--;
 		else
-			tmp->index_pos++;
-		if (tmp->index_pos >= MEM_SIZE)
-			tmp->index_pos %= MEM_SIZE;
-		if (tmp->index_pos < 0)
-			tmp->index_pos += MEM_SIZE;
-		tmp = tmp->next;
+			temp->index_pos++;
+		if (temp->index_pos >= MEM_SIZE)
+			temp->index_pos %= MEM_SIZE;
+		if (temp->index_pos < 0)
+			temp->index_pos += MEM_SIZE;
+		temp = temp->next;
 	}
+	return (*cursor);
 }
 
-void	ns_game_start(t_cursor **cursor, t_map *m_map, t_info *info, t_fl fl)
+t_cursor	*ns_game_start(t_cursor **cursor, t_map *m_map, t_info *info, t_fl fl)
 {
-	int 		dead;
+	t_cursor *temp;
 
-	dead = 1;
 	while (fl.dump > 0)
 	{
-		ns_create_cycle(cursor, m_map);
-		ns_move_cursor(&cursor, &dead, m_map);
+		temp = *cursor;
+		ns_create_cycle(&temp, m_map);
+		*cursor = ns_move_cursor(&temp, m_map);
 		info->total_cycles++;
 		info->cycles++;
 		if (info->cycles == CYCLE_TO_DIE)
@@ -136,4 +134,5 @@ void	ns_game_start(t_cursor **cursor, t_map *m_map, t_info *info, t_fl fl)
 		}
 		fl.dump--;
 	}
+	return (*cursor);
 }

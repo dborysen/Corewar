@@ -47,7 +47,7 @@ void	ns_ld(t_cursor **cur, t_map *m_map)
 		if (ns_check_register(reg.r1, 1, 1))
 		{
 			str = find_fbytes_tind(m_map, temp->index_pos + 2);
-			reg.index = char_to_int(str); // reg.dir ??? был каст в short
+			reg.index = char_to_int(str);
 			temp->registr[reg.r1] = reg.index;
 			if (temp->registr[reg.r1] == 0)
 				temp->carry = 1;

@@ -6,7 +6,7 @@
 /*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/11 15:49:08 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/11 16:52:11 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/14 17:42:46 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,19 +44,52 @@ int			ns_check_id(t_champion *champ)
 	return (1);
 }
 
+t_cursor		*get_nth(t_cursor *head, t_cursor *temp)
+{
+	int counter;
+
+	counter = 0;
+	while (head != temp)
+	{
+		head = head->next;
+		counter++;
+	}
+	return (head);
+}
+
+void			ns_delete_nth(t_cursor **head, t_cursor *temp)
+{
+	t_cursor *prev;
+	t_cursor *elm;
+
+	if (head == NULL)
+		return ;
+	else
+	{
+		prev = get_nth(*head, temp);
+		elm = prev->next;
+		prev->next = elm->next;
+		free(elm);
+	}
+}
+
 void	ns_check_lives(t_cursor **cur, t_info **info)
 {
-	int count;
+	int			count;
+	t_cursor	*temp;
 
 	count = 0;
-	while ((*cur)->next)
+	temp = *cur;
+	while (temp)
 	{
-		if ((*cur)->live_or_die)
+		if (temp->live_or_die)
 		{
-			(*cur)->live_or_die = 0;
+			temp->live_or_die = 0;
 			count++;
 		}
-		(*cur) = (*cur)->next;
+		else
+			ns_delete_nth(cur, temp);
+		temp = temp->next;
 	}
 	if (count >= 21)
 		(*info)->checks -= 1;

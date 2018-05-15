@@ -6,7 +6,7 @@
 /*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/08 15:32:43 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/14 16:03:58 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/14 16:23:28 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ void	set_on_map_rrr(t_map **map, t_cursor *temp, t_reg reg)
 	if (ns_check_register(1, reg.r2, reg.r3))
 	{
 		str = int_to_char(temp->registr[reg.r1]);
-		reg.index = (temp->index_pos + (temp->registr[reg.r2] + temp->registr[reg.r3]) % IDX_MOD);
+		reg.index = (temp->index_pos + ((temp->registr[reg.r2] + temp->registr[reg.r3]) % IDX_MOD));
 		reg.index = reg.index % MEM_SIZE;
 		while (i < 4)
 		{
@@ -50,20 +50,21 @@ void	set_on_map_rdr(t_map **map, t_cursor *temp, t_reg reg)
 
 	map_t = *map;
 	i = 0;
-	reg.r3 = map_t->map[temp->index_pos + 4];
+	reg.r3 = map_t->map[temp->index_pos + 5];
 	if (ns_check_register(1, 1, reg.r3))
 	{
 		reg.dir = (map_t->map[temp->index_pos + 3] << 8) | (map_t->map[temp->index_pos + 4]);
 		str = int_to_char(temp->registr[reg.r1]);
-		reg.index = (temp->index_pos + (reg.dir + temp->registr[reg.r3]) % IDX_MOD);
+		reg.index = (temp->index_pos + ((reg.dir + temp->registr[reg.r3]) % IDX_MOD));
 		reg.index = reg.index % MEM_SIZE;
-		while (i < 4) {
+		while (i < 4)
+		{
 			pos = reg.index + i;
 			if (pos < 0)
 				pos = MEM_SIZE + pos;
 			if (pos >= MEM_SIZE)
 				pos = pos % MEM_SIZE;
-			map_t->map[pos] = (unsigned char) str[i];
+			map_t->map[pos] = (unsigned char)str[i];
 			i++;
 		}
 	}
@@ -81,7 +82,7 @@ void	set_on_map_rdd(t_map **map, t_cursor *temp, t_reg reg)
 	reg.dir = (map_t->map[temp->index_pos + 3] << 8) | (map_t->map[temp->index_pos + 4]);
 	reg.dir2 = (map_t->map[temp->index_pos + 5] << 8) | (map_t->map[temp->index_pos + 6]);
 	str = int_to_char(temp->registr[reg.r1]);
-	reg.index = (temp->index_pos + (reg.dir + reg.dir2) % IDX_MOD);
+	reg.index = (temp->index_pos + ((reg.dir + reg.dir2) % IDX_MOD));
 	reg.index = reg.index % MEM_SIZE;
 	while (i < 4)
 	{
@@ -97,11 +98,11 @@ void	set_on_map_rdd(t_map **map, t_cursor *temp, t_reg reg)
 
 void	set_on_map_rid(t_map **map, t_cursor *temp, t_reg reg)
 {
-	int i;
-	int pos;
-	char *str;
-	t_map *map_t;
-	char *move_bytes;
+	int		i;
+	int		pos;
+	char	*str;
+	t_map	*map_t;
+	char	*move_bytes;
 
 	map_t = *map;
 	i = 0;
@@ -110,15 +111,16 @@ void	set_on_map_rid(t_map **map, t_cursor *temp, t_reg reg)
 	reg.index = char_to_int(move_bytes);
 	reg.dir2 = (map_t->map[temp->index_pos + 5] << 8) | (map_t->map[temp->index_pos + 6]);
 	str = int_to_char(temp->registr[reg.r1]);
-	reg.index = (temp->index_pos + (reg.index + reg.dir2) % IDX_MOD);
+	reg.index = (temp->index_pos + ((reg.index + reg.dir2) % IDX_MOD));
 	reg.index = reg.index % MEM_SIZE;
-	while (i < 4) {
+	while (i < 4)
+	{
 		pos = reg.index + i;
 		if (pos < 0)
 			pos = MEM_SIZE + pos;
 		if (pos >= MEM_SIZE)
 			pos = pos % MEM_SIZE;
-		map_t->map[pos] = (unsigned char) str[i];
+		map_t->map[pos] = (unsigned char)str[i];
 		i++;
 	}
 }
@@ -136,20 +138,20 @@ void	set_on_map_rir(t_map **map, t_cursor *temp, t_reg reg)
 	reg.r3 = map_t->map[temp->index_pos + 5];
 	if (ns_check_register(1, 1, reg.r3))
 	{
-		reg.index = (short) (map_t->map[temp->index_pos + 3] << 8) | (map_t->map[temp->index_pos + 4]);
+		reg.index = (short)(map_t->map[temp->index_pos + 3] << 8) | (map_t->map[temp->index_pos + 4]);
 		move_bytes = find_fbytes_tind(*map, (temp->index_pos + (reg.index % IDX_MOD)));
 		reg.index = char_to_int(move_bytes);
-
 		str = int_to_char(temp->registr[reg.r1]);
-		reg.index = (temp->index_pos + (reg.index + temp->registr[reg.r3]) % IDX_MOD);
+		reg.index = (temp->index_pos + ((reg.index + temp->registr[reg.r3]) % IDX_MOD));
 		reg.index %= MEM_SIZE;
-		while (i < 4) {
+		while (i < 4)
+		{
 			pos = reg.index + i;
 			if (pos < 0)
 				pos += MEM_SIZE;
 			if (pos >= MEM_SIZE)
 				pos %= MEM_SIZE;
-			map_t->map[pos] = (unsigned char) str[i];
+			map_t->map[pos] = (unsigned char)str[i];
 			i++;
 		}
 	}

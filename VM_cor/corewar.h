@@ -6,7 +6,7 @@
 /*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/23 13:22:27 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/14 15:48:55 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/15 13:22:04 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -133,7 +133,8 @@ void 					ns_error(char *err_message);
 void					ns_zero_cursor(t_cursor **cursor);
 void					ns_zero_reg(t_reg *reg);
 void					ns_create_cursor(t_cursor **cursor, t_champion *champ);
-void					ns_game_start(t_cursor **cursor, t_map *m_map, t_info *info, t_fl flags);
+//void					ns_game_start(t_cursor **cursor, t_map *m_map, t_info *info, t_fl flags);
+t_cursor	*ns_game_start(t_cursor **cursor, t_map *m_map, t_info *info, t_fl fl);
 int 					ns_check_register(int r1, int r2, int r3);
 void					usage();
 int						ns_check_id(t_champion *champ);
@@ -145,6 +146,7 @@ void					ns_save_magic(t_champion **champ, unsigned char *file_info);
 void					ns_save_program_size(t_champion **champ, unsigned char *file_info);
 void					ns_check_lives(t_cursor **cur, t_info **info);
 void					ns_reverse_cursor(t_cursor **cursor);
+void					ns_delete_nth(t_cursor **head, t_cursor *temp);
 
 //Champ functions
 void					ns_add(t_cursor **cur, t_map *m_map);
@@ -202,6 +204,6 @@ void					ns_rir_xor(t_cursor **cur, t_map *m_map);
 void					ns_rdr_xor(t_cursor **cur, t_map *m_map);
 void					ns_rrr_xor(t_cursor **cur, t_map *m_map);
 
-void	ns_fork(t_cursor ***cur, t_cursor **tmp, t_map *m_map, int n);
-
+//void	ns_fork(t_cursor ***cur, t_cursor **tmp, t_map *m_map, int n);
+t_cursor	*ns_fork(t_cursor **cur, t_cursor **tmp, t_map *m_map, int n);
 #endif
