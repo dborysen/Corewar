@@ -25,5 +25,3 @@ void	ns_dump_flag(t_champion *champ)
 		temp = temp->next;
 	}
 }
-
-
