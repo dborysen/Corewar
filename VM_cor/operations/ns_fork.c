@@ -6,7 +6,7 @@
 /*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/13 13:32:00 by ssavchen          #+#    #+#             */
-/*   Updated: 2018/05/15 19:17:07 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/16 15:33:48 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ t_cursor	*ns_copy_cursor(t_cursor *tmp, int index, int n)
 	head->champ = tmp->champ;
 	if (n == 1)
 	{
-		head->index_pos = ((index % IDX_MOD) + tmp->index_pos);
+		head->index_pos = tmp->index_pos + index % IDX_MOD;
 		if (head->index_pos < 0)
 			head->index_pos += MEM_SIZE;
 		else if (head->index_pos > MEM_SIZE)
@@ -47,7 +47,7 @@ t_cursor	*ns_copy_cursor(t_cursor *tmp, int index, int n)
 	}
 	else
 	{
-		head->index_pos = (index + tmp->index_pos);
+		head->index_pos = index + tmp->index_pos;
 		if (head->index_pos < 0)
 			head->index_pos += MEM_SIZE;
 		else if (head->index_pos > MEM_SIZE)
@@ -71,10 +71,9 @@ t_cursor	*ns_fork(t_cursor **cur, t_cursor **tmp, t_map *m_map, int n)
 
 	temp = *cur;
 	fork = NULL;
-	index = ns_two_bytes(m_map, (temp->index_pos + 1) % MEM_SIZE, (temp->index_pos + 2) % MEM_SIZE);
+	index = ns_two_bytes(m_map, ((*tmp)->index_pos + 1) % MEM_SIZE, ((*tmp)->index_pos + 2) % MEM_SIZE);
 	fork = ns_copy_cursor(*tmp, index, n);
 	cur = ns_add_head_cursor(&temp, fork);
 	(*tmp)->index_pos += 3;
-	temp = *cur;
 	return (*cur);
 }

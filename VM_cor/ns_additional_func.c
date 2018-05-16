@@ -6,7 +6,7 @@
 /*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/24 14:49:11 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/10 14:59:07 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/16 17:11:08 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,32 +24,27 @@ int				unsigned_char_to_int(unsigned char *str)
 	return (nbr);
 }
 
-//char	*int_to_char(int nbr)
-//{
-//	char *str;
-//
-//	str = (char *)malloc(sizeof(unsigned char) + 5);
-//	ft_printf("nbr = %d\n", nbr);
-//	str[0] = (char)nbr >> 24;
-//			ft_printf("bytes = %02x\n", str[0]);
-//	str[1] = ((char)nbr >> 16) - (((char)nbr >> 24) << 8);
-//	ft_printf("bytes = %02x\n", str[1]);
-//	str[2] = ((char)nbr >> 8) - (((char)nbr >> 16) << 8);
-//	ft_printf("bytes = %02x\n", str[2]);
-//	str[3] = ((char)nbr);
-//	ft_printf("bytes = %02x\n", str[3]);
-//	str[4] = '\0';
-//	return (str);
-//}
+char	*int_to_char2(int nbr)
+{
+	char *str;
+
+	str = (char *)malloc(sizeof(char) + 5);
+	str[0] = (char)nbr >> 24;
+	str[1] = ((char)nbr >> 16) - (((char)nbr >> 24) << 8);
+	str[2] = ((char)nbr >> 8) - (((char)nbr >> 16) << 8);
+	str[3] = ((char)nbr);
+	str[4] = '\0';
+	return (str);
+}
 
 char	*int_to_char(int nbr)
 {
 	char *str;
 
 	str = (char *)malloc(sizeof(char) + 5);
-	str[0] = (char)nbr >> 24;
-	str[1] = (char)nbr >> 16;
-	str[2] = (char)nbr >> 8;
+	str[0] = (char)(nbr >> 24);
+	str[1] = (char)(nbr >> 16);
+	str[2] = (char)(nbr >> 8);
 	str[3] = (char)nbr;
 	str[4] = '\0';
 	return (str);
@@ -78,10 +73,7 @@ char	*find_fbytes_tind(t_map *map, int index)
 	while (i < 4)
 	{
 		pos = index + i;
-		if (pos < 0)
-			pos += MEM_SIZE;
-		if (pos >= MEM_SIZE)
-			pos %= MEM_SIZE;
+		pos = pos < 0 ? pos + MEM_SIZE : pos % MEM_SIZE;
 		str[i] = map->map[pos];
 		i++;
 	}

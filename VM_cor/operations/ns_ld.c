@@ -21,7 +21,7 @@ void	ns_ld2(t_cursor **cur, t_map *m_map, t_reg reg, char *str)
 	if (ns_check_register(reg.r1, 1, 1))
 	{
 		reg.index = ns_two_bytes(m_map, (temp->index_pos + 2) % MEM_SIZE, (temp->index_pos + 3) % MEM_SIZE);
-		str = find_fbytes_tind(m_map, (temp->index_pos + (reg.index % IDX_MOD)));
+		str = find_fbytes_tind(m_map, (temp->index_pos + reg.index % IDX_MOD));
 		reg.index = char_to_int(str);
 		temp->registr[reg.r1] = reg.index;
 		if (temp->registr[reg.r1] == 0)
