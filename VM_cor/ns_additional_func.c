@@ -6,7 +6,7 @@
 /*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/24 14:49:11 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/16 17:11:08 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/16 18:21:19 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,13 +15,13 @@
 
 int				unsigned_char_to_int(unsigned char *str)
 {
-	int nbr;
+	int num;
 
-	nbr = str[0] << 24;
-	nbr += str[1] << 16;
-	nbr += str[2] << 8;
-	nbr += str[3];
-	return (nbr);
+	num = str[0] << 24;
+	num += str[1] << 16;
+	num += str[2] << 8;
+	num += str[3];
+	return (num);
 }
 
 char	*int_to_char2(int nbr)
@@ -29,10 +29,41 @@ char	*int_to_char2(int nbr)
 	char *str;
 
 	str = (char *)malloc(sizeof(char) + 5);
-	str[0] = (char)nbr >> 24;
-	str[1] = ((char)nbr >> 16) - (((char)nbr >> 24) << 8);
-	str[2] = ((char)nbr >> 8) - (((char)nbr >> 16) << 8);
-	str[3] = ((char)nbr);
+	str[0] = (char)(nbr >> 24);
+	ft_printf("0 = %02x\n", str[0]);
+
+	str[1] = ((char)(nbr >> 16)) - (((char)(nbr >> 24)) << 8);
+	ft_printf("0 = %02x\n", str[1]);
+
+	str[2] = ((char)(nbr >> 8)) - (((char)(nbr >> 16)) << 8);
+	ft_printf("0 = %02x\n", str[2]);
+
+	str[3] = (char)nbr;
+	ft_printf("0 = %02x\n", str[3]);
+
+	str[4] = '\0';
+	return (str);
+}
+
+char	*int_to_charpr(int nbr)
+{
+	char *str;
+
+	ft_printf("D = %d\n", nbr);
+	str = (char *)malloc(sizeof(char) + 5);
+	str[0] = (char)(nbr >> 24);
+	ft_printf("0 = %02x\n", str[0]);
+	ft_printf("0nb = %d\n", str[0]);
+
+	str[1] = (char)(nbr >> 16);
+	ft_printf("1 = %02x\n", str[1]);
+
+	str[2] = (char)(nbr >> 8);
+	ft_printf("2 = %02x\n", str[2]);
+
+	str[3] = (char)nbr;
+	ft_printf("3 = %02x\n", str[3]);
+
 	str[4] = '\0';
 	return (str);
 }
@@ -69,7 +100,7 @@ char	*find_fbytes_tind(t_map *map, int index)
 
 	i = 0;
 	str = (char *)malloc(sizeof(char) + 5);
-	index %= MEM_SIZE;
+	index = index < 0 ? index + MEM_SIZE : index % MEM_SIZE;
 	while (i < 4)
 	{
 		pos = index + i;
@@ -78,7 +109,7 @@ char	*find_fbytes_tind(t_map *map, int index)
 		i++;
 	}
 	str[i] = '\0';
-	return str;
+	return (str);
 }
 
 void			ns_position_start(t_champion **champ)

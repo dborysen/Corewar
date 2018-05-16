@@ -6,7 +6,7 @@
 /*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/23 13:22:27 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/16 17:08:16 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/16 17:29:18 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -205,5 +205,8 @@ void					ns_rdr_xor(t_cursor **cur, t_map *m_map);
 void					ns_rrr_xor(t_cursor **cur, t_map *m_map);
 
 t_cursor	*ns_fork(t_cursor **cur, t_cursor **tmp, t_map *m_map, int n);
+
+char	*int_to_charpr(int nbr);
+char	*int_to_char2(int nbr);
 
 #endif
