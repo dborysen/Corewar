@@ -6,7 +6,7 @@
 /*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/24 14:49:11 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/16 18:21:19 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/17 15:45:45 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -92,14 +92,14 @@ int		char_to_int(char *str)
 	return (num);
 }
 
-char	*find_fbytes_tind(t_map *map, int index)
+unsigned char	*find_fbytes_tind(t_map *map, int index)
 {
-	char	*str;
+	unsigned  char	*str;
 	int		i;
 	int		pos;
 
 	i = 0;
-	str = (char *)malloc(sizeof(char) + 5);
+	str = (unsigned char *)malloc(sizeof(unsigned char) + 5);
 	index = index < 0 ? index + MEM_SIZE : index % MEM_SIZE;
 	while (i < 4)
 	{

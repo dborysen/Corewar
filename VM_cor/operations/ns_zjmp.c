@@ -20,10 +20,9 @@ void	ns_zjmp(t_cursor **cur, t_map *m_map)
 	temp = *cur;
 	if (temp->carry == 1)
 	{
-		reg.dir = ns_two_bytes(m_map, (temp->index_pos + 1) % MEM_SIZE, (temp->index_pos + 2) % MEM_SIZE);
+		reg.dir = ns_two_bytes(m_map, temp->index_pos + 1, temp->index_pos + 2);
 		temp->index_pos += reg.dir % IDX_MOD;
 	}
 	else
 		temp->index_pos += 3;
 }
-

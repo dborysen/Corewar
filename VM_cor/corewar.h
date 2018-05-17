@@ -6,7 +6,7 @@
 /*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/23 13:22:27 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/16 17:29:18 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/17 16:21:39 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -104,9 +104,11 @@ typedef struct			s_info
 {
 	int 				total_cycles;
 	int 				cycles;
-	int 				winner;
+	int 				winner_nbr;
+	char 				*winner_name;
 	int 				checks;
 	int 				die;
+	int 				end_game;
 }						t_info;
 
 typedef struct 			s_reg
@@ -147,6 +149,7 @@ void					ns_check_lives(t_cursor **cur, t_info **info);
 void					ns_reverse_cursor(t_cursor **cursor);
 void					ns_delete_nth(t_cursor **head, t_cursor *temp);
 short					ns_two_bytes(t_map *map, int pos1, int pos2);
+int 					ns_step_wrong_codage(int num);
 
 //Champ functions
 void					ns_add(t_cursor **cur, t_map *m_map);
@@ -166,8 +169,8 @@ void					ns_live(t_cursor **cur, t_map *m_map);
 typedef void 			(*ns_array_of_functions)(t_cursor **cur, t_map *m_map);
 char					*int_to_char(int nbr);
 int						char_to_int(char *str);
-char					*find_fbytes_tind(t_map *map, int index);
-
+//char					*find_fbytes_tind(t_map *map, int index);
+unsigned char			*find_fbytes_tind(t_map *map, int index);
 // AND
 void					ns_and(t_cursor **cur, t_map *m_map);
 void					ns_iir_and(t_cursor **cur, t_map *m_map);

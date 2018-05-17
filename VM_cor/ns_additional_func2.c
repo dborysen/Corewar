@@ -6,7 +6,7 @@
 /*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/11 15:49:08 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/16 15:18:10 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/17 17:05:39 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,7 +73,20 @@ void			ns_delete_nth(t_cursor **head, t_cursor *temp)
 	}
 }
 
-void	ns_check_lives(t_cursor **cur, t_info **info)
+int		is_empty_cursor(t_cursor *temp)
+{
+	int len;
+
+	len = 0;
+	while (temp)
+	{
+		len++;
+		temp = temp->next;
+	}
+	return (len == 0 ? 0 : 1);
+}
+
+void	ns_check_lives(t_cursor **cur, t_info **info) // Надо доделать !!!!!! Не особо понимаю
 {
 	int			count;
 	t_cursor	*temp;
@@ -85,28 +98,63 @@ void	ns_check_lives(t_cursor **cur, t_info **info)
 		if (temp->live_or_die)
 		{
 			temp->live_or_die = 0;
+			(*info)->winner_nbr = temp->nbr_player;
+			(*info)->winner_name = temp->champ->champ_name;
 			count++;
 		}
 		else
 			ns_delete_nth(cur, temp);
 		temp = temp->next;
 	}
-	if (count >= 21)
+	if (count >= NBR_LIVE)
 		(*info)->checks -= 1;
 	if ((*info)->checks <= 0)
 	{
 		(*info)->die -= CYCLE_DELTA;
 		(*info)->checks = MAX_CHECKS;
 	}
-	if (count < 21)
+	if (count < NBR_LIVE)
 	{
 		(*info)->die -= CYCLE_DELTA;
 		(*info)->checks = MAX_CHECKS;
+	}
+	if (is_empty_cursor(*cur) == 0 || (*info)->die <= 0)
+	{
+		ft_printf("Player %d (%s) won.\n", (*info)->winner_nbr, (*info)->winner_name);
+		(*info)->end_game = 1;
 	}
 }
 
 short	ns_two_bytes(t_map *map, int pos1, int pos2)
 {
-
+	pos1 = pos1 < 0 ? pos1 + MEM_SIZE : pos1 % MEM_SIZE;
+	pos2 = pos2 < 0 ? pos2 + MEM_SIZE : pos2 % MEM_SIZE;
 	return ((map->map[pos1] << 8) | (map->map[pos2]));
+}
+
+int 	ns_step_wrong_codage(int num)
+{
+	int ret;
+
+	ret = 1;
+	num = num >> 2;
+	if ((num >> 4) == REG_CODE)
+		ret += 1;
+	else if ((num >> 4) == DIR_CODE)
+		ret += g_op_tab->label_size == 0 ? 4 : 2;
+	else if ((num >> 4) == IND_CODE)
+		ret += 2;
+	if (((num >> 2) & 3) == REG_CODE)
+		ret += 1;
+	else if (((num >> 2) & 3) == DIR_CODE)
+		ret += g_op_tab->label_size;
+	else if (((num >> 2) & 3)== IND_CODE)
+		ret += 2;
+	if ((num & 3) == REG_CODE)
+		ret += 1;
+	else if ((num & 3) == DIR_CODE)
+		ret += g_op_tab->label_size;
+	else if ((num & 3) == IND_CODE)
+		ret += 2;
+	return (ret);
 }

@@ -40,18 +40,12 @@ t_cursor	*ns_copy_cursor(t_cursor *tmp, int index, int n)
 	if (n == 1)
 	{
 		head->index_pos = tmp->index_pos + index % IDX_MOD;
-		if (head->index_pos < 0)
-			head->index_pos += MEM_SIZE;
-		else if (head->index_pos > MEM_SIZE)
-			head->index_pos %= MEM_SIZE;
+		head->index_pos = head->index_pos < 0 ? head->index_pos + MEM_SIZE : head->index_pos % MEM_SIZE;
 	}
 	else
 	{
 		head->index_pos = index + tmp->index_pos;
-		if (head->index_pos < 0)
-			head->index_pos += MEM_SIZE;
-		else if (head->index_pos > MEM_SIZE)
-			head->index_pos %= MEM_SIZE;
+		head->index_pos = head->index_pos < 0 ? head->index_pos + MEM_SIZE : head->index_pos % MEM_SIZE;
 	}
 	return (head);
 }
@@ -71,7 +65,7 @@ t_cursor	*ns_fork(t_cursor **cur, t_cursor **tmp, t_map *m_map, int n)
 
 	temp = *cur;
 	fork = NULL;
-	index = ns_two_bytes(m_map, ((*tmp)->index_pos + 1) % MEM_SIZE, ((*tmp)->index_pos + 2) % MEM_SIZE);
+	index = ns_two_bytes(m_map, (*tmp)->index_pos + 1, (*tmp)->index_pos + 2);
 	fork = ns_copy_cursor(*tmp, index, n);
 	cur = ns_add_head_cursor(&temp, fork);
 	(*tmp)->index_pos += 3;

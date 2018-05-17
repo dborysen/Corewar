@@ -6,7 +6,7 @@
 /*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/02 15:09:56 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/16 16:51:50 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/17 17:06:59 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -104,10 +104,8 @@ t_cursor	*ns_move_cursor(t_cursor **cursor, t_map *map)
 			temp->wait_cycle--;
 		else
 			temp->index_pos++;
-		if (temp->index_pos >= MEM_SIZE)
-			temp->index_pos %= MEM_SIZE;
-		if (temp->index_pos < 0)
-			temp->index_pos += MEM_SIZE;
+		temp->index_pos = temp->index_pos < 0 ? temp->index_pos + MEM_SIZE :
+						  temp->index_pos % MEM_SIZE;
 		temp = temp->next;
 	}
 	return (*cursor);
@@ -117,19 +115,17 @@ t_cursor	*ns_game_start(t_cursor **cursor, t_map *m_map, t_info *info, t_fl fl)
 {
 	t_cursor *temp;
 
-	while (fl.dump > 0)
+	while (fl.dump > 0 && info->end_game == 0)
 	{
 		temp = *cursor;
 		ns_create_cycle(&temp, m_map);
 		*cursor = ns_move_cursor(&temp, m_map);
 		info->total_cycles++;
-		info->cycles++;
-		if (info->cycles == CYCLE_TO_DIE)
-		{
+		if (info->total_cycles % CYCLE_TO_DIE == 0)
 			ns_check_lives(cursor, &info);
-			info->cycles = 0;
-		}
 		fl.dump--;
 	}
+	if (fl.dump == 0 && info->end_game == 0)
+		ns_print_map(*m_map);
 	return (*cursor);
 }

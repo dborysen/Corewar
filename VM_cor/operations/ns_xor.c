@@ -35,24 +35,25 @@ void	ns_xor(t_cursor **cur, t_map *m_map)
 		ns_idr_xor(cur, m_map);
 	else if (m_map->map[((*cur)->index_pos + 1) % MEM_SIZE] == T_IIR)
 		ns_iir_xor(cur, m_map);
-
+	else
+	(*cur)->index_pos += ns_step_wrong_codage(m_map->map[((*cur)->index_pos + 1) % MEM_SIZE]);
 }
 
 void	ns_iir_xor(t_cursor **cur, t_map *m_map)
 {
-	t_cursor	*temp;
-	t_reg		reg;
-	char		*str;
-	char		*str2;
-	int			index2;
+	t_cursor		*temp;
+	t_reg			reg;
+	unsigned char	*str;
+	unsigned char	*str2;
+	int				index2;
 
 	temp = *cur;
-	reg.index = ns_two_bytes(m_map, (temp->index_pos + 2) % MEM_SIZE, (temp->index_pos + 3) % MEM_SIZE);
+	reg.index = ns_two_bytes(m_map, temp->index_pos + 2, temp->index_pos + 3);
 	str = find_fbytes_tind(m_map, (temp->index_pos + reg.index));
-	reg.index = char_to_int(str);
-	index2 = ns_two_bytes(m_map, (temp->index_pos + 4) % MEM_SIZE, (temp->index_pos + 5) % MEM_SIZE);
+	reg.index = unsigned_char_to_int(str);
+	index2 = ns_two_bytes(m_map, temp->index_pos + 4, temp->index_pos + 5);
 	str2 = find_fbytes_tind(m_map, (temp->index_pos + index2));
-	index2 = char_to_int(str2);
+	index2 = unsigned_char_to_int(str2);
 	reg.r3 = m_map->map[(temp->index_pos + 6) % MEM_SIZE];
 	if (ns_check_register(1, 1, reg.r3))
 	{
@@ -67,18 +68,18 @@ void	ns_iir_xor(t_cursor **cur, t_map *m_map)
 
 void	ns_idr_xor(t_cursor **cur, t_map *m_map)
 {
-	t_cursor	*temp;
-	t_reg		reg;
-	char		*str;
-	char		*str2;
-	int			index2;
+	t_cursor		*temp;
+	t_reg			reg;
+	unsigned char	*str;
+	unsigned char	*str2;
+	int				index2;
 
 	temp = *cur;
-	reg.index = ns_two_bytes(m_map, (temp->index_pos + 2) % MEM_SIZE, (temp->index_pos + 3) % MEM_SIZE);
+	reg.index = ns_two_bytes(m_map, temp->index_pos + 2, temp->index_pos + 3);
 	str = find_fbytes_tind(m_map, (temp->index_pos + reg.index));
-	reg.index = char_to_int(str);
+	reg.index = unsigned_char_to_int(str);
 	str2 = find_fbytes_tind(m_map, temp->index_pos + 4);
-	index2 = char_to_int(str2);
+	index2 = unsigned_char_to_int(str2);
 	reg.r3 = m_map->map[(temp->index_pos + 8) % MEM_SIZE];
 	if (ns_check_register(1, 1, reg.r3))
 	{
@@ -95,12 +96,12 @@ void	ns_irr_xor(t_cursor **cur, t_map *m_map)
 {
 	t_cursor	*temp;
 	t_reg		reg;
-	char		*str;
+	unsigned char		*str;
 
 	temp = *cur;
-	reg.index = ns_two_bytes(m_map, (temp->index_pos + 2) % MEM_SIZE, (temp->index_pos + 3) % MEM_SIZE);
+	reg.index = ns_two_bytes(m_map, temp->index_pos + 2, temp->index_pos + 3);
 	str = find_fbytes_tind(m_map, (temp->index_pos + reg.index));
-	reg.index = char_to_int(str);
+	reg.index = unsigned_char_to_int(str);
 	reg.r2 = m_map->map[(temp->index_pos + 4) % MEM_SIZE];
 	reg.r3 = m_map->map[(temp->index_pos + 5) % MEM_SIZE];
 	if (ns_check_register(1, reg.r2, reg.r3))
@@ -116,18 +117,18 @@ void	ns_irr_xor(t_cursor **cur, t_map *m_map)
 
 void	ns_dir_xor(t_cursor **cur, t_map *m_map)
 {
-	t_cursor	*temp;
-	t_reg		reg;
-	char		*str;
-	char		*str2;
-	int			index2;
+	t_cursor		*temp;
+	t_reg			reg;
+	unsigned char	*str;
+	unsigned char	*str2;
+	int				index2;
 
 	temp = *cur;
 	str = find_fbytes_tind(m_map, temp->index_pos + 2);
-	reg.index = char_to_int(str);
-	index2 = ns_two_bytes(m_map, (temp->index_pos + 6) % MEM_SIZE, (temp->index_pos + 7) % MEM_SIZE);
+	reg.index = unsigned_char_to_int(str);
+	index2 = ns_two_bytes(m_map, temp->index_pos + 6, temp->index_pos + 7);
 	str2 = find_fbytes_tind(m_map, temp->index_pos + index2);
-	index2 = char_to_int(str2);
+	index2 = unsigned_char_to_int(str2);
 	reg.r3 = m_map->map[(temp->index_pos + 8) % MEM_SIZE];
 	if (ns_check_register(1, 1, reg.r3))
 	{
@@ -142,17 +143,17 @@ void	ns_dir_xor(t_cursor **cur, t_map *m_map)
 
 void	ns_ddr_xor(t_cursor **cur, t_map *m_map)
 {
-	t_cursor	*temp;
-	t_reg		reg;
-	char		*str;
-	char		*str2;
-	int			index2;
+	t_cursor		*temp;
+	t_reg			reg;
+	unsigned char	*str;
+	unsigned char	*str2;
+	int				index2;
 
 	temp = *cur;
 	str = find_fbytes_tind(m_map, temp->index_pos + 2);
-	reg.index = char_to_int(str);
+	reg.index = unsigned_char_to_int(str);
 	str2 = find_fbytes_tind(m_map, temp->index_pos + 6);
-	index2 = char_to_int(str2);
+	index2 = unsigned_char_to_int(str2);
 	reg.r3 = m_map->map[(temp->index_pos + 10) % MEM_SIZE];
 	if (ns_check_register(1, 1, reg.r3))
 	{
@@ -167,13 +168,13 @@ void	ns_ddr_xor(t_cursor **cur, t_map *m_map)
 
 void	ns_drr_xor(t_cursor **cur, t_map *m_map)
 {
-	t_cursor	*temp;
-	t_reg		reg;
-	char		*str;
+	t_cursor		*temp;
+	t_reg			reg;
+	unsigned char	*str;
 
 	temp = *cur;
 	str = find_fbytes_tind(m_map, temp->index_pos + 2);
-	reg.index = char_to_int(str);
+	reg.index = unsigned_char_to_int(str);
 	reg.r2 = m_map->map[(temp->index_pos + 6) % MEM_SIZE];
 	reg.r3 = m_map->map[(temp->index_pos + 7) % MEM_SIZE];
 	if (ns_check_register(1, reg.r2, reg.r3))
@@ -189,15 +190,15 @@ void	ns_drr_xor(t_cursor **cur, t_map *m_map)
 
 void	ns_rir_xor(t_cursor **cur, t_map *m_map)
 {
-	t_cursor	*temp;
-	t_reg		reg;
-	char		*str;
+	t_cursor		*temp;
+	t_reg			reg;
+	unsigned char	*str;
 
 	temp = *cur;
 	reg.r1 = m_map->map[temp->index_pos + 2];
-	reg.index = ns_two_bytes(m_map, (temp->index_pos + 2) % MEM_SIZE, (temp->index_pos + 3) % MEM_SIZE);
+	reg.index = ns_two_bytes(m_map, temp->index_pos + 2, temp->index_pos + 3);
 	str = find_fbytes_tind(m_map, (temp->index_pos + reg.index));
-	reg.index = (short)char_to_int(str);
+	reg.index = unsigned_char_to_int(str);
 	reg.r3 = m_map->map[temp->index_pos + 5];
 	if (ns_check_register(reg.r1, 1, reg.r3))
 	{
@@ -212,14 +213,14 @@ void	ns_rir_xor(t_cursor **cur, t_map *m_map)
 
 void	ns_rdr_xor(t_cursor **cur, t_map *m_map)
 {
-	t_cursor	*temp;
-	t_reg		reg;
-	char		*str;
+	t_cursor		*temp;
+	t_reg			reg;
+	unsigned char	*str;
 
 	temp = *cur;
 	reg.r1 = m_map->map[(temp->index_pos + 2) % MEM_SIZE];
 	str = find_fbytes_tind(m_map, temp->index_pos + 3);
-	reg.index = char_to_int(str);
+	reg.index = unsigned_char_to_int(str);
 	reg.r3 = m_map->map[(temp->index_pos + 7) % MEM_SIZE];
 	if (ns_check_register(reg.r1, 1, reg.r3))
 	{

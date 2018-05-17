@@ -6,7 +6,7 @@
 /*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/04 17:09:29 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/15 17:33:57 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/17 15:08:42 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,13 +26,13 @@ void	ns_sub(t_cursor **cur, t_map *m_map)
 		if (ns_check_register(reg.r1, reg.r2, reg.r3))
 		{
 			temp->registr[reg.r3] = temp->registr[reg.r1] - temp->registr[reg.r2];
-			temp->index_pos += 5;
 			if (temp->registr[reg.r3] == 0)
 				temp->carry = 1;
 			else
 				temp->carry = 0;
 		}
-		else
-			temp->index_pos += 5;
+		temp->index_pos += 5;
 	}
+	else
+		temp->index_pos += ns_step_wrong_codage(m_map->map[(temp->index_pos + 1) % MEM_SIZE]);
 }

@@ -6,7 +6,7 @@
 /*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/23 13:20:36 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/16 18:25:54 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/17 17:16:58 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,13 +36,13 @@ int			main(int ac, char **av)
 	ns_create_cursor(&cursor, champ);
 	ns_reverse_cursor(&cursor);
 	cursor = ns_game_start(&cursor, &map, &info, flags);
-	ns_print_map(map);
-	while (cursor)
-	{
-		ft_printf("pos = %d : ", cursor->index_pos);
-		ft_printf("com = %d\n", cursor->commad);
-		cursor = cursor->next;
-	}
+//	ns_print_map(map);
+//	while (cursor)
+//	{
+//		ft_printf("pos = %d : ", cursor->index_pos);
+//		ft_printf("com = %d\n", cursor->commad);
+//		cursor = cursor->next;
+//	}
 //	rev(s, (int)ft_strlen(s));
 //	ft_printf("%s\n", s);
 //	while (champ->next)

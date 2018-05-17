@@ -6,25 +6,25 @@
 /*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/11 15:57:53 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/11 15:58:37 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/17 17:01:13 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "corewar.h"
 
-void		ns_save_flags(char **av, t_fl *flags, int *i)
+void		ns_save_flags(char **av, t_fl *flags, int *i, int ac)
 {
 	if(ft_strcmp(av[*i], "-dump") == 0)
 	{
 		*i += 1;
-		if (!ft_isdigit(av[*i][0]))
+		if (ac - 1 < *i || !ft_isdigit(av[*i][0]))
 			ns_error("not a digit after flag");
 		flags->dump = ft_atoi(av[*i]);
 	}
 	else if(ft_strcmp(av[*i], "-n") == 0)
 	{
 		*i += 1;
-		if (!ft_isdigit(av[*i][0]))
+		if (ac - 1 < *i ||  !ft_isdigit(av[*i][0]))
 			ns_error("not a digit after flag");
 		flags->n = ft_atoi(av[*i]);
 	}
@@ -101,14 +101,14 @@ void		ns_check_flags(int ac, char **av, t_fl *flags, t_champion **champ)
 	while (i < ac)
 	{
 		if (av[i][0] == '-')
-			ns_save_flags(av, flags, &i);
+			ns_save_flags(av, flags, &i, ac);
 		else
 			temp = ns_check_champions(av[i], &temp, flags);
 		i++;
 	}
 	if ((*champ)->id == 0 || !ns_check_id(*champ))
 		ns_error("wrong number champions");
-//	if(!flags->dump && !flags->n && !flags->v)
-//		ns_error("wrong num of flags");
+	if(!flags->dump && !flags->v)
+		ns_error("wrong number of flags");
 	temp->next = NULL;
 }

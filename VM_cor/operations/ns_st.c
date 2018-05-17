@@ -6,7 +6,7 @@
 /*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/07 15:38:50 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/16 18:25:50 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/17 15:00:51 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,23 +21,9 @@ void	set_on_map(t_map **map, t_cursor *temp, t_reg reg)
 
 	map_t = *map;
 	i = 0;
-	reg.index = ns_two_bytes(map_t, (temp->index_pos + 3) % MEM_SIZE, (temp->index_pos + 4) % MEM_SIZE);
-//	if (temp->index_pos == 602)
-//	{
-//		ft_printf("\n");
-//
-//		ft_printf("regss = %d\n", temp->registr[reg.r1]);
-//		ft_printf("r = %d\n", reg.r1);
-//		int j = 0;
-//		while (j < REG_NUMBER + 1)
-//			ft_printf(" r = %d : ", temp->registr[j++]);
-//		ft_printf("\n");
-//	}
-
-
+	reg.index = ns_two_bytes(map_t, temp->index_pos + 3, temp->index_pos + 4);
 	str = int_to_char(temp->registr[reg.r1]);
 	reg.index = temp->index_pos + reg.index % IDX_MOD;
-
 	reg.index = reg.index < 0 ? reg.index + MEM_SIZE : reg.index % MEM_SIZE;
 	while (i < 4)
 	{
@@ -69,4 +55,6 @@ void	ns_st(t_cursor **cur, t_map *m_map)
 			set_on_map(&m_map, temp, reg);
 		temp->index_pos += 5;
 	}
+	else
+		temp->index_pos += ns_step_wrong_codage(m_map->map[(temp->index_pos + 1) % MEM_SIZE]);
 }
