@@ -6,7 +6,7 @@
 /*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/24 14:49:11 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/17 15:45:45 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/18 18:26:07 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,15 +68,15 @@ char	*int_to_charpr(int nbr)
 	return (str);
 }
 
-char	*int_to_char(int nbr)
+unsigned char	*int_to_char(int nbr)
 {
-	char *str;
+	unsigned char *str;
 
-	str = (char *)malloc(sizeof(char) + 5);
-	str[0] = (char)(nbr >> 24);
-	str[1] = (char)(nbr >> 16);
-	str[2] = (char)(nbr >> 8);
-	str[3] = (char)nbr;
+	str = (unsigned char *)malloc(sizeof(unsigned char) + 5);
+	str[0] = (unsigned char)(nbr >> 24);
+	str[1] = (unsigned char)(nbr >> 16);
+	str[2] = (unsigned char)(nbr >> 8);
+	str[3] = (unsigned char)nbr;
 	str[4] = '\0';
 	return (str);
 }
@@ -92,11 +92,31 @@ int		char_to_int(char *str)
 	return (num);
 }
 
+unsigned char	*find_fbytes_tindpr(t_map *map, unsigned int index)
+{
+	unsigned  char	*str;
+	int				i;
+	int				pos;
+
+	i = 0;
+	str = (unsigned char *)malloc(sizeof(unsigned char) + 5);
+	index = index % MEM_SIZE;
+	while (i < 4)
+	{
+		pos = index + i;
+		pos = pos < 0 ? pos + MEM_SIZE : pos % MEM_SIZE;
+		str[i] = map->map[pos];
+		i++;
+	}
+	str[i] = '\0';
+	return (str);
+}
+
 unsigned char	*find_fbytes_tind(t_map *map, int index)
 {
 	unsigned  char	*str;
-	int		i;
-	int		pos;
+	int				i;
+	int				pos;
 
 	i = 0;
 	str = (unsigned char *)malloc(sizeof(unsigned char) + 5);

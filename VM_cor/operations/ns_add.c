@@ -26,10 +26,7 @@ void	ns_add(t_cursor **cur, t_map *m_map)
 		if (ns_check_register(reg.r1, reg.r2, reg.r3))
 		{
 			temp->registr[reg.r3] = temp->registr[reg.r1] + temp->registr[reg.r2];
-			if (temp->registr[reg.r3] == 0)
-				temp->carry = 1;
-			else
-				temp->carry = 0;
+			temp->carry = temp->registr[reg.r3] == 0 ? 1 : 0;
 		}
 		temp->index_pos += 5;
 	}

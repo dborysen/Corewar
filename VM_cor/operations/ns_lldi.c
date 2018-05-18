@@ -6,7 +6,7 @@
 /*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/10 15:26:30 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/17 17:58:19 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/18 18:19:03 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,10 @@ int		ns_lldi4(t_cursor **cur, t_map *m_map, t_reg reg, unsigned char *str)
 	temp = *cur;
 	if (m_map->map[(temp->index_pos + 1) % MEM_SIZE] == T_DDR)
 	{
+		if (temp->index_pos == 2510)
+		{
+			ft_printf("HERE DDR\n");
+		}
 		reg.r3 = m_map->map[(temp->index_pos + 6) % MEM_SIZE];
 		if (ns_check_register(1, 1, reg.r3))
 		{
@@ -32,6 +36,10 @@ int		ns_lldi4(t_cursor **cur, t_map *m_map, t_reg reg, unsigned char *str)
 	}
 	else if (m_map->map[(temp->index_pos + 1) % MEM_SIZE] == T_IDR)
 	{
+		if (temp->index_pos == 2510)
+		{
+			ft_printf("HERE IDR\n");
+		}
 		reg.r3 = m_map->map[(temp->index_pos + 6) % MEM_SIZE];
 		if (ns_check_register(1, 1, reg.r3))
 		{
@@ -57,6 +65,10 @@ int		ns_lldi3(t_cursor **cur, t_map *m_map, t_reg reg, unsigned char *str)
 	temp = *cur;
 	if (m_map->map[(temp->index_pos + 1) % MEM_SIZE] == T_IRR)
 	{
+		if (temp->index_pos == 2510)
+		{
+			ft_printf("HERE IRR\n");
+		}
 		reg.r2 = m_map->map[(temp->index_pos + 4) % MEM_SIZE];
 		reg.r3 = m_map->map[(temp->index_pos + 5) % MEM_SIZE];
 		if (ns_check_register(1, reg.r2, reg.r3))
@@ -82,6 +94,10 @@ int		ns_lldi2(t_cursor **cur, t_map *m_map, t_reg reg, unsigned char *str)
 	temp = *cur;
 	if (m_map->map[(temp->index_pos + 1) % MEM_SIZE] == T_DRR)
 	{
+		if (temp->index_pos == 2510)
+		{
+			ft_printf("HERE DRR \n");
+		}
 		reg.r2 = m_map->map[(temp->index_pos + 4) % MEM_SIZE];
 		reg.r3 = m_map->map[(temp->index_pos + 5) % MEM_SIZE];
 		if (ns_check_register(1, reg.r2, reg.r3))
@@ -95,9 +111,13 @@ int		ns_lldi2(t_cursor **cur, t_map *m_map, t_reg reg, unsigned char *str)
 	}
 	else if (m_map->map[(temp->index_pos + 1) % MEM_SIZE] == T_RDR)
 	{
+		if (temp->index_pos == 2510)
+		{
+			ft_printf("HERE RDR \n");
+		}
 		reg.r1 = m_map->map[(temp->index_pos + 2) % MEM_SIZE];
 		reg.r3 = m_map->map[(temp->index_pos + 5) % MEM_SIZE];
-		if (ns_check_register(1, 1, reg.r3))
+		if (ns_check_register(reg.r1, 1, reg.r3))
 		{
 			reg.dir = ns_two_bytes(m_map, temp->index_pos + 3, temp->index_pos + 4);
 			str = find_fbytes_tind(m_map, (temp->index_pos + (reg.dir + temp->registr[reg.r1])));

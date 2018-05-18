@@ -6,7 +6,7 @@
 /*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/11 15:11:53 by ssavchen          #+#    #+#             */
-/*   Updated: 2018/05/17 15:06:07 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/18 17:11:17 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 /*
@@ -49,19 +49,16 @@ void	ns_iir_and(t_cursor **cur, t_map *m_map)
 
 	temp = *cur;
 	reg.index = ns_two_bytes(m_map, temp->index_pos + 2, temp->index_pos + 3);
-	str = find_fbytes_tind(m_map, (temp->index_pos + reg.index));
+	str = find_fbytes_tind(m_map, (temp->index_pos + reg.index % IDX_MOD));
 	reg.index = unsigned_char_to_int(str);
 	index2 = ns_two_bytes(m_map, temp->index_pos + 4, temp->index_pos + 5);
-	str2 = find_fbytes_tind(m_map, (temp->index_pos + index2));
+	str2 = find_fbytes_tind(m_map, (temp->index_pos + index2 % IDX_MOD));
 	index2 = unsigned_char_to_int(str2);
 	reg.r3 = m_map->map[(temp->index_pos + 6) % MEM_SIZE];
 	if (ns_check_register(1, 1, reg.r3))
 	{
 		temp->registr[reg.r3] = reg.index & index2;
-		if (temp->registr[reg.r3] == 0)
-			temp->carry = 1;
-		else
-			temp->carry = 0;
+		temp->carry = temp->registr[reg.r3] == 0 ? 1 : 0;
 	}
 	temp->index_pos += 7;
 }
@@ -76,7 +73,7 @@ void	ns_idr_and(t_cursor **cur, t_map *m_map)
 
 	temp = *cur;
 	reg.index = ns_two_bytes(m_map, temp->index_pos + 2, temp->index_pos + 3);
-	str = find_fbytes_tind(m_map, (temp->index_pos + reg.index));
+	str = find_fbytes_tind(m_map, (temp->index_pos + reg.index % IDX_MOD));
 	reg.index = unsigned_char_to_int(str);
 	str2 = find_fbytes_tind(m_map, temp->index_pos + 4);
 	index2 = unsigned_char_to_int(str2);
@@ -84,10 +81,7 @@ void	ns_idr_and(t_cursor **cur, t_map *m_map)
 	if (ns_check_register(1, 1, reg.r3))
 	{
 		temp->registr[reg.r3] = reg.index & index2;
-		if (temp->registr[reg.r3] == 0)
-			temp->carry = 1;
-		else
-			temp->carry = 0;
+		temp->carry = temp->registr[reg.r3] == 0 ? 1 : 0;
 	}
 	temp->index_pos += 9;
 }
@@ -100,17 +94,14 @@ void	ns_irr_and(t_cursor **cur, t_map *m_map)
 
 	temp = *cur;
 	reg.index = ns_two_bytes(m_map, temp->index_pos + 2, temp->index_pos + 3);
-	str = find_fbytes_tind(m_map, (temp->index_pos + reg.index));
+	str = find_fbytes_tind(m_map, (temp->index_pos + reg.index % IDX_MOD));
 	reg.index = unsigned_char_to_int(str);
 	reg.r2 = m_map->map[(temp->index_pos + 4) % MEM_SIZE];
 	reg.r3 = m_map->map[(temp->index_pos + 5) % MEM_SIZE];
 	if (ns_check_register(1, reg.r2, reg.r3))
 	{
 		temp->registr[reg.r3] = reg.index & temp->registr[reg.r2];
-		if (temp->registr[reg.r3] == 0)
-			temp->carry = 1;
-		else
-			temp->carry = 0;
+		temp->carry = temp->registr[reg.r3] == 0 ? 1 : 0;
 	}
 	temp->index_pos += 6;
 }
@@ -127,16 +118,13 @@ void	ns_dir_and(t_cursor **cur, t_map *m_map)
 	str = find_fbytes_tind(m_map, temp->index_pos + 2);
 	reg.index = unsigned_char_to_int(str);
 	index2 = ns_two_bytes(m_map, temp->index_pos + 6, temp->index_pos + 7);
-	str2 = find_fbytes_tind(m_map, temp->index_pos + index2);
+	str2 = find_fbytes_tind(m_map, temp->index_pos + index2 % IDX_MOD);
 	index2 = unsigned_char_to_int(str2);
 	reg.r3 = m_map->map[(temp->index_pos + 8) % MEM_SIZE];
 	if (ns_check_register(1, 1, reg.r3))
 	{
 		temp->registr[reg.r3] = reg.index & index2;
-		if (temp->registr[reg.r3] == 0)
-			temp->carry = 1;
-		else
-			temp->carry = 0;
+		temp->carry = temp->registr[reg.r3] == 0 ? 1 : 0;
 	}
 	temp->index_pos += 9;
 }
@@ -158,10 +146,7 @@ void	ns_ddr_and(t_cursor **cur, t_map *m_map)
 	if (ns_check_register(1, 1, reg.r3))
 	{
 		temp->registr[reg.r3] = reg.index & index2;
-		if (temp->registr[reg.r3] == 0)
-			temp->carry = 1;
-		else
-			temp->carry = 0;
+		temp->carry = temp->registr[reg.r3] == 0 ? 1 : 0;
 	}
 	temp->index_pos += 11;
 }
@@ -180,10 +165,7 @@ void	ns_drr_and(t_cursor **cur, t_map *m_map)
 	if (ns_check_register(1, reg.r2, reg.r3))
 	{
 		temp->registr[reg.r3] = reg.index & temp->registr[reg.r2];
-		if (temp->registr[reg.r3] == 0)
-			temp->carry = 1;
-		else
-			temp->carry = 0;
+		temp->carry = temp->registr[reg.r3] == 0 ? 1 : 0;
 	}
 	temp->index_pos += 8;
 }
@@ -197,25 +179,22 @@ void	ns_rir_and(t_cursor **cur, t_map *m_map)
 	temp = *cur;
 	reg.r1 = m_map->map[(temp->index_pos + 2) % MEM_SIZE];
 	reg.index = ns_two_bytes(m_map, temp->index_pos + 3, temp->index_pos + 4);
-	str = find_fbytes_tind(m_map, (temp->index_pos + reg.index));
+	str = find_fbytes_tind(m_map, (temp->index_pos + reg.index % IDX_MOD));
 	reg.index = unsigned_char_to_int(str);
 	reg.r3 = m_map->map[(temp->index_pos + 5) % MEM_SIZE];
 	if (ns_check_register(reg.r1, 1, reg.r3))
 	{
 		temp->registr[reg.r3] = temp->registr[reg.r1] & reg.index;
-		if (temp->registr[reg.r3] == 0)
-			temp->carry = 1;
-		else
-			temp->carry = 0;
+		temp->carry = temp->registr[reg.r3] == 0 ? 1 : 0;
 	}
 	temp->index_pos += 6;
 }
 
 void	ns_rdr_and(t_cursor **cur, t_map *m_map)
 {
-	t_cursor	*temp;
-	t_reg		reg;
-	unsigned char		*str;
+	t_cursor		*temp;
+	t_reg			reg;
+	unsigned char	*str;
 
 	temp = *cur;
 	reg.r1 = m_map->map[(temp->index_pos + 2) % MEM_SIZE];
@@ -225,10 +204,7 @@ void	ns_rdr_and(t_cursor **cur, t_map *m_map)
 	if (ns_check_register(reg.r1, 1, reg.r3))
 	{
 		temp->registr[reg.r3] = temp->registr[reg.r1] & reg.index;
-		if (temp->registr[reg.r3] == 0)
-			temp->carry = 1;
-		else
-			temp->carry = 0;
+		temp->carry = temp->registr[reg.r3] == 0 ? 1 : 0;
 	}
 	temp->index_pos += 8;
 }
@@ -245,10 +221,7 @@ void	ns_rrr_and(t_cursor **cur, t_map *m_map)
 	if (ns_check_register(reg.r1, reg.r2, reg.r3))
 	{
 		temp->registr[reg.r3] = temp->registr[reg.r1] & temp->registr[reg.r2];
-		if (temp->registr[reg.r3] == 0)
-			temp->carry = 1;
-		else
-			temp->carry = 0;
+		temp->carry = temp->registr[reg.r3] == 0 ? 1 : 0;
 	}
 	temp->index_pos += 5;
 }

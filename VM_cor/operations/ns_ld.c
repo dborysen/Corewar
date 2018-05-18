@@ -6,7 +6,7 @@
 /*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/08 17:58:58 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/17 17:26:50 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/18 17:12:34 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,10 +24,7 @@ void	ns_ld2(t_cursor **cur, t_map *m_map, t_reg reg, unsigned char *str)
 		str = find_fbytes_tind(m_map, (temp->index_pos + reg.index % IDX_MOD));
 		reg.index = unsigned_char_to_int(str);
 		temp->registr[reg.r1] = reg.index;
-		if (temp->registr[reg.r1] == 0)
-			temp->carry = 1;
-		else
-			temp->carry = 0;
+		temp->carry = temp->registr[reg.r1] == 0 ? 1 : 0;
 	}
 	temp->index_pos += 5;
 }
@@ -49,10 +46,7 @@ void	ns_ld(t_cursor **cur, t_map *m_map)
 			str = find_fbytes_tind(m_map, temp->index_pos + 2);
 			reg.index = unsigned_char_to_int(str);
 			temp->registr[reg.r1] = reg.index;
-			if (temp->registr[reg.r1] == 0)
-				temp->carry = 1;
-			else
-				temp->carry = 0;
+			temp->carry = temp->registr[reg.r1] == 0 ? 1 : 0;
 		}
 		temp->index_pos += 7;
 	}

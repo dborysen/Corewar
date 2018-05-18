@@ -6,11 +6,12 @@
 /*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/02 15:09:56 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/17 17:06:59 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/18 18:08:23 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "corewar.h"
+int g_pr = 0;
 
 ns_array_of_functions g_func[16] =
 {
@@ -82,26 +83,40 @@ void	ns_create_cycle(t_cursor **cursor, t_map *m_map)
 	}
 }
 
-t_cursor	*ns_move_cursor(t_cursor **cursor, t_map *map)
+t_cursor	*ns_move_cursor(t_cursor **cursor, t_map *map, t_info **info)
 {
 	t_cursor *temp;
 
 	temp = *cursor;
 	while (temp)
 	{
-		if (temp->wait_cycle == 1 && temp->commad != 0)
+		if (temp->wait_cycle == 1 && temp->commad > 0)
 		{
 			if (temp->commad == 12)
-					*cursor = ns_fork(cursor, &temp, map, 1);
+				*cursor = ns_fork(cursor, &temp, map, 1);
 			else if (temp->commad == 15)
-					*cursor = ns_fork(cursor, &temp, map, 0);
+				*cursor = ns_fork(cursor, &temp, map, 0);
 			else
+			{
+//				if (g_pr == 1)
+//				{
+//					ft_printf("com = %d : ", temp->commad);
+//					ft_printf("pos = %d\n", temp->index_pos);
+//					ft_printf("BITCH func\n");
+//				}
 				(*g_func[temp->commad - 1])(&temp, map);
-			temp->wait_cycle = 0;
+			}
+			if (temp->champ->life == 1)
+			{
+				(*info)->winner_nbr = temp->champ->id;
+				(*info)->winner_name = temp->champ->champ_name;
+			}
 			temp->commad = 0;
+			temp->wait_cycle = 0;
 		}
-		else if (temp->wait_cycle != 0 && temp->commad != 0)
+		else if (temp->wait_cycle != 0 && temp->commad != 0) {
 			temp->wait_cycle--;
+		}
 		else
 			temp->index_pos++;
 		temp->index_pos = temp->index_pos < 0 ? temp->index_pos + MEM_SIZE :
@@ -118,11 +133,17 @@ t_cursor	*ns_game_start(t_cursor **cursor, t_map *m_map, t_info *info, t_fl fl)
 	while (fl.dump > 0 && info->end_game == 0)
 	{
 		temp = *cursor;
+		if (fl.dump == 1)
+			g_pr = 1;
 		ns_create_cycle(&temp, m_map);
-		*cursor = ns_move_cursor(&temp, m_map);
+		*cursor = ns_move_cursor(&temp, m_map, &info);
 		info->total_cycles++;
-		if (info->total_cycles % CYCLE_TO_DIE == 0)
-			ns_check_lives(cursor, &info);
+		info->cycles++;
+//		if (info->cycles == info->die)
+//		{
+//			ns_check_lives(cursor, &info);
+//			info->cycles = 0;
+//		}
 		fl.dump--;
 	}
 	if (fl.dump == 0 && info->end_game == 0)

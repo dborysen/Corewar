@@ -6,7 +6,7 @@
 /*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/08 15:32:43 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/17 15:53:12 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/18 17:33:34 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	set_on_map_rrr(t_map **map, t_cursor *temp, t_reg reg)
 {
 	int		i;
 	int		pos;
-	char	*str;
+	unsigned char	*str;
 	t_map	*map_t;
 
 	map_t = *map;
@@ -32,7 +32,7 @@ void	set_on_map_rrr(t_map **map, t_cursor *temp, t_reg reg)
 		{
 			pos = reg.index + i;
 			pos = pos < 0 ? pos + MEM_SIZE : pos % MEM_SIZE;
-			map_t->map[pos] = (unsigned char)str[i];
+			map_t->map[pos] = str[i];
 			i++;
 		}
 	}
@@ -40,13 +40,14 @@ void	set_on_map_rrr(t_map **map, t_cursor *temp, t_reg reg)
 
 void	set_on_map_rdr(t_map **map, t_cursor *temp, t_reg reg)
 {
-	int		i;
-	int		pos;
-	char	*str;
-	t_map	*map_t;
+	int				i;
+	int				pos;
+	unsigned char	*str;
+	t_map			*map_t;
 
 	map_t = *map;
 	i = 0;
+	reg.r3 = map_t->map[(temp->index_pos + 5) % MEM_SIZE];
 	if (ns_check_register(1, 1, reg.r3))
 	{
 		reg.dir = ns_two_bytes(map_t, temp->index_pos + 3, temp->index_pos + 4);
@@ -57,7 +58,7 @@ void	set_on_map_rdr(t_map **map, t_cursor *temp, t_reg reg)
 		{
 			pos = reg.index + i;
 			pos = pos < 0 ? pos + MEM_SIZE : pos % MEM_SIZE;
-			map_t->map[pos] = (unsigned char)str[i];
+			map_t->map[pos] = str[i];
 			i++;
 		}
 	}
@@ -65,10 +66,10 @@ void	set_on_map_rdr(t_map **map, t_cursor *temp, t_reg reg)
 
 void	set_on_map_rdd(t_map **map, t_cursor *temp, t_reg reg)
 {
-	int		i;
-	int		pos;
-	char	*str;
-	t_map	*map_t;
+	int				i;
+	int				pos;
+	unsigned char	*str;
+	t_map			*map_t;
 
 	map_t = *map;
 	i = 0;
@@ -81,7 +82,7 @@ void	set_on_map_rdd(t_map **map, t_cursor *temp, t_reg reg)
 	{
 		pos = reg.index + i;
 		pos = pos < 0 ? pos + MEM_SIZE : pos % MEM_SIZE;
-		map_t->map[pos] = (unsigned char)str[i];
+		map_t->map[pos] = str[i];
 		i++;
 	}
 }
@@ -90,7 +91,7 @@ void	set_on_map_rid(t_map **map, t_cursor *temp, t_reg reg)
 {
 	int				i;
 	int				pos;
-	char			*str;
+	unsigned char	*str;
 	t_map			*map_t;
 	unsigned char	*move_bytes;
 
@@ -107,7 +108,7 @@ void	set_on_map_rid(t_map **map, t_cursor *temp, t_reg reg)
 	{
 		pos = reg.index + i;
 		pos = pos < 0 ? pos + MEM_SIZE : pos % MEM_SIZE;
-		map_t->map[pos] = (unsigned char)str[i];
+		map_t->map[pos] = str[i];
 		i++;
 	}
 }
@@ -116,7 +117,7 @@ void	set_on_map_rir(t_map **map, t_cursor *temp, t_reg reg)
 {
 	int				i;
 	int				pos;
-	char			*str;
+	unsigned char			*str;
 	t_map			*map_t;
 	unsigned char 	*move_bytes;
 
@@ -135,7 +136,7 @@ void	set_on_map_rir(t_map **map, t_cursor *temp, t_reg reg)
 		{
 			pos = reg.index + i;
 			pos = pos < 0 ? pos + MEM_SIZE : pos % MEM_SIZE;
-			map_t->map[pos] = (unsigned char)str[i];
+			map_t->map[pos] = str[i];
 			i++;
 		}
 	}

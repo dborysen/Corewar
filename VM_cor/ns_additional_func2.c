@@ -6,7 +6,7 @@
 /*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/11 15:49:08 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/17 17:05:39 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/18 18:49:31 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ int 			ns_check_register(int r1, int r2, int r3)
 {
 	if (r1 > REG_NUMBER || r2 > REG_NUMBER || r3 > REG_NUMBER)
 		return (0);
-	if (r1 == 0 || r2 == 0 || r3 == 0)
+	if (r1 <= 0 || r2 <= 0 || r3 <= 0)
 		return (0);
 	return (1);
 }
@@ -86,7 +86,7 @@ int		is_empty_cursor(t_cursor *temp)
 	return (len == 0 ? 0 : 1);
 }
 
-void	ns_check_lives(t_cursor **cur, t_info **info) // Надо доделать !!!!!! Не особо понимаю
+void	ns_check_lives(t_cursor **cur, t_info **info)
 {
 	int			count;
 	t_cursor	*temp;
@@ -98,22 +98,20 @@ void	ns_check_lives(t_cursor **cur, t_info **info) // Надо доделать 
 		if (temp->live_or_die)
 		{
 			temp->live_or_die = 0;
-			(*info)->winner_nbr = temp->nbr_player;
-			(*info)->winner_name = temp->champ->champ_name;
 			count++;
 		}
 		else
 			ns_delete_nth(cur, temp);
 		temp = temp->next;
 	}
-	if (count >= NBR_LIVE)
+	if (count < NBR_LIVE)
 		(*info)->checks -= 1;
-	if ((*info)->checks <= 0)
+	else
 	{
 		(*info)->die -= CYCLE_DELTA;
 		(*info)->checks = MAX_CHECKS;
 	}
-	if (count < NBR_LIVE)
+	if ((*info)->checks == 0)
 	{
 		(*info)->die -= CYCLE_DELTA;
 		(*info)->checks = MAX_CHECKS;
@@ -147,13 +145,13 @@ int 	ns_step_wrong_codage(int num)
 	if (((num >> 2) & 3) == REG_CODE)
 		ret += 1;
 	else if (((num >> 2) & 3) == DIR_CODE)
-		ret += g_op_tab->label_size;
+		ret += g_op_tab->label_size == 0 ? 4 : 2;
 	else if (((num >> 2) & 3)== IND_CODE)
 		ret += 2;
 	if ((num & 3) == REG_CODE)
 		ret += 1;
 	else if ((num & 3) == DIR_CODE)
-		ret += g_op_tab->label_size;
+		ret += g_op_tab->label_size == 0 ? 4 : 2;
 	else if ((num & 3) == IND_CODE)
 		ret += 2;
 	return (ret);

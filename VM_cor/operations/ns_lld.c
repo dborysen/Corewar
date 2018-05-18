@@ -6,11 +6,31 @@
 /*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/08 19:13:52 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/17 13:26:10 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/18 15:09:09 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../corewar.h"
+
+unsigned char	*find_twobytes(t_map *map, int index)
+{
+	unsigned  char	*str;
+	int				i;
+	int				pos;
+
+	i = 0;
+	str = (unsigned char *)malloc(sizeof(unsigned char) + 3);
+	index = index < 0 ? index + MEM_SIZE : index % MEM_SIZE;
+	while (i < 2)
+	{
+		pos = index + i;
+		pos = pos < 0 ? pos + MEM_SIZE : pos % MEM_SIZE;
+		str[i] = map->map[pos];
+		i++;
+	}
+	str[i] = '\0';
+	return (str);
+}
 
 void	ns_lld2(t_cursor **cur, t_map *m_map, t_reg reg, unsigned char *str)
 {
@@ -21,13 +41,10 @@ void	ns_lld2(t_cursor **cur, t_map *m_map, t_reg reg, unsigned char *str)
 	if (ns_check_register(reg.r1, 1, 1))
 	{
 		reg.index = ns_two_bytes(m_map, temp->index_pos + 2, temp->index_pos + 3);
-		str = find_fbytes_tind(m_map, (temp->index_pos + reg.index));
+		str = find_twobytes(m_map, temp->index_pos + reg.index);
 		reg.index = unsigned_char_to_int(str);
 		temp->registr[reg.r1] = reg.index;
-		if (temp->registr[reg.r1] == 0)
-			temp->carry = 1;
-		else
-			temp->carry = 0;
+		temp->carry = temp->registr[reg.r1] == 0 ? 1 : 0;
 	}
 	temp->index_pos += 5;
 }
@@ -49,10 +66,7 @@ void	ns_lld(t_cursor **cur, t_map *m_map)
 			str = find_fbytes_tind(m_map, temp->index_pos + 2);
 			reg.index = unsigned_char_to_int(str);
 			temp->registr[reg.r1] = reg.index;
-			if (temp->registr[reg.r1] == 0)
-				temp->carry = 1;
-			else
-				temp->carry = 0;
+			temp->carry = temp->registr[reg.r1] == 0 ? 1 : 0;
 		}
 		temp->index_pos += 7;
 	}

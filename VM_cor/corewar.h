@@ -6,7 +6,7 @@
 /*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/23 13:22:27 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/17 16:21:39 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/18 18:04:18 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -109,6 +109,7 @@ typedef struct			s_info
 	int 				checks;
 	int 				die;
 	int 				end_game;
+	t_champion			*champ;
 }						t_info;
 
 typedef struct 			s_reg
@@ -163,14 +164,16 @@ void					ns_lldi(t_cursor **cur, t_map *m_map);
 void					ns_zjmp(t_cursor **cur, t_map *m_map);
 void					ns_aff(t_cursor **cur, t_map *m_map);
 void					ns_live(t_cursor **cur, t_map *m_map);
+t_cursor				*ns_fork(t_cursor **cur, t_cursor **tmp, t_map *m_map, int n);
 
 //*************
 
 typedef void 			(*ns_array_of_functions)(t_cursor **cur, t_map *m_map);
-char					*int_to_char(int nbr);
+//char					*int_to_char(int nbr);
+unsigned char	*int_to_char(int nbr);
 int						char_to_int(char *str);
-//char					*find_fbytes_tind(t_map *map, int index);
 unsigned char			*find_fbytes_tind(t_map *map, int index);
+
 // AND
 void					ns_and(t_cursor **cur, t_map *m_map);
 void					ns_iir_and(t_cursor **cur, t_map *m_map);
@@ -207,9 +210,8 @@ void					ns_rir_xor(t_cursor **cur, t_map *m_map);
 void					ns_rdr_xor(t_cursor **cur, t_map *m_map);
 void					ns_rrr_xor(t_cursor **cur, t_map *m_map);
 
-t_cursor	*ns_fork(t_cursor **cur, t_cursor **tmp, t_map *m_map, int n);
 
 char	*int_to_charpr(int nbr);
 char	*int_to_char2(int nbr);
-
+unsigned char	*find_fbytes_tindpr(t_map *map, unsigned int index);
 #endif

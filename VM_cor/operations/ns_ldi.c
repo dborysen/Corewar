@@ -6,7 +6,7 @@
 /*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/10 13:35:15 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/17 17:36:19 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/18 15:17:46 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ void	ns_ldi4(t_cursor **cur, t_map *m_map, t_reg reg, unsigned char *str)
 		{
 			reg.index = ns_two_bytes(m_map, temp->index_pos + 2, temp->index_pos + 3);
 			reg.dir2 = ns_two_bytes(m_map, temp->index_pos + 4, temp->index_pos + 5);
-			str = find_fbytes_tind(m_map, (temp->index_pos + (reg.index % IDX_MOD)));
+			str = find_fbytes_tind(m_map, (temp->index_pos + reg.index % IDX_MOD));
 			reg.index = unsigned_char_to_int(str);
 			str = find_fbytes_tind(m_map, (temp->index_pos + ((reg.index + reg.dir2) % IDX_MOD)));
 			reg.index = unsigned_char_to_int(str);
@@ -61,7 +61,7 @@ void	ns_ldi3(t_cursor **cur, t_map *m_map, t_reg reg, unsigned char *str)
 		if (ns_check_register(1, reg.r2, reg.r3))
 		{
 			reg.index = ns_two_bytes(m_map, temp->index_pos + 2, temp->index_pos + 3);
-			str = find_fbytes_tind(m_map, (temp->index_pos + (reg.index % IDX_MOD)));
+			str = find_fbytes_tind(m_map, (temp->index_pos + reg.index % IDX_MOD));
 			reg.index = unsigned_char_to_int(str);
 			str = find_fbytes_tind(m_map, (temp->index_pos + ((reg.index + temp->registr[reg.r2]) % IDX_MOD)));
 			reg.index = unsigned_char_to_int(str);
@@ -95,7 +95,7 @@ void	ns_ldi2(t_cursor **cur, t_map *m_map, t_reg reg, unsigned char *str)
 	{
 		reg.r1 = m_map->map[(temp->index_pos + 2) % MEM_SIZE];
 		reg.r3 = m_map->map[(temp->index_pos + 5) % MEM_SIZE];
-		if (ns_check_register(1, 1, reg.r3))
+		if (ns_check_register(reg.r1, 1, reg.r3))
 		{
 			reg.dir = ns_two_bytes(m_map, temp->index_pos + 3, temp->index_pos + 4);
 			str = find_fbytes_tind(m_map, (temp->index_pos + ((reg.dir + temp->registr[reg.r1]) % IDX_MOD)));

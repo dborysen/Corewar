@@ -6,7 +6,7 @@
 /*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/24 15:27:39 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/17 16:25:17 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/18 14:45:55 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,6 +46,7 @@ void	ns_zero_cursor(t_cursor **cursor)
 	temp->wait_cycle = 0;
 	temp->live_or_die = 0;
 	temp->carry = 0;
+	temp->champ = NULL;
 	while (i < REG_NUMBER + 1)
 		temp->registr[i++] = 0;
 }
