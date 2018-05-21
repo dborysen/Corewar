@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
+/*   By: ssavchen <ssavchen@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/23 13:20:36 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/21 13:20:45 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/21 13:47:23 by ssavchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,13 +30,14 @@ int			main(int ac, char **av)
 	ns_zero_info(&info);
 	ns_check_flags(ac, av, &flags, &champ);
 	ns_create_map(&map);
-	ns_dump_flag(champ);
+//	ns_dump_flag(champ);
 	ns_position_start(&champ);
 	ns_fill_map(champ, &map);
 	ns_create_cursor(&cursor, champ);
 	ns_reverse_cursor(&cursor);
 	info.count_cursor = ns_count_cursor(cursor);
 	cursor = ns_game_start(&cursor, &map, &info, flags);
+	ns_ncurses(map, &info);
 //	ns_print_map(map);
 //	while (cursor)
 //	{

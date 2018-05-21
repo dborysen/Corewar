@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   corewar.h                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
+/*   By: ssavchen <ssavchen@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/23 13:22:27 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/21 13:37:30 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/21 13:45:26 by ssavchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 
 #include "libft/libft.h"
 #include "op.h"
+#include <ncurses.h>
 # define T_RRR 0b01010100
 # define T_RIR 0b01110100
 # define T_RDR 0b01100100
@@ -58,6 +59,17 @@ static const	t_op    g_op_tab[17] =
 				{"aff", 1, {T_REG}, 16, 2, "aff", 1, 0},
 				{0, 0, {0}, 0, 0, 0, 0, 0}
 };
+
+typedef struct			s_vizor
+{
+	WINDOW				*ful;
+	WINDOW				*map;
+	WINDOW				*stat;
+	int					cycle;
+	int					proc;
+	int					limit;
+	int					state;
+}						t_vizor;
 
 typedef struct			s_fl
 {
@@ -214,9 +226,11 @@ void					ns_rir_xor(t_cursor **cur, t_map *m_map);
 void					ns_rdr_xor(t_cursor **cur, t_map *m_map);
 void					ns_rrr_xor(t_cursor **cur, t_map *m_map);
 
-
-char	*int_to_charpr(int nbr);
-char	*int_to_char2(int nbr);
-unsigned char	*find_fbytes_tindpr(t_map *map, unsigned int index);
+void					ns_ncurses(t_map map, t_info *info);
+void					nc_right_print(t_vizor *viz, t_info *info);
+void					nc_wait(t_vizor *viz, t_info *info);
+void					nc_set_color(void);
+void					nc_get_color(t_map map, int i, t_vizor viz);
+void					nc_check_window();
 
 #endif

@@ -107,6 +107,8 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/ssavchen/coretwar/VM_cor/libft/unsigned_itoa.c" "/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles/VM_cor.dir/libft/unsigned_itoa.c.o"
   "/Users/ssavchen/coretwar/VM_cor/libft/zero_flags.c" "/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles/VM_cor.dir/libft/zero_flags.c.o"
   "/Users/ssavchen/coretwar/VM_cor/main.c" "/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles/VM_cor.dir/main.c.o"
+  "/Users/ssavchen/coretwar/VM_cor/ncurses/first.c" "/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles/VM_cor.dir/ncurses/first.c.o"
+  "/Users/ssavchen/coretwar/VM_cor/ncurses/second.c" "/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles/VM_cor.dir/ncurses/second.c.o"
   "/Users/ssavchen/coretwar/VM_cor/ns_additional_func.c" "/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles/VM_cor.dir/ns_additional_func.c.o"
   "/Users/ssavchen/coretwar/VM_cor/ns_additional_func2.c" "/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles/VM_cor.dir/ns_additional_func2.c.o"
   "/Users/ssavchen/coretwar/VM_cor/ns_cursor_create.c" "/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles/VM_cor.dir/ns_cursor_create.c.o"
