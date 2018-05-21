@@ -139,11 +139,11 @@ t_cursor	*ns_game_start(t_cursor **cursor, t_map *m_map, t_info *info, t_fl fl)
 		*cursor = ns_move_cursor(&temp, m_map, &info);
 		info->total_cycles++;
 		info->cycles++;
-//		if (info->cycles == info->die)
-//		{
-//			ns_check_lives(cursor, &info);
-//			info->cycles = 0;
-//		}
+		if (info->cycles == info->die)
+		{
+			ns_check_lives(cursor, &info);
+			info->cycles = 0;
+		}
 		fl.dump--;
 	}
 	if (fl.dump == 0 && info->end_game == 0)
