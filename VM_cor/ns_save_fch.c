@@ -6,7 +6,7 @@
 /*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/11 15:57:53 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/17 17:01:13 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/21 13:34:29 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,6 +68,7 @@ t_champion	*ns_read_champion(char *av, t_champion **champ)
 t_champion	*ns_check_champions(char *av, t_champion **champ, t_fl *fl)
 {
 	static int id = 1;
+	static int color = 1;
 	t_champion *temp;
 
 	temp = *champ;
@@ -83,6 +84,7 @@ t_champion	*ns_check_champions(char *av, t_champion **champ, t_fl *fl)
 			temp->id = id;
 			id++;
 		}
+		temp->color = color++;
 		temp = ns_read_champion(av, &temp);
 	}
 	else

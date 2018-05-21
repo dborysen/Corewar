@@ -6,7 +6,7 @@
 /*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/23 13:22:27 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/18 18:04:18 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/21 13:34:54 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,12 +78,14 @@ typedef struct			s_champion
 	int					id;
 	int					position_to_start;
 	int 				life;
+	int 				color;
 	struct s_champion	*next;
 }						t_champion;
 
 typedef struct			s_map
 {
 	unsigned char 		map[MEM_SIZE];
+	int			 		color[MEM_SIZE];
 }						t_map;
 
 typedef struct			s_cursor
@@ -103,13 +105,14 @@ typedef struct			s_cursor
 typedef struct			s_info
 {
 	int 				total_cycles;
+	int					cycles_limit;
+	int					count_cursor;
 	int 				cycles;
 	int 				winner_nbr;
 	char 				*winner_name;
 	int 				checks;
 	int 				die;
 	int 				end_game;
-	t_champion			*champ;
 }						t_info;
 
 typedef struct 			s_reg
@@ -151,7 +154,7 @@ void					ns_reverse_cursor(t_cursor **cursor);
 void					ns_delete_nth(t_cursor **head, t_cursor *temp);
 short					ns_two_bytes(t_map *map, int pos1, int pos2);
 int 					ns_step_wrong_codage(int num);
-
+int						ns_count_cursor(t_cursor *temp);
 //Champ functions
 void					ns_add(t_cursor **cur, t_map *m_map);
 void					ns_sub(t_cursor **cur, t_map *m_map);
@@ -214,4 +217,5 @@ void					ns_rrr_xor(t_cursor **cur, t_map *m_map);
 char	*int_to_charpr(int nbr);
 char	*int_to_char2(int nbr);
 unsigned char	*find_fbytes_tindpr(t_map *map, unsigned int index);
+
 #endif

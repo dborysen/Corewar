@@ -6,7 +6,7 @@
 /*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/11 15:49:08 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/18 18:49:31 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/21 13:19:49 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,7 +73,7 @@ void			ns_delete_nth(t_cursor **head, t_cursor *temp)
 	}
 }
 
-int		is_empty_cursor(t_cursor *temp)
+int		ns_count_cursor(t_cursor *temp)
 {
 	int len;
 
@@ -83,7 +83,7 @@ int		is_empty_cursor(t_cursor *temp)
 		len++;
 		temp = temp->next;
 	}
-	return (len == 0 ? 0 : 1);
+	return len;
 }
 
 void	ns_check_lives(t_cursor **cur, t_info **info)
@@ -116,7 +116,7 @@ void	ns_check_lives(t_cursor **cur, t_info **info)
 		(*info)->die -= CYCLE_DELTA;
 		(*info)->checks = MAX_CHECKS;
 	}
-	if (is_empty_cursor(*cur) == 0 || (*info)->die <= 0)
+	if (ns_count_cursor(*cur) == 0 || (*info)->die <= 0)
 	{
 		ft_printf("Player %d (%s) won.\n", (*info)->winner_nbr, (*info)->winner_name);
 		(*info)->end_game = 1;
