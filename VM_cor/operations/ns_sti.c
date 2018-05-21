@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ns_sti.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
+/*   By: ssavchen <ssavchen@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/08 15:32:43 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/18 17:33:34 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/21 13:48:27 by ssavchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,6 +60,7 @@ void	set_on_map_rdr(t_map **map, t_cursor *temp, t_reg reg)
 			pos = reg.index + i;
 			pos = pos < 0 ? pos + MEM_SIZE : pos % MEM_SIZE;
 			map_t->map[pos] = str[i];
+			map_t->color[pos] = temp->champ->color;
 			i++;
 		}
 	}
@@ -84,6 +85,7 @@ void	set_on_map_rdd(t_map **map, t_cursor *temp, t_reg reg)
 		pos = reg.index + i;
 		pos = pos < 0 ? pos + MEM_SIZE : pos % MEM_SIZE;
 		map_t->map[pos] = str[i];
+		map_t->color[pos] = temp->champ->color;
 		i++;
 	}
 }
@@ -110,6 +112,7 @@ void	set_on_map_rid(t_map **map, t_cursor *temp, t_reg reg)
 		pos = reg.index + i;
 		pos = pos < 0 ? pos + MEM_SIZE : pos % MEM_SIZE;
 		map_t->map[pos] = str[i];
+		map_t->color[pos] = temp->champ->color;
 		i++;
 	}
 }
@@ -138,6 +141,7 @@ void	set_on_map_rir(t_map **map, t_cursor *temp, t_reg reg)
 			pos = reg.index + i;
 			pos = pos < 0 ? pos + MEM_SIZE : pos % MEM_SIZE;
 			map_t->map[pos] = str[i];
+			map_t->color[pos] = temp->champ->color;
 			i++;
 		}
 	}
