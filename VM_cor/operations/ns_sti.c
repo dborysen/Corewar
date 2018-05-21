@@ -3,14 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ns_sti.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ssavchen <ssavchen@student.unit.ua>        +#+  +:+       +#+        */
+/*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/05/08 15:32:43 by myprosku          #+#    #+#             */
-<<<<<<< HEAD
-/*   Updated: 2018/05/21 13:40:39 by myprosku         ###   ########.fr       */
-=======
-/*   Updated: 2018/05/21 13:48:27 by ssavchen         ###   ########.fr       */
->>>>>>> 5bef45b1dee28c7f70b6c007652fec5dfecb4b96
+/*   Created: 2018/05/21 13:51:06 by myprosku          #+#    #+#             */
+/*   Updated: 2018/05/21 13:51:06 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

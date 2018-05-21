@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   corewar.h                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ssavchen <ssavchen@student.unit.ua>        +#+  +:+       +#+        */
+/*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/23 13:22:27 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/21 13:45:26 by ssavchen         ###   ########.fr       */
+/*   Updated: 2018/05/21 16:31:49 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -163,11 +163,13 @@ void					ns_save_comment(t_champion **champ, unsigned char *file_info);
 void					ns_save_magic(t_champion **champ, unsigned char *file_info);
 void					ns_save_program_size(t_champion **champ, unsigned char *file_info);
 void					ns_check_lives(t_cursor **cur, t_info **info);
+//t_cursor				*ns_check_lives(t_cursor *cur, t_info **info);
 void					ns_reverse_cursor(t_cursor **cursor);
 void					ns_delete_nth(t_cursor **head, t_cursor *temp);
 short					ns_two_bytes(t_map *map, int pos1, int pos2);
 int 					ns_step_wrong_codage(int num);
 int						ns_count_cursor(t_cursor *temp);
+
 //Champ functions
 void					ns_add(t_cursor **cur, t_map *m_map);
 void					ns_sub(t_cursor **cur, t_map *m_map);

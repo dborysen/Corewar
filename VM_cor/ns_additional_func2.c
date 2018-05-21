@@ -6,7 +6,7 @@
 /*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/11 15:49:08 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/21 13:19:49 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/21 17:51:35 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,46 +44,43 @@ int			ns_check_id(t_champion *champ)
 	return (1);
 }
 
-t_cursor		*get_nth(t_cursor *head, t_cursor *temp)
-{
-	int counter;
-
-	counter = 0;
-	while (head != temp)
-	{
-		head = head->next;
-		counter++;
-	}
-	return (head);
-}
-
-void			ns_delete_nth(t_cursor **head, t_cursor *temp)
-{
-	t_cursor *prev;
-	t_cursor *elm;
-
-	if (head == NULL)
-		return ;
-	else
-	{
-		prev = get_nth(*head, temp);
-		elm = prev->next;
-		prev->next = elm->next;
-		free(elm);
-	}
-}
-
 int		ns_count_cursor(t_cursor *temp)
 {
 	int len;
 
 	len = 0;
+	if (temp == NULL)
+		return (0);
 	while (temp)
 	{
 		len++;
 		temp = temp->next;
 	}
-	return len;
+	return (len);
+}
+
+void	delete_node(t_cursor **head, t_cursor *del)
+{
+	t_cursor *temp;
+	t_cursor *prev;
+
+	temp = *head;
+	prev = NULL;
+	if (temp != NULL && temp == del)
+	{
+		*head = temp->next;
+		free(temp);
+		return;
+	}
+	while (temp != NULL && temp != del)
+	{
+		prev = temp;
+		temp = temp->next;
+	}
+	if (temp == NULL)
+		return;
+	prev->next = temp->next;
+	free(temp);
 }
 
 void	ns_check_lives(t_cursor **cur, t_info **info)
@@ -101,7 +98,7 @@ void	ns_check_lives(t_cursor **cur, t_info **info)
 			count++;
 		}
 		else
-			ns_delete_nth(cur, temp);
+			delete_node(cur, temp);
 		temp = temp->next;
 	}
 	if (count < NBR_LIVE)
@@ -111,7 +108,7 @@ void	ns_check_lives(t_cursor **cur, t_info **info)
 		(*info)->die -= CYCLE_DELTA;
 		(*info)->checks = MAX_CHECKS;
 	}
-	if ((*info)->checks == 0)
+	if ((*info)->checks <= 0)
 	{
 		(*info)->die -= CYCLE_DELTA;
 		(*info)->checks = MAX_CHECKS;

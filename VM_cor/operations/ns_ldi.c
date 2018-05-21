@@ -6,7 +6,7 @@
 /*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/10 13:35:15 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/18 15:17:46 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/21 14:17:38 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,7 @@ void	ns_ldi4(t_cursor **cur, t_map *m_map, t_reg reg, unsigned char *str)
 			str = find_fbytes_tind(m_map, (temp->index_pos + ((reg.dir + reg.dir2) % IDX_MOD)));
 			reg.index = unsigned_char_to_int(str);
 			temp->registr[reg.r3] = reg.index;
+//			temp->carry = temp->registr[reg.r3] == 0 ? 1 : 0;
 		}
 		temp->index_pos += 7;
 	}
@@ -42,6 +43,7 @@ void	ns_ldi4(t_cursor **cur, t_map *m_map, t_reg reg, unsigned char *str)
 			str = find_fbytes_tind(m_map, (temp->index_pos + ((reg.index + reg.dir2) % IDX_MOD)));
 			reg.index = unsigned_char_to_int(str);
 			temp->registr[reg.r3] = reg.index;
+//			temp->carry = temp->registr[reg.r3] == 0 ? 1 : 0;
 		}
 		temp->index_pos += 6;
 	}
@@ -66,6 +68,7 @@ void	ns_ldi3(t_cursor **cur, t_map *m_map, t_reg reg, unsigned char *str)
 			str = find_fbytes_tind(m_map, (temp->index_pos + ((reg.index + temp->registr[reg.r2]) % IDX_MOD)));
 			reg.index = unsigned_char_to_int(str);
 			temp->registr[reg.r3] = reg.index;
+//			temp->carry = temp->registr[reg.r3] == 0 ? 1 : 0;
 		}
 		temp->index_pos += 6;
 	}
@@ -88,6 +91,7 @@ void	ns_ldi2(t_cursor **cur, t_map *m_map, t_reg reg, unsigned char *str)
 			str = find_fbytes_tind(m_map, (temp->index_pos + ((reg.dir + temp->registr[reg.r2]) % IDX_MOD)));
 			reg.index = unsigned_char_to_int(str);
 			temp->registr[reg.r3] = reg.index;
+//			temp->carry = temp->registr[reg.r3] == 0 ? 1 : 0;
 		}
 		temp->index_pos += 6;
 	}
@@ -101,6 +105,7 @@ void	ns_ldi2(t_cursor **cur, t_map *m_map, t_reg reg, unsigned char *str)
 			str = find_fbytes_tind(m_map, (temp->index_pos + ((reg.dir + temp->registr[reg.r1]) % IDX_MOD)));
 			reg.index = unsigned_char_to_int(str);
 			temp->registr[reg.r3] = reg.index;
+//			temp->carry = temp->registr[reg.r3] == 0 ? 1 : 0;
 		}
 		temp->index_pos += 6;
 	}
@@ -127,6 +132,7 @@ void	ns_ldi(t_cursor **cur, t_map *m_map)
 			str = find_fbytes_tind(m_map, (temp->index_pos + ((temp->registr[reg.r1] + temp->registr[reg.r2]) % IDX_MOD)));
 			reg.index = unsigned_char_to_int(str);
 			temp->registr[reg.r3] = reg.index;
+//			temp->carry = temp->registr[reg.r3] == 0 ? 1 : 0;
 		}
 		temp->index_pos += 5;
 	}

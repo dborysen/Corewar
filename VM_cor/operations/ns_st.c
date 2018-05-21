@@ -6,7 +6,7 @@
 /*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/07 15:38:50 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/18 18:44:18 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/21 16:59:11 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,8 +24,6 @@ void	set_on_map(t_map **map, t_cursor *temp, t_reg reg)
 	reg.index = ns_two_bytes(map_t, temp->index_pos + 3, temp->index_pos + 4);
 	str = int_to_char(temp->registr[reg.r1]);
 	reg.index = temp->index_pos + reg.index % IDX_MOD;
-	if (temp->index_pos == 1772)
-		ft_printf("RIII ind = %d\n", temp->registr[reg.r1]);
 	reg.index = reg.index < 0 ? reg.index + MEM_SIZE : reg.index % MEM_SIZE;
 	while (i < 4)
 	{
@@ -35,7 +33,6 @@ void	set_on_map(t_map **map, t_cursor *temp, t_reg reg)
 		map_t->color[pos] = temp->champ->color;
 		i++;
 	}
-	free(str);
 }
 
 void	ns_st(t_cursor **cur, t_map *m_map)
@@ -45,8 +42,6 @@ void	ns_st(t_cursor **cur, t_map *m_map)
 
 	temp = *cur;
 	reg.r1 = m_map->map[(temp->index_pos + 2) % MEM_SIZE];
-
-
 	if (m_map->map[(temp->index_pos + 1) % MEM_SIZE] == T_RR)
 	{
 		reg.r2 = m_map->map[(temp->index_pos + 3) % MEM_SIZE];

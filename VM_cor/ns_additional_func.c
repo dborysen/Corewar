@@ -121,6 +121,8 @@ unsigned char	*find_fbytes_tind(t_map *map, int index)
 	i = 0;
 	str = (unsigned char *)malloc(sizeof(unsigned char) + 5);
 	index = index < 0 ? index + MEM_SIZE : index % MEM_SIZE;
+	while (index < 0)
+		index += MEM_SIZE;
 	while (i < 4)
 	{
 		pos = index + i;

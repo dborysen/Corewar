@@ -6,12 +6,11 @@
 /*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/02 15:09:56 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/21 13:10:53 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/21 17:45:14 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "corewar.h"
-int g_pr = 0;
 
 ns_array_of_functions g_func[16] =
 {
@@ -103,15 +102,7 @@ t_cursor	*ns_move_cursor(t_cursor **cursor, t_map *map, t_info **info)
 				(*info)->count_cursor++;
 			}
 			else
-			{
-//				if (g_pr == 1)
-//				{
-//					ft_printf("com = %d : ", temp->commad);
-//					ft_printf("pos = %d\n", temp->index_pos);
-//					ft_printf("BITCH func\n");
-//				}
 				(*g_func[temp->commad - 1])(&temp, map);
-			}
 			if (temp->champ->life == 1)
 			{
 				(*info)->winner_nbr = temp->champ->id;
@@ -136,11 +127,11 @@ t_cursor	*ns_game_start(t_cursor **cursor, t_map *m_map, t_info *info, t_fl fl)
 {
 	t_cursor *temp;
 
+	info->winner_nbr = (*cursor)->champ->id;
+	info->winner_name = (*cursor)->champ->champ_name;
 	while (fl.dump > 0 && info->end_game == 0)
 	{
 		temp = *cursor;
-		if (fl.dump == 1)
-			g_pr = 1;
 		ns_create_cycle(&temp, m_map);
 		*cursor = ns_move_cursor(&temp, m_map, &info);
 		info->total_cycles++;
