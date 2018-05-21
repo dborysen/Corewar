@@ -37,6 +37,7 @@ t_cursor	*ns_copy_cursor(t_cursor *tmp, int index, int n)
 	ns_copy_reg(tmp->registr, head->registr);
 	head->carry = tmp->carry;
 	head->champ = tmp->champ;
+	head->color = tmp->color;
 	if (n == 1)
 	{
 		head->index_pos = tmp->index_pos + index % IDX_MOD;
