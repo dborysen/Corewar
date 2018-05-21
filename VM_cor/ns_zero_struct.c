@@ -6,7 +6,7 @@
 /*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/24 15:27:39 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/21 13:17:34 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/21 13:36:52 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,7 @@ void	ns_zero_champ(t_champion **champ)
 	temp->size_bytes = 0;
 	temp->position_to_start = 0;
 	temp->life = 0;
+	temp->color = 0;
 }
 
 void	ns_zero_cursor(t_cursor **cursor)
@@ -46,6 +47,7 @@ void	ns_zero_cursor(t_cursor **cursor)
 	temp->wait_cycle = 0;
 	temp->live_or_die = 0;
 	temp->carry = 0;
+	temp->color = 0;
 	temp->champ = NULL;
 	while (i < REG_NUMBER + 1)
 		temp->registr[i++] = 0;

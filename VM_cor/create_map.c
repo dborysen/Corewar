@@ -6,7 +6,7 @@
 /*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/24 16:30:21 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/21 13:30:40 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/21 13:33:39 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ void	ns_ch_map(t_champion *champ, t_map **map)
 		if (ind < champ->size_bytes)
 		{
 			memory_map->map[i] = champ->exec_code[ind++];
-			memory_map->color[i] =
+			memory_map->color[i] = champ->color;
 		}
 		i++;
 	}

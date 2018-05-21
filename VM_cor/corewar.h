@@ -6,7 +6,7 @@
 /*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/23 13:22:27 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/21 13:34:54 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/21 13:37:30 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -98,6 +98,7 @@ typedef struct			s_cursor
 	int 				live_or_die;
 	int 				registr[REG_NUMBER + 1];
 	int 				carry;
+	int 				color;
 	t_champion			*champ;
 	struct s_cursor		*next;
 }						t_cursor;

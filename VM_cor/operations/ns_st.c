@@ -32,6 +32,7 @@ void	set_on_map(t_map **map, t_cursor *temp, t_reg reg)
 		pos = reg.index + i;
 		pos = pos < 0 ? pos + MEM_SIZE : pos % MEM_SIZE;
 		map_t->map[pos] = str[i];
+		map_t->color[pos] = temp->champ->color;
 		i++;
 	}
 	free(str);
