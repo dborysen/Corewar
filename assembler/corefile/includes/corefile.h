@@ -62,5 +62,6 @@ void			magic_number(int fd);
 void			prog_length(t_str_tokens *input, int fd);
 int				valid_label(char *label, t_str_tokens *start_of_list);
 int				plus_validation(t_str_tokens *input);
+int				all_headers_filled(t_header_data header);
 
 #endif

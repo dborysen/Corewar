@@ -21,7 +21,7 @@ int				corefile(t_str_tokens *input,
 	g_position = position;
 	prog_name = correct_name(header);
 	construct_data(input);
-	if (plus_validation(input) == ERROR)
+	if (plus_validation(input) == ERROR || all_headers_filled(header) == ERROR)
 	{
 		ft_strdel(&prog_name);
 		return (ERROR);

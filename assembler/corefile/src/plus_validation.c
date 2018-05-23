@@ -34,3 +34,10 @@ int			plus_validation(t_str_tokens *input)
 	}
 	return (OK);
 }
+
+int			all_headers_filled(t_header_data header)
+{
+	if (header.bot_comment == NULL || header.bot_name == NULL)
+		return (ERROR);
+	return (OK);
+}
