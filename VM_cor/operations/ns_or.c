@@ -36,9 +36,7 @@ void	ns_or(t_cursor **cur, t_map *m_map)
 	else if (m_map->map[((*cur)->index_pos + 1) % MEM_SIZE] == T_IIR)
 		ns_iir_or(cur, m_map);
 	else
-	(*cur)->index_pos += ns_step_wrong_codage(m_map->map[((*cur)->index_pos + 1) % MEM_SIZE]);
-
-
+		(*cur)->index_pos += ns_step_wrong_codage(m_map->map[((*cur)->index_pos + 1) % MEM_SIZE]);
 }
 
 void	ns_iir_or(t_cursor **cur, t_map *m_map)
@@ -63,6 +61,8 @@ void	ns_iir_or(t_cursor **cur, t_map *m_map)
 		temp->carry = temp->registr[reg.r3] == 0 ? 1 : 0;
 	}
 	temp->index_pos += 7;
+	free(str);
+	free(str2);
 }
 
 void	ns_idr_or(t_cursor **cur, t_map *m_map)
@@ -86,6 +86,8 @@ void	ns_idr_or(t_cursor **cur, t_map *m_map)
 		temp->carry = temp->registr[reg.r3] == 0 ? 1 : 0;
 	}
 	temp->index_pos += 9;
+	free(str);
+	free(str2);
 }
 
 void	ns_irr_or(t_cursor **cur, t_map *m_map)
@@ -106,6 +108,7 @@ void	ns_irr_or(t_cursor **cur, t_map *m_map)
 		temp->carry = temp->registr[reg.r3] == 0 ? 1 : 0;
 	}
 	temp->index_pos += 6;
+	free(str);
 }
 
 void	ns_dir_or(t_cursor **cur, t_map *m_map)
@@ -129,6 +132,8 @@ void	ns_dir_or(t_cursor **cur, t_map *m_map)
 		temp->carry = temp->registr[reg.r3] == 0 ? 1 : 0;
 	}
 	temp->index_pos += 9;
+	free(str);
+	free(str2);
 }
 
 void	ns_ddr_or(t_cursor **cur, t_map *m_map)
@@ -151,6 +156,8 @@ void	ns_ddr_or(t_cursor **cur, t_map *m_map)
 		temp->carry = temp->registr[reg.r3] == 0 ? 1 : 0;
 	}
 	temp->index_pos += 11;
+	free(str);
+	free(str2);
 }
 
 void	ns_drr_or(t_cursor **cur, t_map *m_map)
@@ -170,6 +177,7 @@ void	ns_drr_or(t_cursor **cur, t_map *m_map)
 		temp->carry = temp->registr[reg.r3] == 0 ? 1 : 0;
 	}
 	temp->index_pos += 8;
+	free(str);
 }
 
 void	ns_rir_or(t_cursor **cur, t_map *m_map)
@@ -190,6 +198,7 @@ void	ns_rir_or(t_cursor **cur, t_map *m_map)
 		temp->carry = temp->registr[reg.r3] == 0 ? 1 : 0;
 	}
 	temp->index_pos += 6;
+	free(str);
 }
 
 void	ns_rdr_or(t_cursor **cur, t_map *m_map)
@@ -209,6 +218,7 @@ void	ns_rdr_or(t_cursor **cur, t_map *m_map)
 		temp->carry = temp->registr[reg.r3] == 0 ? 1 : 0;
 	}
 	temp->index_pos += 8;
+	free(str);
 }
 
 void	ns_rrr_or(t_cursor **cur, t_map *m_map)

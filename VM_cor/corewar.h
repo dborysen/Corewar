@@ -6,7 +6,7 @@
 /*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/23 13:22:27 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/21 16:31:49 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/22 19:02:02 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,6 +74,7 @@ typedef struct			s_vizor
 typedef struct			s_fl
 {
 	int					dump;
+	int					d;
 	int					n;
 	short				v;
 
@@ -98,6 +99,7 @@ typedef struct			s_map
 {
 	unsigned char 		map[MEM_SIZE];
 	int			 		color[MEM_SIZE];
+	int					d;
 }						t_map;
 
 typedef struct			s_cursor
@@ -152,7 +154,9 @@ void 					ns_error(char *err_message);
 void					ns_zero_cursor(t_cursor **cursor);
 void					ns_zero_reg(t_reg *reg);
 void					ns_create_cursor(t_cursor **cursor, t_champion *champ);
-t_cursor				*ns_game_start(t_cursor **cursor, t_map *m_map, t_info *info, t_fl fl);
+//t_cursor				*ns_game_start(t_cursor **cursor, t_map *m_map, t_info *info, t_fl fl);
+t_cursor				*game_start_dump(t_cursor **cursor, t_map *m_map, t_info *info, t_fl fl);
+t_cursor				*game_start(t_cursor **cursor, t_map *m_map, t_info *info);
 int 					ns_check_register(int r1, int r2, int r3);
 void					usage();
 int						ns_check_id(t_champion *champ);

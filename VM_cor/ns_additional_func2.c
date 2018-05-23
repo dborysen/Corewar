@@ -6,7 +6,7 @@
 /*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/11 15:49:08 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/21 17:51:35 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/22 16:50:14 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -115,7 +115,7 @@ void	ns_check_lives(t_cursor **cur, t_info **info)
 	}
 	if (ns_count_cursor(*cur) == 0 || (*info)->die <= 0)
 	{
-		ft_printf("Player %d (%s) won.\n", (*info)->winner_nbr, (*info)->winner_name);
+		ft_printf("Player %d, (\"%s\") has won !!\n", (*info)->winner_nbr, (*info)->winner_name);
 		(*info)->end_game = 1;
 	}
 }

@@ -6,7 +6,7 @@
 /*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/04 17:12:12 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/18 17:26:00 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/22 16:40:36 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 /*
@@ -61,6 +61,8 @@ void	ns_iir_xor(t_cursor **cur, t_map *m_map)
 		temp->carry = temp->registr[reg.r3] == 0 ? 1 : 0;
 	}
 	temp->index_pos += 7;
+	free(str);
+	free(str2);
 }
 
 void	ns_idr_xor(t_cursor **cur, t_map *m_map)
@@ -84,13 +86,15 @@ void	ns_idr_xor(t_cursor **cur, t_map *m_map)
 		temp->carry = temp->registr[reg.r3] == 0 ? 1 : 0;
 	}
 	temp->index_pos += 9;
+	free(str);
+	free(str2);
 }
 
 void	ns_irr_xor(t_cursor **cur, t_map *m_map)
 {
-	t_cursor	*temp;
-	t_reg		reg;
-	unsigned char		*str;
+	t_cursor		*temp;
+	t_reg			reg;
+	unsigned char	*str;
 
 	temp = *cur;
 	reg.index = ns_two_bytes(m_map, temp->index_pos + 2, temp->index_pos + 3);
@@ -104,6 +108,8 @@ void	ns_irr_xor(t_cursor **cur, t_map *m_map)
 		temp->carry = temp->registr[reg.r3] == 0 ? 1 : 0;
 	}
 	temp->index_pos += 6;
+	free(str);
+
 }
 
 void	ns_dir_xor(t_cursor **cur, t_map *m_map)
@@ -127,6 +133,8 @@ void	ns_dir_xor(t_cursor **cur, t_map *m_map)
 		temp->carry = temp->registr[reg.r3] == 0 ? 1 : 0;
 	}
 	temp->index_pos += 9;
+	free(str);
+	free(str2);
 }
 
 void	ns_ddr_xor(t_cursor **cur, t_map *m_map)
@@ -149,6 +157,8 @@ void	ns_ddr_xor(t_cursor **cur, t_map *m_map)
 		temp->carry = temp->registr[reg.r3] == 0 ? 1 : 0;
 	}
 	temp->index_pos += 11;
+	free(str);
+	free(str2);
 }
 
 void	ns_drr_xor(t_cursor **cur, t_map *m_map)
@@ -168,6 +178,7 @@ void	ns_drr_xor(t_cursor **cur, t_map *m_map)
 		temp->carry = temp->registr[reg.r3] == 0 ? 1 : 0;
 	}
 	temp->index_pos += 8;
+	free(str);
 }
 
 void	ns_rir_xor(t_cursor **cur, t_map *m_map)
@@ -179,7 +190,7 @@ void	ns_rir_xor(t_cursor **cur, t_map *m_map)
 	temp = *cur;
 	reg.r1 = m_map->map[temp->index_pos + 2];
 	reg.index = ns_two_bytes(m_map, temp->index_pos + 2, temp->index_pos + 3);
-	str = find_fbytes_tind(m_map, (temp->index_pos + reg.index));
+	str = find_fbytes_tind(m_map, temp->index_pos + reg.index % IDX_MOD);
 	reg.index = unsigned_char_to_int(str);
 	reg.r3 = m_map->map[temp->index_pos + 5];
 	if (ns_check_register(reg.r1, 1, reg.r3))
@@ -188,6 +199,7 @@ void	ns_rir_xor(t_cursor **cur, t_map *m_map)
 		temp->carry = temp->registr[reg.r3] == 0 ? 1 : 0;
 	}
 	temp->index_pos += 6;
+	free(str);
 }
 
 void	ns_rdr_xor(t_cursor **cur, t_map *m_map)

@@ -6,7 +6,7 @@
 /*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/11 15:11:53 by ssavchen          #+#    #+#             */
-/*   Updated: 2018/05/18 17:11:17 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/23 15:30:38 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 /*
@@ -61,6 +61,8 @@ void	ns_iir_and(t_cursor **cur, t_map *m_map)
 		temp->carry = temp->registr[reg.r3] == 0 ? 1 : 0;
 	}
 	temp->index_pos += 7;
+	free(str);
+	free(str2);
 }
 
 void	ns_idr_and(t_cursor **cur, t_map *m_map)
@@ -84,6 +86,8 @@ void	ns_idr_and(t_cursor **cur, t_map *m_map)
 		temp->carry = temp->registr[reg.r3] == 0 ? 1 : 0;
 	}
 	temp->index_pos += 9;
+	free(str);
+	free(str2);
 }
 
 void	ns_irr_and(t_cursor **cur, t_map *m_map)
@@ -104,6 +108,7 @@ void	ns_irr_and(t_cursor **cur, t_map *m_map)
 		temp->carry = temp->registr[reg.r3] == 0 ? 1 : 0;
 	}
 	temp->index_pos += 6;
+	free(str);
 }
 
 void	ns_dir_and(t_cursor **cur, t_map *m_map)
@@ -127,6 +132,8 @@ void	ns_dir_and(t_cursor **cur, t_map *m_map)
 		temp->carry = temp->registr[reg.r3] == 0 ? 1 : 0;
 	}
 	temp->index_pos += 9;
+	free(str);
+	free(str2);
 }
 
 void	ns_ddr_and(t_cursor **cur, t_map *m_map)
@@ -149,6 +156,8 @@ void	ns_ddr_and(t_cursor **cur, t_map *m_map)
 		temp->carry = temp->registr[reg.r3] == 0 ? 1 : 0;
 	}
 	temp->index_pos += 11;
+	free(str);
+	free(str2);
 }
 
 void	ns_drr_and(t_cursor **cur, t_map *m_map)
@@ -168,13 +177,14 @@ void	ns_drr_and(t_cursor **cur, t_map *m_map)
 		temp->carry = temp->registr[reg.r3] == 0 ? 1 : 0;
 	}
 	temp->index_pos += 8;
+	free(str);
 }
 
 void	ns_rir_and(t_cursor **cur, t_map *m_map)
 {
-	t_cursor	*temp;
-	t_reg		reg;
-	unsigned char		*str;
+	t_cursor		*temp;
+	t_reg			reg;
+	unsigned char	*str;
 
 	temp = *cur;
 	reg.r1 = m_map->map[(temp->index_pos + 2) % MEM_SIZE];
@@ -188,6 +198,7 @@ void	ns_rir_and(t_cursor **cur, t_map *m_map)
 		temp->carry = temp->registr[reg.r3] == 0 ? 1 : 0;
 	}
 	temp->index_pos += 6;
+	free(str);
 }
 
 void	ns_rdr_and(t_cursor **cur, t_map *m_map)
@@ -207,6 +218,7 @@ void	ns_rdr_and(t_cursor **cur, t_map *m_map)
 		temp->carry = temp->registr[reg.r3] == 0 ? 1 : 0;
 	}
 	temp->index_pos += 8;
+	free(str);
 }
 
 void	ns_rrr_and(t_cursor **cur, t_map *m_map)

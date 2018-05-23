@@ -6,7 +6,7 @@
 /*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/11 15:57:53 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/21 13:34:29 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/22 19:06:25 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@ void		ns_save_flags(char **av, t_fl *flags, int *i, int ac)
 {
 	if(ft_strcmp(av[*i], "-dump") == 0)
 	{
+		flags->d = 1;
 		*i += 1;
 		if (ac - 1 < *i || !ft_isdigit(av[*i][0]))
 			ns_error("not a digit after flag");
@@ -28,6 +29,8 @@ void		ns_save_flags(char **av, t_fl *flags, int *i, int ac)
 			ns_error("not a digit after flag");
 		flags->n = ft_atoi(av[*i]);
 	}
+	else if(ft_strcmp(av[*i], "-v") == 0)
+		flags->v = 1;
 }
 
 t_champion	*ns_save_champs(t_champion **champ, unsigned char *file_info, int fd)
@@ -110,7 +113,7 @@ void		ns_check_flags(int ac, char **av, t_fl *flags, t_champion **champ)
 	}
 	if ((*champ)->id == 0 || !ns_check_id(*champ))
 		ns_error("wrong number champions");
-	if(!flags->dump && !flags->v)
-		ns_error("wrong number of flags");
+//	if (flags->v)
+//		flags->dump = -1;
 	temp->next = NULL;
 }

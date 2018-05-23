@@ -6,7 +6,7 @@
 /*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/24 14:49:11 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/18 18:26:07 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/22 16:08:30 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,7 +53,6 @@ char	*int_to_charpr(int nbr)
 	str = (char *)malloc(sizeof(char) + 5);
 	str[0] = (char)(nbr >> 24);
 	ft_printf("0 = %02x\n", str[0]);
-	ft_printf("0nb = %d\n", str[0]);
 
 	str[1] = (char)(nbr >> 16);
 	ft_printf("1 = %02x\n", str[1]);
@@ -90,26 +89,6 @@ int		char_to_int(char *str)
 	num += str[2] << 8;
 	num += str[3];
 	return (num);
-}
-
-unsigned char	*find_fbytes_tindpr(t_map *map, unsigned int index)
-{
-	unsigned  char	*str;
-	int				i;
-	int				pos;
-
-	i = 0;
-	str = (unsigned char *)malloc(sizeof(unsigned char) + 5);
-	index = index % MEM_SIZE;
-	while (i < 4)
-	{
-		pos = index + i;
-		pos = pos < 0 ? pos + MEM_SIZE : pos % MEM_SIZE;
-		str[i] = map->map[pos];
-		i++;
-	}
-	str[i] = '\0';
-	return (str);
 }
 
 unsigned char	*find_fbytes_tind(t_map *map, int index)

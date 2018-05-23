@@ -23,6 +23,8 @@ void	ns_sub(t_cursor **cur, t_map *m_map)
 		reg.r1 = m_map->map[(temp->index_pos + 2) % MEM_SIZE];
 		reg.r2 = m_map->map[(temp->index_pos + 3) % MEM_SIZE];
 		reg.r3 = m_map->map[(temp->index_pos + 4) % MEM_SIZE];
+		if (reg.r1 == 14 || reg.r2 == 14 || reg.r3 == 14)
+			ft_printf("ADD\n");
 		if (ns_check_register(reg.r1, reg.r2, reg.r3))
 		{
 			temp->registr[reg.r3] = temp->registr[reg.r1] - temp->registr[reg.r2];

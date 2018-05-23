@@ -6,7 +6,7 @@
 /*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/02 15:09:56 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/21 17:45:14 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/23 17:14:07 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,7 @@ void		ns_create_cursor(t_cursor **cursor, t_champion *champ)
 		temp->next = (t_cursor *)malloc(sizeof(t_cursor));
 		temp->registr[1] = -temp->nbr_player;
 		temp->champ = champ;
+		temp->color = champ->color + 5;
 		temp = temp->next;
 		champ = champ->next;
 	}
@@ -89,6 +90,9 @@ t_cursor	*ns_move_cursor(t_cursor **cursor, t_map *map, t_info **info)
 	temp = *cursor;
 	while (temp)
 	{
+		temp->index_pos = temp->index_pos < 0 ? temp->index_pos + MEM_SIZE :
+						  temp->index_pos % MEM_SIZE;
+		map->color[temp->index_pos] = temp->color;
 		if (temp->wait_cycle == 1 && temp->commad > 0)
 		{
 			if (temp->commad == 12)
@@ -116,14 +120,12 @@ t_cursor	*ns_move_cursor(t_cursor **cursor, t_map *map, t_info **info)
 		}
 		else
 			temp->index_pos++;
-		temp->index_pos = temp->index_pos < 0 ? temp->index_pos + MEM_SIZE :
-						  temp->index_pos % MEM_SIZE;
 		temp = temp->next;
 	}
 	return (*cursor);
 }
 
-t_cursor	*ns_game_start(t_cursor **cursor, t_map *m_map, t_info *info, t_fl fl)
+t_cursor	*game_start_dump(t_cursor **cursor, t_map *m_map, t_info *info, t_fl fl)
 {
 	t_cursor *temp;
 
@@ -143,7 +145,31 @@ t_cursor	*ns_game_start(t_cursor **cursor, t_map *m_map, t_info *info, t_fl fl)
 		}
 		fl.dump--;
 	}
-	if (fl.dump == 0 && info->end_game == 0)
+	if (fl.dump == 0)
 		ns_print_map(*m_map);
 	return (*cursor);
 }
+
+t_cursor	*game_start(t_cursor **cursor, t_map *m_map, t_info *info)
+{
+	t_cursor *temp;
+
+	info->winner_nbr = (*cursor)->champ->id;
+	info->winner_name = (*cursor)->champ->champ_name;
+	while (info->end_game == 0)
+	{
+		temp = *cursor;
+		ns_create_cycle(&temp, m_map);
+		*cursor = ns_move_cursor(&temp, m_map, &info);
+		info->total_cycles++;
+		info->cycles++;
+		if (info->cycles == info->die)
+		{
+			ns_check_lives(cursor, &info);
+			info->cycles = 0;
+		}
+	}
+	return (*cursor);
+}
+
+

@@ -6,7 +6,7 @@
 /*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/13 13:32:00 by ssavchen          #+#    #+#             */
-/*   Updated: 2018/05/21 16:25:24 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/23 17:09:00 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ void	ns_copy_reg(int *src, int *dest)
 	}
 }
 
-t_cursor	*ns_copy_cursor(t_cursor *tmp, int index, int n)
+t_cursor	*ns_copy_cursor(t_cursor *tmp, short index, int n)
 {
 	t_cursor	*head;
 
@@ -62,7 +62,7 @@ t_cursor	*ns_fork(t_cursor **cur, t_cursor **tmp, t_map *m_map, int n)
 {
 	t_cursor	*temp;
 	t_cursor	*fork;
-	int			index;
+	short		index;
 
 	temp = *cur;
 	fork = NULL;

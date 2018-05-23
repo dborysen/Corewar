@@ -6,11 +6,40 @@
 /*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/23 13:20:36 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/21 18:03:05 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/23 16:49:51 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "corewar.h"
+
+void	del_champ(t_champion **champ)
+{
+	t_champion *temp;
+	t_champion *del;
+
+	temp = *champ;
+	while (temp->next)
+	{
+		del = temp;
+		temp = temp->next;
+		free(del->exec_code);
+		free(del);
+	}
+}
+
+void	del_cursor(t_cursor **champ)
+{
+	t_cursor *temp;
+	t_cursor *del;
+
+	temp = *champ;
+	while (temp)
+	{
+		del = temp;
+		temp = temp->next;
+		free(del);
+	}
+}
 
 int			main(int ac, char **av)
 {
@@ -30,13 +59,22 @@ int			main(int ac, char **av)
 	ns_zero_info(&info);
 	ns_check_flags(ac, av, &flags, &champ);
 	ns_create_map(&map);
-	ns_dump_flag(champ);
 	ns_position_start(&champ);
 	ns_fill_map(champ, &map);
 	ns_create_cursor(&cursor, champ);
 	ns_reverse_cursor(&cursor);
 	info.count_cursor = ns_count_cursor(cursor);
-	cursor = ns_game_start(&cursor, &map, &info, flags);
+	map.d = flags.d;
+	if (flags.d)
+	{
+		ns_dump_flag(champ);
+		cursor = game_start_dump(&cursor, &map, &info, flags);
+	}
+	else
+	{
+		ns_dump_flag(champ);
+		cursor = game_start(&cursor, &map, &info);
+	}
 //	ns_ncurses(map, &info);
 //	ns_print_map(map);
 //	while (cursor)
@@ -65,6 +103,7 @@ int			main(int ac, char **av)
 //		champ = champ->next;
 //	}
 //	ft_printf("%d %d %d\n", flags.dump_is, flags.s_is, flags.v_is);
-
+	del_champ(&champ);
+	del_cursor(&cursor);
 	return (0);
 }

@@ -6,7 +6,7 @@
 /*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/24 15:27:39 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/21 13:36:52 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/22 19:06:41 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,8 @@
 
 void	ns_zero_flags(t_fl *flags)
 {
-	flags->dump= 0;
+	flags->dump = 0;
+	flags->d = 0;
 	flags->v = 0;
 	flags->n = 0;
 }

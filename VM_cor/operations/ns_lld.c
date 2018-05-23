@@ -6,7 +6,7 @@
 /*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/08 19:13:52 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/18 15:09:09 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/23 16:36:09 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,15 +38,17 @@ void	ns_lld2(t_cursor **cur, t_map *m_map, t_reg reg, unsigned char *str)
 
 	temp = *cur;
 	reg.r1 = m_map->map[(temp->index_pos + 4) % MEM_SIZE];
+//	ft_printf("LLD = IR\n");
 	if (ns_check_register(reg.r1, 1, 1))
 	{
 		reg.index = ns_two_bytes(m_map, temp->index_pos + 2, temp->index_pos + 3);
-		str = find_twobytes(m_map, temp->index_pos + reg.index);
+		str = find_twobytes(m_map, temp->index_pos + reg.index); // ?? four or read md two bytes !!!
 		reg.index = unsigned_char_to_int(str);
 		temp->registr[reg.r1] = reg.index;
 		temp->carry = temp->registr[reg.r1] == 0 ? 1 : 0;
 	}
 	temp->index_pos += 5;
+	free(str);
 }
 
 void	ns_lld(t_cursor **cur, t_map *m_map)
@@ -60,7 +62,9 @@ void	ns_lld(t_cursor **cur, t_map *m_map)
 	ns_zero_reg(&reg);
 	if (m_map->map[(temp->index_pos + 1) % MEM_SIZE] == T_DR)
 	{
+//		ft_printf("LLD = DR\n");
 		reg.r1 = m_map->map[(temp->index_pos + 6) % MEM_SIZE];
+//		ft_printf("reg = %d\n", reg.r1);
 		if (ns_check_register(reg.r1, 1, 1))
 		{
 			str = find_fbytes_tind(m_map, temp->index_pos + 2);
@@ -74,4 +78,5 @@ void	ns_lld(t_cursor **cur, t_map *m_map)
 		ns_lld2(cur, m_map, reg, str);
 	else
 		temp->index_pos += ns_step_wrong_codage(m_map->map[(temp->index_pos + 1) % MEM_SIZE]);
+	free(str);
 }
