@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ns_cursor_create.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
+/*   By: ssavchen <ssavchen@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/02 15:09:56 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/23 17:14:07 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/23 18:22:35 by ssavchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -92,6 +92,11 @@ t_cursor	*ns_move_cursor(t_cursor **cursor, t_map *map, t_info **info)
 	{
 		temp->index_pos = temp->index_pos < 0 ? temp->index_pos + MEM_SIZE :
 						  temp->index_pos % MEM_SIZE;
+		temp->before_pos = temp->index_pos;
+		if (map->color[temp->index_pos] < 5)
+			map->color[temp->index_pos] = temp->color;
+		else if (map->color[temp->index_pos] == 5)
+			map->color[temp->index_pos] = 10;
 		map->color[temp->index_pos] = temp->color;
 		if (temp->wait_cycle == 1 && temp->commad > 0)
 		{

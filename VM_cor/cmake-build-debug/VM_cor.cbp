@@ -8,38 +8,38 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/Users/myprosku/corTwar/VM_cor/cmake-build-debug"/>
+				<Option working_dir="/Users/ssavchen/coretwar/VM_cor/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/myprosku/corTwar/VM_cor/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/myprosku/corTwar/VM_cor/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/myprosku/corTwar/VM_cor/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/myprosku/corTwar/VM_cor/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/Users/myprosku/corTwar/VM_cor/cmake-build-debug"/>
+				<Option working_dir="/Users/ssavchen/coretwar/VM_cor/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/myprosku/corTwar/VM_cor/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/myprosku/corTwar/VM_cor/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/myprosku/corTwar/VM_cor/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/myprosku/corTwar/VM_cor/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/Users/myprosku/corTwar/VM_cor/cmake-build-debug"/>
+				<Option working_dir="/Users/ssavchen/coretwar/VM_cor/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/myprosku/corTwar/VM_cor/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/myprosku/corTwar/VM_cor/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/myprosku/corTwar/VM_cor/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/myprosku/corTwar/VM_cor/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="VM_cor">
-				<Option output="/Users/myprosku/corTwar/VM_cor/cmake-build-debug/VM_cor" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/myprosku/corTwar/VM_cor/cmake-build-debug"/>
+				<Option output="/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/VM_cor" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ssavchen/coretwar/VM_cor/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -52,15 +52,15 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/myprosku/corTwar/VM_cor/cmake-build-debug/Makefile&quot;  VERBOSE=1 VM_cor"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/myprosku/corTwar/VM_cor/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/myprosku/corTwar/VM_cor/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/myprosku/corTwar/VM_cor/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/Makefile&quot;  VERBOSE=1 VM_cor"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="VM_cor/fast">
-				<Option output="/Users/myprosku/corTwar/VM_cor/cmake-build-debug/VM_cor" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/myprosku/corTwar/VM_cor/cmake-build-debug"/>
+				<Option output="/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/VM_cor" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ssavchen/coretwar/VM_cor/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -73,404 +73,404 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/myprosku/corTwar/VM_cor/cmake-build-debug/Makefile&quot;  VERBOSE=1 VM_cor/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/myprosku/corTwar/VM_cor/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/myprosku/corTwar/VM_cor/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/myprosku/corTwar/VM_cor/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/Makefile&quot;  VERBOSE=1 VM_cor/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/ssavchen/coretwar/VM_cor/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/corewar.h">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/corewar.h">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/create_map.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/create_map.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/dump_flag.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/dump_flag.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/libft/af_per_doxu.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/libft/af_per_doxu.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/libft/af_per_sc.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/libft/af_per_sc.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/libft/alignment_p.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/libft/alignment_p.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/libft/alignment_s.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/libft/alignment_s.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/libft/find_flags.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/libft/find_flags.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/libft/flag_hljz.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/libft/flag_hljz.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/libft/format_b.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/libft/format_b.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/libft/format_b_jz.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/libft/format_b_jz.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/libft/format_c.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/libft/format_c.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/libft/format_di.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/libft/format_di.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/libft/format_di_jz.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/libft/format_di_jz.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/libft/format_dig.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/libft/format_dig.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/libft/format_o.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/libft/format_o.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/libft/format_o_jz.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/libft/format_o_jz.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/libft/format_p.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/libft/format_p.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/libft/format_s.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/libft/format_s.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/libft/format_u.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/libft/format_u.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/libft/format_u_jz.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/libft/format_u_jz.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/libft/format_x.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/libft/format_x.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/libft/format_x_jz.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/libft/format_x_jz.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/libft/ft_aligment_sharp.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/libft/ft_aligment_sharp.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/libft/ft_aligment_wchar.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/libft/ft_aligment_wchar.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/libft/ft_alignment.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/libft/ft_alignment.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/libft/ft_alignment_di.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/libft/ft_alignment_di.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/libft/ft_atoi.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/libft/ft_atoi.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/libft/ft_bzero.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/libft/ft_bzero.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/libft/ft_dot.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/libft/ft_dot.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/libft/ft_intlen.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/libft/ft_intlen.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/libft/ft_isalnum.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/libft/ft_isalnum.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/libft/ft_isalpha.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/libft/ft_isalpha.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/libft/ft_isascii.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/libft/ft_isascii.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/libft/ft_isdigit.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/libft/ft_isdigit.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/libft/ft_isprint.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/libft/ft_isprint.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/libft/ft_isspace.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/libft/ft_isspace.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/libft/ft_itoa.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/libft/ft_itoa.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/libft/ft_itoa_base.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/libft/ft_itoa_base.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/libft/ft_itoa_intmax.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/libft/ft_itoa_intmax.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/libft/ft_lstadd.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/libft/ft_lstadd.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/libft/ft_lstdel.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/libft/ft_lstdel.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/libft/ft_lstdelone.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/libft/ft_lstdelone.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/libft/ft_lstiter.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/libft/ft_lstiter.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/libft/ft_lstmap.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/libft/ft_lstmap.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/libft/ft_lstnew.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/libft/ft_lstnew.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/libft/ft_memalloc.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/libft/ft_memalloc.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/libft/ft_memccpy.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/libft/ft_memccpy.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/libft/ft_memchr.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/libft/ft_memchr.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/libft/ft_memcmp.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/libft/ft_memcmp.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/libft/ft_memcpy.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/libft/ft_memcpy.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/libft/ft_memdel.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/libft/ft_memdel.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/libft/ft_memmove.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/libft/ft_memmove.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/libft/ft_memset.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/libft/ft_memset.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/libft/ft_min_max.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/libft/ft_min_max.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/libft/ft_printf.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/libft/ft_printf.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/libft/ft_putchar.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/libft/ft_putchar.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/libft/ft_putchar_fd.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/libft/ft_putchar_fd.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/libft/ft_putendl.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/libft/ft_putendl.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/libft/ft_putendl_fd.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/libft/ft_putendl_fd.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/libft/ft_putnbr.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/libft/ft_putnbr.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/libft/ft_putnbr_fd.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/libft/ft_putnbr_fd.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/libft/ft_putnbr_u.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/libft/ft_putnbr_u.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/libft/ft_putstr.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/libft/ft_putstr.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/libft/ft_putstr_fd.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/libft/ft_putstr_fd.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/libft/ft_putstr_u.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/libft/ft_putstr_u.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/libft/ft_strcat.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/libft/ft_strcat.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/libft/ft_strchr.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/libft/ft_strchr.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/libft/ft_strclr.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/libft/ft_strclr.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/libft/ft_strcmp.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/libft/ft_strcmp.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/libft/ft_strcpy.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/libft/ft_strcpy.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/libft/ft_strdel.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/libft/ft_strdel.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/libft/ft_strdup.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/libft/ft_strdup.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/libft/ft_strequ.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/libft/ft_strequ.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/libft/ft_striter.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/libft/ft_striter.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/libft/ft_striteri.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/libft/ft_striteri.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/libft/ft_strjoin.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/libft/ft_strjoin.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/libft/ft_strlcat.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/libft/ft_strlcat.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/libft/ft_strlen.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/libft/ft_strlen.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/libft/ft_strmap.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/libft/ft_strmap.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/libft/ft_strmapi.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/libft/ft_strmapi.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/libft/ft_strncat.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/libft/ft_strncat.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/libft/ft_strncmp.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/libft/ft_strncmp.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/libft/ft_strncpy.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/libft/ft_strncpy.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/libft/ft_strndup.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/libft/ft_strndup.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/libft/ft_strnequ.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/libft/ft_strnequ.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/libft/ft_strnew.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/libft/ft_strnew.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/libft/ft_strnstr.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/libft/ft_strnstr.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/libft/ft_strrchr.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/libft/ft_strrchr.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/libft/ft_strsplit.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/libft/ft_strsplit.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/libft/ft_strstr.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/libft/ft_strstr.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/libft/ft_strsub.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/libft/ft_strsub.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/libft/ft_strtrim.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/libft/ft_strtrim.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/libft/ft_swap.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/libft/ft_swap.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/libft/ft_tolower.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/libft/ft_tolower.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/libft/ft_toupper.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/libft/ft_toupper.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/libft/ft_zero.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/libft/ft_zero.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/libft/get_next_line.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/libft/get_next_line.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/libft/libft.h">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/libft/libft.h">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/libft/print_addres.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/libft/print_addres.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/libft/putchar_int.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/libft/putchar_int.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/libft/putstr_int.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/libft/putstr_int.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/libft/unsigned_itoa.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/libft/unsigned_itoa.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/libft/zero_flags.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/libft/zero_flags.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/main.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/main.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/ncurses/first.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/ncurses/first.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/ncurses/second.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/ncurses/second.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/ns_additional_func.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/ns_additional_func.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/ns_additional_func2.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/ns_additional_func2.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/ns_cursor_create.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/ns_cursor_create.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/ns_read_champion.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/ns_read_champion.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/ns_save_fch.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/ns_save_fch.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/ns_zero_struct.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/ns_zero_struct.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/op.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/op.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/op.h">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/op.h">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/operations/ns_add.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/operations/ns_add.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/operations/ns_aff.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/operations/ns_aff.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/operations/ns_and.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/operations/ns_and.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/operations/ns_fork.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/operations/ns_fork.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/operations/ns_ld.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/operations/ns_ld.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/operations/ns_ldi.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/operations/ns_ldi.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/operations/ns_live.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/operations/ns_live.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/operations/ns_lld.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/operations/ns_lld.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/operations/ns_lldi.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/operations/ns_lldi.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/operations/ns_or.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/operations/ns_or.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/operations/ns_st.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/operations/ns_st.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/operations/ns_sti.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/operations/ns_sti.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/operations/ns_sub.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/operations/ns_sub.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/operations/ns_xor.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/operations/ns_xor.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/operations/ns_zjmp.c">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/operations/ns_zjmp.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/CMakeLists.txt">
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

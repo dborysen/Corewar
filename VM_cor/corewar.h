@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   corewar.h                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
+/*   By: ssavchen <ssavchen@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/23 13:22:27 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/22 19:02:02 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/23 18:28:18 by ssavchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,6 +69,7 @@ typedef struct			s_vizor
 	int					proc;
 	int					limit;
 	int					state;
+	int					pause;
 }						t_vizor;
 
 typedef struct			s_fl
@@ -105,6 +106,7 @@ typedef struct			s_map
 typedef struct			s_cursor
 {
 	int					index_pos;
+	int					before_pos;
 	int					nbr_player;
 	int 				step;
 	int					wait_cycle;
@@ -125,6 +127,7 @@ typedef struct			s_info
 	int 				cycles;
 	int 				winner_nbr;
 	char 				*winner_name;
+	int					winner_col;
 	int 				checks;
 	int 				die;
 	int 				end_game;
@@ -232,11 +235,21 @@ void					ns_rir_xor(t_cursor **cur, t_map *m_map);
 void					ns_rdr_xor(t_cursor **cur, t_map *m_map);
 void					ns_rrr_xor(t_cursor **cur, t_map *m_map);
 
-void					ns_ncurses(t_map map, t_info *info);
+
+void	ns_create_cycle(t_cursor **cursor, t_map *m_map);
+t_cursor	*ns_move_cursor(t_cursor **cursor, t_map *map, t_info **info);
+
+void					ns_ncurses(t_map *map, t_info *info, t_cursor **cursor, t_fl fl);
 void					nc_right_print(t_vizor *viz, t_info *info);
-void					nc_wait(t_vizor *viz, t_info *info);
+void					nc_wait(t_vizor *viz, t_info *info, t_map *map, t_cursor **cursor, t_fl fl);
 void					nc_set_color(void);
 void					nc_get_color(t_map map, int i, t_vizor viz);
 void					nc_check_window();
+void					nc_qwer(int key, t_info *info, t_vizor *viz);
+void					nc_print_all(t_map map, t_vizor *viz, t_info *info);
+void					nc_print_map(t_map map, t_vizor viz, WINDOW *winmap);
+void					nc_next_step(t_vizor *viz, t_info *info, t_map *map, t_cursor **cursor, t_fl fl);
+t_cursor				**nc_game_start(t_cursor **cursor, t_map **m_map, t_info *info, t_fl fl);
+void					nc_winner(t_vizor *viz, t_info *info);
 
 #endif

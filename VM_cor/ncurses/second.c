@@ -6,7 +6,7 @@
 /*   By: ssavchen <ssavchen@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/17 16:24:34 by ssavchen          #+#    #+#             */
-/*   Updated: 2018/05/21 12:33:25 by ssavchen         ###   ########.fr       */
+/*   Updated: 2018/05/23 17:14:27 by ssavchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,48 +14,77 @@
 
 void	nc_offline(t_vizor *viz)
 {
-	delwin(viz->stat);
-	delwin(viz->map);
-	delwin(viz->ful);
-	endwin();
-	exit(0);
+		delwin(viz->stat);
+		delwin(viz->map);
+		delwin(viz->ful);
+		endwin();
+		exit(0);
 }
 
-void	nc_wait(t_vizor *viz, t_info *info)
+void	nc_next_step(t_vizor *viz, t_info *info, t_map *map, t_cursor **cursor, t_fl fl)
+{
+	int		key;
+	int		exit;
+
+	exit = 1;
+	while (exit && info->end_game == 0)
+	{
+		if ((viz)->pause == 1)
+			(viz)->pause = 0;
+		timeout(1);
+		key = getch();
+		if (key == 27)
+			nc_offline(viz);
+		else if (key == ' ')
+			nc_wait(viz, info, map, cursor, fl);
+		else if (key == 'q' || key == 'w' || key == 'e' || key == 'r')
+			nc_qwer(key, info, viz);
+		cursor = nc_game_start(cursor, &map, info, fl);
+		nc_print_all(*map, viz, info);
+	}
+	nc_winner(viz, info);
+	timeout(50000);
+	if ((key = getch()) == 27)
+		nc_offline(viz);
+}
+
+void	nc_wait(t_vizor *viz, t_info *info, t_map *map, t_cursor **cursor, t_fl fl)
 {
 	int		key;
 
-	if (viz->state == 1)
+	if (viz->pause == 0)
 	{
+		viz->pause = 1;
 		nc_right_print(viz, info);
-		viz->state = 0;
 		wrefresh(viz->stat);
 	}
 	key = getch();
-	if (key == 'q' && viz->limit > 10)
-		viz->limit -= 10;
-	else if (key == 'w' && viz->limit > 1)
-		viz->limit--;
-	else if (key == 'e' && viz->limit < 1000)
-		viz->limit++;
-	else if (key == 'r' && viz->limit < 989)
-		viz->limit += 10;
+	if (key == 'q' || key == 'w' || key == 'e' || key == 'r')
+		nc_qwer(key, info, viz);
+	else if (key == ' ')
+		nc_next_step(viz, info, map, cursor, fl);
 	else if (key == 27)
 		nc_offline(viz);
-	nc_right_print(viz, info);
-	wrefresh(viz->stat);
-	nc_wait(viz, info);
+//	nc_right_print(viz, info);
+//	wrefresh(viz->stat);
+	nc_wait(viz, info, map, cursor, fl);
 }
 
 void	nc_right_print(t_vizor *viz, t_info *info)
 {
-	mvwprintw(viz->stat, 3, 3, "Cycle/second limit : %4d", viz->limit);
-	mvwprintw(viz->stat, 6, 3, "Cycle : %d", info->total_cycles);
-	mvwprintw(viz->stat, 9, 3, "Processes : %d", viz->proc);
-	mvwprintw(viz->stat, 12, 3, "CYCLE_TO_DIE : %d", info->die);
-	mvwprintw(viz->stat, 15, 3, "CYCLE_DELTA : %d", info->checks);
-	mvwprintw(viz->stat, 18, 3, "NBR_LIVE : %d", viz->proc);
-	mvwprintw(viz->stat, 21, 3, "MAX_CHECKS : %d", info->checks);
+	wattron(viz->stat, COLOR_PAIR(5));
+	wattron(viz->stat, A_BOLD);
+	if (viz->pause == 1)
+		mvwprintw(viz->stat, 3, 5, "** PAUSED  **");
+	else
+		mvwprintw(viz->stat, 3, 5, "** RUNNING **");
+	mvwprintw(viz->stat, 6, 4, "Cycle/second limit : %4d", info->cycles_limit);
+	mvwprintw(viz->stat, 9, 4, "Cycle : %d", info->total_cycles);
+	mvwprintw(viz->stat, 12, 4, "Processes : %d", info->count_cursor);
+	mvwprintw(viz->stat, 15, 4, "CYCLE_TO_DIE : %d", info->die);
+	mvwprintw(viz->stat, 18, 4, "CYCLE_DELTA : %d", CYCLE_DELTA);
+	mvwprintw(viz->stat, 21, 4, "NBR_LIVE : %d", NBR_LIVE);
+	mvwprintw(viz->stat, 24, 4, "MAX_CHECKS : %d", MAX_CHECKS);
 }
 
 void	nc_check_window(void)
