@@ -82,7 +82,7 @@ int				code_ind(t_tokens *tokens, t_str_tokens *input,
 	if (tokens->current_str_piece[0] == ':')
 	{
 		if (valid_label(
-		tokens->current_str_piece + 2, start_of_list) == ERROR)
+		tokens->current_str_piece + 1, start_of_list) == ERROR)
 			return (error_messege(input, tokens, g_position));
 		res = position_of_label(
 		tokens->current_str_piece + 1, input, start_of_list);
