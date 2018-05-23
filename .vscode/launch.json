@@ -9,7 +9,7 @@
 			"type": "cppdbg",
 			"request": "launch",
 			"program": "${workspaceFolder}/assembler/asm",
-			"args": [],
+			"args": ["/Users/dborysen/Downloads/corewar_all_versions/corewar_23_05/assembler/test1.s"],
 			"stopAtEntry": false,
 			"cwd": "${workspaceFolder}",
 			"environment": [],

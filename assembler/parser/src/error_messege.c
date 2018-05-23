@@ -83,13 +83,13 @@ int			error_messege_for_operation(t_str_tokens *input,
 	place_in_str = ft_strstr(input->current_str,
 		input_tokens->current_str_piece) - input->current_str;
 	place_in_trimmed_str = ft_strstr(str_trim,
-		input_tokens->current_str_piece) - input->current_str;
+		input_tokens->current_str_piece) - str_trim;
 	copy_str = arrow_in_str(str_trim, place_in_trimmed_str);
 	if (ft_strlen(input_tokens->current_str_piece) == 0)
 		input_tokens->current_str_piece = 0;
 	ft_printf("\n\e[1;31mINVALID INSTRUCTION: \e[0m");
 	ft_printf("\e[1;37mat [%d:%d]\n", index, place_in_str);
-	ft_printf("\t%s\e[0m\n", input->current_str);
+	ft_printf("\t%s\e[0m\n", str_trim);
 	ft_printf("\t\e[1;36m%s\e[0m\n", copy_str);
 	ft_strdel(&copy_str);
 	ft_strdel(&str_trim);
