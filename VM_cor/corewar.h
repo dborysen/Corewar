@@ -6,7 +6,7 @@
 /*   By: ssavchen <ssavchen@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/23 13:22:27 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/23 18:28:18 by ssavchen         ###   ########.fr       */
+/*   Updated: 2018/05/24 13:50:41 by ssavchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 #include "libft/libft.h"
 #include "op.h"
 #include <ncurses.h>
+
 # define T_RRR 0b01010100
 # define T_RIR 0b01110100
 # define T_RDR 0b01100100

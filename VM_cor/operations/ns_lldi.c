@@ -149,37 +149,37 @@ void	lldi_ddr(t_cursor **cur, t_map *m_map)
 }
 void	ns_lldi(t_cursor **cur, t_map *m_map)
 {
-	if (m_map->map[((*cur)->index_pos + 1) % MEM_SIZE] == T_RRR)
+	if ((m_map->map[((*cur)->index_pos + 1) % MEM_SIZE] & T_RRR) == T_RRR)
 	{
 //		if ((*cur)->index_pos == 314)
 //			ft_printf("LLDI = RRR\n");
 		lldi_rrr(cur, m_map);
 	}
-	else if (m_map->map[((*cur)->index_pos + 1) % MEM_SIZE] == T_RDR)
+	else if ((m_map->map[((*cur)->index_pos + 1) % MEM_SIZE] & T_RDR) == T_RDR)
 	{
 //		if ((*cur)->index_pos == 314)
 //			ft_printf("LLDI = RDR\n");
 		lldi_rdr(cur, m_map);
 	}
-	else if (m_map->map[((*cur)->index_pos + 1) % MEM_SIZE] == T_DRR)
+	else if ((m_map->map[((*cur)->index_pos + 1) % MEM_SIZE] & T_DRR) == T_DRR)
 	{
 //		if ((*cur)->index_pos == 314)
 //			ft_printf("LLDI = DRR\n");
 		lldi_drr(cur, m_map);
 	}
-	else if (m_map->map[((*cur)->index_pos + 1) % MEM_SIZE] == T_IRR)
+	else if ((m_map->map[((*cur)->index_pos + 1) % MEM_SIZE] & T_IRR) == T_IRR)
 	{
 //		if ((*cur)->index_pos == 314)
 //			ft_printf("LLDI = IRR\n");
 		lldi_irr(cur, m_map);
 	}
-	else if (m_map->map[((*cur)->index_pos + 1) % MEM_SIZE] == T_IDR)
+	else if ((m_map->map[((*cur)->index_pos + 1) % MEM_SIZE] & T_IDR) == T_IDR)
 	{
 //		if ((*cur)->index_pos == 314)
 //			ft_printf("LLDI = IDR\n");
 		lldi_idr(cur, m_map);
 	}
-	else if (m_map->map[((*cur)->index_pos + 1) % MEM_SIZE] == T_DDR)
+	else if ((m_map->map[((*cur)->index_pos + 1) % MEM_SIZE] & T_DDR) == T_DDR)
 	{
 //		if ((*cur)->index_pos == 314)
 //			ft_printf("LLDI = DDR\n");

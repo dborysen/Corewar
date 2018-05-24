@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ns_add.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
+/*   By: ssavchen <ssavchen@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/04 15:58:01 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/08 16:45:17 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/24 13:35:22 by ssavchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void	ns_add(t_cursor **cur, t_map *m_map)
 	t_reg		reg;
 
 	temp = *cur;
-	if (m_map->map[(temp->index_pos + 1 ) % MEM_SIZE] == T_RRR)
+	if ((m_map->map[(temp->index_pos + 1 ) % MEM_SIZE] & T_RRR) == T_RRR)
 	{
 		reg.r1 = m_map->map[(temp->index_pos + 2) % MEM_SIZE];
 		reg.r2 = m_map->map[(temp->index_pos + 3) % MEM_SIZE];
