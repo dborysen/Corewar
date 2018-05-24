@@ -60,7 +60,7 @@ void	ns_lld(t_cursor **cur, t_map *m_map)
 	temp = *cur;
 	str = NULL;
 	ns_zero_reg(&reg);
-	if (m_map->map[(temp->index_pos + 1) % MEM_SIZE] == T_DR)
+	if ((m_map->map[(temp->index_pos + 1) % MEM_SIZE] & T_DR) == T_DR)
 	{
 //		ft_printf("LLD = DR\n");
 		reg.r1 = m_map->map[(temp->index_pos + 6) % MEM_SIZE];
@@ -74,7 +74,7 @@ void	ns_lld(t_cursor **cur, t_map *m_map)
 		}
 		temp->index_pos += 7;
 	}
-	else if (m_map->map[(temp->index_pos + 1) % MEM_SIZE] == T_IR)
+	else if ((m_map->map[(temp->index_pos + 1) % MEM_SIZE] & T_IR) == T_IR)
 		ns_lld2(cur, m_map, reg, str);
 	else
 		temp->index_pos += ns_step_wrong_codage(m_map->map[(temp->index_pos + 1) % MEM_SIZE]);
