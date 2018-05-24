@@ -107,8 +107,6 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/myprosku/corTwar/VM_cor/libft/unsigned_itoa.c" "/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles/VM_cor.dir/libft/unsigned_itoa.c.o"
   "/Users/myprosku/corTwar/VM_cor/libft/zero_flags.c" "/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles/VM_cor.dir/libft/zero_flags.c.o"
   "/Users/myprosku/corTwar/VM_cor/main.c" "/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles/VM_cor.dir/main.c.o"
-  "/Users/myprosku/corTwar/VM_cor/ncurses/first.c" "/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles/VM_cor.dir/ncurses/first.c.o"
-  "/Users/myprosku/corTwar/VM_cor/ncurses/second.c" "/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles/VM_cor.dir/ncurses/second.c.o"
   "/Users/myprosku/corTwar/VM_cor/ns_additional_func.c" "/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles/VM_cor.dir/ns_additional_func.c.o"
   "/Users/myprosku/corTwar/VM_cor/ns_additional_func2.c" "/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles/VM_cor.dir/ns_additional_func2.c.o"
   "/Users/myprosku/corTwar/VM_cor/ns_cursor_create.c" "/Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles/VM_cor.dir/ns_cursor_create.c.o"

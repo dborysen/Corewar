@@ -6,7 +6,7 @@
 /*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/10 13:35:15 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/23 16:35:22 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/24 14:30:50 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -130,16 +130,12 @@ void	ldi_ddr(t_cursor **cur, t_map *m_map)
 	temp = *cur;
 	str = NULL;
 	reg.r3 = m_map->map[(temp->index_pos + 6) % MEM_SIZE];
-//	ft_printf("reg = %d : ", reg.r3);
 	if (ns_check_register(1, 1, reg.r3))
 	{
 		reg.dir = ns_two_bytes(m_map, temp->index_pos + 2, temp->index_pos + 3);
-//		ft_printf("dir = %hd : ", reg.dir);
 		reg.dir2 = ns_two_bytes(m_map, temp->index_pos + 4, temp->index_pos + 5);
-//		ft_printf("dir2 = %hd : ", reg.dir2);
 		str = find_fbytes_tind(m_map, (temp->index_pos + ((reg.dir + reg.dir2) % IDX_MOD)));
 		reg.index = unsigned_char_to_int(str);
-//		ft_printf("index = %d\n", reg.index);
 		temp->registr[reg.r3] = reg.index;
 	}
 	temp->index_pos += 7;
@@ -148,48 +144,20 @@ void	ldi_ddr(t_cursor **cur, t_map *m_map)
 
 void	ns_ldi(t_cursor **cur, t_map *m_map)
 {
-	if ((m_map->map[((*cur)->index_pos + 1) % MEM_SIZE] & T_RRR) == T_RRR)
-	{
-//		if ((*cur)->index_pos == 206)
-//			ft_printf("LDI = RRR\n");
+	if ((m_map->map[((*cur)->index_pos + 1) % MEM_SIZE] >> 2) == T_RRR)
 		ldi_rrr(cur, m_map);
-	}
-	else if ((m_map->map[((*cur)->index_pos + 1) % MEM_SIZE] & T_RDR) == T_RDR)
-	{
-//		if ((*cur)->index_pos == 206)
-//			ft_printf("LDI = RDR\n");
+	else if ((m_map->map[((*cur)->index_pos + 1) % MEM_SIZE] >> 2) == T_RDR)
 		ldi_rdr(cur, m_map);
-	}
-	else if ((m_map->map[((*cur)->index_pos + 1) % MEM_SIZE] & T_DRR) == T_DRR)
-	{
-//		if ((*cur)->index_pos == 206)
-//			ft_printf("LDI = DRR\n");
+	else if ((m_map->map[((*cur)->index_pos + 1) % MEM_SIZE] >> 2) == T_DRR)
 		ldi_drr(cur, m_map);
-	}
-	else if ((m_map->map[((*cur)->index_pos + 1) % MEM_SIZE] & T_IRR) == T_IRR)
-	{
-//		if ((*cur)->index_pos == 206)
-//			ft_printf("LDI = IRR\n");
+	else if ((m_map->map[((*cur)->index_pos + 1) % MEM_SIZE] >> 2) == T_IRR)
 		ldi_irr(cur, m_map);
-	}
-	else if ((m_map->map[((*cur)->index_pos + 1) % MEM_SIZE] & T_IDR) == T_IDR)
-	{
-//		if ((*cur)->index_pos == 206)
-//			ft_printf("LDI = IDR\n");
+	else if ((m_map->map[((*cur)->index_pos + 1) % MEM_SIZE] >> 2) == T_IDR)
 		ldi_idr(cur, m_map);
-	}
-	else if ((m_map->map[((*cur)->index_pos + 1) % MEM_SIZE] & T_DDR) == T_DDR)
-	{
-//		if ((*cur)->index_pos == 206)
-//			ft_printf("LDI = DDR\n");
+	else if ((m_map->map[((*cur)->index_pos + 1) % MEM_SIZE] >> 2) == T_DDR)
 		ldi_ddr(cur, m_map);
-	}
 	else
-	{
-//		if ((*cur)->index_pos == 206)
-//			ft_printf("LDI = ELSE\n");
 		(*cur)->index_pos += ns_step_wrong_codage(m_map->map[((*cur)->index_pos + 1) % MEM_SIZE]);
-	}
 }
 
 

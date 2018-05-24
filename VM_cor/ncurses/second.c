@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   second.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ssavchen <ssavchen@student.unit.ua>        +#+  +:+       +#+        */
+/*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/17 16:24:34 by ssavchen          #+#    #+#             */
-/*   Updated: 2018/05/23 17:14:27 by ssavchen         ###   ########.fr       */
+/*   Updated: 2018/05/24 18:12:12 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@ void	nc_next_step(t_vizor *viz, t_info *info, t_map *map, t_cursor **cursor, t_f
 		nc_print_all(*map, viz, info);
 	}
 	nc_winner(viz, info);
-	timeout(50000);
+	timeout(-1);
 	if ((key = getch()) == 27)
 		nc_offline(viz);
 }

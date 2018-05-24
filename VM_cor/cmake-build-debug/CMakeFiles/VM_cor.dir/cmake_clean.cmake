@@ -124,8 +124,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/VM_cor.dir/ns_additional_func2.c.o"
   "CMakeFiles/VM_cor.dir/ns_save_fch.c.o"
   "CMakeFiles/VM_cor.dir/operations/ns_fork.c.o"
-  "CMakeFiles/VM_cor.dir/ncurses/first.c.o"
-  "CMakeFiles/VM_cor.dir/ncurses/second.c.o"
   "VM_cor.pdb"
   "VM_cor"
 )

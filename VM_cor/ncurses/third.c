@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   third.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ssavchen <ssavchen@student.unit.ua>        +#+  +:+       +#+        */
+/*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/21 15:46:57 by ssavchen          #+#    #+#             */
-/*   Updated: 2018/05/23 17:46:36 by ssavchen         ###   ########.fr       */
+/*   Updated: 2018/05/24 18:16:43 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,20 +48,21 @@ void		clear_map(t_cursor *cur, t_map **map)
 {
 	while (cur)
 	{
-		if ((*map)->color[cur->before_pos] >= 6 && (*map)->color[cur->before_pos] <= 9)
-			(*map)->color[cur->before_pos] = cur->color - 5;
-		else if ((*map)->color[cur->before_pos] == 10)
-			(*map)->color[cur->before_pos] = 5;
+		if ((*map)->color[cur->before_pos % MEM_SIZE] >= 6 && (*map)->color[cur->before_pos % MEM_SIZE] <= 9)
+			(*map)->color[cur->before_pos % MEM_SIZE] = cur->color - 5;
+		else if ((*map)->color[cur->before_pos % MEM_SIZE] == 10)
+			(*map)->color[cur->before_pos % MEM_SIZE] = 5;
 		cur = cur->next;
 	}
 }
 
 t_cursor	**nc_game_start(t_cursor **cursor, t_map **m_map, t_info *info, t_fl fl)
 {
-	t_cursor *temp;
-	t_map		*map_t;
+	t_cursor	*temp;
+	t_map 		*map_t;
 
 	map_t = *m_map;
+	(void)fl;
 	temp = *cursor;
 	clear_map(temp, m_map);
 	info->winner_name = (*cursor)->champ->champ_name;

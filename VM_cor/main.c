@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ssavchen <ssavchen@student.unit.ua>        +#+  +:+       +#+        */
+/*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/23 13:20:36 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/23 18:26:32 by ssavchen         ###   ########.fr       */
+/*   Updated: 2018/05/24 18:27:50 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void	del_champ(t_champion **champ)
 	t_champion *del;
 
 	temp = *champ;
-	while (temp->next)
+	while (temp)
 	{
 		del = temp;
 		temp = temp->next;
@@ -62,21 +62,20 @@ int			main(int ac, char **av)
 	ns_position_start(&champ);
 	ns_fill_map(champ, &map);
 	ns_create_cursor(&cursor, champ);
+	if (!flags.v)
+		ns_dump_flag(champ);
 	ns_reverse_cursor(&cursor);
+	ns_reverse_champ(&champ);
+	info.champion = champ;
 	info.count_cursor = ns_count_cursor(cursor);
 	map.d = flags.d;
+	map.v = flags.v;
 	if (flags.d)
-	{
-		ns_dump_flag(champ);
 		cursor = game_start_dump(&cursor, &map, &info, flags);
-	}
-	else if (flags.v)
-		ns_ncurses(&map, &info, &cursor, flags);
+//	else if (flags.v)
+//		ns_ncurses(&map, &info, &cursor, flags);
 	else
-	{
-		ns_dump_flag(champ);
 		cursor = game_start(&cursor, &map, &info);
-	}
 //	ns_ncurses(map, &info);
 //	ns_print_map(map);
 //	while (cursor)

@@ -6,7 +6,7 @@
 /*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/13 13:32:00 by ssavchen          #+#    #+#             */
-/*   Updated: 2018/05/23 17:09:00 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/24 14:48:28 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,6 +38,7 @@ t_cursor	*ns_copy_cursor(t_cursor *tmp, short index, int n)
 	head->carry = tmp->carry;
 	head->champ = tmp->champ;
 	head->color = tmp->color;
+	head->before_pos = tmp->before_pos;
 	if (n == 1)
 	{
 		head->index_pos = tmp->index_pos + index % IDX_MOD;

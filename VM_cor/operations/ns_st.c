@@ -6,7 +6,7 @@
 /*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/07 15:38:50 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/21 16:59:11 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/24 16:17:39 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,14 +42,14 @@ void	ns_st(t_cursor **cur, t_map *m_map)
 
 	temp = *cur;
 	reg.r1 = m_map->map[(temp->index_pos + 2) % MEM_SIZE];
-	if ((m_map->map[(temp->index_pos + 1) % MEM_SIZE] & T_RR) == T_RR)
+	if ((m_map->map[(temp->index_pos + 1) % MEM_SIZE] >> 4) == T_RR)
 	{
 		reg.r2 = m_map->map[(temp->index_pos + 3) % MEM_SIZE];
 		if (ns_check_register(reg.r1, reg.r2, 1))
 			temp->registr[reg.r2] = temp->registr[reg.r1];
 		temp->index_pos += 4;
 	}
-	else if ((m_map->map[(temp->index_pos + 1) % MEM_SIZE] & T_RI) == T_RI)
+	else if ((m_map->map[(temp->index_pos + 1) % MEM_SIZE] >> 4) == T_RI)
 	{
 		if (ns_check_register(reg.r1, 1, 1))
 			set_on_map(&m_map, temp, reg);

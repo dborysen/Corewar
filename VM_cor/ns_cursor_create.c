@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ns_cursor_create.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ssavchen <ssavchen@student.unit.ua>        +#+  +:+       +#+        */
+/*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/02 15:09:56 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/23 18:22:35 by ssavchen         ###   ########.fr       */
+/*   Updated: 2018/05/24 18:27:31 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,8 +32,8 @@ void		ns_create_cursor(t_cursor **cursor, t_champion *champ)
 		temp->commad = 0;
 		temp->next = (t_cursor *)malloc(sizeof(t_cursor));
 		temp->registr[1] = -temp->nbr_player;
-		temp->champ = champ;
 		temp->color = champ->color + 5;
+		temp->champ = champ;
 		temp = temp->next;
 		champ = champ->next;
 	}
@@ -55,6 +55,24 @@ void		ns_reverse_cursor(t_cursor **cursor)
 		current = next;
 	}
 	*cursor = prev;
+}
+
+void		ns_reverse_champ(t_champion **champ)
+{
+	t_champion *prev;
+	t_champion *current;
+	t_champion *next;
+
+	prev = NULL;
+	current = *champ;
+	while (current->next)
+	{
+		next = current->next;
+		current->next = prev;
+		prev = current;
+		current = next;
+	}
+	*champ = prev;
 }
 
 void	ns_create_cycle(t_cursor **cursor, t_map *m_map)
@@ -81,6 +99,34 @@ void	ns_create_cycle(t_cursor **cursor, t_map *m_map)
 		}
 		temp = temp->next;
 	}
+}
+
+int			check_id_playe(int id, t_info *info)
+{
+	t_champion *temp;
+
+	temp = info->champion;
+	while (temp)
+	{
+		if (id == temp->id)
+			return (1);
+		temp = temp->next;
+	}
+	return (0);
+}
+
+char		*find_name_id(int id, t_info *info)
+{
+	t_champion *temp;
+
+	temp = info->champion;
+	while (temp)
+	{
+		if (id == temp->id)
+			return (temp->champ_name);
+		temp = temp->next;
+	}
+	return (NULL);
 }
 
 t_cursor	*ns_move_cursor(t_cursor **cursor, t_map *map, t_info **info)
@@ -112,11 +158,15 @@ t_cursor	*ns_move_cursor(t_cursor **cursor, t_map *map, t_info **info)
 			}
 			else
 				(*g_func[temp->commad - 1])(&temp, map);
-			if (temp->champ->life == 1)
+			if (check_id_playe(temp->champ_nbr, *info))
 			{
-				(*info)->winner_nbr = temp->champ->id;
-				(*info)->winner_name = temp->champ->champ_name;
+				if (!map->d && !map->v)
+					ft_printf("A process shows that player %d (%s) is alive\n",
+							  temp->champ_nbr, find_name_id(temp->champ_nbr, *info));
+				(*info)->winner_nbr = temp->champ_nbr;
+				(*info)->winner_name = find_name_id(temp->champ_nbr, *info);
 			}
+			temp->champ_nbr = 0;
 			temp->commad = 0;
 			temp->wait_cycle = 0;
 		}
@@ -125,6 +175,8 @@ t_cursor	*ns_move_cursor(t_cursor **cursor, t_map *map, t_info **info)
 		}
 		else
 			temp->index_pos++;
+		temp->index_pos = temp->index_pos < 0 ? temp->index_pos + MEM_SIZE :
+						  temp->index_pos % MEM_SIZE;
 		temp = temp->next;
 	}
 	return (*cursor);
@@ -134,8 +186,8 @@ t_cursor	*game_start_dump(t_cursor **cursor, t_map *m_map, t_info *info, t_fl fl
 {
 	t_cursor *temp;
 
-	info->winner_nbr = (*cursor)->champ->id;
-	info->winner_name = (*cursor)->champ->champ_name;
+	info->winner_nbr = info->champion->id;
+	info->winner_name = info->champion->champ_name;
 	while (fl.dump > 0 && info->end_game == 0)
 	{
 		temp = *cursor;
@@ -152,6 +204,8 @@ t_cursor	*game_start_dump(t_cursor **cursor, t_map *m_map, t_info *info, t_fl fl
 	}
 	if (fl.dump == 0)
 		ns_print_map(*m_map);
+	if (info->end_game == 1)
+		ft_printf("Player %d, (\"%s\") has won !!\n", info->winner_nbr, info->winner_name);
 	return (*cursor);
 }
 
@@ -159,8 +213,8 @@ t_cursor	*game_start(t_cursor **cursor, t_map *m_map, t_info *info)
 {
 	t_cursor *temp;
 
-	info->winner_nbr = (*cursor)->champ->id;
-	info->winner_name = (*cursor)->champ->champ_name;
+	info->winner_nbr = info->champion->id;
+	info->winner_name = info->champion->champ_name;
 	while (info->end_game == 0)
 	{
 		temp = *cursor;
@@ -174,6 +228,7 @@ t_cursor	*game_start(t_cursor **cursor, t_map *m_map, t_info *info)
 			info->cycles = 0;
 		}
 	}
+	ft_printf("Player %d, (\"%s\") has won !!\n", info->winner_nbr, info->winner_name);
 	return (*cursor);
 }
 

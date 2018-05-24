@@ -49,15 +49,11 @@ void	set_on_map_rdr(t_map **map, t_cursor *temp, t_reg reg)
 	map_t = *map;
 	i = 0;
 	reg.r3 = map_t->map[(temp->index_pos + 5) % MEM_SIZE];
-//	ft_printf("reg = %d : ", reg.r3);
-//	ft_printf("temp_reg = %d : ", temp->registr[reg.r3]);
 	if (ns_check_register(1, 1, reg.r3))
 	{
 		reg.dir = ns_two_bytes(map_t, temp->index_pos + 3, temp->index_pos + 4);
-//		ft_printf("dir = %hd : ", reg.dir);
 		str = int_to_char(temp->registr[reg.r1]);
 		reg.index = temp->index_pos + ((reg.dir + temp->registr[reg.r3]) % IDX_MOD);
-//		ft_printf("index = %d\n", reg.index);
 		reg.index = reg.index < 0 ? reg.index + MEM_SIZE : reg.index % MEM_SIZE;
 		while (i < 4)
 		{
@@ -158,42 +154,32 @@ void	ns_sti(t_cursor **cur, t_map *m_map)
 
 	temp = *cur;
 	reg.r1 = m_map->map[(temp->index_pos + 2) % MEM_SIZE];
-	if ((m_map->map[(temp->index_pos + 1) % MEM_SIZE] & T_RRR) == T_RRR)
+	if ((m_map->map[(temp->index_pos + 1) % MEM_SIZE] >> 2) == T_RRR)
 	{
-//		if (temp->index_pos == 18)
-//			ft_printf("STI = RRR\n");
 		if (ns_check_register(reg.r1, 1, 1))
 			set_on_map_rrr(&m_map, *cur, reg);
 		temp->index_pos += 5;
 	}
-	else if ((m_map->map[(temp->index_pos + 1) % MEM_SIZE] & T_RDR) == T_RDR)
+	else if ((m_map->map[(temp->index_pos + 1) % MEM_SIZE] >> 2) == T_RDR)
 	{
-//		if (temp->index_pos == 18)
-//			ft_printf("STI = RDR\n");
 		if (ns_check_register(reg.r1, 1, 1))
 			set_on_map_rdr(&m_map, *cur, reg);
 		temp->index_pos += 6;
 	}
-	else if ((m_map->map[(temp->index_pos + 1) % MEM_SIZE] & T_RDD) == T_RDD)
+	else if ((m_map->map[(temp->index_pos + 1) % MEM_SIZE] >> 2) == T_RDD)
 	{
-//		if (temp->index_pos == 18)
-//			ft_printf("STI = RDD\n");
 		if (ns_check_register(reg.r1, 1, 1))
 			set_on_map_rdd(&m_map, *cur, reg);
 		temp->index_pos += 7;
 	}
-	else if ((m_map->map[(temp->index_pos + 1) % MEM_SIZE] & T_RID) == T_RID)
+	else if ((m_map->map[(temp->index_pos + 1) % MEM_SIZE] >> 2) == T_RID)
 	{
-//		if (temp->index_pos == 18)
-//			ft_printf("STI = RID\n");
 		if (ns_check_register(reg.r1, 1, 1))
 			set_on_map_rid(&m_map, *cur, reg);
 		temp->index_pos += 7;
 	}
-	else if ((m_map->map[(temp->index_pos + 1) % MEM_SIZE] & T_RIR) == T_RIR)
+	else if ((m_map->map[(temp->index_pos + 1) % MEM_SIZE] >> 2) == T_RIR)
 	{
-//		if (temp->index_pos == 18)
-//			ft_printf("STI = RIR\n");
 		if (ns_check_register(reg.r1, 1, 1))
 			set_on_map_rir(&m_map, *cur, reg);
 		temp->index_pos += 6;

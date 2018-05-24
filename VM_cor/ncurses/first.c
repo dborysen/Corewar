@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   first.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ssavchen <ssavchen@student.unit.ua>        +#+  +:+       +#+        */
+/*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/17 12:03:59 by ssavchen          #+#    #+#             */
-/*   Updated: 2018/05/23 17:34:49 by ssavchen         ###   ########.fr       */
+/*   Updated: 2018/05/24 18:11:22 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,12 +16,12 @@ void	nc_create_viz(t_vizor *viz)
 {
 	int		height;
 	int		width;
+
 	viz->limit = 50;
 	viz->cycle = 1;
 	viz->proc = 1;
 	viz->state = 1;
 	viz->pause = 1;
-
 	height = 74;
 	width = 260;
 	viz->ful = newwin(height, width, 0, 0);
@@ -114,9 +114,5 @@ void	ns_ncurses(t_map *map, t_info *info, t_cursor **cursor, t_fl fl)
 	wrefresh(viz.ful);
 	wrefresh(viz.map);
 	wrefresh(viz.stat);
-//	nc_next_step(&viz, info, map, cursor, fl);
-//	nc_print_map(*map, viz, viz.map);
-//	wrefresh(viz.map);
-//	getch();
 	nc_wait(&viz, info, map, cursor, fl);
 }

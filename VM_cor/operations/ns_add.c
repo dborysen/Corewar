@@ -18,7 +18,7 @@ void	ns_add(t_cursor **cur, t_map *m_map)
 	t_reg		reg;
 
 	temp = *cur;
-	if ((m_map->map[(temp->index_pos + 1 ) % MEM_SIZE] & T_RRR) == T_RRR)
+	if ((m_map->map[(temp->index_pos + 1 ) % MEM_SIZE] >> 2) == T_RRR)
 	{
 		reg.r1 = m_map->map[(temp->index_pos + 2) % MEM_SIZE];
 		reg.r2 = m_map->map[(temp->index_pos + 3) % MEM_SIZE];

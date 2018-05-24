@@ -17,23 +17,23 @@
 
 void	ns_and(t_cursor **cur, t_map *m_map)
 {
-	if ((m_map->map[((*cur)->index_pos + 1) % MEM_SIZE] & T_RRR) == T_RRR)
+	if ((m_map->map[((*cur)->index_pos + 1) % MEM_SIZE] >> 2) == T_RRR)
 		ns_rrr_and(cur, m_map);
-	else if ((m_map->map[((*cur)->index_pos + 1) % MEM_SIZE] & T_RDR) == T_RDR)
+	else if ((m_map->map[((*cur)->index_pos + 1) % MEM_SIZE] >> 2) == T_RDR)
 		ns_rdr_and(cur, m_map);
-	else if ((m_map->map[((*cur)->index_pos + 1) % MEM_SIZE] & T_RIR) == T_RIR)
+	else if ((m_map->map[((*cur)->index_pos + 1) % MEM_SIZE] >> 2) == T_RIR)
 		ns_rir_and(cur, m_map);
-	else if ((m_map->map[((*cur)->index_pos + 1) % MEM_SIZE] & T_DRR) == T_DRR)
+	else if ((m_map->map[((*cur)->index_pos + 1) % MEM_SIZE] >> 2) == T_DRR)
 		ns_drr_and(cur, m_map);
-	else if ((m_map->map[((*cur)->index_pos + 1) % MEM_SIZE] & T_DDR) == T_DDR)
+	else if ((m_map->map[((*cur)->index_pos + 1) % MEM_SIZE] >> 2) == T_DDR)
 		ns_ddr_and(cur, m_map);
-	else if ((m_map->map[((*cur)->index_pos + 1) % MEM_SIZE] & t_DIR) == t_DIR)
+	else if ((m_map->map[((*cur)->index_pos + 1) % MEM_SIZE] >> 2) == t_DIR)
 		ns_dir_and(cur, m_map);
-	else if ((m_map->map[((*cur)->index_pos + 1) % MEM_SIZE] & T_IRR) == T_IRR)
+	else if ((m_map->map[((*cur)->index_pos + 1) % MEM_SIZE] >> 2) == T_IRR)
 		ns_irr_and(cur, m_map);
-	else if ((m_map->map[((*cur)->index_pos + 1) % MEM_SIZE] & T_IDR) == T_IDR)
+	else if ((m_map->map[((*cur)->index_pos + 1) % MEM_SIZE] >> 2) == T_IDR)
 		ns_idr_and(cur, m_map);
-	else if ((m_map->map[((*cur)->index_pos + 1) % MEM_SIZE] & T_IIR) == T_IIR)
+	else if ((m_map->map[((*cur)->index_pos + 1) % MEM_SIZE] >> 2) == T_IIR)
 		ns_iir_and(cur, m_map);
 	else
 		(*cur)->index_pos += ns_step_wrong_codage(m_map->map[((*cur)->index_pos + 1) % MEM_SIZE]);

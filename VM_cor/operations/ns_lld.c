@@ -38,7 +38,6 @@ void	ns_lld2(t_cursor **cur, t_map *m_map, t_reg reg, unsigned char *str)
 
 	temp = *cur;
 	reg.r1 = m_map->map[(temp->index_pos + 4) % MEM_SIZE];
-//	ft_printf("LLD = IR\n");
 	if (ns_check_register(reg.r1, 1, 1))
 	{
 		reg.index = ns_two_bytes(m_map, temp->index_pos + 2, temp->index_pos + 3);
@@ -60,11 +59,9 @@ void	ns_lld(t_cursor **cur, t_map *m_map)
 	temp = *cur;
 	str = NULL;
 	ns_zero_reg(&reg);
-	if ((m_map->map[(temp->index_pos + 1) % MEM_SIZE] & T_DR) == T_DR)
+	if ((m_map->map[(temp->index_pos + 1) % MEM_SIZE] >> 4) == T_DR)
 	{
-//		ft_printf("LLD = DR\n");
 		reg.r1 = m_map->map[(temp->index_pos + 6) % MEM_SIZE];
-//		ft_printf("reg = %d\n", reg.r1);
 		if (ns_check_register(reg.r1, 1, 1))
 		{
 			str = find_fbytes_tind(m_map, temp->index_pos + 2);
@@ -74,7 +71,7 @@ void	ns_lld(t_cursor **cur, t_map *m_map)
 		}
 		temp->index_pos += 7;
 	}
-	else if ((m_map->map[(temp->index_pos + 1) % MEM_SIZE] & T_IR) == T_IR)
+	else if ((m_map->map[(temp->index_pos + 1) % MEM_SIZE] >> 4) == T_IR)
 		ns_lld2(cur, m_map, reg, str);
 	else
 		temp->index_pos += ns_step_wrong_codage(m_map->map[(temp->index_pos + 1) % MEM_SIZE]);

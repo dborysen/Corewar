@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   corewar.h                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ssavchen <ssavchen@student.unit.ua>        +#+  +:+       +#+        */
+/*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/23 13:22:27 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/24 14:02:55 by ssavchen         ###   ########.fr       */
+/*   Updated: 2018/05/24 17:44:38 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,21 +18,21 @@
 #include "op.h"
 #include <ncurses.h>
 
-# define T_RRR 0b01010100
-# define T_RIR 0b01110100
-# define T_RDR 0b01100100
-# define T_IRR 0b11010100
-# define T_IIR 0b11110100
-# define T_IDR 0b11100100
-# define T_DRR 0b10010100
-# define t_DIR 0b10110100
-# define T_DDR 0b10100100
-# define T_RDD 0b01101000
-# define T_RID 0b01111000
-# define T_IR 0b11010000
-# define T_DR 0b10010000
-# define T_RI 0b01110000
-# define T_RR 0b01010000
+# define T_RRR 0b010101
+# define T_RIR 0b011101
+# define T_RDR 0b011001
+# define T_IRR 0b110101
+# define T_IIR 0b111101
+# define T_IDR 0b111001
+# define T_DRR 0b100101
+# define t_DIR 0b101101
+# define T_DDR 0b101001
+# define T_RDD 0b011010
+# define T_RID 0b011110
+# define T_IR 0b1101
+# define T_DR 0b1001
+# define T_RI 0b0111
+# define T_RR 0b0101
 
 static const	t_op    g_op_tab[17] =
 {
@@ -102,6 +102,7 @@ typedef struct			s_map
 	unsigned char 		map[MEM_SIZE];
 	int			 		color[MEM_SIZE];
 	int					d;
+	int					v;
 }						t_map;
 
 typedef struct			s_cursor
@@ -116,6 +117,7 @@ typedef struct			s_cursor
 	int 				registr[REG_NUMBER + 1];
 	int 				carry;
 	int 				color;
+	int 				champ_nbr;
 	t_champion			*champ;
 	struct s_cursor		*next;
 }						t_cursor;
@@ -132,6 +134,7 @@ typedef struct			s_info
 	int 				checks;
 	int 				die;
 	int 				end_game;
+	t_champion			*champion;
 }						t_info;
 
 typedef struct 			s_reg
@@ -177,6 +180,7 @@ void					ns_delete_nth(t_cursor **head, t_cursor *temp);
 short					ns_two_bytes(t_map *map, int pos1, int pos2);
 int 					ns_step_wrong_codage(int num);
 int						ns_count_cursor(t_cursor *temp);
+void					ns_reverse_champ(t_champion **champ);
 
 //Champ functions
 void					ns_add(t_cursor **cur, t_map *m_map);
@@ -237,8 +241,8 @@ void					ns_rdr_xor(t_cursor **cur, t_map *m_map);
 void					ns_rrr_xor(t_cursor **cur, t_map *m_map);
 
 
-void	ns_create_cycle(t_cursor **cursor, t_map *m_map);
-t_cursor	*ns_move_cursor(t_cursor **cursor, t_map *map, t_info **info);
+void					ns_create_cycle(t_cursor **cursor, t_map *m_map);
+t_cursor				*ns_move_cursor(t_cursor **cursor, t_map *map, t_info **info);
 
 void					ns_ncurses(t_map *map, t_info *info, t_cursor **cursor, t_fl fl);
 void					nc_right_print(t_vizor *viz, t_info *info);
