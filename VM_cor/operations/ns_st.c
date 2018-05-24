@@ -42,14 +42,14 @@ void	ns_st(t_cursor **cur, t_map *m_map)
 
 	temp = *cur;
 	reg.r1 = m_map->map[(temp->index_pos + 2) % MEM_SIZE];
-	if (m_map->map[(temp->index_pos + 1) % MEM_SIZE] == T_RR)
+	if ((m_map->map[(temp->index_pos + 1) % MEM_SIZE] & T_RR) == T_RR)
 	{
 		reg.r2 = m_map->map[(temp->index_pos + 3) % MEM_SIZE];
 		if (ns_check_register(reg.r1, reg.r2, 1))
 			temp->registr[reg.r2] = temp->registr[reg.r1];
 		temp->index_pos += 4;
 	}
-	else if (m_map->map[(temp->index_pos + 1) % MEM_SIZE] == T_RI)
+	else if ((m_map->map[(temp->index_pos + 1) % MEM_SIZE] & T_RI) == T_RI)
 	{
 		if (ns_check_register(reg.r1, 1, 1))
 			set_on_map(&m_map, temp, reg);

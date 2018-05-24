@@ -158,7 +158,7 @@ void	ns_sti(t_cursor **cur, t_map *m_map)
 
 	temp = *cur;
 	reg.r1 = m_map->map[(temp->index_pos + 2) % MEM_SIZE];
-	if (m_map->map[(temp->index_pos + 1) % MEM_SIZE] == T_RRR)
+	if ((m_map->map[(temp->index_pos + 1) % MEM_SIZE] & T_RRR) == T_RRR)
 	{
 //		if (temp->index_pos == 18)
 //			ft_printf("STI = RRR\n");
@@ -166,7 +166,7 @@ void	ns_sti(t_cursor **cur, t_map *m_map)
 			set_on_map_rrr(&m_map, *cur, reg);
 		temp->index_pos += 5;
 	}
-	else if (m_map->map[(temp->index_pos + 1) % MEM_SIZE] == T_RDR)
+	else if ((m_map->map[(temp->index_pos + 1) % MEM_SIZE] & T_RDR) == T_RDR)
 	{
 //		if (temp->index_pos == 18)
 //			ft_printf("STI = RDR\n");
@@ -174,7 +174,7 @@ void	ns_sti(t_cursor **cur, t_map *m_map)
 			set_on_map_rdr(&m_map, *cur, reg);
 		temp->index_pos += 6;
 	}
-	else if (m_map->map[(temp->index_pos + 1) % MEM_SIZE] == T_RDD)
+	else if ((m_map->map[(temp->index_pos + 1) % MEM_SIZE] & T_RDD) == T_RDD)
 	{
 //		if (temp->index_pos == 18)
 //			ft_printf("STI = RDD\n");
@@ -182,7 +182,7 @@ void	ns_sti(t_cursor **cur, t_map *m_map)
 			set_on_map_rdd(&m_map, *cur, reg);
 		temp->index_pos += 7;
 	}
-	else if (m_map->map[(temp->index_pos + 1) % MEM_SIZE] == T_RID)
+	else if ((m_map->map[(temp->index_pos + 1) % MEM_SIZE] & T_RID) == T_RID)
 	{
 //		if (temp->index_pos == 18)
 //			ft_printf("STI = RID\n");
@@ -190,7 +190,7 @@ void	ns_sti(t_cursor **cur, t_map *m_map)
 			set_on_map_rid(&m_map, *cur, reg);
 		temp->index_pos += 7;
 	}
-	else if (m_map->map[(temp->index_pos + 1) % MEM_SIZE] == T_RIR)
+	else if ((m_map->map[(temp->index_pos + 1) % MEM_SIZE] & T_RIR) == T_RIR)
 	{
 //		if (temp->index_pos == 18)
 //			ft_printf("STI = RIR\n");

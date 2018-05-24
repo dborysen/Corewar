@@ -17,23 +17,23 @@
 
 void	ns_xor(t_cursor **cur, t_map *m_map)
 {
-	if (m_map->map[((*cur)->index_pos + 1) % MEM_SIZE] == T_RRR)
+	if ((m_map->map[((*cur)->index_pos + 1) % MEM_SIZE] & T_RRR) == T_RRR)
 		ns_rrr_xor(cur, m_map);
-	else if (m_map->map[((*cur)->index_pos + 1) % MEM_SIZE] == T_RDR)
+	else if ((m_map->map[((*cur)->index_pos + 1) % MEM_SIZE] & T_RDR) == T_RDR)
 		ns_rdr_xor(cur, m_map);
-	else if (m_map->map[((*cur)->index_pos + 1) % MEM_SIZE] == T_RIR)
+	else if ((m_map->map[((*cur)->index_pos + 1) % MEM_SIZE] & T_RIR) == T_RIR)
 		ns_rir_xor(cur, m_map);
-	else if (m_map->map[((*cur)->index_pos + 1) % MEM_SIZE] == T_DRR)
+	else if ((m_map->map[((*cur)->index_pos + 1) % MEM_SIZE] & T_DRR) == T_DRR)
 		ns_drr_xor(cur, m_map);
-	else if (m_map->map[((*cur)->index_pos + 1) % MEM_SIZE] == T_DDR)
+	else if ((m_map->map[((*cur)->index_pos + 1) % MEM_SIZE] & T_DDR) == T_DDR)
 		ns_ddr_xor(cur, m_map);
-	else if (m_map->map[((*cur)->index_pos + 1) % MEM_SIZE] == t_DIR)
+	else if ((m_map->map[((*cur)->index_pos + 1) % MEM_SIZE] & t_DIR) == t_DIR)
 		ns_dir_xor(cur, m_map);
-	else if (m_map->map[((*cur)->index_pos + 1) % MEM_SIZE] == T_IRR)
+	else if ((m_map->map[((*cur)->index_pos + 1) % MEM_SIZE] & T_IRR) == T_IRR)
 		ns_irr_xor(cur, m_map);
-	else if (m_map->map[((*cur)->index_pos + 1) % MEM_SIZE] == T_IDR)
+	else if ((m_map->map[((*cur)->index_pos + 1) % MEM_SIZE] & T_IDR) == T_IDR)
 		ns_idr_xor(cur, m_map);
-	else if (m_map->map[((*cur)->index_pos + 1) % MEM_SIZE] == T_IIR)
+	else if ((m_map->map[((*cur)->index_pos + 1) % MEM_SIZE] & T_IIR) == T_IIR)
 		ns_iir_xor(cur, m_map);
 	else
 		(*cur)->index_pos += ns_step_wrong_codage(m_map->map[((*cur)->index_pos + 1) % MEM_SIZE]);
