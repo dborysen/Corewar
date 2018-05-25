@@ -6,7 +6,7 @@
 /*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/23 17:23:34 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/11 15:58:50 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/25 15:46:49 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,9 +63,9 @@ void	ns_save_comment(t_champion **champ, unsigned char *file_info)
 	temp->champ_comment[i] = '\0';
 }
 
-void 	ns_save_program_name(t_champion **champ, unsigned char *file_info)
+void	ns_save_program_name(t_champion **champ, unsigned char *file_info)
 {
-	int 		i;
+	int			i;
 	t_champion	*temp;
 
 	i = 0;
@@ -78,7 +78,8 @@ void 	ns_save_program_name(t_champion **champ, unsigned char *file_info)
 	temp->champ_name[i] = '\0';
 }
 
-void	ns_save_execute_code(t_champion **champ, unsigned char *file_info, int fd)
+void	ns_save_execute_code(t_champion **champ,
+							unsigned char *file_info, int fd)
 {
 	unsigned int	i;
 	t_champion		*temp;
@@ -92,7 +93,8 @@ void	ns_save_execute_code(t_champion **champ, unsigned char *file_info, int fd)
 	temp->exec_code = (unsigned char*)ft_strnew(temp->size_bytes);
 	while (i < temp->size_bytes)
 	{
-		temp->exec_code[i] = file_info[i + PROG_NAME_LENGTH + COMMENT_LENGTH + 16];
+		temp->exec_code[i] = file_info[i + PROG_NAME_LENGTH
+									+ COMMENT_LENGTH + 16];
 		i++;
 	}
 	temp->exec_code[i] = '\0';

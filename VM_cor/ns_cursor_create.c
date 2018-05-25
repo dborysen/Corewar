@@ -6,19 +6,19 @@
 /*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/02 15:09:56 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/25 15:23:59 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/25 15:43:56 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "corewar.h"
 
-ns_array_of_functions g_func[16] =
+ns_array_of_functions	g_func[16] =
 {
-		ns_live, ns_ld, ns_st, ns_add, ns_sub, ns_and, ns_or, ns_xor,
-		ns_zjmp, ns_ldi, ns_sti, 0, ns_lld, ns_lldi, 0, ns_aff
+	ns_live, ns_ld, ns_st, ns_add, ns_sub, ns_and, ns_or, ns_xor,
+	ns_zjmp, ns_ldi, ns_sti, 0, ns_lld, ns_lldi, 0, ns_aff
 };
 
-void		ns_create_cursor(t_cursor **cursor, t_champion *champ)
+void	ns_create_cursor(t_cursor **cursor, t_champion *champ)
 {
 	t_cursor *temp;
 
@@ -43,7 +43,7 @@ void		ns_create_cursor(t_cursor **cursor, t_champion *champ)
 void	ns_create_cycle(t_cursor **cursor, t_map *m_map)
 {
 	t_cursor	*temp;
-	int 		i;
+	int			i;
 
 	temp = *cursor;
 	while (temp)
@@ -57,7 +57,7 @@ void	ns_create_cycle(t_cursor **cursor, t_map *m_map)
 				{
 					temp->wait_cycle = g_op_tab[i].cycles;
 					temp->commad = g_op_tab[i].opcode;
-					break;
+					break ;
 				}
 				i++;
 			}
@@ -66,7 +66,8 @@ void	ns_create_cycle(t_cursor **cursor, t_map *m_map)
 	}
 }
 
-void		ns_do_command(t_cursor **cursor, t_cursor *temp, t_map *map, t_info **info)
+void		ns_do_command(t_cursor **cursor, t_cursor *temp,
+						t_map *map, t_info **info)
 {
 	if (temp->commad == 12)
 	{
@@ -84,7 +85,7 @@ void		ns_do_command(t_cursor **cursor, t_cursor *temp, t_map *map, t_info **info
 	{
 		if (!map->d && !map->v)
 			ft_printf("A process shows that player %d (%s) is alive\n",
-					  temp->champ_nbr, find_name_id(temp->champ_nbr, *info));
+					temp->champ_nbr, find_name_id(temp->champ_nbr, *info));
 		(*info)->winner_nbr = temp->champ_nbr;
 		(*info)->winner_name = find_name_id(temp->champ_nbr, *info);
 	}
@@ -110,13 +111,12 @@ t_cursor	*ns_move_cursor(t_cursor **cursor, t_map *map, t_info **info)
 		temp->color = map->color[temp->index_pos];
 		if (temp->wait_cycle == 1 && temp->commad > 0)
 			ns_do_command(cursor, temp, map, info);
-		else if (temp->wait_cycle != 0 && temp->commad != 0) {
+		else if (temp->wait_cycle != 0 && temp->commad != 0)
 			temp->wait_cycle--;
-		}
 		else
 			temp->index_pos++;
 		temp->index_pos = temp->index_pos < 0 ? temp->index_pos + MEM_SIZE :
-						  temp->index_pos % MEM_SIZE;
+						temp->index_pos % MEM_SIZE;
 		temp = temp->next;
 	}
 	return (*cursor);

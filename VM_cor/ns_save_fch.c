@@ -6,7 +6,7 @@
 /*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/11 15:57:53 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/25 15:33:15 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/25 15:49:48 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void		ns_save_flags(char **av, t_fl *flags, int *i, int ac)
 {
-	if(ft_strcmp(av[*i], "-dump") == 0)
+	if (ft_strcmp(av[*i], "-dump") == 0)
 	{
 		flags->d = 1;
 		*i += 1;
@@ -22,18 +22,19 @@ void		ns_save_flags(char **av, t_fl *flags, int *i, int ac)
 			ns_error("not a digit after flag");
 		flags->dump = ft_atoi(av[*i]);
 	}
-	else if(ft_strcmp(av[*i], "-n") == 0)
+	else if (ft_strcmp(av[*i], "-n") == 0)
 	{
 		*i += 1;
-		if (ac - 1 < *i ||  !ft_isdigit(av[*i][0]))
+		if (ac - 1 < *i || !ft_isdigit(av[*i][0]))
 			ns_error("not a digit after flag");
 		flags->n = ft_atoi(av[*i]);
 	}
-	else if(ft_strcmp(av[*i], "-v") == 0)
+	else if (ft_strcmp(av[*i], "-v") == 0)
 		flags->v = 1;
 }
 
-t_champion	*ns_save_champs(t_champion **champ, unsigned char *file_info, int fd)
+t_champion	*ns_save_champs(t_champion **champ,
+							unsigned char *file_info, int fd)
 {
 	t_champion *temp;
 
@@ -51,8 +52,8 @@ t_champion	*ns_save_champs(t_champion **champ, unsigned char *file_info, int fd)
 
 t_champion	*ns_read_champion(char *av, t_champion **champ)
 {
-	int 			fd;
-	off_t 			size_file;
+	int				fd;
+	off_t			size_file;
 	unsigned char	*file_info;
 	t_champion		*temp;
 
@@ -77,7 +78,7 @@ t_champion	*ns_check_champions(char *av, t_champion **champ, t_fl *fl)
 	t_champion *temp;
 
 	temp = *champ;
-	if(ft_strstr(av , ".cor"))
+	if (ft_strstr(av, ".cor"))
 	{
 		if (fl->n)
 		{
@@ -101,10 +102,11 @@ t_champion	*ns_check_champions(char *av, t_champion **champ, t_fl *fl)
 
 void		ns_check_flags(int ac, char **av, t_fl *flags, t_champion **champ)
 {
-	int i;
+	int			i;
+	t_champion	*temp;
 
 	i = 1;
-	t_champion *temp = *champ;
+	temp = *champ;
 	while (i < ac)
 	{
 		if (av[i][0] == '-')

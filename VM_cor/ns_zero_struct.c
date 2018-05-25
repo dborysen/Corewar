@@ -37,8 +37,8 @@ void	ns_zero_champ(t_champion **champ)
 
 void	ns_zero_cursor(t_cursor **cursor)
 {
-	t_cursor 	*temp;
-	int 		i;
+	t_cursor	*temp;
+	int			i;
 
 	i = 0;
 	temp = *cursor;

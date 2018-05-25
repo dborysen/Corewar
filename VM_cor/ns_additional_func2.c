@@ -6,7 +6,7 @@
 /*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/11 15:49:08 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/25 14:49:21 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/25 15:41:36 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -94,7 +94,7 @@ void	ns_check_lives(t_cursor **cur, t_info **info, t_map **map)
 		(*info)->end_game = 1;
 }
 
-int 	ns_step_wrong_codage(int num)
+int		ns_step_wrong_codage(int num)
 {
 	int ret;
 
@@ -110,7 +110,7 @@ int 	ns_step_wrong_codage(int num)
 		ret += 1;
 	else if (((num >> 2) & 3) == DIR_CODE)
 		ret += g_op_tab->label_size == 0 ? 4 : 2;
-	else if (((num >> 2) & 3)== IND_CODE)
+	else if (((num >> 2) & 3) == IND_CODE)
 		ret += 2;
 	if ((num & 3) == REG_CODE)
 		ret += 1;
