@@ -115,14 +115,8 @@ add_executable(VM_cor
         operations/ns_and.c operations/ns_xor.c operations/ns_or.c operations/ns_st.c
         operations/ns_sti.c operations/ns_ld.c operations/ns_lld.c operations/ns_ldi.c
         operations/ns_lldi.c operations/ns_zjmp.c operations/ns_aff.c operations/ns_live.c
-<<<<<<< HEAD
-        ns_additional_func2.c ns_save_fch.c operations/ns_fork.c ns_error.c ns_additional_func3.c start_game.c)
+        ns_additional_func2.c ns_save_fch.c operations/ns_fork.c ns_error.c
+        ns_additional_func3.c start_game.c operations/ns_and2.c operations/ns_or2.c operations/ns_xor2.c)
 #        ncurses/first.c
 #        ncurses/second.c
 #        ncurses/third.c ncurses/fourth.c)
-=======
-        ns_additional_func2.c ns_save_fch.c operations/ns_fork.c
-        ncurses/first.c
-        ncurses/second.c
-        ncurses/third.c)
->>>>>>> 95d318dbf7577427977bc4d12a2660f62ec9f033

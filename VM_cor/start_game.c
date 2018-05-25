@@ -6,13 +6,14 @@
 /*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/25 14:58:46 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/25 14:59:01 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/25 15:54:47 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "corewar.h"
 
-t_cursor	*game_start_dump(t_cursor **cursor, t_map *m_map, t_info *info, t_fl fl)
+t_cursor	*game_start_dump(t_cursor **cursor, t_map *m_map,
+							t_info *info, t_fl fl)
 {
 	t_cursor *temp;
 
@@ -35,7 +36,8 @@ t_cursor	*game_start_dump(t_cursor **cursor, t_map *m_map, t_info *info, t_fl fl
 	if (fl.dump == 0 && info->end_game == 0)
 		ns_print_map(*m_map);
 	if (info->end_game == 1)
-		ft_printf("Player %d, (\"%s\") has won !!\n", info->winner_nbr, info->winner_name);
+		ft_printf("Player %d, (\"%s\") has won !!\n",
+				info->winner_nbr, info->winner_name);
 	return (*cursor);
 }
 
@@ -58,14 +60,15 @@ t_cursor	*game_start(t_cursor **cursor, t_map *m_map, t_info *info)
 			info->cycles = 0;
 		}
 	}
-	ft_printf("Player %d, (\"%s\") has won !!\n", info->winner_nbr, info->winner_name);
+	ft_printf("Player %d, (\"%s\") has won !!\n",
+			info->winner_nbr, info->winner_name);
 	return (*cursor);
 }
 
 t_cursor	**nc_game_start(t_cursor **cursor, t_map **m_map, t_info *info)
 {
 	t_cursor	*temp;
-	t_map 		*map_t;
+	t_map		*map_t;
 
 	map_t = *m_map;
 	temp = *cursor;
@@ -82,6 +85,5 @@ t_cursor	**nc_game_start(t_cursor **cursor, t_map **m_map, t_info *info)
 		ns_check_lives(cursor, &info, m_map);
 		info->cycles = 0;
 	}
-	return cursor;
+	return (cursor);
 }
-

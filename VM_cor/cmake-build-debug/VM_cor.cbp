@@ -419,9 +419,6 @@
 		<Unit filename="/Users/myprosku/corTwar/VM_cor/ns_zero_struct.c">
 			<Option target="VM_cor"/>
 		</Unit>
-		<Unit filename="/Users/myprosku/corTwar/VM_cor/op.c">
-			<Option target="VM_cor"/>
-		</Unit>
 		<Unit filename="/Users/myprosku/corTwar/VM_cor/op.h">
 			<Option target="VM_cor"/>
 		</Unit>
@@ -432,6 +429,9 @@
 			<Option target="VM_cor"/>
 		</Unit>
 		<Unit filename="/Users/myprosku/corTwar/VM_cor/operations/ns_and.c">
+			<Option target="VM_cor"/>
+		</Unit>
+		<Unit filename="/Users/myprosku/corTwar/VM_cor/operations/ns_and2.c">
 			<Option target="VM_cor"/>
 		</Unit>
 		<Unit filename="/Users/myprosku/corTwar/VM_cor/operations/ns_fork.c">
@@ -455,6 +455,9 @@
 		<Unit filename="/Users/myprosku/corTwar/VM_cor/operations/ns_or.c">
 			<Option target="VM_cor"/>
 		</Unit>
+		<Unit filename="/Users/myprosku/corTwar/VM_cor/operations/ns_or2.c">
+			<Option target="VM_cor"/>
+		</Unit>
 		<Unit filename="/Users/myprosku/corTwar/VM_cor/operations/ns_st.c">
 			<Option target="VM_cor"/>
 		</Unit>
@@ -465,6 +468,9 @@
 			<Option target="VM_cor"/>
 		</Unit>
 		<Unit filename="/Users/myprosku/corTwar/VM_cor/operations/ns_xor.c">
+			<Option target="VM_cor"/>
+		</Unit>
+		<Unit filename="/Users/myprosku/corTwar/VM_cor/operations/ns_xor2.c">
 			<Option target="VM_cor"/>
 		</Unit>
 		<Unit filename="/Users/myprosku/corTwar/VM_cor/operations/ns_zjmp.c">

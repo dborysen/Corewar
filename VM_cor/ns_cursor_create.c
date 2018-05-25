@@ -6,7 +6,7 @@
 /*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/02 15:09:56 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/25 15:43:56 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/25 15:56:08 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ ns_array_of_functions	g_func[16] =
 	ns_zjmp, ns_ldi, ns_sti, 0, ns_lld, ns_lldi, 0, ns_aff
 };
 
-void	ns_create_cursor(t_cursor **cursor, t_champion *champ)
+void					ns_create_cursor(t_cursor **cursor, t_champion *champ)
 {
 	t_cursor *temp;
 
@@ -40,7 +40,7 @@ void	ns_create_cursor(t_cursor **cursor, t_champion *champ)
 	temp->next = NULL;
 }
 
-void	ns_create_cycle(t_cursor **cursor, t_map *m_map)
+void					ns_create_cycle(t_cursor **cursor, t_map *m_map)
 {
 	t_cursor	*temp;
 	int			i;
@@ -66,7 +66,7 @@ void	ns_create_cycle(t_cursor **cursor, t_map *m_map)
 	}
 }
 
-void		ns_do_command(t_cursor **cursor, t_cursor *temp,
+void					ns_do_command(t_cursor **cursor, t_cursor *temp,
 						t_map *map, t_info **info)
 {
 	if (temp->commad == 12)
@@ -94,7 +94,8 @@ void		ns_do_command(t_cursor **cursor, t_cursor *temp,
 	temp->wait_cycle = 0;
 }
 
-t_cursor	*ns_move_cursor(t_cursor **cursor, t_map *map, t_info **info)
+t_cursor				*ns_move_cursor(t_cursor **cursor, t_map *map,
+										t_info **info)
 {
 	t_cursor *temp;
 

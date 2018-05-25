@@ -6,13 +6,13 @@
 /*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/13 13:32:00 by ssavchen          #+#    #+#             */
-/*   Updated: 2018/05/24 14:48:28 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/25 16:09:08 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../corewar.h"
 
-void	ns_copy_reg(int *src, int *dest)
+void		ns_copy_reg(int *src, int *dest)
 {
 	int		i;
 
@@ -21,6 +21,25 @@ void	ns_copy_reg(int *src, int *dest)
 	{
 		dest[i] = src[i];
 		i++;
+	}
+}
+
+void		ns_fork_pos(t_cursor **head, t_cursor *tmp, int index, int n)
+{
+	t_cursor	*head_t;
+
+	head_t = *head;
+	if (n == 1)
+	{
+		head_t->index_pos = tmp->index_pos + index % IDX_MOD;
+		head_t->index_pos = head_t->index_pos < 0 ? head_t->index_pos + MEM_SIZE
+												: head_t->index_pos % MEM_SIZE;
+	}
+	else
+	{
+		head_t->index_pos = index + tmp->index_pos;
+		head_t->index_pos = head_t->index_pos < 0 ? head_t->index_pos + MEM_SIZE
+												: head_t->index_pos % MEM_SIZE;
 	}
 }
 
@@ -39,16 +58,7 @@ t_cursor	*ns_copy_cursor(t_cursor *tmp, short index, int n)
 	head->champ = tmp->champ;
 	head->color = tmp->color;
 	head->before_pos = tmp->before_pos;
-	if (n == 1)
-	{
-		head->index_pos = tmp->index_pos + index % IDX_MOD;
-		head->index_pos = head->index_pos < 0 ? head->index_pos + MEM_SIZE : head->index_pos % MEM_SIZE;
-	}
-	else
-	{
-		head->index_pos = index + tmp->index_pos;
-		head->index_pos = head->index_pos < 0 ? head->index_pos + MEM_SIZE : head->index_pos % MEM_SIZE;
-	}
+	ns_fork_pos(&head, tmp, index, n);
 	return (head);
 }
 

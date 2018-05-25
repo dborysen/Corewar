@@ -3120,33 +3120,6 @@ ns_zero_struct.c.s:
 	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/ns_zero_struct.c.s
 .PHONY : ns_zero_struct.c.s
 
-op.o: op.c.o
-
-.PHONY : op.o
-
-# target to build an object file
-op.c.o:
-	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/op.c.o
-.PHONY : op.c.o
-
-op.i: op.c.i
-
-.PHONY : op.i
-
-# target to preprocess a source file
-op.c.i:
-	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/op.c.i
-.PHONY : op.c.i
-
-op.s: op.c.s
-
-.PHONY : op.s
-
-# target to generate assembly for a file
-op.c.s:
-	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/op.c.s
-.PHONY : op.c.s
-
 operations/ns_add.o: operations/ns_add.c.o
 
 .PHONY : operations/ns_add.o
@@ -3227,6 +3200,33 @@ operations/ns_and.s: operations/ns_and.c.s
 operations/ns_and.c.s:
 	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/operations/ns_and.c.s
 .PHONY : operations/ns_and.c.s
+
+operations/ns_and2.o: operations/ns_and2.c.o
+
+.PHONY : operations/ns_and2.o
+
+# target to build an object file
+operations/ns_and2.c.o:
+	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/operations/ns_and2.c.o
+.PHONY : operations/ns_and2.c.o
+
+operations/ns_and2.i: operations/ns_and2.c.i
+
+.PHONY : operations/ns_and2.i
+
+# target to preprocess a source file
+operations/ns_and2.c.i:
+	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/operations/ns_and2.c.i
+.PHONY : operations/ns_and2.c.i
+
+operations/ns_and2.s: operations/ns_and2.c.s
+
+.PHONY : operations/ns_and2.s
+
+# target to generate assembly for a file
+operations/ns_and2.c.s:
+	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/operations/ns_and2.c.s
+.PHONY : operations/ns_and2.c.s
 
 operations/ns_fork.o: operations/ns_fork.c.o
 
@@ -3417,6 +3417,33 @@ operations/ns_or.c.s:
 	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/operations/ns_or.c.s
 .PHONY : operations/ns_or.c.s
 
+operations/ns_or2.o: operations/ns_or2.c.o
+
+.PHONY : operations/ns_or2.o
+
+# target to build an object file
+operations/ns_or2.c.o:
+	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/operations/ns_or2.c.o
+.PHONY : operations/ns_or2.c.o
+
+operations/ns_or2.i: operations/ns_or2.c.i
+
+.PHONY : operations/ns_or2.i
+
+# target to preprocess a source file
+operations/ns_or2.c.i:
+	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/operations/ns_or2.c.i
+.PHONY : operations/ns_or2.c.i
+
+operations/ns_or2.s: operations/ns_or2.c.s
+
+.PHONY : operations/ns_or2.s
+
+# target to generate assembly for a file
+operations/ns_or2.c.s:
+	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/operations/ns_or2.c.s
+.PHONY : operations/ns_or2.c.s
+
 operations/ns_st.o: operations/ns_st.c.o
 
 .PHONY : operations/ns_st.o
@@ -3524,6 +3551,33 @@ operations/ns_xor.s: operations/ns_xor.c.s
 operations/ns_xor.c.s:
 	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/operations/ns_xor.c.s
 .PHONY : operations/ns_xor.c.s
+
+operations/ns_xor2.o: operations/ns_xor2.c.o
+
+.PHONY : operations/ns_xor2.o
+
+# target to build an object file
+operations/ns_xor2.c.o:
+	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/operations/ns_xor2.c.o
+.PHONY : operations/ns_xor2.c.o
+
+operations/ns_xor2.i: operations/ns_xor2.c.i
+
+.PHONY : operations/ns_xor2.i
+
+# target to preprocess a source file
+operations/ns_xor2.c.i:
+	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/operations/ns_xor2.c.i
+.PHONY : operations/ns_xor2.c.i
+
+operations/ns_xor2.s: operations/ns_xor2.c.s
+
+.PHONY : operations/ns_xor2.s
+
+# target to generate assembly for a file
+operations/ns_xor2.c.s:
+	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/operations/ns_xor2.c.s
+.PHONY : operations/ns_xor2.c.s
 
 operations/ns_zjmp.o: operations/ns_zjmp.c.o
 
@@ -3921,9 +3975,6 @@ help:
 	@echo "... ns_zero_struct.o"
 	@echo "... ns_zero_struct.i"
 	@echo "... ns_zero_struct.s"
-	@echo "... op.o"
-	@echo "... op.i"
-	@echo "... op.s"
 	@echo "... operations/ns_add.o"
 	@echo "... operations/ns_add.i"
 	@echo "... operations/ns_add.s"
@@ -3933,6 +3984,9 @@ help:
 	@echo "... operations/ns_and.o"
 	@echo "... operations/ns_and.i"
 	@echo "... operations/ns_and.s"
+	@echo "... operations/ns_and2.o"
+	@echo "... operations/ns_and2.i"
+	@echo "... operations/ns_and2.s"
 	@echo "... operations/ns_fork.o"
 	@echo "... operations/ns_fork.i"
 	@echo "... operations/ns_fork.s"
@@ -3954,6 +4008,9 @@ help:
 	@echo "... operations/ns_or.o"
 	@echo "... operations/ns_or.i"
 	@echo "... operations/ns_or.s"
+	@echo "... operations/ns_or2.o"
+	@echo "... operations/ns_or2.i"
+	@echo "... operations/ns_or2.s"
 	@echo "... operations/ns_st.o"
 	@echo "... operations/ns_st.i"
 	@echo "... operations/ns_st.s"
@@ -3966,6 +4023,9 @@ help:
 	@echo "... operations/ns_xor.o"
 	@echo "... operations/ns_xor.i"
 	@echo "... operations/ns_xor.s"
+	@echo "... operations/ns_xor2.o"
+	@echo "... operations/ns_xor2.i"
+	@echo "... operations/ns_xor2.s"
 	@echo "... operations/ns_zjmp.o"
 	@echo "... operations/ns_zjmp.i"
 	@echo "... operations/ns_zjmp.s"
