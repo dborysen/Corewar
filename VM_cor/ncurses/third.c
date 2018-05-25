@@ -3,10 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   third.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
+/*   By: ssavchen <ssavchen@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/21 15:46:57 by ssavchen          #+#    #+#             */
+<<<<<<< HEAD
 /*   Updated: 2018/05/25 14:47:18 by myprosku         ###   ########.fr       */
+=======
+/*   Updated: 2018/05/25 15:06:18 by ssavchen         ###   ########.fr       */
+>>>>>>> 95d318dbf7577427977bc4d12a2660f62ec9f033
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,8 +42,14 @@ void	nc_qwer(int key, t_info *info, t_vizor *viz)
 		info->cycles_limit--;
 	else if (key == 'e' && info->cycles_limit < 1000)
 		info->cycles_limit++;
-	else if (key == 'r' && info->cycles_limit < 989)
+	else if (key == 'r' && info->cycles_limit <= 990)
 		info->cycles_limit += 10;
+	else if (key == 'r' && info->cycles_limit >= 991
+			 && info->cycles_limit <= 999)
+		info->cycles_limit = 1000;
+	else if (key == 'q' && info->cycles_limit > 1
+			 && info->cycles_limit <= 10)
+		info->cycles_limit = 1;
 	nc_right_print(viz, info);
 	wrefresh(viz->stat);
 }

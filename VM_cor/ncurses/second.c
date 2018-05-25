@@ -6,7 +6,7 @@
 /*   By: ssavchen <ssavchen@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/17 16:24:34 by ssavchen          #+#    #+#             */
-/*   Updated: 2018/05/25 12:39:41 by ssavchen         ###   ########.fr       */
+/*   Updated: 2018/05/25 14:23:10 by ssavchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,14 +24,13 @@ void	nc_offline(t_vizor *viz)
 void	nc_next_step(t_vizor *viz, t_info *info, t_map *map, t_cursor **cursor, t_fl fl)
 {
 	int		key;
-	int		exit;
 
-	exit = 1;
-	while (exit && info->end_game == 0)
+	while (info->end_game == 0)
 	{
 		if ((viz)->pause == 1)
 			(viz)->pause = 0;
 		timeout(1);
+		usleep((useconds_t)(350000 / info->cycles_limit));
 		key = getch();
 		if (key == 27)
 			nc_offline(viz);
@@ -44,7 +43,7 @@ void	nc_next_step(t_vizor *viz, t_info *info, t_map *map, t_cursor **cursor, t_f
 	}
 	nc_winner(viz, info);
 	timeout(-1);
-	if ((key = getch()) == 27)
+	if (getch() == 27)
 		nc_offline(viz);
 }
 
