@@ -1,4 +1,14 @@
+<<<<<<< HEAD
 /Applications/CLion.app/Contents/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/myprosku/corTwar/VM_cor
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /Users/myprosku/corTwar/VM_cor/cmake-build-debug
+=======
+/Applications/CLion.app/Contents/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/ssavchen/coretwar/VM_cor
+CMake Error at CMakeLists.txt:123:
+  Parse error.  Expected a command name, got unquoted argument with text
+  "=======".
+
+
+-- Configuring incomplete, errors occurred!
+>>>>>>> 15ab5a3286cb52febc27c2c30c5cf9442e5ada06
