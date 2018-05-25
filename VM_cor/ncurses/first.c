@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   first.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
+/*   By: ssavchen <ssavchen@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/17 12:03:59 by ssavchen          #+#    #+#             */
-/*   Updated: 2018/05/24 18:11:22 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/25 13:02:40 by ssavchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,21 +14,15 @@
 
 void	nc_create_viz(t_vizor *viz)
 {
-	int		height;
-	int		width;
-
-	viz->limit = 50;
-	viz->cycle = 1;
-	viz->proc = 1;
-	viz->state = 1;
 	viz->pause = 1;
-	height = 74;
-	width = 260;
-	viz->ful = newwin(height, width, 0, 0);
-	viz->map = newwin(height - 5, width - 50, 4, 2);
-	viz->stat = newwin(height - 9, width - 200, 4, 198);
-	box(viz->ful, 0, 0);
-	box(viz->stat, 0, 0);
+	viz->height = 74;
+	viz->width = 260;
+	viz->ful = newwin(viz->height, viz->width, 0, 0);
+	viz->map = newwin(viz->height - 5, viz->width - 50, 4, 2);
+	viz->stat = newwin(viz->height - 9, viz->width - 200, 4, 198);
+	nc_print_borderf(viz);
+//	box(viz->ful, 0, 0);
+//	box(viz->stat, 0, 0);
 }
 
 void	nc_get_color(t_map map, int i, t_vizor viz)

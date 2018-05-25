@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   second.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
+/*   By: ssavchen <ssavchen@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/17 16:24:34 by ssavchen          #+#    #+#             */
-/*   Updated: 2018/05/24 18:12:12 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/25 12:39:41 by ssavchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,9 +65,8 @@ void	nc_wait(t_vizor *viz, t_info *info, t_map *map, t_cursor **cursor, t_fl fl)
 		nc_next_step(viz, info, map, cursor, fl);
 	else if (key == 27)
 		nc_offline(viz);
-//	nc_right_print(viz, info);
-//	wrefresh(viz->stat);
-	nc_wait(viz, info, map, cursor, fl);
+	if (viz->pause == 1)
+		nc_wait(viz, info, map, cursor, fl);
 }
 
 void	nc_right_print(t_vizor *viz, t_info *info)

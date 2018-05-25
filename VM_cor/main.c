@@ -72,8 +72,8 @@ int			main(int ac, char **av)
 	map.v = flags.v;
 	if (flags.d)
 		cursor = game_start_dump(&cursor, &map, &info, flags);
-//	else if (flags.v)
-//		ns_ncurses(&map, &info, &cursor, flags);
+	else if (flags.v)
+		ns_ncurses(&map, &info, &cursor, flags);
 	else
 		cursor = game_start(&cursor, &map, &info);
 //	ns_ncurses(map, &info);

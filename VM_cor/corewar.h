@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   corewar.h                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
+/*   By: ssavchen <ssavchen@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/23 13:22:27 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/24 17:44:38 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/25 13:02:40 by ssavchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,10 +66,8 @@ typedef struct			s_vizor
 	WINDOW				*ful;
 	WINDOW				*map;
 	WINDOW				*stat;
-	int					cycle;
-	int					proc;
-	int					limit;
-	int					state;
+	int					height;
+	int					width;
 	int					pause;
 }						t_vizor;
 
@@ -256,5 +254,6 @@ void					nc_print_map(t_map map, t_vizor viz, WINDOW *winmap);
 void					nc_next_step(t_vizor *viz, t_info *info, t_map *map, t_cursor **cursor, t_fl fl);
 t_cursor				**nc_game_start(t_cursor **cursor, t_map **m_map, t_info *info, t_fl fl);
 void					nc_winner(t_vizor *viz, t_info *info);
+void					nc_print_borderf(t_vizor *viz);
 
 #endif
