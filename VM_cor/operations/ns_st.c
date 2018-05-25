@@ -17,7 +17,7 @@ void	set_on_map(t_map **map, t_cursor *temp, t_reg reg)
 	int				i;
 	int				pos;
 	unsigned char	*str;
-	t_map 			*map_t;
+	t_map			*map_t;
 
 	map_t = *map;
 	i = 0;
@@ -56,5 +56,6 @@ void	ns_st(t_cursor **cur, t_map *m_map)
 		temp->index_pos += 5;
 	}
 	else
-		temp->index_pos += ns_step_wrong_codage(m_map->map[(temp->index_pos + 1) % MEM_SIZE]);
+		temp->index_pos += ns_step_wrong_codage(
+				m_map->map[(temp->index_pos + 1) % MEM_SIZE]);
 }

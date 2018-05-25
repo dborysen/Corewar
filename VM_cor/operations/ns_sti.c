@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ns_sti.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
+/*   By: ssavchen <ssavchen@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/21 13:51:06 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/23 16:44:27 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/25 16:34:07 by ssavchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,8 @@ void	set_on_map_rrr(t_map **map, t_cursor *temp, t_reg reg)
 	if (ns_check_register(1, reg.r2, reg.r3))
 	{
 		str = int_to_char(temp->registr[reg.r1]);
-		reg.index = temp->index_pos + ((temp->registr[reg.r2] + temp->registr[reg.r3]) % IDX_MOD);
+		reg.index = temp->index_pos + ((temp->registr[reg.r2] +
+				temp->registr[reg.r3]) % IDX_MOD);
 		reg.index = reg.index < 0 ? reg.index + MEM_SIZE : reg.index % MEM_SIZE;
 		while (i < 4)
 		{
@@ -53,7 +54,8 @@ void	set_on_map_rdr(t_map **map, t_cursor *temp, t_reg reg)
 	{
 		reg.dir = ns_two_bytes(map_t, temp->index_pos + 3, temp->index_pos + 4);
 		str = int_to_char(temp->registr[reg.r1]);
-		reg.index = temp->index_pos + ((reg.dir + temp->registr[reg.r3]) % IDX_MOD);
+		reg.index = temp->index_pos +
+				((reg.dir + temp->registr[reg.r3]) % IDX_MOD);
 		reg.index = reg.index < 0 ? reg.index + MEM_SIZE : reg.index % MEM_SIZE;
 		while (i < 4)
 		{
@@ -101,7 +103,8 @@ void	set_on_map_rid(t_map **map, t_cursor *temp, t_reg reg)
 	map_t = *map;
 	i = 0;
 	reg.index = ns_two_bytes(map_t, temp->index_pos + 3, temp->index_pos + 4);
-	move_bytes = find_fbytes_tind(*map, (temp->index_pos + (reg.index % IDX_MOD)));
+	move_bytes = find_fbytes_tind(*map,
+				(temp->index_pos + (reg.index % IDX_MOD)));
 	reg.index = unsigned_char_to_int(move_bytes);
 	reg.dir2 = ns_two_bytes(map_t, temp->index_pos + 5, temp->index_pos + 6);
 	str = int_to_char(temp->registr[reg.r1]);
@@ -123,18 +126,21 @@ void	set_on_map_rir(t_map **map, t_cursor *temp, t_reg reg)
 	int				pos;
 	unsigned char			*str;
 	t_map			*map_t;
-	unsigned char 	*move_bytes;
+	unsigned char	*move_bytes;
 
 	map_t = *map;
 	i = 0;
 	reg.r3 = map_t->map[temp->index_pos + 5];
 	if (ns_check_register(1, 1, reg.r3))
 	{
-		reg.index = ns_two_bytes(map_t, temp->index_pos + 3, temp->index_pos + 4);
-		move_bytes = find_fbytes_tind(*map, (temp->index_pos + (reg.index % IDX_MOD)));
+		reg.index = ns_two_bytes(map_t, temp->index_pos + 3,
+								temp->index_pos + 4);
+		move_bytes = find_fbytes_tind(*map, (temp->index_pos +
+				(reg.index % IDX_MOD)));
 		reg.index = unsigned_char_to_int(move_bytes);
 		str = int_to_char(temp->registr[reg.r1]);
-		reg.index = temp->index_pos + ((reg.index + temp->registr[reg.r3]) % IDX_MOD);
+		reg.index = temp->index_pos + ((reg.index + temp->registr[reg.r3])
+									% IDX_MOD);
 		reg.index = reg.index < 0 ? reg.index + MEM_SIZE : reg.index % MEM_SIZE;
 		while (i < 4)
 		{
@@ -185,5 +191,6 @@ void	ns_sti(t_cursor **cur, t_map *m_map)
 		temp->index_pos += 6;
 	}
 	else
-		temp->index_pos += ns_step_wrong_codage(m_map->map[(temp->index_pos + 1) % MEM_SIZE]);
+		temp->index_pos += ns_step_wrong_codage(
+				m_map->map[(temp->index_pos + 1) % MEM_SIZE]);
 }

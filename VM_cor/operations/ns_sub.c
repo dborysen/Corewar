@@ -14,22 +14,23 @@
 
 void	ns_sub(t_cursor **cur, t_map *m_map)
 {
-	t_cursor	*temp;
+	t_cursor	*tmp;
 	t_reg		reg;
 
-	temp = *cur;
-	if ((m_map->map[temp->index_pos + 1] >> 2) == T_RRR)
+	tmp = *cur;
+	if ((m_map->map[tmp->index_pos + 1] >> 2) == T_RRR)
 	{
-		reg.r1 = m_map->map[(temp->index_pos + 2) % MEM_SIZE];
-		reg.r2 = m_map->map[(temp->index_pos + 3) % MEM_SIZE];
-		reg.r3 = m_map->map[(temp->index_pos + 4) % MEM_SIZE];
+		reg.r1 = m_map->map[(tmp->index_pos + 2) % MEM_SIZE];
+		reg.r2 = m_map->map[(tmp->index_pos + 3) % MEM_SIZE];
+		reg.r3 = m_map->map[(tmp->index_pos + 4) % MEM_SIZE];
 		if (ns_check_register(reg.r1, reg.r2, reg.r3))
 		{
-			temp->registr[reg.r3] = temp->registr[reg.r1] - temp->registr[reg.r2];
-			temp->carry = temp->registr[reg.r3] == 0 ? 1 : 0;
+			tmp->registr[reg.r3] = tmp->registr[reg.r1] - tmp->registr[reg.r2];
+			tmp->carry = tmp->registr[reg.r3] == 0 ? 1 : 0;
 		}
-		temp->index_pos += 5;
+		tmp->index_pos += 5;
 	}
 	else
-		temp->index_pos += ns_step_wrong_codage(m_map->map[(temp->index_pos + 1) % MEM_SIZE]);
+		tmp->index_pos += ns_step_wrong_codage(
+				m_map->map[(tmp->index_pos + 1) % MEM_SIZE]);
 }

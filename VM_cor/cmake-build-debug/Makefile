@@ -48,10 +48,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/myprosku/corTwar/VM_cor
+CMAKE_SOURCE_DIR = /Users/ssavchen/coretwar/VM_cor
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/myprosku/corTwar/VM_cor/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/ssavchen/coretwar/VM_cor/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles /Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles /Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -3309,6 +3309,33 @@ operations/ns_ldi.c.s:
 	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/operations/ns_ldi.c.s
 .PHONY : operations/ns_ldi.c.s
 
+operations/ns_ldi2.o: operations/ns_ldi2.c.o
+
+.PHONY : operations/ns_ldi2.o
+
+# target to build an object file
+operations/ns_ldi2.c.o:
+	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/operations/ns_ldi2.c.o
+.PHONY : operations/ns_ldi2.c.o
+
+operations/ns_ldi2.i: operations/ns_ldi2.c.i
+
+.PHONY : operations/ns_ldi2.i
+
+# target to preprocess a source file
+operations/ns_ldi2.c.i:
+	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/operations/ns_ldi2.c.i
+.PHONY : operations/ns_ldi2.c.i
+
+operations/ns_ldi2.s: operations/ns_ldi2.c.s
+
+.PHONY : operations/ns_ldi2.s
+
+# target to generate assembly for a file
+operations/ns_ldi2.c.s:
+	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/operations/ns_ldi2.c.s
+.PHONY : operations/ns_ldi2.c.s
+
 operations/ns_live.o: operations/ns_live.c.o
 
 .PHONY : operations/ns_live.o
@@ -3389,6 +3416,33 @@ operations/ns_lldi.s: operations/ns_lldi.c.s
 operations/ns_lldi.c.s:
 	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/operations/ns_lldi.c.s
 .PHONY : operations/ns_lldi.c.s
+
+operations/ns_lldi2.o: operations/ns_lldi2.c.o
+
+.PHONY : operations/ns_lldi2.o
+
+# target to build an object file
+operations/ns_lldi2.c.o:
+	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/operations/ns_lldi2.c.o
+.PHONY : operations/ns_lldi2.c.o
+
+operations/ns_lldi2.i: operations/ns_lldi2.c.i
+
+.PHONY : operations/ns_lldi2.i
+
+# target to preprocess a source file
+operations/ns_lldi2.c.i:
+	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/operations/ns_lldi2.c.i
+.PHONY : operations/ns_lldi2.c.i
+
+operations/ns_lldi2.s: operations/ns_lldi2.c.s
+
+.PHONY : operations/ns_lldi2.s
+
+# target to generate assembly for a file
+operations/ns_lldi2.c.s:
+	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/operations/ns_lldi2.c.s
+.PHONY : operations/ns_lldi2.c.s
 
 operations/ns_or.o: operations/ns_or.c.o
 
@@ -3996,6 +4050,9 @@ help:
 	@echo "... operations/ns_ldi.o"
 	@echo "... operations/ns_ldi.i"
 	@echo "... operations/ns_ldi.s"
+	@echo "... operations/ns_ldi2.o"
+	@echo "... operations/ns_ldi2.i"
+	@echo "... operations/ns_ldi2.s"
 	@echo "... operations/ns_live.o"
 	@echo "... operations/ns_live.i"
 	@echo "... operations/ns_live.s"
@@ -4005,6 +4062,9 @@ help:
 	@echo "... operations/ns_lldi.o"
 	@echo "... operations/ns_lldi.i"
 	@echo "... operations/ns_lldi.s"
+	@echo "... operations/ns_lldi2.o"
+	@echo "... operations/ns_lldi2.i"
+	@echo "... operations/ns_lldi2.s"
 	@echo "... operations/ns_or.o"
 	@echo "... operations/ns_or.i"
 	@echo "... operations/ns_or.s"

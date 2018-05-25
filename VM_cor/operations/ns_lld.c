@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ns_lld.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
+/*   By: ssavchen <ssavchen@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/08 19:13:52 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/23 16:36:09 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/25 16:23:59 by ssavchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 unsigned char	*find_twobytes(t_map *map, int index)
 {
-	unsigned  char	*str;
+	unsigned char	*str;
 	int				i;
 	int				pos;
 
@@ -32,16 +32,17 @@ unsigned char	*find_twobytes(t_map *map, int index)
 	return (str);
 }
 
-void	ns_lld2(t_cursor **cur, t_map *m_map, t_reg reg, unsigned char *str)
+void			ns_ll(t_cursor **cur, t_map *map, t_reg reg, unsigned char *str)
 {
 	t_cursor *temp;
 
 	temp = *cur;
-	reg.r1 = m_map->map[(temp->index_pos + 4) % MEM_SIZE];
+	reg.r1 = map->map[(temp->index_pos + 4) % MEM_SIZE];
 	if (ns_check_register(reg.r1, 1, 1))
 	{
-		reg.index = ns_two_bytes(m_map, temp->index_pos + 2, temp->index_pos + 3);
-		str = find_twobytes(m_map, temp->index_pos + reg.index); // ?? four or read md two bytes !!!
+		reg.index = ns_two_bytes(map, temp->index_pos + 2,
+								temp->index_pos + 3);
+		str = find_twobytes(map, temp->index_pos + reg.index);
 		reg.index = unsigned_char_to_int(str);
 		temp->registr[reg.r1] = reg.index;
 		temp->carry = temp->registr[reg.r1] == 0 ? 1 : 0;
@@ -50,11 +51,11 @@ void	ns_lld2(t_cursor **cur, t_map *m_map, t_reg reg, unsigned char *str)
 	free(str);
 }
 
-void	ns_lld(t_cursor **cur, t_map *m_map)
+void			ns_lld(t_cursor **cur, t_map *m_map)
 {
-	t_cursor 		*temp;
+	t_cursor		*temp;
 	t_reg			reg;
-	unsigned char 	*str;
+	unsigned char	*str;
 
 	temp = *cur;
 	str = NULL;
@@ -72,8 +73,9 @@ void	ns_lld(t_cursor **cur, t_map *m_map)
 		temp->index_pos += 7;
 	}
 	else if ((m_map->map[(temp->index_pos + 1) % MEM_SIZE] >> 4) == T_IR)
-		ns_lld2(cur, m_map, reg, str);
+		ns_ll(cur, m_map, reg, str);
 	else
-		temp->index_pos += ns_step_wrong_codage(m_map->map[(temp->index_pos + 1) % MEM_SIZE]);
+		temp->index_pos += ns_step_wrong_codage(m_map->map[(temp->index_pos + 1)
+														% MEM_SIZE]);
 	free(str);
 }

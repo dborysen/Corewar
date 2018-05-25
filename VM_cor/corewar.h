@@ -6,7 +6,7 @@
 /*   By: ssavchen <ssavchen@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/23 13:22:27 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/25 15:46:49 by ssavchen         ###   ########.fr       */
+/*   Updated: 2018/05/25 16:41:18 by ssavchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -193,6 +193,13 @@ void					ns_zjmp(t_cursor **cur, t_map *m_map);
 void					ns_aff(t_cursor **cur, t_map *m_map);
 void					ns_live(t_cursor **cur, t_map *m_map);
 t_cursor				*ns_fork(t_cursor **cur, t_cursor **tmp, t_map *m_map, int n);
+
+void					lldi_rrr(t_cursor **cur, t_map *m_map);
+void					lldi_rdr(t_cursor **cur, t_map *m_map);
+void					ldi_rrr(t_cursor **cur, t_map *m_map);
+void					ldi_rdr(t_cursor **cur, t_map *m_map);
+
+
 
 //*************
 

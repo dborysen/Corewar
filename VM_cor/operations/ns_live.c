@@ -14,9 +14,9 @@
 
 void	ns_live(t_cursor **cur, t_map *m_map)
 {
-	t_cursor 		*temp;
+	t_cursor		*temp;
 	t_reg			reg;
-	unsigned char 	*str;
+	unsigned char	*str;
 
 	temp = *cur;
 	temp->live_or_die = 1;
