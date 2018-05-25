@@ -6,7 +6,7 @@
 /*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/23 13:20:36 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/24 18:27:50 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/25 14:24:32 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,7 +70,7 @@ int			main(int ac, char **av)
 	info.count_cursor = ns_count_cursor(cursor);
 	map.d = flags.d;
 	map.v = flags.v;
-	if (flags.d)
+	if (flags.d && !flags.v)
 		cursor = game_start_dump(&cursor, &map, &info, flags);
 	else if (flags.v)
 		ns_ncurses(&map, &info, &cursor, flags);
@@ -104,7 +104,7 @@ int			main(int ac, char **av)
 //		champ = champ->next;
 //	}
 //	ft_printf("%d %d %d\n", flags.dump_is, flags.s_is, flags.v_is);
-//	del_champ(&champ);
-//	del_cursor(&cursor);
+	del_champ(&champ);
+	del_cursor(&cursor);
 	return (0);
 }

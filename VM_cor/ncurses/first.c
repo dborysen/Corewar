@@ -20,9 +20,8 @@ void	nc_create_viz(t_vizor *viz)
 	viz->ful = newwin(viz->height, viz->width, 0, 0);
 	viz->map = newwin(viz->height - 5, viz->width - 50, 4, 2);
 	viz->stat = newwin(viz->height - 9, viz->width - 200, 4, 198);
-	nc_print_borderf(viz);
-//	box(viz->ful, 0, 0);
-//	box(viz->stat, 0, 0);
+	box(viz->ful, 0, 0);
+	box(viz->stat, 0, 0);
 }
 
 void	nc_get_color(t_map map, int i, t_vizor viz)

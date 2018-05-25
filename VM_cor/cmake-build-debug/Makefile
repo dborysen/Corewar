@@ -48,10 +48,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/ssavchen/coretwar/VM_cor
+CMAKE_SOURCE_DIR = /Users/myprosku/corTwar/VM_cor
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/ssavchen/coretwar/VM_cor/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/myprosku/corTwar/VM_cor/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles /Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles /Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ssavchen/coretwar/VM_cor/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/myprosku/corTwar/VM_cor/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -2904,114 +2904,6 @@ main.c.s:
 	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/main.c.s
 .PHONY : main.c.s
 
-ncurses/first.o: ncurses/first.c.o
-
-.PHONY : ncurses/first.o
-
-# target to build an object file
-ncurses/first.c.o:
-	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/ncurses/first.c.o
-.PHONY : ncurses/first.c.o
-
-ncurses/first.i: ncurses/first.c.i
-
-.PHONY : ncurses/first.i
-
-# target to preprocess a source file
-ncurses/first.c.i:
-	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/ncurses/first.c.i
-.PHONY : ncurses/first.c.i
-
-ncurses/first.s: ncurses/first.c.s
-
-.PHONY : ncurses/first.s
-
-# target to generate assembly for a file
-ncurses/first.c.s:
-	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/ncurses/first.c.s
-.PHONY : ncurses/first.c.s
-
-ncurses/fourth.o: ncurses/fourth.c.o
-
-.PHONY : ncurses/fourth.o
-
-# target to build an object file
-ncurses/fourth.c.o:
-	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/ncurses/fourth.c.o
-.PHONY : ncurses/fourth.c.o
-
-ncurses/fourth.i: ncurses/fourth.c.i
-
-.PHONY : ncurses/fourth.i
-
-# target to preprocess a source file
-ncurses/fourth.c.i:
-	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/ncurses/fourth.c.i
-.PHONY : ncurses/fourth.c.i
-
-ncurses/fourth.s: ncurses/fourth.c.s
-
-.PHONY : ncurses/fourth.s
-
-# target to generate assembly for a file
-ncurses/fourth.c.s:
-	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/ncurses/fourth.c.s
-.PHONY : ncurses/fourth.c.s
-
-ncurses/second.o: ncurses/second.c.o
-
-.PHONY : ncurses/second.o
-
-# target to build an object file
-ncurses/second.c.o:
-	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/ncurses/second.c.o
-.PHONY : ncurses/second.c.o
-
-ncurses/second.i: ncurses/second.c.i
-
-.PHONY : ncurses/second.i
-
-# target to preprocess a source file
-ncurses/second.c.i:
-	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/ncurses/second.c.i
-.PHONY : ncurses/second.c.i
-
-ncurses/second.s: ncurses/second.c.s
-
-.PHONY : ncurses/second.s
-
-# target to generate assembly for a file
-ncurses/second.c.s:
-	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/ncurses/second.c.s
-.PHONY : ncurses/second.c.s
-
-ncurses/third.o: ncurses/third.c.o
-
-.PHONY : ncurses/third.o
-
-# target to build an object file
-ncurses/third.c.o:
-	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/ncurses/third.c.o
-.PHONY : ncurses/third.c.o
-
-ncurses/third.i: ncurses/third.c.i
-
-.PHONY : ncurses/third.i
-
-# target to preprocess a source file
-ncurses/third.c.i:
-	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/ncurses/third.c.i
-.PHONY : ncurses/third.c.i
-
-ncurses/third.s: ncurses/third.c.s
-
-.PHONY : ncurses/third.s
-
-# target to generate assembly for a file
-ncurses/third.c.s:
-	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/ncurses/third.c.s
-.PHONY : ncurses/third.c.s
-
 ns_additional_func.o: ns_additional_func.c.o
 
 .PHONY : ns_additional_func.o
@@ -3066,6 +2958,33 @@ ns_additional_func2.c.s:
 	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/ns_additional_func2.c.s
 .PHONY : ns_additional_func2.c.s
 
+ns_additional_func3.o: ns_additional_func3.c.o
+
+.PHONY : ns_additional_func3.o
+
+# target to build an object file
+ns_additional_func3.c.o:
+	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/ns_additional_func3.c.o
+.PHONY : ns_additional_func3.c.o
+
+ns_additional_func3.i: ns_additional_func3.c.i
+
+.PHONY : ns_additional_func3.i
+
+# target to preprocess a source file
+ns_additional_func3.c.i:
+	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/ns_additional_func3.c.i
+.PHONY : ns_additional_func3.c.i
+
+ns_additional_func3.s: ns_additional_func3.c.s
+
+.PHONY : ns_additional_func3.s
+
+# target to generate assembly for a file
+ns_additional_func3.c.s:
+	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/ns_additional_func3.c.s
+.PHONY : ns_additional_func3.c.s
+
 ns_cursor_create.o: ns_cursor_create.c.o
 
 .PHONY : ns_cursor_create.o
@@ -3092,6 +3011,33 @@ ns_cursor_create.s: ns_cursor_create.c.s
 ns_cursor_create.c.s:
 	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/ns_cursor_create.c.s
 .PHONY : ns_cursor_create.c.s
+
+ns_error.o: ns_error.c.o
+
+.PHONY : ns_error.o
+
+# target to build an object file
+ns_error.c.o:
+	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/ns_error.c.o
+.PHONY : ns_error.c.o
+
+ns_error.i: ns_error.c.i
+
+.PHONY : ns_error.i
+
+# target to preprocess a source file
+ns_error.c.i:
+	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/ns_error.c.i
+.PHONY : ns_error.c.i
+
+ns_error.s: ns_error.c.s
+
+.PHONY : ns_error.s
+
+# target to generate assembly for a file
+ns_error.c.s:
+	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/ns_error.c.s
+.PHONY : ns_error.c.s
 
 ns_read_champion.o: ns_read_champion.c.o
 
@@ -3606,6 +3552,33 @@ operations/ns_zjmp.c.s:
 	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/operations/ns_zjmp.c.s
 .PHONY : operations/ns_zjmp.c.s
 
+start_game.o: start_game.c.o
+
+.PHONY : start_game.o
+
+# target to build an object file
+start_game.c.o:
+	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/start_game.c.o
+.PHONY : start_game.c.o
+
+start_game.i: start_game.c.i
+
+.PHONY : start_game.i
+
+# target to preprocess a source file
+start_game.c.i:
+	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/start_game.c.i
+.PHONY : start_game.c.i
+
+start_game.s: start_game.c.s
+
+.PHONY : start_game.s
+
+# target to generate assembly for a file
+start_game.c.s:
+	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/start_game.c.s
+.PHONY : start_game.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -3924,27 +3897,21 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... ncurses/first.o"
-	@echo "... ncurses/first.i"
-	@echo "... ncurses/first.s"
-	@echo "... ncurses/fourth.o"
-	@echo "... ncurses/fourth.i"
-	@echo "... ncurses/fourth.s"
-	@echo "... ncurses/second.o"
-	@echo "... ncurses/second.i"
-	@echo "... ncurses/second.s"
-	@echo "... ncurses/third.o"
-	@echo "... ncurses/third.i"
-	@echo "... ncurses/third.s"
 	@echo "... ns_additional_func.o"
 	@echo "... ns_additional_func.i"
 	@echo "... ns_additional_func.s"
 	@echo "... ns_additional_func2.o"
 	@echo "... ns_additional_func2.i"
 	@echo "... ns_additional_func2.s"
+	@echo "... ns_additional_func3.o"
+	@echo "... ns_additional_func3.i"
+	@echo "... ns_additional_func3.s"
 	@echo "... ns_cursor_create.o"
 	@echo "... ns_cursor_create.i"
 	@echo "... ns_cursor_create.s"
+	@echo "... ns_error.o"
+	@echo "... ns_error.i"
+	@echo "... ns_error.s"
 	@echo "... ns_read_champion.o"
 	@echo "... ns_read_champion.i"
 	@echo "... ns_read_champion.s"
@@ -4002,6 +3969,9 @@ help:
 	@echo "... operations/ns_zjmp.o"
 	@echo "... operations/ns_zjmp.i"
 	@echo "... operations/ns_zjmp.s"
+	@echo "... start_game.o"
+	@echo "... start_game.i"
+	@echo "... start_game.s"
 .PHONY : help
 
 

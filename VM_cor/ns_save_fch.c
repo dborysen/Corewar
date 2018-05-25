@@ -6,7 +6,7 @@
 /*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/11 15:57:53 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/22 19:06:25 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/25 15:33:15 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,6 +45,7 @@ t_champion	*ns_save_champs(t_champion **champ, unsigned char *file_info, int fd)
 	ns_save_execute_code(&temp, file_info, fd);
 	temp->next = (t_champion *)malloc(sizeof(t_champion));
 	temp = temp->next;
+	free(file_info);
 	return (temp);
 }
 
@@ -61,7 +62,8 @@ t_champion	*ns_read_champion(char *av, t_champion **champ)
 	size_file = lseek(fd, 0, SEEK_END);
 	lseek(fd, 0, SEEK_SET);
 	file_info = (unsigned char *)ft_strnew((size_t)size_file);
-	read(fd, file_info, (size_t)size_file);
+	if (read(fd, file_info, (size_t)size_file) <= 0)
+		ns_error("empty file");
 	temp->file_size = (size_t)size_file;
 	if (temp->file_size > sizeof(header_t) + CHAMP_MAX_SIZE)
 		ns_error("large file");
@@ -113,7 +115,5 @@ void		ns_check_flags(int ac, char **av, t_fl *flags, t_champion **champ)
 	}
 	if ((*champ)->id == 0 || !ns_check_id(*champ))
 		ns_error("wrong number champions");
-//	if (flags->v)
-//		flags->dump = -1;
 	temp->next = NULL;
 }

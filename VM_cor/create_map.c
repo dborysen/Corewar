@@ -6,7 +6,7 @@
 /*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/24 16:30:21 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/21 13:33:39 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/25 14:23:20 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,8 +28,8 @@ void	ns_create_map(t_map *memory_map)
 void	ns_ch_map(t_champion *champ, t_map **map)
 {
 	int				i;
-	unsigned int 	ind;
-	t_map	*memory_map;
+	unsigned int	ind;
+	t_map			*memory_map;
 
 	ind = 0;
 	memory_map = *map;
@@ -39,7 +39,8 @@ void	ns_ch_map(t_champion *champ, t_map **map)
 		if (ind < champ->size_bytes)
 		{
 			memory_map->map[i] = champ->exec_code[ind++];
-			memory_map->color[i] = champ->color;
+			if (memory_map->color[i] != champ->color + 5)
+				memory_map->color[i] = champ->color;
 		}
 		i++;
 	}
@@ -49,6 +50,7 @@ void	ns_fill_map(t_champion *champ, t_map *map)
 {
 	while (champ->next)
 	{
+		map->color[champ->position_to_start] = champ->color + 5;
 		ns_ch_map(champ, &map);
 		champ = champ->next;
 	}
