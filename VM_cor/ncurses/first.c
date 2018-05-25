@@ -6,7 +6,7 @@
 /*   By: ssavchen <ssavchen@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/17 12:03:59 by ssavchen          #+#    #+#             */
-/*   Updated: 2018/05/25 13:48:49 by ssavchen         ###   ########.fr       */
+/*   Updated: 2018/05/25 15:37:57 by ssavchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -89,7 +89,7 @@ void	nc_set_color(void)
 	init_pair(10, COLOR_WHITE, COLOR_WHITE);
 }
 
-void	ns_ncurses(t_map *map, t_info *info, t_cursor **cursor, t_fl fl)
+void	ns_ncurses(t_map *map, t_info *info, t_cursor **cursor)
 {
 	t_vizor		viz;
 
@@ -107,5 +107,5 @@ void	ns_ncurses(t_map *map, t_info *info, t_cursor **cursor, t_fl fl)
 	wrefresh(viz.ful);
 	wrefresh(viz.map);
 	wrefresh(viz.stat);
-	nc_wait(&viz, info, map, cursor, fl);
+	nc_wait(&viz, info, map, cursor);
 }

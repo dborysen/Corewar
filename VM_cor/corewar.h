@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   corewar.h                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
+/*   By: ssavchen <ssavchen@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/23 13:22:27 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/25 14:56:31 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/25 15:46:49 by ssavchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -239,18 +239,17 @@ void					ns_rrr_xor(t_cursor **cur, t_map *m_map);
 
 void					ns_create_cycle(t_cursor **cursor, t_map *m_map);
 t_cursor				*ns_move_cursor(t_cursor **cursor, t_map *map, t_info **info);
-
-void					ns_ncurses(t_map *map, t_info *info, t_cursor **cursor, t_fl fl);
+void					ns_ncurses(t_map *map, t_info *info, t_cursor **cursor);
 void					nc_right_print(t_vizor *viz, t_info *info);
-void					nc_wait(t_vizor *viz, t_info *info, t_map *map, t_cursor **cursor, t_fl fl);
+void					nc_wait(t_vizor *viz, t_info *info, t_map *map, t_cursor **cursor);
 void					nc_set_color(void);
 void					nc_get_color(t_map map, int i, t_vizor viz);
 void					nc_check_window();
 void					nc_qwer(int key, t_info *info, t_vizor *viz);
 void					nc_print_all(t_map map, t_vizor *viz, t_info *info);
 void					nc_print_map(t_map map, t_vizor viz, WINDOW *winmap);
-void					nc_next_step(t_vizor *viz, t_info *info, t_map *map, t_cursor **cursor, t_fl fl);
-t_cursor				**nc_game_start(t_cursor **cursor, t_map **m_map, t_info *info, t_fl fl);
+void					nc_next_step(t_vizor *viz, t_info *info, t_map *map, t_cursor **cursor);
+t_cursor				**nc_game_start(t_cursor **cursor, t_map **m_map, t_info *info);
 void					nc_winner(t_vizor *viz, t_info *info);
 void					clear_map(t_cursor *cur, t_map **map);
 

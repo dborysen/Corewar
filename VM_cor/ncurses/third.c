@@ -5,8 +5,13 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
+<<<<<<< HEAD
 /*   Created: 2018/05/25 15:40:32 by myprosku          #+#    #+#             */
 /*   Updated: 2018/05/25 15:40:32 by myprosku         ###   ########.fr       */
+=======
+/*   Created: 2018/05/25 15:41:15 by ssavchen          #+#    #+#             */
+/*   Updated: 2018/05/25 15:50:11 by ssavchen         ###   ########.fr       */
+>>>>>>> 117d9609c23d1112f764fb0116c229f2ad510b36
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,20 +46,21 @@ void	nc_qwer(int key, t_info *info, t_vizor *viz)
 	else if (key == 'r' && info->cycles_limit <= 990)
 		info->cycles_limit += 10;
 	else if (key == 'r' && info->cycles_limit >= 991
-			 && info->cycles_limit <= 999)
+			&& info->cycles_limit <= 999)
 		info->cycles_limit = 1000;
 	else if (key == 'q' && info->cycles_limit > 1
-			 && info->cycles_limit <= 10)
+			&& info->cycles_limit <= 10)
 		info->cycles_limit = 1;
 	nc_right_print(viz, info);
 	wrefresh(viz->stat);
 }
 
-void		clear_map(t_cursor *cur, t_map **map)
+void	clear_map(t_cursor *cur, t_map **map)
 {
 	while (cur)
 	{
-		if ((*map)->color[cur->before_pos % MEM_SIZE] >= 6 && (*map)->color[cur->before_pos % MEM_SIZE] <= 9)
+		if ((*map)->color[cur->before_pos % MEM_SIZE] >= 6
+			&& (*map)->color[cur->before_pos % MEM_SIZE] <= 9)
 			(*map)->color[cur->before_pos % MEM_SIZE] = cur->color - 5;
 		else if ((*map)->color[cur->before_pos % MEM_SIZE] == 10)
 			(*map)->color[cur->before_pos % MEM_SIZE] = 5;
