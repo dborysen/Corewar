@@ -20,6 +20,11 @@ int				corefile(t_str_tokens *input,
 
 	g_position = position;
 	prog_name = correct_name(header);
+	if (prog_name == NULL){
+		ft_printf("\n\e[1;31mERROR: \e[1;37mexpecting\e[1;36m ");
+		ft_printf(".s\e[0m \e[1;37mfile\e[0m\e[0m\n\n");
+		return (ERROR);
+	}
 	construct_data(input);
 	if (plus_validation(input) == ERROR || all_headers_filled(header) == ERROR)
 	{

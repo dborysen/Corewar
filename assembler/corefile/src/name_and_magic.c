@@ -17,7 +17,7 @@ char			*correct_name(t_header_data header)
 	int		position;
 	char	*res;
 
-	if (ft_strchr(header.program_name, '.'))
+	if (ft_strstr(header.program_name, ".s"))
 	{
 		position = ft_strchr(header.program_name, '.') - header.program_name;
 		res = ft_strdup(header.program_name);
@@ -25,10 +25,7 @@ char			*correct_name(t_header_data header)
 		ft_join_free(&res, ".cor");
 	}
 	else
-	{
-		res = ft_strdup(header.program_name);
-		ft_join_free(&res, ".cor");
-	}
+		res = NULL;
 	return (res);
 }
 
