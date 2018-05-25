@@ -62,13 +62,12 @@ t_cursor	*game_start(t_cursor **cursor, t_map *m_map, t_info *info)
 	return (*cursor);
 }
 
-t_cursor	**nc_game_start(t_cursor **cursor, t_map **m_map, t_info *info, t_fl fl)
+t_cursor	**nc_game_start(t_cursor **cursor, t_map **m_map, t_info *info)
 {
 	t_cursor	*temp;
 	t_map 		*map_t;
 
 	map_t = *m_map;
-	(void)fl;
 	temp = *cursor;
 	clear_map(temp, m_map);
 	info->winner_name = (*cursor)->champ->champ_name;

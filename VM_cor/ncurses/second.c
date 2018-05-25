@@ -6,7 +6,7 @@
 /*   By: ssavchen <ssavchen@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/17 16:24:34 by ssavchen          #+#    #+#             */
-/*   Updated: 2018/05/25 14:23:10 by ssavchen         ###   ########.fr       */
+/*   Updated: 2018/05/25 15:47:41 by ssavchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,14 @@
 
 void	nc_offline(t_vizor *viz)
 {
-		delwin(viz->stat);
-		delwin(viz->map);
-		delwin(viz->ful);
-		endwin();
-		exit(0);
+	delwin(viz->stat);
+	delwin(viz->map);
+	delwin(viz->ful);
+	endwin();
+	exit(0);
 }
 
-void	nc_next_step(t_vizor *viz, t_info *info, t_map *map, t_cursor **cursor, t_fl fl)
+void	nc_next_step(t_vizor *viz, t_info *info, t_map *map, t_cursor **cursor)
 {
 	int		key;
 
@@ -35,10 +35,10 @@ void	nc_next_step(t_vizor *viz, t_info *info, t_map *map, t_cursor **cursor, t_f
 		if (key == 27)
 			nc_offline(viz);
 		else if (key == ' ')
-			nc_wait(viz, info, map, cursor, fl);
+			nc_wait(viz, info, map, cursor);
 		else if (key == 'q' || key == 'w' || key == 'e' || key == 'r')
 			nc_qwer(key, info, viz);
-		cursor = nc_game_start(cursor, &map, info, fl);
+		cursor = nc_game_start(cursor, &map, info);
 		nc_print_all(*map, viz, info);
 	}
 	nc_winner(viz, info);
@@ -47,7 +47,7 @@ void	nc_next_step(t_vizor *viz, t_info *info, t_map *map, t_cursor **cursor, t_f
 		nc_offline(viz);
 }
 
-void	nc_wait(t_vizor *viz, t_info *info, t_map *map, t_cursor **cursor, t_fl fl)
+void	nc_wait(t_vizor *viz, t_info *info, t_map *map, t_cursor **cursor)
 {
 	int		key;
 
@@ -61,11 +61,11 @@ void	nc_wait(t_vizor *viz, t_info *info, t_map *map, t_cursor **cursor, t_fl fl)
 	if (key == 'q' || key == 'w' || key == 'e' || key == 'r')
 		nc_qwer(key, info, viz);
 	else if (key == ' ')
-		nc_next_step(viz, info, map, cursor, fl);
+		nc_next_step(viz, info, map, cursor);
 	else if (key == 27)
 		nc_offline(viz);
 	if (viz->pause == 1)
-		nc_wait(viz, info, map, cursor, fl);
+		nc_wait(viz, info, map, cursor);
 }
 
 void	nc_right_print(t_vizor *viz, t_info *info)
