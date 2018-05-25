@@ -119,4 +119,4 @@ add_executable(VM_cor
         ns_additional_func2.c ns_save_fch.c operations/ns_fork.c
         ncurses/first.c
         ncurses/second.c
-        ncurses/third.c ncurses/fourth.c)
+        ncurses/third.c)

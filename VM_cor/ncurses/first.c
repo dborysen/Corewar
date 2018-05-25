@@ -6,7 +6,7 @@
 /*   By: ssavchen <ssavchen@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/17 12:03:59 by ssavchen          #+#    #+#             */
-/*   Updated: 2018/05/25 13:02:40 by ssavchen         ###   ########.fr       */
+/*   Updated: 2018/05/25 13:48:49 by ssavchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,9 +20,8 @@ void	nc_create_viz(t_vizor *viz)
 	viz->ful = newwin(viz->height, viz->width, 0, 0);
 	viz->map = newwin(viz->height - 5, viz->width - 50, 4, 2);
 	viz->stat = newwin(viz->height - 9, viz->width - 200, 4, 198);
-	nc_print_borderf(viz);
-//	box(viz->ful, 0, 0);
-//	box(viz->stat, 0, 0);
+	box(viz->ful, 0, 0);
+	box(viz->stat, 0, 0);
 }
 
 void	nc_get_color(t_map map, int i, t_vizor viz)
