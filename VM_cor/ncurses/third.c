@@ -70,7 +70,7 @@ int		nc_players_print(t_vizor *viz, t_info *info)
 
 	tmp = info->champion;
 	i = 15;
-	while (tmp)
+	while (tmp->next)
 	{
 		mvwprintw(viz->stat, i, 4, "Player - %d : ", tmp->id);
 		wattron(viz->stat, COLOR_PAIR(tmp->color));

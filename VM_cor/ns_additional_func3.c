@@ -6,7 +6,7 @@
 /*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/25 14:57:54 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/29 14:58:43 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/29 18:12:44 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,31 +31,12 @@ void		ns_reverse_cursor(t_cursor **cursor)
 	*cursor = prev;
 }
 
-void		ns_reverse_champ(t_champion **champ)
-{
-	t_champion *prev;
-	t_champion *current;
-	t_champion *next;
-
-	prev = NULL;
-	current = *champ;
-	while (current->next)
-	{
-		next = current->next;
-		current->next = prev;
-		prev = current;
-		current = next;
-	}
-	free(current);
-	*champ = prev;
-}
-
 int			check_id_player(int id, t_info *info)
 {
 	t_champion *temp;
 
 	temp = info->champion;
-	while (temp)
+	while (temp->next)
 	{
 		if (id == temp->id)
 			return (1);
@@ -69,7 +50,7 @@ char		*find_name_id(int id, t_info *info)
 	t_champion *temp;
 
 	temp = info->champion;
-	while (temp)
+	while (temp->next)
 	{
 		if (id == temp->id)
 			return (temp->champ_name);

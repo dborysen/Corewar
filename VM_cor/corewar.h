@@ -6,7 +6,7 @@
 /*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/23 13:22:27 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/29 16:19:41 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/29 18:13:27 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -168,7 +168,6 @@ void					ns_save_program_size(t_champion **champ,
 void					ns_check_lives(t_cursor **cur,
 									t_info **info, t_map **map);
 void					ns_reverse_cursor(t_cursor **cursor);
-void					ns_reverse_champ(t_champion **champ);
 char					*find_name_id(int id, t_info *info);
 short					ns_two_bytes(t_map *map, int pos1, int pos2);
 int						ns_check_register(int r1, int r2, int r3);

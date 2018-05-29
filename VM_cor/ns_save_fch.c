@@ -6,7 +6,7 @@
 /*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/11 15:57:53 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/29 16:41:00 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/29 17:21:01 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,7 +67,7 @@ t_champion	*ns_read_champion(char *av, t_champion **champ)
 	if (read(fd, file_info, (size_t)size_file) <= 0)
 		ns_error("empty file");
 	temp->file_size = (size_t)size_file;
-	if (temp->file_size > sizeof(header_t) + CHAMP_MAX_SIZE)
+	if (temp->file_size > sizeof(t_header) + CHAMP_MAX_SIZE)
 		ns_error("large file");
 	return (ns_save_champs(&temp, file_info, fd));
 }

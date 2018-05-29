@@ -6,7 +6,7 @@
 /*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/25 14:58:46 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/25 15:54:47 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/29 18:12:11 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,8 @@ t_cursor	*game_start_dump(t_cursor **cursor, t_map *m_map,
 {
 	t_cursor *temp;
 
-	info->winner_nbr = info->champion->id;
-	info->winner_name = info->champion->champ_name;
+	info->winner_nbr = (*cursor)->champ->id;
+	info->winner_name = (*cursor)->champ->champ_name;
 	while (fl.dump > 0 && info->end_game == 0)
 	{
 		temp = *cursor;
@@ -45,8 +45,8 @@ t_cursor	*game_start(t_cursor **cursor, t_map *m_map, t_info *info)
 {
 	t_cursor *temp;
 
-	info->winner_nbr = info->champion->id;
-	info->winner_name = info->champion->champ_name;
+	info->winner_nbr = (*cursor)->champ->id;
+	info->winner_name = (*cursor)->champ->champ_name;
 	while (info->end_game == 0)
 	{
 		temp = *cursor;

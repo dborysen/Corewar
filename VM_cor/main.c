@@ -6,7 +6,7 @@
 /*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/23 13:20:36 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/29 17:12:04 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/29 18:13:05 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -79,10 +79,8 @@ int			main(int ac, char **av)
 	if (!flags.v)
 		ns_dump_flag(champ);
 	ns_reverse_cursor(&cursor);
-	ns_reverse_champ(&champ);
 	info.champion = champ;
 	cursor = ns_start(flags, cursor, info, map);
 	ns_delete_struct(champ, cursor);
-	system("leaks a.out");
 	return (0);
 }

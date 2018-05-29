@@ -42,7 +42,6 @@ void	nc_next_step(t_vizor *viz, t_info *info, t_map *map, t_cursor **cursor)
 		nc_print_all(*map, viz, info);
 	}
 	nc_winner(viz, info);
-	timeout(-1);
 	while (1)
 		while (getch() == 27)
 			nc_offline(viz);
