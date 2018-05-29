@@ -6,7 +6,7 @@
 /*   By: ssavchen <ssavchen@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/17 12:03:59 by ssavchen          #+#    #+#             */
-/*   Updated: 2018/05/25 15:37:57 by ssavchen         ###   ########.fr       */
+/*   Updated: 2018/05/29 10:56:52 by ssavchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,10 +16,10 @@ void	nc_create_viz(t_vizor *viz)
 {
 	viz->pause = 1;
 	viz->height = 74;
-	viz->width = 260;
+	viz->width = 250;
 	viz->ful = newwin(viz->height, viz->width, 0, 0);
-	viz->map = newwin(viz->height - 5, viz->width - 50, 4, 2);
-	viz->stat = newwin(viz->height - 9, viz->width - 200, 4, 198);
+	viz->map = newwin(viz->height - 5, viz->width - 50, 2, 2);
+	viz->stat = newwin(viz->height - 9, viz->width - 200, 2, 198);
 	box(viz->ful, 0, 0);
 	box(viz->stat, 0, 0);
 }
@@ -87,6 +87,7 @@ void	nc_set_color(void)
 	init_pair(8, COLOR_BLACK, COLOR_RED);
 	init_pair(9, COLOR_BLACK, COLOR_CYAN);
 	init_pair(10, COLOR_WHITE, COLOR_WHITE);
+	init_pair(11, COLOR_RED, COLOR_BLACK);
 }
 
 void	ns_ncurses(t_map *map, t_info *info, t_cursor **cursor)
@@ -94,12 +95,12 @@ void	ns_ncurses(t_map *map, t_info *info, t_cursor **cursor)
 	t_vizor		viz;
 
 	initscr();
-	nc_check_window();
 	cbreak();
 	noecho();
 	curs_set(0);
 	start_color();
 	nc_set_color();
+	nc_check_window();
 	nc_create_viz(&viz);
 	nc_print_map(*map, viz, viz.map);
 	nc_right_print(&viz, info);

@@ -395,6 +395,15 @@
 		<Unit filename="/Users/ssavchen/coretwar/VM_cor/main.c">
 			<Option target="VM_cor"/>
 		</Unit>
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/ncurses/first.c">
+			<Option target="VM_cor"/>
+		</Unit>
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/ncurses/second.c">
+			<Option target="VM_cor"/>
+		</Unit>
+		<Unit filename="/Users/ssavchen/coretwar/VM_cor/ncurses/third.c">
+			<Option target="VM_cor"/>
+		</Unit>
 		<Unit filename="/Users/ssavchen/coretwar/VM_cor/ns_additional_func.c">
 			<Option target="VM_cor"/>
 		</Unit>
