@@ -6,7 +6,7 @@
 /*   By: ssavchen <ssavchen@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/25 15:53:27 by ssavchen          #+#    #+#             */
-/*   Updated: 2018/05/29 10:45:25 by ssavchen         ###   ########.fr       */
+/*   Updated: 2018/05/29 17:08:24 by ssavchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,4 +61,23 @@ void	clear_map(t_cursor *cur, t_map **map)
 			(*map)->color[cur->before_pos % MEM_SIZE] = 5;
 		cur = cur->next;
 	}
+}
+
+int		nc_players_print(t_vizor *viz, t_info *info)
+{
+	int		i;
+	t_champion	*tmp;
+
+	tmp = info->champion;
+	i = 15;
+	while (tmp)
+	{
+		mvwprintw(viz->stat, i, 4, "Player -%d : ", tmp->id);
+		wattron(viz->stat, COLOR_PAIR(tmp->color));
+		mvwprintw(viz->stat, i, 16, "%s", tmp->champ_name);
+		i += 3;
+		tmp = tmp->next;
+		wattron(viz->stat, COLOR_PAIR(5));
+	}
+	return (i);
 }

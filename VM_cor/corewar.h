@@ -273,5 +273,6 @@ t_cursor				*ns_move_cursor(t_cursor **cursor,
 										t_map *map, t_info **info);
 t_cursor				**nc_game_start(t_cursor **cursor,
 										t_map **m_map, t_info *info);
+int						nc_players_print(t_vizor *viz, t_info *info);
 
 #endif

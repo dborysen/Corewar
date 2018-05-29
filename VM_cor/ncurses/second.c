@@ -6,7 +6,7 @@
 /*   By: ssavchen <ssavchen@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/17 16:24:34 by ssavchen          #+#    #+#             */
-/*   Updated: 2018/05/29 13:43:54 by ssavchen         ###   ########.fr       */
+/*   Updated: 2018/05/29 17:01:47 by ssavchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,6 +71,8 @@ void	nc_wait(t_vizor *viz, t_info *info, t_map *map, t_cursor **cursor)
 
 void	nc_right_print(t_vizor *viz, t_info *info)
 {
+	int		i;
+
 	wattron(viz->stat, COLOR_PAIR(5));
 	wattron(viz->stat, A_BOLD);
 	if (viz->pause == 1)
@@ -80,10 +82,11 @@ void	nc_right_print(t_vizor *viz, t_info *info)
 	mvwprintw(viz->stat, 6, 4, "Cycle/second limit : %4d", info->cycles_limit);
 	mvwprintw(viz->stat, 9, 4, "Cycle : %d", info->total_cycles);
 	mvwprintw(viz->stat, 12, 4, "Processes : %d", info->count_cursor);
-	mvwprintw(viz->stat, 15, 4, "CYCLE_TO_DIE : %d", info->die);
-	mvwprintw(viz->stat, 18, 4, "CYCLE_DELTA : %d", CYCLE_DELTA);
-	mvwprintw(viz->stat, 21, 4, "NBR_LIVE : %d", NBR_LIVE);
-	mvwprintw(viz->stat, 24, 4, "MAX_CHECKS : %d", MAX_CHECKS);
+	i = nc_players_print(viz, info);
+	mvwprintw(viz->stat, i, 4, "CYCLE_TO_DIE : %d", info->die);
+	mvwprintw(viz->stat, i += 3, 4, "CYCLE_DELTA : %d", CYCLE_DELTA);
+	mvwprintw(viz->stat, i += 3, 4, "NBR_LIVE : %d", NBR_LIVE);
+	mvwprintw(viz->stat, i += 3, 4, "MAX_CHECKS : %d", MAX_CHECKS);
 }
 
 void	nc_check_window(void)
