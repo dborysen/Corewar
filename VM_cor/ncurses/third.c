@@ -6,7 +6,7 @@
 /*   By: ssavchen <ssavchen@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/25 15:53:27 by ssavchen          #+#    #+#             */
-/*   Updated: 2018/05/25 15:53:27 by ssavchen         ###   ########.fr       */
+/*   Updated: 2018/05/29 10:45:25 by ssavchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,11 +22,11 @@ void	nc_print_all(t_map map, t_vizor *viz, t_info *info)
 
 void	nc_winner(t_vizor *viz, t_info *info)
 {
-	mvwprintw((viz)->stat, 30, 3, "WINNER IS: ");
+	mvwprintw((viz)->stat, 30, 3, "THE WINNER IS: ");
 	wattron(viz->stat, COLOR_PAIR(info->winner_col));
-	mvwprintw((viz)->stat, 30, 3 + 11, "%s", info->winner_name);
+	mvwprintw((viz)->stat, 30, 3 + 15, "%s", info->winner_name);
 	wattron(viz->stat, COLOR_PAIR(5));
-	mvwprintw((viz)->stat, 36, 3, "PRESS ESC TO EXIT! F*CK YOU");
+	mvwprintw((viz)->stat, 36, 3, "PRESS ESC TO EXIT!");
 	wrefresh(viz->stat);
 }
 

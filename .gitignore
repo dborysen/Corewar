@@ -1,4 +1,5 @@
 cmake-build-debug
+a.out
 .idea
 .DS_Store*
 *.o
