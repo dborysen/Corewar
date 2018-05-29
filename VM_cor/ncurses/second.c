@@ -6,7 +6,7 @@
 /*   By: ssavchen <ssavchen@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/17 16:24:34 by ssavchen          #+#    #+#             */
-/*   Updated: 2018/05/29 11:13:38 by ssavchen         ###   ########.fr       */
+/*   Updated: 2018/05/29 11:30:07 by ssavchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -87,20 +87,20 @@ void	nc_right_print(t_vizor *viz, t_info *info)
 
 void	nc_check_window(void)
 {
-	if (COLS < 250 || LINES < 74)
+	if (COLS < 255 || LINES < 70)
 	{
 		attron(A_BOLD);
 		attron(A_UNDERLINE);
 		attron(COLOR_PAIR(11));
 		mvprintw(LINES / 2, COLS / 2, "YO YO YO YO");
 		mvprintw(LINES / 2 + 1, COLS / 2, "Take relax!");
-		if (COLS < 250 && LINES < 74)
+		if (COLS < 255 && LINES < 70)
 			mvprintw(LINES / 2 + 2, COLS / 2,
 					"Make the window wider and higher!");
-		else if (COLS < 250 && LINES >= 74)
+		else if (COLS < 255 && LINES >= 70)
 			mvprintw(LINES / 2 + 2, COLS / 2,
 					"Make the window wider!");
-		else if (COLS >= 250 && LINES < 74)
+		else if (COLS >= 255 && LINES < 70)
 			mvprintw(LINES / 2 + 2, COLS / 2,
 					"Make the window higher!");
 		getch();

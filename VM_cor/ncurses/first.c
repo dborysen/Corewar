@@ -6,7 +6,7 @@
 /*   By: ssavchen <ssavchen@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/17 12:03:59 by ssavchen          #+#    #+#             */
-/*   Updated: 2018/05/29 10:56:52 by ssavchen         ###   ########.fr       */
+/*   Updated: 2018/05/29 11:38:03 by ssavchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,11 +15,11 @@
 void	nc_create_viz(t_vizor *viz)
 {
 	viz->pause = 1;
-	viz->height = 74;
-	viz->width = 250;
+	viz->height = 70;
+	viz->width = 255;
 	viz->ful = newwin(viz->height, viz->width, 0, 0);
-	viz->map = newwin(viz->height - 5, viz->width - 50, 2, 2);
-	viz->stat = newwin(viz->height - 9, viz->width - 200, 2, 198);
+	viz->map = newwin(viz->height - 3, viz->width - 50, 2, 2);
+	viz->stat = newwin(viz->height - 6, viz->width - 200, 2, 198);
 	box(viz->ful, 0, 0);
 	box(viz->stat, 0, 0);
 }
