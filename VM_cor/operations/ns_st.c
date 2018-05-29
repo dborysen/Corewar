@@ -33,6 +33,7 @@ void	set_on_map(t_map **map, t_cursor *temp, t_reg reg)
 		map_t->color[pos] = temp->champ->color;
 		i++;
 	}
+	free(str);
 }
 
 void	ns_st(t_cursor **cur, t_map *m_map)

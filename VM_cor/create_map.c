@@ -6,17 +6,19 @@
 /*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/24 16:30:21 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/25 14:23:20 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/29 15:11:46 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "corewar.h"
 
-void	ns_create_map(t_map *memory_map)
+void	ns_create_map(t_map *memory_map, t_fl flags)
 {
 	int i;
 
 	i = 0;
+	memory_map->d = flags.d;
+	memory_map->v = flags.v;
 	while (i < MEM_SIZE)
 	{
 		memory_map->map[i] = 0;

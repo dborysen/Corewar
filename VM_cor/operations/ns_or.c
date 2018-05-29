@@ -24,7 +24,7 @@ void	ns_or(t_cursor **cur, t_map *m_map)
 		ns_drr_or(cur, m_map);
 	else if ((m_map->map[((*cur)->index_pos + 1) % MEM_SIZE] >> 2) == T_DDR)
 		ns_ddr_or(cur, m_map);
-	else if ((m_map->map[((*cur)->index_pos + 1) % MEM_SIZE] >> 2) == t_DIR)
+	else if ((m_map->map[((*cur)->index_pos + 1) % MEM_SIZE] >> 2) == X_DIR)
 		ns_dir_or(cur, m_map);
 	else if ((m_map->map[((*cur)->index_pos + 1) % MEM_SIZE] >> 2) == T_IRR)
 		ns_irr_or(cur, m_map);

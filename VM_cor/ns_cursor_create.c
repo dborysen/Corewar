@@ -6,13 +6,13 @@
 /*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/02 15:09:56 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/25 15:56:08 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/29 16:17:52 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "corewar.h"
 
-ns_array_of_functions	g_func[16] =
+t_array_functions		g_func[16] =
 {
 	ns_live, ns_ld, ns_st, ns_add, ns_sub, ns_and, ns_or, ns_xor,
 	ns_zjmp, ns_ldi, ns_sti, 0, ns_lld, ns_lldi, 0, ns_aff
@@ -30,10 +30,10 @@ void					ns_create_cursor(t_cursor **cursor, t_champion *champ)
 		temp->nbr_player = champ->id;
 		temp->index_pos = champ->position_to_start;
 		temp->commad = 0;
-		temp->next = (t_cursor *)malloc(sizeof(t_cursor));
 		temp->registr[1] = -temp->nbr_player;
 		temp->color = champ->color + 5;
 		temp->champ = champ;
+		temp->next = (t_cursor *)malloc(sizeof(t_cursor));
 		temp = temp->next;
 		champ = champ->next;
 	}

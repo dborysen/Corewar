@@ -395,20 +395,16 @@
 		<Unit filename="/Users/myprosku/corTwar/VM_cor/main.c">
 			<Option target="VM_cor"/>
 		</Unit>
-<<<<<<< HEAD
+		<Unit filename="/Users/myprosku/corTwar/VM_cor/ncurses/first.c">
+			<Option target="VM_cor"/>
+		</Unit>
+		<Unit filename="/Users/myprosku/corTwar/VM_cor/ncurses/second.c">
+			<Option target="VM_cor"/>
+		</Unit>
+		<Unit filename="/Users/myprosku/corTwar/VM_cor/ncurses/third.c">
+			<Option target="VM_cor"/>
+		</Unit>
 		<Unit filename="/Users/myprosku/corTwar/VM_cor/ns_additional_func.c">
-=======
-		<Unit filename="/Users/ssavchen/coretwar/VM_cor/ncurses/first.c">
-			<Option target="VM_cor"/>
-		</Unit>
-		<Unit filename="/Users/ssavchen/coretwar/VM_cor/ncurses/second.c">
-			<Option target="VM_cor"/>
-		</Unit>
-		<Unit filename="/Users/ssavchen/coretwar/VM_cor/ncurses/third.c">
-			<Option target="VM_cor"/>
-		</Unit>
-		<Unit filename="/Users/ssavchen/coretwar/VM_cor/ns_additional_func.c">
->>>>>>> 26d11cbb2c40003f96aebaae5fad75ef4ed8445c
 			<Option target="VM_cor"/>
 		</Unit>
 		<Unit filename="/Users/myprosku/corTwar/VM_cor/ns_additional_func2.c">
@@ -481,6 +477,9 @@
 			<Option target="VM_cor"/>
 		</Unit>
 		<Unit filename="/Users/myprosku/corTwar/VM_cor/operations/ns_sti.c">
+			<Option target="VM_cor"/>
+		</Unit>
+		<Unit filename="/Users/myprosku/corTwar/VM_cor/operations/ns_sti2.c">
 			<Option target="VM_cor"/>
 		</Unit>
 		<Unit filename="/Users/myprosku/corTwar/VM_cor/operations/ns_sub.c">

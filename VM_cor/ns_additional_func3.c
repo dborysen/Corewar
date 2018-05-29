@@ -6,7 +6,7 @@
 /*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/25 14:57:54 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/25 14:58:10 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/29 14:58:43 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,7 @@ void		ns_reverse_cursor(t_cursor **cursor)
 		prev = current;
 		current = next;
 	}
+	free(current);
 	*cursor = prev;
 }
 
@@ -45,6 +46,7 @@ void		ns_reverse_champ(t_champion **champ)
 		prev = current;
 		current = next;
 	}
+	free(current);
 	*champ = prev;
 }
 

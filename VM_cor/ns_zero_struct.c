@@ -6,13 +6,13 @@
 /*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/24 15:27:39 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/22 19:06:41 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/29 15:52:15 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "corewar.h"
 
-void	ns_zero_flags(t_fl *flags)
+void		ns_zero_flags(t_fl *flags)
 {
 	flags->dump = 0;
 	flags->d = 0;
@@ -20,28 +20,28 @@ void	ns_zero_flags(t_fl *flags)
 	flags->n = 0;
 }
 
-void	ns_zero_champ(t_champion **champ)
+t_champion	*ns_zero_champ(void)
 {
 	t_champion *temp;
 
-	temp = *champ;
+	temp = (t_champion *)malloc(sizeof(t_champion));
 	temp->exec_code = NULL;
 	temp->file_size = 0;
 	temp->id = 0;
 	temp->magic = 0;
 	temp->size_bytes = 0;
 	temp->position_to_start = 0;
-	temp->life = 0;
 	temp->color = 0;
+	return (temp);
 }
 
-void	ns_zero_cursor(t_cursor **cursor)
+t_cursor	*ns_zero_cursor(void)
 {
 	t_cursor	*temp;
 	int			i;
 
 	i = 0;
-	temp = *cursor;
+	temp = (t_cursor *)malloc(sizeof(t_cursor));
 	temp->index_pos = 0;
 	temp->nbr_player = 0;
 	temp->step = 0;
@@ -52,9 +52,10 @@ void	ns_zero_cursor(t_cursor **cursor)
 	temp->champ = NULL;
 	while (i < REG_NUMBER + 1)
 		temp->registr[i++] = 0;
+	return (temp);
 }
 
-void	ns_zero_info(t_info *info)
+void		ns_zero_info(t_info *info)
 {
 	info->total_cycles = 0;
 	info->cycles_limit = 50;
@@ -67,7 +68,7 @@ void	ns_zero_info(t_info *info)
 	info->end_game = 0;
 }
 
-void	ns_zero_reg(t_reg *reg)
+void		ns_zero_reg(t_reg *reg)
 {
 	reg->r1 = 0;
 	reg->r2 = 0;

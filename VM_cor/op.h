@@ -72,10 +72,10 @@ typedef char	t_arg_type;
 
 typedef struct		header_s
 {
-	unsigned int		magic;
-	char				prog_name[PROG_NAME_LENGTH + 1];
-	unsigned int		prog_size;
-	char				comment[COMMENT_LENGTH + 1];
+	unsigned int	magic;
+	char			prog_name[PROG_NAME_LENGTH + 1];
+	unsigned int	prog_size;
+	char			comment[COMMENT_LENGTH + 1];
 }					header_t;
 
 typedef struct		s_op
@@ -87,7 +87,7 @@ typedef struct		s_op
 	unsigned int 	cycles;
 	char			*description;
 	unsigned int 	codeg_octal;
-	unsigned int 	label_size; // 0 - 4, 1 - 2 по таблице
+	unsigned int 	label_size;
 }					t_op;
 
 #endif

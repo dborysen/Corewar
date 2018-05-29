@@ -6,7 +6,7 @@
 /*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/11 15:57:53 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/25 15:49:48 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/29 16:40:50 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -115,7 +115,7 @@ void		ns_check_flags(int ac, char **av, t_fl *flags, t_champion **champ)
 			temp = ns_check_champions(av[i], &temp, flags);
 		i++;
 	}
+	temp->next = NULL;
 	if ((*champ)->id == 0 || !ns_check_id(*champ))
 		ns_error("wrong number champions");
-	temp->next = NULL;
 }

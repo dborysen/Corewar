@@ -24,4 +24,5 @@ void	ns_live(t_cursor **cur, t_map *m_map)
 	reg.index = unsigned_char_to_int(str);
 	temp->champ_nbr = 0 - reg.index;
 	temp->index_pos += 5;
+	free(str);
 }
