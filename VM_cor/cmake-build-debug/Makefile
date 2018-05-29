@@ -2904,87 +2904,6 @@ main.c.s:
 	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/main.c.s
 .PHONY : main.c.s
 
-ncurses/first.o: ncurses/first.c.o
-
-.PHONY : ncurses/first.o
-
-# target to build an object file
-ncurses/first.c.o:
-	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/ncurses/first.c.o
-.PHONY : ncurses/first.c.o
-
-ncurses/first.i: ncurses/first.c.i
-
-.PHONY : ncurses/first.i
-
-# target to preprocess a source file
-ncurses/first.c.i:
-	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/ncurses/first.c.i
-.PHONY : ncurses/first.c.i
-
-ncurses/first.s: ncurses/first.c.s
-
-.PHONY : ncurses/first.s
-
-# target to generate assembly for a file
-ncurses/first.c.s:
-	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/ncurses/first.c.s
-.PHONY : ncurses/first.c.s
-
-ncurses/second.o: ncurses/second.c.o
-
-.PHONY : ncurses/second.o
-
-# target to build an object file
-ncurses/second.c.o:
-	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/ncurses/second.c.o
-.PHONY : ncurses/second.c.o
-
-ncurses/second.i: ncurses/second.c.i
-
-.PHONY : ncurses/second.i
-
-# target to preprocess a source file
-ncurses/second.c.i:
-	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/ncurses/second.c.i
-.PHONY : ncurses/second.c.i
-
-ncurses/second.s: ncurses/second.c.s
-
-.PHONY : ncurses/second.s
-
-# target to generate assembly for a file
-ncurses/second.c.s:
-	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/ncurses/second.c.s
-.PHONY : ncurses/second.c.s
-
-ncurses/third.o: ncurses/third.c.o
-
-.PHONY : ncurses/third.o
-
-# target to build an object file
-ncurses/third.c.o:
-	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/ncurses/third.c.o
-.PHONY : ncurses/third.c.o
-
-ncurses/third.i: ncurses/third.c.i
-
-.PHONY : ncurses/third.i
-
-# target to preprocess a source file
-ncurses/third.c.i:
-	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/ncurses/third.c.i
-.PHONY : ncurses/third.c.i
-
-ncurses/third.s: ncurses/third.c.s
-
-.PHONY : ncurses/third.s
-
-# target to generate assembly for a file
-ncurses/third.c.s:
-	$(MAKE) -f CMakeFiles/VM_cor.dir/build.make CMakeFiles/VM_cor.dir/ncurses/third.c.s
-.PHONY : ncurses/third.c.s
-
 ns_additional_func.o: ns_additional_func.c.o
 
 .PHONY : ns_additional_func.o
@@ -4113,15 +4032,6 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... ncurses/first.o"
-	@echo "... ncurses/first.i"
-	@echo "... ncurses/first.s"
-	@echo "... ncurses/second.o"
-	@echo "... ncurses/second.i"
-	@echo "... ncurses/second.s"
-	@echo "... ncurses/third.o"
-	@echo "... ncurses/third.i"
-	@echo "... ncurses/third.s"
 	@echo "... ns_additional_func.o"
 	@echo "... ns_additional_func.i"
 	@echo "... ns_additional_func.s"

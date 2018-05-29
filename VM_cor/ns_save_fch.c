@@ -6,7 +6,7 @@
 /*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/11 15:57:53 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/29 16:40:50 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/29 16:41:00 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,6 +45,7 @@ t_champion	*ns_save_champs(t_champion **champ,
 	ns_save_comment(&temp, file_info);
 	ns_save_execute_code(&temp, file_info, fd);
 	temp->next = (t_champion *)malloc(sizeof(t_champion));
+	temp->position_to_start = 0;
 	temp = temp->next;
 	free(file_info);
 	return (temp);

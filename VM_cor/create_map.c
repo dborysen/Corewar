@@ -52,7 +52,7 @@ void	ns_fill_map(t_champion *champ, t_map *map)
 {
 	while (champ->next)
 	{
-		map->color[champ->position_to_start] = champ->color + 5;
+		map->color[champ->position_to_start % MEM_SIZE] = champ->color + 5;
 		ns_ch_map(champ, &map);
 		champ = champ->next;
 	}
