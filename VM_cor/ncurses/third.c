@@ -6,7 +6,7 @@
 /*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/25 15:53:27 by ssavchen          #+#    #+#             */
-/*   Updated: 2018/05/29 17:30:52 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/29 17:31:49 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,7 +65,7 @@ void	clear_map(t_cursor *cur, t_map **map)
 
 int		nc_players_print(t_vizor *viz, t_info *info)
 {
-	int		i;
+	int			i;
 	t_champion	*tmp;
 
 	tmp = info->champion;
@@ -74,7 +74,8 @@ int		nc_players_print(t_vizor *viz, t_info *info)
 	{
 		mvwprintw(viz->stat, i, 4, "Player - %d : ", tmp->id);
 		wattron(viz->stat, COLOR_PAIR(tmp->color));
-		mvwprintw(viz->stat, i, 16 + ft_intlen(tmp->id), "\"%s\"", tmp->champ_name);
+		mvwprintw(viz->stat, i, 16 + ft_intlen(tmp->id), "\"%s\"",
+				tmp->champ_name);
 		i += 3;
 		tmp = tmp->next;
 		wattron(viz->stat, COLOR_PAIR(5));
