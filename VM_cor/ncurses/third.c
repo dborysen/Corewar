@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   third.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ssavchen <ssavchen@student.unit.ua>        +#+  +:+       +#+        */
+/*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/25 15:53:27 by ssavchen          #+#    #+#             */
-/*   Updated: 2018/05/29 17:08:24 by ssavchen         ###   ########.fr       */
+/*   Updated: 2018/05/29 17:30:52 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,9 +72,9 @@ int		nc_players_print(t_vizor *viz, t_info *info)
 	i = 15;
 	while (tmp)
 	{
-		mvwprintw(viz->stat, i, 4, "Player -%d : ", tmp->id);
+		mvwprintw(viz->stat, i, 4, "Player - %d : ", tmp->id);
 		wattron(viz->stat, COLOR_PAIR(tmp->color));
-		mvwprintw(viz->stat, i, 16, "%s", tmp->champ_name);
+		mvwprintw(viz->stat, i, 16 + ft_intlen(tmp->id), "\"%s\"", tmp->champ_name);
 		i += 3;
 		tmp = tmp->next;
 		wattron(viz->stat, COLOR_PAIR(5));
