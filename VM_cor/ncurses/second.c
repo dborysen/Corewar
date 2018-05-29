@@ -6,7 +6,7 @@
 /*   By: ssavchen <ssavchen@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/17 16:24:34 by ssavchen          #+#    #+#             */
-/*   Updated: 2018/05/29 11:30:07 by ssavchen         ###   ########.fr       */
+/*   Updated: 2018/05/29 13:43:54 by ssavchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,8 +43,9 @@ void	nc_next_step(t_vizor *viz, t_info *info, t_map *map, t_cursor **cursor)
 	}
 	nc_winner(viz, info);
 	timeout(-1);
-	if (getch() == 27)
-		nc_offline(viz);
+	while (1)
+		while (getch() == 27)
+			nc_offline(viz);
 }
 
 void	nc_wait(t_vizor *viz, t_info *info, t_map *map, t_cursor **cursor)
