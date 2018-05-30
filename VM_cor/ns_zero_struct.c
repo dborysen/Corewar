@@ -66,6 +66,7 @@ void		ns_zero_info(t_info *info)
 	info->winner_name = NULL;
 	info->die = CYCLE_TO_DIE;
 	info->end_game = 0;
+	info->zdvig = 15;
 }
 
 void		ns_zero_reg(t_reg *reg)

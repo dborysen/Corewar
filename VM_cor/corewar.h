@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   corewar.h                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
+/*   By: ssavchen <ssavchen@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/04/23 13:22:27 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/29 18:13:27 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/30 14:07:10 by ssavchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -125,6 +125,7 @@ typedef struct			s_info
 	int					winner_nbr;
 	char				*winner_name;
 	int					winner_col;
+	int					zdvig;
 	int					checks;
 	int					die;
 	int					end_game;
@@ -272,6 +273,6 @@ t_cursor				*ns_move_cursor(t_cursor **cursor,
 										t_map *map, t_info **info);
 t_cursor				**nc_game_start(t_cursor **cursor,
 										t_map **m_map, t_info *info);
-int						nc_players_print(t_vizor *viz, t_info *info);
+void					nc_players_print(t_vizor *viz, t_info *info);
 
 #endif

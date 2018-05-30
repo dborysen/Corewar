@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   third.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
+/*   By: ssavchen <ssavchen@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/25 15:53:27 by ssavchen          #+#    #+#             */
-/*   Updated: 2018/05/29 17:31:49 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/30 14:14:37 by ssavchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,11 +22,11 @@ void	nc_print_all(t_map map, t_vizor *viz, t_info *info)
 
 void	nc_winner(t_vizor *viz, t_info *info)
 {
-	mvwprintw((viz)->stat, 30, 3, "THE WINNER IS: ");
+	mvwprintw((viz)->stat, info->zdvig, 4, "THE WINNER IS: ");
 	wattron(viz->stat, COLOR_PAIR(info->winner_col));
-	mvwprintw((viz)->stat, 30, 3 + 15, "%s", info->winner_name);
+	mvwprintw((viz)->stat, info->zdvig, 4 + 15, "%s", info->winner_name);
 	wattron(viz->stat, COLOR_PAIR(5));
-	mvwprintw((viz)->stat, 36, 3, "PRESS ESC TO EXIT!");
+	mvwprintw((viz)->stat, info->zdvig + 3, 4, "PRESS ESC TO EXIT!");
 	wrefresh(viz->stat);
 }
 
@@ -63,22 +63,20 @@ void	clear_map(t_cursor *cur, t_map **map)
 	}
 }
 
-int		nc_players_print(t_vizor *viz, t_info *info)
+void	nc_players_print(t_vizor *viz, t_info *info)
 {
-	int			i;
 	t_champion	*tmp;
 
+	info->zdvig = 15;
 	tmp = info->champion;
-	i = 15;
 	while (tmp->next)
 	{
-		mvwprintw(viz->stat, i, 4, "Player - %d : ", tmp->id);
+		mvwprintw(viz->stat, info->zdvig, 4, "Player - %d : ", tmp->id);
 		wattron(viz->stat, COLOR_PAIR(tmp->color));
-		mvwprintw(viz->stat, i, 16 + ft_intlen(tmp->id), "\"%s\"",
+		mvwprintw(viz->stat, info->zdvig, 16 + ft_intlen(tmp->id), "\"%s\"",
 				tmp->champ_name);
-		i += 3;
+		info->zdvig += 3;
 		tmp = tmp->next;
 		wattron(viz->stat, COLOR_PAIR(5));
 	}
-	return (i);
 }
