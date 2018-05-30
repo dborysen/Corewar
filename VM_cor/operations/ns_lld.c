@@ -12,26 +12,6 @@
 
 #include "../corewar.h"
 
-unsigned char	*find_twobytes(t_map *map, int index)
-{
-	unsigned char	*str;
-	int				i;
-	int				pos;
-
-	i = 0;
-	str = (unsigned char *)malloc(sizeof(unsigned char) + 3);
-	index = index < 0 ? index + MEM_SIZE : index % MEM_SIZE;
-	while (i < 2)
-	{
-		pos = index + i;
-		pos = pos < 0 ? pos + MEM_SIZE : pos % MEM_SIZE;
-		str[i] = map->map[pos];
-		i++;
-	}
-	str[i] = '\0';
-	return (str);
-}
-
 void			ns_ll(t_cursor **cur, t_map *map, t_reg reg, unsigned char *str)
 {
 	t_cursor *temp;
@@ -42,7 +22,7 @@ void			ns_ll(t_cursor **cur, t_map *map, t_reg reg, unsigned char *str)
 	{
 		reg.index = ns_two_bytes(map, temp->index_pos + 2,
 								temp->index_pos + 3);
-		str = find_twobytes(map, temp->index_pos + reg.index);
+		str = find_fbytes_tind(map, temp->index_pos + reg.index);
 		reg.index = unsigned_char_to_int(str);
 		temp->registr[reg.r1] = reg.index;
 		temp->carry = temp->registr[reg.r1] == 0 ? 1 : 0;

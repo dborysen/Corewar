@@ -6,7 +6,7 @@
 /*   By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/25 13:33:11 by myprosku          #+#    #+#             */
-/*   Updated: 2018/05/29 16:39:30 by myprosku         ###   ########.fr       */
+/*   Updated: 2018/05/30 13:07:14 by myprosku         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ns_error(char *err_message)
 {
-	ft_printf("Error with problem: %s.\n", err_message);
+	ft_printf("\n\e[1;31mError:\e[0m \e[1;37m%s.\e[0m\n\n", err_message);
 	exit(0);
 }
 
