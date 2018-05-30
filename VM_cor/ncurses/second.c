@@ -84,7 +84,6 @@ void	nc_right_print(t_vizor *viz, t_info *info)
 	mvwprintw(viz->stat, info->zdvig += 3, 4, "CYCLE_DELTA : %d", CYCLE_DELTA);
 	mvwprintw(viz->stat, info->zdvig += 3, 4, "NBR_LIVE : %d", NBR_LIVE);
 	mvwprintw(viz->stat, info->zdvig += 3, 4, "MAX_CHECKS : %d", MAX_CHECKS);
-//	info->zdvig += 3;
 }
 
 void	nc_check_window(void)

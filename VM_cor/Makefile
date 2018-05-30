@@ -6,7 +6,7 @@
 #    By: myprosku <myprosku@student.unit.ua>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/05/30 13:21:38 by myprosku          #+#    #+#              #
-#    Updated: 2018/05/30 13:46:56 by myprosku         ###   ########.fr        #
+#    Updated: 2018/05/30 13:47:36 by myprosku         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -32,7 +32,7 @@ FLAGS = -Wall -Wextra -Werror
 
 %.o	: %.c
 		@gcc $(FLAGS) -c $< -o $@
-		@echo "\033[1mCOREWAR :\033[0m		 \033[37m[Compilation:\033[0m\033[36m $@\033[0m]"
+		@echo "\033[1mVM :\033[0m		 \033[37m[Compilation:\033[0m\033[36m $@\033[0m]"
 
 all: $(NAME)
 
@@ -40,7 +40,7 @@ $(NAME): $(OBJECT)
 	@make -C $(LIBFT)
 	@gcc $(FLAGS) -lncurses -I $(INCLUDES) $(SRCS) ./libft/libft.a -o ./$(NAME)
 	@echo "\033[5;32m--------------------------\033[0m"
-	@echo "\033[5;32m         COREWAR - OK     \033[0m"
+	@echo "\033[5;32m   Virtual machine - OK   \033[0m"
 	@echo "\033[5;32m--------------------------\033[0m"
 
 norm:
