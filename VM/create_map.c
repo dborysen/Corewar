@@ -71,14 +71,14 @@ void	ns_print_map(t_map memory_map)
 	{
 		if (count == 0)
 		{
-			hex == 0 ? ft_printf("0x%#.4x :", hex) : ft_printf("%#.4x :", hex);
+			hex == 0 ? ft_printf("0x%#.4x:", hex) : ft_printf("%#.4x:", hex);
 			hex += 64;
 		}
 		ft_printf(" %02x", memory_map.map[i]);
 		count++;
 		if (count == 64)
 		{
-			ft_printf(" \n");
+			ft_printf("\n");
 			count = 0;
 		}
 		i++;
