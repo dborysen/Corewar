@@ -186,6 +186,7 @@ t_champion				*ns_read_champion(char *av, t_champion **champ);
 t_champion				*ns_zero_champ();
 unsigned char			*int_to_char(int nbr);
 unsigned char			*find_fbytes_tind(t_map *map, int index);
+int						is_digit(char *str);
 /*
 ** Champ functions
 */

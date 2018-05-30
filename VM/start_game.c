@@ -73,9 +73,6 @@ t_cursor	**nc_game_start(t_cursor **cursor, t_map **m_map, t_info *info)
 	map_t = *m_map;
 	temp = *cursor;
 	clear_map(temp, m_map);
-	info->winner_name = (*cursor)->champ->champ_name;
-	info->winner_nbr = (*cursor)->champ->id;
-	info->winner_col = (*cursor)->champ->color;
 	ns_create_cycle(&temp, map_t);
 	*cursor = ns_move_cursor(&temp, map_t, &info);
 	info->total_cycles++;

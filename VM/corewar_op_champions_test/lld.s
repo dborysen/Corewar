@@ -1,5 +1,5 @@
-.name "Super Pivnik"
-.comment "Co-Co-Co"
+.name "lld"
+.comment "lld"
 
 add r1, r1, r2
 add r2, r2, r2
@@ -8,9 +8,5 @@ add r3, r3, r3
 add r3, r3, r3
 add r3, r3, r3
 
-lfork %2000
-lfork %3000
-
-
-ld %-1, r2
+lld %-3, r2
 sti r2, r3, r3

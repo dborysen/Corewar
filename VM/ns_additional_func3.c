@@ -58,3 +58,17 @@ char		*find_name_id(int id, t_info *info)
 	}
 	return (NULL);
 }
+
+int			is_digit(char *str)
+{
+	int i;
+
+	i = 0;
+	while (str[i])
+	{
+		if (!ft_isdigit(str[i]))
+			return (0);
+		i++;
+	}
+	return (1);
+}

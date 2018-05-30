@@ -94,6 +94,9 @@ void	ns_ncurses(t_map *map, t_info *info, t_cursor **cursor)
 {
 	t_vizor		viz;
 
+	info->winner_name = (*cursor)->champ->champ_name;
+	info->winner_nbr = (*cursor)->champ->id;
+	info->winner_col = (*cursor)->champ->color;
 	initscr();
 	cbreak();
 	noecho();

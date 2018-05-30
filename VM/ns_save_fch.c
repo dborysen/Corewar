@@ -18,14 +18,14 @@ void		ns_save_flags(char **av, t_fl *flags, int *i, int ac)
 	{
 		flags->d = 1;
 		*i += 1;
-		if (ac - 1 < *i || !ft_isdigit(av[*i][0]))
+		if (ac - 1 < *i || !is_digit(av[*i]))
 			ns_error("not a digit after flag");
 		flags->dump = ft_atoi(av[*i]);
 	}
 	else if (ft_strcmp(av[*i], "-n") == 0)
 	{
 		*i += 1;
-		if (ac - 1 < *i || !ft_isdigit(av[*i][0]))
+		if (ac - 1 < *i || !is_digit(av[*i]))
 			ns_error("not a digit after flag");
 		flags->n = ft_atoi(av[*i]);
 	}
