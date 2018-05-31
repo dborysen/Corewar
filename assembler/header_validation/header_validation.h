@@ -53,5 +53,6 @@ char			*save_header(char *str, int max_length, int header_type);
 void			show_not_valid_header_length_error(int header_type,
 													int max_length);
 char			*fill_header(char *str, int start_of_header, int max_length);
+int				still_in_header_zone(char *str);
 
 #endif

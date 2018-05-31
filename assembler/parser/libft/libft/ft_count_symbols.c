@@ -1,22 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   corewar.h                                          :+:      :+:    :+:   */
+/*   ft_count_symbols.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dborysen <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/01/24 14:46:54 by dborysen          #+#    #+#             */
-/*   Updated: 2018/01/24 14:46:55 by dborysen         ###   ########.fr       */
+/*   Created: 2018/05/31 11:40:14 by dborysen          #+#    #+#             */
+/*   Updated: 2018/05/31 11:40:15 by dborysen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef COREWAR_H
-# define COREWAR_H
+int		ft_count_symbols(char *str, char c)
+{
+	int i;
+	int symb_count;
 
-# include "assembler/lexer/lexer.h"
-# include "assembler/parser/includes/parsing.h"
-# include "assembler/header_validation/header_validation.h"
-# include "assembler/validation.h"
-# include "assembler/corefile/includes/corefile.h"
-
-#endif
+	i = 0;
+	symb_count = 0;
+	while (str[i] != '\0')
+	{
+		if (str[i] == c)
+			symb_count++;
+		i++;
+	}
+	return (symb_count);
+}

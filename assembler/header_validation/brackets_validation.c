@@ -83,7 +83,7 @@ int		open_brackets_on_place(char *header_str, int line_num)
 	char **split_line;
 
 	split_line = ft_splitwhtsp(header_str);
-	if (split_line[1][0] == '"')
+	if (ft_countw(header_str, ' ') != 1 && split_line[1][0] == '"')
 	{
 		free_two_dem_array(split_line);
 		return (TRUE);

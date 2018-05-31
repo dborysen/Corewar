@@ -23,8 +23,10 @@ int		is_only_one_name_and_one_comment(t_data *data_from_file)
 int		is_only_one_current_header(t_data *data_from_file, int header)
 {
 	char	current_header[8];
-	char	what_to_find_in_str[8];
+	char	what_to_find_in_str[9];
+	int		test;
 
+	test = 0;
 	if (header == HEADER_NAME)
 	{
 		ft_strcpy(current_header, "name");
@@ -66,7 +68,9 @@ int		header_is_here(t_data *data_from_file, int type_of_header)
 	header_count = find_header(data_from_file, what_to_find_in_str);
 	if (header_count == 0)
 	{
-		ft_printf("\n\e[1;31mERROR: \e[1;37mexpected program %s \e[0m\e[0m\n\n",
+		ft_printf("\n\e[1;31mERROR: \e[1;37mexpected program %s \e[0m\e[0m\n",
+		current_header);
+		ft_printf("\t\e[1;36m%s \"<yours %s>\"\e[0m\n\n", what_to_find_in_str,
 		current_header);
 		return (FALSE);
 	}
@@ -81,10 +85,15 @@ int		find_header(t_data *data_from_file, char *current_header)
 	header_count = 0;
 	while (data_from_file != NULL)
 	{
-		if (ft_strchr(data_from_file->data, '.') != 0)
+		if (ft_strchr(data_from_file->data, '.') == 0 &&
+			only_hesh_coomment_line(data_from_file->data) == FALSE)
+			return (header_count);
+		if (ft_strchr(data_from_file->data, '.') != 0 &&
+			ft_count_symbols(data_from_file->data, '\"') <= 2)
 		{
 			str_split = ft_splitwhtsp(data_from_file->data);
-			if (ft_strcmp(str_split[0], current_header) == 0)
+			if (ft_countw(data_from_file->data, ' ') > 1 &&
+							ft_strcmp(str_split[0], current_header) == 0)
 				header_count++;
 			free_two_dem_array(str_split);
 		}

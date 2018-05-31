@@ -80,7 +80,9 @@ ft_join_free_b.c \
 ft_join_free.c \
 clear_res_split.c \
 ft_splitwhtsp.c \
-ft_strrstr.c
+ft_strrstr.c\
+ft_countw.c\
+ft_count_symbols.c
 
 
 OBJECT = $(SRCS:.c=.o)

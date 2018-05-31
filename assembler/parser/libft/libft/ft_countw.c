@@ -1,22 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   corewar.h                                          :+:      :+:    :+:   */
+/*   ft_countw.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dborysen <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/01/24 14:46:54 by dborysen          #+#    #+#             */
-/*   Updated: 2018/01/24 14:46:55 by dborysen         ###   ########.fr       */
+/*   Created: 2018/01/24 14:46:54 by klee              #+#    #+#             */
+/*   Updated: 2018/01/24 14:46:55 by klee             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef COREWAR_H
-# define COREWAR_H
+int	ft_countw(char const *s, char c)
+{
+	int state;
+	int words;
+	int i;
 
-# include "assembler/lexer/lexer.h"
-# include "assembler/parser/includes/parsing.h"
-# include "assembler/header_validation/header_validation.h"
-# include "assembler/validation.h"
-# include "assembler/corefile/includes/corefile.h"
-
-#endif
+	state = 0;
+	words = 0;
+	i = 0;
+	while (s[i] != '\0')
+	{
+		if (s[i] == c && (s[i + 1] != c || s[i + 1] != '\0'))
+			state = 0;
+		else if (state == 0)
+		{
+			state = 1;
+			words++;
+		}
+		i++;
+	}
+	return (words);
+}
